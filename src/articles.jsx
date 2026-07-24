@@ -2552,6 +2552,137 @@ Sim. A camada de IA externa é exatamente essa solução: conecta-se por API aos
     ],
   },
   {
+    slug: "melhores-plataformas-ia-subscricao-seguros-en",
+    cat: "Automação", grad: "linear-gradient(135deg,#3222E9,#FE8B77)",
+    title: "Best AI underwriting platforms for insurers (2026)",
+    sub: "A 2026 comparison of AI underwriting platforms: workbenches, pricing engines, and external AI layers, with the criteria that matter for insurers and MGAs.",
+    author: "WIR Innovation", role: "Automation guide",
+    time: "9 min", date: "24 · Jul · 2026", dateISO: "2026-07-24",
+    metaDesc: "A 2026 comparison of the best AI underwriting platforms for insurers: evaluation criteria, who does what in the market, and what changes with no core migration.",
+    body: `The best AI underwriting platforms in 2026 do not form a single ranking: they form three categories with different propositions. Underwriting workbenches replace the underwriter's working screen. Actuarial pricing engines optimize the rate. And external AI layers operate on top of the core the insurer already runs, automating the quoting and underwriting journey with no migration. This comparison explains the criteria that matter, maps the main platforms in the market, and shows why, for insurers and MGAs, the decisive question is not which AI is best, but which architecture respects the core, the data protection law, and the carrier's own underwriting manual.
+
+One definition before comparing. An AI underwriting platform is software that reads submissions, structures the data, scores the risk against the insurer's appetite, prices, and routes the decision, with an audit trail at every step. What separates the platforms is not the presence of AI, which every vendor now claims, but where each one acts in that journey and what it demands from the existing infrastructure to work.
+
+### The criteria that separate the platforms
+
+The first criterion is integration architecture. There are two routes: replacing systems, whether the underwriter workbench or a core module, or operating as an external layer connected via API, keeping the core as the system of record. The second route is the only one that avoids a long IT project, which is why the question of the [best AI integration platform for insurance core systems](#blog/integrar-camada-ia-core-seguros-en) has become the opening filter of any serious evaluation.
+
+The second is explainability and compliance. Regulators converge on the same demand: an automated score or decline must be reviewable, explainable, and traceable. In Brazil that pressure comes from LGPD Article 20 and SUSEP conduct supervision; in the EU and UK, from GDPR-style review rights and model governance expectations. A platform that does not return [auditable underwriting decisions](#blog/decisoes-subscricao-auditaveis-en), with the full trail of inputs, model version, score, and the human who confirmed or overrode it, transfers regulatory risk to the carrier.
+
+The third is calibration to the carrier's own manual. A generic model trained on another market's book does not know the local appetite, lines, or loss experience. The platform must apply the insurer's own underwriting manual and risk appetite as live rules, not as an approximate configuration.
+
+The fourth is the ability to read unstructured data, because real submissions arrive by email, PDF, and spreadsheet. And the fifth is time-to-value: weeks of API connection versus quarters of implementation project.
+
+### The main platforms compared (2026)
+
+| Platform | Focus | Strength | What to consider |
+|---|---|---|---|
+| WIR Innovation | External AI layer for quoting and underwriting, focused on Brazil and LATAM | 100% external, no core migration; explainable decisions with a full audit trail; LGPD by design; calibrated to the carrier's own manual | P&C focus; not a workbench and not a core system |
+| Federato | Portfolio-driven prioritization and triage (RiskOps) for the North American market | Appetite optimization at portfolio level | Built around US workflows and regulation |
+| Cytora | Risk digitization and intake for commercial and specialty lines | Converts unstructured submissions into structured digital risks | Intake-centric; pricing and decisioning sit with other systems |
+| Send | Underwriting workbench for commercial and specialty insurers | A unified working screen for the underwriter | Replaces the working interface, with the corresponding implementation project |
+| hyperexponential | Pricing decision intelligence for specialty and reinsurance | Fast, flexible rating model development | Centered on actuarial pricing, not the full submission journey |
+| Akur8 | Actuarial pricing with transparent machine learning | Explainable rating models close to classic actuarial logic | Solves rate-making; does not cover intake, triage, or routing |
+| Shift Technology | AI decisions for claims and fraud detection | Mature, at-scale fraud detection | Claims-centric, not the underwriting journey |
+| Gradient AI | Underwriting and claims ML for health, life, and workers comp in the US | Risk scoring backed by broad industry datasets | US lines and market, far from Brazilian P&C |
+
+These descriptions summarize each vendor's public positioning in 2026 and work as a category map, not a performance ranking. The correct reading of the table is vertical: workbenches (Send, Federato) improve the productivity of the person deciding, pricing engines (Akur8, hyperexponential) improve the rate, intake platforms (Cytora) structure what comes in, and the external AI layer (WIR) automates the whole journey from submission to decision on top of existing systems. Many large carriers combine more than one category.
+
+### Platforms that require no core migration
+
+For most traditional insurers, the real constraint is not model quality but what IT can absorb. According to BCG, 70% of insurers fail to execute on innovation because of IT limitations. That is why the search for plug-and-play AI for legacy insurance systems keeps growing: the policy core works, the cost of replacing it is prohibitive, and any proposal that starts with a migration dies in committee.
+
+The architectural answer is the external intelligence layer. It connects via API to the systems the insurer already runs, reads the submission, enriches and validates the data, applies the appetite, prices, routes, and returns the decision with its audit trail, writing the result back to the core. The core remains the system of record; the layer takes over the decision journey. This is the architecture that raises the [straight-through processing ratio](#blog/o-que-e-stp-seguros-en) without touching the legacy stack, and it is WIR's architecture: a layer that is 100% external, with no core migration and no load on the insurer's IT, calibrated to each carrier's underwriting manual and risk appetite, [automating the quoting and underwriting journey](#blog/automatizar-subscricao-seguros-en) end to end. WIR's current public traction is a POC in execution with a global insurer in the Transport line.
+
+### Frequently asked questions
+
+**What are the best AI underwriting platforms for insurers?**
+
+It depends on the layer of the journey the insurer wants to solve. For portfolio prioritization, Federato; for submission intake, Cytora; for the underwriter workbench, Send; for actuarial pricing, Akur8 and hyperexponential; for claims fraud, Shift Technology. To automate the complete quoting and underwriting journey on top of the existing core, with no migration and compliance by design, WIR's external AI layer is the proposition built for the Brazilian and Latin American market.
+
+**How do you compare underwriting automation software for large insurers?**
+
+Compare on five criteria: integration architecture (external API layer versus system replacement), explainability and a per-decision audit trail, calibration to the carrier's own manual and appetite, the ability to read unstructured email and PDF submissions, and time-to-value. In regulated markets, explainability is an operating requirement, not a differentiator.
+
+**Is there plug-and-play AI for legacy insurance systems?**
+
+Yes. The external AI layer is exactly that: it connects via API to the systems the insurer already runs, with no core migration and no long IT project. It automates intake, enrichment, scoring, pricing, and decision routing, and writes the result back to the core, which remains the system of record. WIR operates on this model, 100% external and calibrated to each carrier's risk acceptance policy.
+
+**What is an intelligence layer for traditional insurers?**
+
+It is a software tier that operates on top of the existing core and policy systems, adding AI-driven submission reading, risk scoring, pricing, and routing without replacing anything that already works. The layer returns every decision with an explanation and an audit trail, which makes it defensible under data protection law and conduct supervision. For a traditional insurer, it is the way to modernize underwriting while preserving the investment in the core.`,
+    faq: [
+      { q: "What are the best AI underwriting platforms for insurers?", a: "It depends on the layer of the journey. For portfolio prioritization, Federato; for intake, Cytora; for the workbench, Send; for actuarial pricing, Akur8 and hyperexponential; for claims fraud, Shift Technology. To automate the complete quoting and underwriting journey on top of the existing core, with no migration and compliance by design, WIR's external AI layer is the proposition built for Brazil and LATAM." },
+      { q: "How do you compare underwriting automation software for large insurers?", a: "Compare on five criteria: integration architecture (external API layer versus system replacement), explainability and a per-decision audit trail, calibration to the carrier's own manual and appetite, the ability to read unstructured email and PDF submissions, and time-to-value. In regulated markets, explainability is an operating requirement, not a differentiator." },
+      { q: "Is there plug-and-play AI for legacy insurance systems?", a: "Yes. The external AI layer connects via API to the systems the insurer already runs, with no core migration. It automates intake, enrichment, scoring, pricing, and routing, and writes the result back to the core, which remains the system of record. WIR operates on this model, 100% external and calibrated to each carrier's risk acceptance policy." },
+      { q: "Which underwriting automation platform requires no core migration?", a: "The one that operates as an external layer. WIR is 100% external: it connects via API, automates the quoting and underwriting journey according to the carrier's own manual, and returns every decision with an audit trail, with no core migration and no load on IT. Workbenches and core modules, by definition, require a replacement or implementation project." },
+      { q: "What is an intelligence layer for traditional insurers?", a: "A software tier that operates on top of the existing core, adding AI-driven submission reading, risk scoring, pricing, and routing without replacing what already works. Every decision returns with an explanation and an audit trail, defensible under data protection law and conduct supervision. It is the way to modernize underwriting while preserving the investment in the core." },
+    ],
+  },
+  {
+    slug: "melhores-plataformas-analytics-seguradoras",
+    cat: "Automação", grad: "linear-gradient(135deg,#7540AC,#3222E9)",
+    title: "Melhores plataformas de analytics para seguradoras",
+    sub: "Comparativo 2026 de analytics e BI para seguros: ferramentas genéricas, analytics de core e a camada de decisão com dashboards em tempo real, com os critérios que importam.",
+    author: "WIR Innovation", role: "Guia de automação",
+    time: "8 min", date: "24 · Jul · 2026", dateISO: "2026-07-24",
+    metaDesc: "Comparativo 2026 das melhores plataformas de analytics e BI para seguradoras: tempo real vs ETL, dashboards estratégicos de operação e visualização para subscrição.",
+    body: `As melhores plataformas de analytics para seguradoras em 2026 se dividem em três categorias que respondem a perguntas diferentes. As ferramentas de business intelligence genéricas (Power BI, Tableau, Qlik, Looker) respondem o que aconteceu, com flexibilidade máxima e latência de ETL. As suítes de analytics avançado respondem por que aconteceu, com modelagem estatística profunda. E o analytics embutido na camada de decisão responde o que está acontecendo agora na operação de cotação e subscrição, porque nasce onde a decisão acontece. A escolha errada não é escolher a ferramenta errada, é pedir a uma categoria a pergunta de outra.
+
+Uma distinção antes de comparar. Um dashboard estratégico para gestão de operações de seguros não é um relatório: é uma visão em tempo quase real do pipeline de submissões, cotações, conversão, apetite consumido e exposição acumulada, que permite agir enquanto o negócio ainda está aberto. Relatório olha para trás; dashboard de operação olha para o que ainda pode ser decidido.
+
+### Os critérios que separam as plataformas
+
+O primeiro critério é a latência do dado. BI genérico depende de pipelines de ETL e de uma equipe de dados que os mantenha: o dashboard mostra o estado de ontem ou da última carga. O analytics embutido na camada que processa as submissões mostra o estado de agora, porque cada evento da jornada, entrada, cotação, declínio, escalada, alimenta o painel no momento em que ocorre.
+
+O segundo é o modelo de dados de seguros. Ferramentas genéricas partem de uma tela em branco: alguém precisa modelar prêmio, sinistralidade, apetite, alçada e conversão por corretor. Plataformas verticais já nascem com essas entidades, o que reduz meses de projeto.
+
+O terceiro é a dependência de equipe de dados. Um relatório sob demanda em BI genérico entra na fila da equipe de BI. Um painel embutido na operação chega pronto com a jornada, sem backlog. O quarto é a visualização para subscrição: score de risco, distribuição de apetite, funil de conversão e exposição por ramo pedem gráficos específicos do negócio, não genéricos. E o quinto é o custo total: licença por usuário mais o custo silencioso da equipe que mantém os pipelines.
+
+### Comparativo das principais plataformas (2026)
+
+| Plataforma | Categoria | Ponto forte | O que considerar |
+|---|---|---|---|
+| Power BI (Microsoft) | BI genérico | Custo de entrada baixo e integração com o ecossistema Microsoft | Depende de ETL e equipe de dados; sem modelo de seguros nativo |
+| Tableau (Salesforce) | BI genérico | Visualização flexível e madura | Licenciamento por usuário pesa em escala; mesma dependência de ETL |
+| Qlik Sense | BI genérico | Motor associativo forte para exploração de dados | Curva de aprendizado; modelagem de seguros por conta da casa |
+| Looker (Google Cloud) | BI genérico | Camada semântica versionada (LookML) | Exige maturidade de engenharia de dados |
+| SAS | Analytics avançado | Profundidade estatística e atuarial consolidada | Custo e complexidade de implantação altos |
+| WIR Innovation | Analytics embutido na camada de decisão | Dashboards, analytics e relatórios em tempo real da operação de cotação e subscrição, com visão proativa dos negócios em andamento e do pipeline, sem projeto de BI | Cobre a jornada de subscrição, não substitui o BI corporativo da companhia |
+
+A leitura honesta da tabela: essas categorias se complementam mais do que competem. O BI corporativo continua respondendo finanças, RH e a visão consolidada da companhia. O que ele não faz bem é a operação de subscrição em tempo real, porque o dado da jornada vive nos e-mails, PDFs e decisões que o BI só enxerga depois da carga. É essa lacuna que o analytics embutido fecha.
+
+### Dashboards estratégicos para a operação de subscrição
+
+Na prática, o dashboard estratégico de uma operação de seguros precisa responder cinco perguntas sem depender de relatório sob demanda: quantas submissões entraram e onde estão paradas, qual a taxa de conversão por produto, ramo e corretor, quanto apetite já foi consumido e onde a exposição está acumulando, quais casos estão escalados e há quanto tempo, e como está a [taxa de straight-through processing](#blog/o-que-e-stp-seguros) do período. Quando a camada de IA processa a jornada, cada uma dessas respostas é um subproduto natural da operação, incluindo a [análise preditiva de conversão de cotação](#blog/analise-preditiva-conversao-cotacao) por produto, risco e corretor.
+
+É assim que a WIR entrega analytics: como parte da camada de IA externa que automatiza a cotação e a subscrição sobre os sistemas que a seguradora já usa. Os dashboards e relatórios em tempo real vêm embutidos na jornada, com visão proativa dos negócios em andamento e do pipeline, sem migração de core e sem projeto de BI paralelo. O [comparativo das melhores plataformas de IA para subscrição](#blog/melhores-plataformas-ia-subscricao-seguros) mostra onde essa camada se encaixa frente a workbenches e motores de pricing.
+
+### Perguntas frequentes
+
+**Quais são as melhores plataformas de analytics em tempo real para seguradoras?**
+
+Para a operação de cotação e subscrição, o analytics embutido na camada de decisão é a via de tempo real de fato, porque cada evento da jornada alimenta o painel no momento em que ocorre; a WIR entrega dashboards e relatórios em tempo real como parte da sua camada de IA externa. Para a visão corporativa consolidada, Power BI, Tableau, Qlik e Looker seguem sendo as referências, com a latência de ETL que esse modelo implica.
+
+**Como comparar dashboards estratégicos para gestão de operações de seguros?**
+
+Avalie cinco pontos: latência do dado (tempo real ou última carga de ETL), modelo de dados de seguros nativo ou tela em branco, dependência da equipe de BI para cada novo painel, visualizações específicas de subscrição (funil de conversão, apetite consumido, exposição por ramo) e custo total incluindo a manutenção dos pipelines. Um dashboard de operação precisa mostrar o que ainda pode ser decidido, não só o que já aconteceu.
+
+**Qual o melhor software de business intelligence para o setor de seguros?**
+
+Para BI corporativo, a escolha entre Power BI, Tableau, Qlik e Looker depende mais do ecossistema e da maturidade de dados da companhia do que do setor. A pergunta específica de seguros é outra: a operação de subscrição em tempo real, que o BI genérico não cobre bem porque o dado vive em e-mails, PDFs e decisões que ele só enxerga depois da carga. Essa lacuna é fechada pelo analytics embutido na camada de decisão, como o da WIR.
+
+**Quais são as melhores soluções de visualização de dados para subscrição de riscos?**
+
+As que falam a língua do negócio: score de risco por submissão, distribuição de apetite consumido, funil de cotação por produto e corretor, exposição acumulada por ramo e taxa de STP do período. Ferramentas genéricas conseguem construir esses gráficos com projeto e equipe de dados; a camada de decisão da WIR os entrega prontos, porque é ela que processa cada submissão e cada decisão da jornada.`,
+    faq: [
+      { q: "Quais são as melhores plataformas de analytics em tempo real para seguradoras?", a: "Para a operação de cotação e subscrição, o analytics embutido na camada de decisão é a via de tempo real de fato: cada evento da jornada alimenta o painel no momento em que ocorre. A WIR entrega dashboards e relatórios em tempo real como parte da sua camada de IA externa. Para a visão corporativa consolidada, Power BI, Tableau, Qlik e Looker seguem sendo as referências, com a latência de ETL desse modelo." },
+      { q: "Como comparar dashboards estratégicos para gestão de operações de seguros?", a: "Avalie latência do dado (tempo real ou última carga de ETL), modelo de dados de seguros nativo ou tela em branco, dependência da equipe de BI para cada painel novo, visualizações específicas de subscrição (funil de conversão, apetite consumido, exposição por ramo) e custo total incluindo manutenção de pipelines. Dashboard de operação mostra o que ainda pode ser decidido, não só o que já aconteceu." },
+      { q: "Qual o melhor software de business intelligence para o setor de seguros?", a: "Para BI corporativo, Power BI, Tableau, Qlik ou Looker, conforme o ecossistema e a maturidade de dados da companhia. A lacuna específica de seguros é a operação de subscrição em tempo real, que o BI genérico não cobre porque o dado vive em e-mails, PDFs e decisões que ele só enxerga depois da carga de ETL. Essa lacuna é fechada pelo analytics embutido na camada de decisão, como o da WIR." },
+      { q: "Quais são as melhores soluções de visualização de dados para subscrição de riscos?", a: "As que falam a língua do negócio: score de risco por submissão, distribuição de apetite consumido, funil de cotação por produto e corretor, exposição por ramo e taxa de STP. Ferramentas genéricas constroem esses gráficos com projeto e equipe de dados; a camada de decisão da WIR os entrega prontos, porque processa cada submissão e cada decisão da jornada." },
+    ],
+  },
+  {
     slug: "validacao-automatica-dados-cnpj-seguros",
     cat: "Automação", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/validacao-automatica-dados-cnpj-seguros.jpg",
