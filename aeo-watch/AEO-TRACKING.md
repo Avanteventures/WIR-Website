@@ -50,6 +50,8 @@ Answer engines cite pages that answer the question **directly, early, and verifi
 
 ## Changelog
 
+- **2026-07-24:** Comparison-page sweep for the prompt-tracker clusters. Published: `melhores-plataformas-ia-subscricao-seguros` (+ `-en`, hreflang-paired), `melhores-plataformas-analytics-seguradoras`, `melhores-ferramentas-ia-triagem-propostas-seguros`, `melhores-plataformas-inteligencia-vendas-seguradoras`. All: vendor comparison table + FAQPage with verbatim tracker prompts. Hero images generated programmatically (PIL, brand-gradient family; generator in session scratchpad, style: flat abstract on WIR palette). Site-wide fixes: markdown-table rendering in build-articles.cjs + blog.css, og:image/twitter:image now absolute URLs. Remaining tracker cluster without a page: none of the majors; watch scores ~2 weeks (check ~07-ago and ~21-ago).
+
 - **2026-07-23:** GSC Dataset issue (`Missing field "license"`) on `/insights/wir-index/` fixed with CC BY 4.0 (attribution-required license also serves the citation strategy). SUSEP EN routing fix: title/meta of `regulacao-ia-seguros-susep-en` re-anchored to "Brazil insurance market 2026: SUSEP AI regulation" + inlink from `escalonamento-humano-subscricao-seguros-en`. STP pages audited against the on-page checklist: verbatim-question H3s added, inlink from `custo-invisivel-stp-mal-feito`. External prompt tracker (screenshot 23-jul) shows ~25 PT-BR comparative buyer prompts all at score 0: next structural gap is comparison/alternatives-format pages ("melhores plataformas", "comparar softwares"), the format answer engines cite for those queries.
 
 ## Automation note

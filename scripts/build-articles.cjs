@@ -165,7 +165,7 @@ function renderHead(article) {
 <meta property="og:title" content="${esc(article.title)}" />
 <meta property="og:description" content="${esc(article.metaDesc)}" />
 <meta property="og:url" content="${url}" />
-${article.image ? `<meta property="og:image" content="${article.image}" />` : ""}
+${article.image ? `<meta property="og:image" content="${SITE_URL}${article.image}" />` : ""}
 <meta property="og:locale" content="${ogLocale}" />
 <meta property="og:site_name" content="WIR Innovation" />
 <meta property="article:author" content="${esc(article.author)}" />
@@ -174,7 +174,7 @@ ${article.image ? `<meta property="og:image" content="${article.image}" />` : ""
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="${esc(article.title)}" />
 <meta name="twitter:description" content="${esc(article.metaDesc)}" />
-${article.image ? `<meta name="twitter:image" content="${article.image}" />` : ""}
+${article.image ? `<meta name="twitter:image" content="${SITE_URL}${article.image}" />` : ""}
 
 <link rel="icon" type="image/svg+xml" href="/assets/wir-logo-azul.svg" />
 <link rel="apple-touch-icon" href="/assets/wir-logo-azul.svg" />

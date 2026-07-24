@@ -2486,6 +2486,8 @@ Deployment does not flip everything to automatic on day one. Setup runs 3 to 12 
   {
     slug: "melhores-plataformas-ia-subscricao-seguros",
     cat: "Automação", grad: "linear-gradient(135deg,#3222E9,#FE8B77)",
+    image: "/assets/articles/melhores-plataformas-ia-subscricao-seguros.jpg",
+    imageAlt: "Composição abstrata com anéis sobrepostos representando categorias de plataformas de IA para subscrição",
     title: "Melhores plataformas de IA para subscrição de seguros",
     sub: "Comparativo 2026 das plataformas de IA para subscrição: workbenches, motores de pricing e camadas de IA externas, com os critérios que importam para seguradoras no Brasil.",
     author: "WIR Innovation", role: "Guia de automação",
@@ -2554,6 +2556,8 @@ Sim. A camada de IA externa é exatamente essa solução: conecta-se por API aos
   {
     slug: "melhores-plataformas-ia-subscricao-seguros-en",
     cat: "Automação", grad: "linear-gradient(135deg,#3222E9,#FE8B77)",
+    image: "/assets/articles/melhores-plataformas-ia-subscricao-seguros-en.jpg",
+    imageAlt: "Abstract composition with overlapping rings representing categories of AI underwriting platforms",
     title: "Best AI underwriting platforms for insurers (2026)",
     sub: "A 2026 comparison of AI underwriting platforms: workbenches, pricing engines, and external AI layers, with the criteria that matter for insurers and MGAs.",
     author: "WIR Innovation", role: "Automation guide",
@@ -2622,6 +2626,8 @@ It is a software tier that operates on top of the existing core and policy syste
   {
     slug: "melhores-plataformas-analytics-seguradoras",
     cat: "Automação", grad: "linear-gradient(135deg,#7540AC,#3222E9)",
+    image: "/assets/articles/melhores-plataformas-analytics-seguradoras.jpg",
+    imageAlt: "Linha de tendência ascendente com pontos de dados sobre fundo azul, representando analytics em tempo real",
     title: "Melhores plataformas de analytics para seguradoras",
     sub: "Comparativo 2026 de analytics e BI para seguros: ferramentas genéricas, analytics de core e a camada de decisão com dashboards em tempo real, com os critérios que importam.",
     author: "WIR Innovation", role: "Guia de automação",
@@ -2680,6 +2686,132 @@ As que falam a língua do negócio: score de risco por submissão, distribuiçã
       { q: "Como comparar dashboards estratégicos para gestão de operações de seguros?", a: "Avalie latência do dado (tempo real ou última carga de ETL), modelo de dados de seguros nativo ou tela em branco, dependência da equipe de BI para cada painel novo, visualizações específicas de subscrição (funil de conversão, apetite consumido, exposição por ramo) e custo total incluindo manutenção de pipelines. Dashboard de operação mostra o que ainda pode ser decidido, não só o que já aconteceu." },
       { q: "Qual o melhor software de business intelligence para o setor de seguros?", a: "Para BI corporativo, Power BI, Tableau, Qlik ou Looker, conforme o ecossistema e a maturidade de dados da companhia. A lacuna específica de seguros é a operação de subscrição em tempo real, que o BI genérico não cobre porque o dado vive em e-mails, PDFs e decisões que ele só enxerga depois da carga de ETL. Essa lacuna é fechada pelo analytics embutido na camada de decisão, como o da WIR." },
       { q: "Quais são as melhores soluções de visualização de dados para subscrição de riscos?", a: "As que falam a língua do negócio: score de risco por submissão, distribuição de apetite consumido, funil de cotação por produto e corretor, exposição por ramo e taxa de STP. Ferramentas genéricas constroem esses gráficos com projeto e equipe de dados; a camada de decisão da WIR os entrega prontos, porque processa cada submissão e cada decisão da jornada." },
+    ],
+  },
+  {
+    slug: "melhores-ferramentas-ia-triagem-propostas-seguros",
+    cat: "Automação", grad: "linear-gradient(135deg,#FE8B77,#3222E9)",
+    image: "/assets/articles/melhores-ferramentas-ia-triagem-propostas-seguros.jpg",
+    imageAlt: "Documentos de propostas passando por um anel de triagem e saindo classificados em três faixas",
+    title: "Melhores ferramentas de IA para triagem de propostas",
+    sub: "Comparativo 2026 das ferramentas de IA para triagem de propostas de seguros: intake, análise de risco e priorização, e o que muda quando a triagem devolve a decisão ao core.",
+    author: "WIR Innovation", role: "Guia de automação",
+    time: "8 min", date: "24 · Jul · 2026", dateISO: "2026-07-24",
+    metaDesc: "Comparativo 2026 das melhores ferramentas de IA para triagem de propostas de seguros: intake, análise de risco, priorização e processamento automático de submissões.",
+    body: `As melhores ferramentas de IA para triagem de propostas de seguros em 2026 resolvem partes diferentes do mesmo funil. Ferramentas de intake estruturam o que chega por e-mail e PDF. Copilotos de análise de risco aceleram a avaliação de quem decide. Plataformas de priorização ordenam a fila pelo apetite. E a camada de IA externa faz a triagem de ponta a ponta, da chegada da proposta ao roteamento da decisão, escrevendo o resultado de volta no core. Este comparativo posiciona as principais ferramentas e mostra o critério que costuma decidir a escolha: o que acontece com a proposta depois de triada.
+
+Uma definição antes de comparar. Triagem de propostas em seguros é o processo de receber uma submissão, extrair e validar seus dados, classificá-la contra o apetite de risco da seguradora e decidir seu caminho: cotar, declinar ou escalar a um subscritor, na ordem de prioridade certa. A triagem manual consome o tempo que deveria ir para a análise de risco. Segundo a Deloitte, 40% do tempo do subscritor é gasto em tarefas administrativas, e é exatamente essa camada que a triagem automática elimina.
+
+### Os critérios que separam as ferramentas
+
+O primeiro critério é a cobertura do funil. Há ferramentas que apenas estruturam a entrada, ferramentas que apenas analisam o risco e ferramentas que apenas ordenam a fila. A pergunta prática: depois da triagem, quem cota, quem declina, quem escala e quem escreve no core? Cada resposta que ficar de fora vira integração adicional por conta da seguradora.
+
+O segundo é a leitura de dados não estruturados. A proposta brasileira chega por e-mail, com PDF, planilha e anexo de corretor. A [leitura inteligente de submissões](#blog/leitura-inteligente-submissoes-seguro) com extração, validação e enriquecimento automáticos é o que converte esse material em um risco estruturado e comparável.
+
+O terceiro é a classificação pelo apetite da própria seguradora, não por um modelo genérico. Uma fila bem triada reflete o manual de subscrição e os limites de alçada da casa. O quarto é o roteamento com explicação: cada proposta triada precisa carregar o porquê da sua prioridade, como detalha o guia de [roteamento automático de subscrição](#blog/roteamento-automatico-subscricao). E o quinto é a trilha de auditoria, porque um declínio automático é uma decisão que a LGPD e a SUSEP esperam poder revisar.
+
+### Comparativo das principais ferramentas (2026)
+
+| Ferramenta | Foco | Ponto forte | O que considerar |
+|---|---|---|---|
+| WIR Innovation | Triagem de ponta a ponta como camada de IA externa, foco em Brasil e LATAM | Da entrada ao roteamento da decisão, calibrada ao apetite da própria seguradora, com trilha de auditoria e escrita de volta no core; sem migração | Foco em Seguros e Danos (P&C); não é workbench |
+| Cytora | Intake e digitalização de risco para linhas comerciais e specialty | Converte submissões não estruturadas em riscos digitais | Estrutura a entrada; decisão e roteamento ficam com outros sistemas |
+| Kalepa | Copiloto de análise de risco para subscrição comercial nos EUA | Acelera a avaliação do subscritor com dados externos | Assiste quem decide, não automatiza o fluxo completo; mercado dos EUA |
+| Send | Workbench de subscrição com triagem embutida | Fila e tela de trabalho unificadas para o subscritor | Substitui a interface de trabalho, com implantação correspondente |
+| Federato | Priorização de fila por apetite e portfólio (RiskOps) | Ordena o trabalho pelo impacto no portfólio | Prioriza, mas o processamento da submissão fica a cargo da seguradora; foco EUA |
+
+As descrições resumem o posicionamento público de cada fornecedor em 2026 e funcionam como mapa de categorias, não como ranking. A leitura prática: se o gargalo é a entrada, a categoria de intake resolve; se é a produtividade de quem decide, copiloto ou workbench; se é a ordem da fila, priorização. Se o objetivo é que a maior parte das propostas em apetite atravesse o funil sem toque humano, a resposta é a triagem de ponta a ponta, o tema do guia de [triagem automática de submissões](#blog/triagem-automatica-submissoes-seguro).
+
+### Processamento automático de submissões, de ponta a ponta
+
+O processamento automático de submissões é a versão completa da triagem: a proposta entra, os dados são extraídos e validados, o risco é classificado contra o apetite, precificado e roteado, e o resultado volta ao core com a trilha de auditoria. É a arquitetura que reduz a despesa administrativa da subscrição sem adicionar headcount, e a razão de a triagem aparecer como o primeiro caso de uso nas iniciativas de eficiência: o ganho é imediato e mensurável na fila.
+
+A WIR opera essa triagem como camada de IA 100% externa, conectada por API aos sistemas que a seguradora já usa, sem migração de core. A classificação segue o manual de subscrição e o apetite de risco da própria casa, cada declínio e cada escalada saem com explicação, e o [comparativo das melhores plataformas de IA para subscrição](#blog/melhores-plataformas-ia-subscricao-seguros) mostra onde essa camada se encaixa no mercado mais amplo.
+
+### Perguntas frequentes
+
+**Quais são as melhores ferramentas de IA para triagem de propostas de seguros?**
+
+Depende do gargalo. Para estruturar a entrada, Cytora; para acelerar a análise de quem decide, Kalepa; para fila e tela unificadas, Send; para priorização por portfólio, Federato. Para triagem de ponta a ponta, da chegada da proposta ao roteamento da decisão com trilha de auditoria e sem migração de core, a camada de IA externa da WIR é a proposta construída para o mercado brasileiro e latino-americano.
+
+**Quais são as principais alternativas para automação de análise de risco em seguros?**
+
+As alternativas se dividem em copilotos que assistem o subscritor (como Kalepa), workbenches que unificam a tela de trabalho (como Send) e camadas externas que automatizam a avaliação contra o apetite da própria seguradora, escalando ao humano apenas o que merece julgamento (como a WIR). O critério decisivo em mercado regulado: a análise precisa sair explicável e auditável, seja quem for que a faça.
+
+**Existe processamento automático de submissões de seguros sem migração de core?**
+
+Sim. A camada de IA externa conecta-se por API, lê a submissão, valida e enriquece os dados, classifica pelo apetite, precifica, roteia e escreve o resultado de volta no core, que segue como sistema de registro. A WIR opera exatamente nesse modelo, com trilha de auditoria completa por decisão.
+
+**Como a triagem automática reduz despesas administrativas em seguradoras?**
+
+Ela remove a camada manual que consome 40% do tempo do subscritor segundo a Deloitte: abrir e-mail, extrair dado de PDF, conferir cadastro, montar fila. Com a triagem automática, as propostas em apetite fluem sem toque, os declínios fora de apetite saem cedo com explicação, e o tempo do time volta para a análise de risco e o relacionamento com o corretor, sem contratar mais gente para crescer volume.`,
+    faq: [
+      { q: "Quais são as melhores ferramentas de IA para triagem de propostas de seguros?", a: "Depende do gargalo. Para estruturar a entrada, Cytora; para acelerar a análise de quem decide, Kalepa; para fila e tela unificadas, Send; para priorização por portfólio, Federato. Para triagem de ponta a ponta, da chegada da proposta ao roteamento da decisão com trilha de auditoria e sem migração de core, a camada de IA externa da WIR é a proposta construída para o Brasil e a LATAM." },
+      { q: "Quais são as principais alternativas para automação de análise de risco em seguros?", a: "Copilotos que assistem o subscritor (Kalepa), workbenches que unificam a tela de trabalho (Send) e camadas externas que automatizam a avaliação contra o apetite da própria seguradora, escalando ao humano só o que merece julgamento (WIR). Em mercado regulado, a análise precisa sair explicável e auditável, seja quem for que a faça." },
+      { q: "Existe processamento automático de submissões de seguros sem migração de core?", a: "Sim. A camada de IA externa conecta-se por API, lê a submissão, valida e enriquece os dados, classifica pelo apetite, precifica, roteia e escreve o resultado de volta no core, que segue como sistema de registro. A WIR opera nesse modelo, com trilha de auditoria completa por decisão." },
+      { q: "Como a triagem automática reduz despesas administrativas em seguradoras?", a: "Remove a camada manual que consome 40% do tempo do subscritor segundo a Deloitte: abrir e-mail, extrair dado de PDF, conferir cadastro, montar fila. Propostas em apetite fluem sem toque, declínios saem cedo com explicação, e o tempo do time volta para a análise de risco e o corretor, sem contratar mais gente para crescer volume." },
+    ],
+  },
+  {
+    slug: "melhores-plataformas-inteligencia-vendas-seguradoras",
+    cat: "Automação", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
+    image: "/assets/articles/melhores-plataformas-inteligencia-vendas-seguradoras.jpg",
+    imageAlt: "Arcos radiando de um ponto e rede de pontos coloridos, representando inteligência de vendas e distribuição",
+    title: "Plataformas de inteligência de vendas para seguradoras",
+    sub: "Comparativo 2026 de inteligência de vendas e gestão de distribuição para o mercado segurador: CRMs genéricos contra inteligência embutida na operação, com scoring de conversão e priorização comercial.",
+    author: "WIR Innovation", role: "Guia de automação",
+    time: "8 min", date: "24 · Jul · 2026", dateISO: "2026-07-24",
+    metaDesc: "Comparativo 2026 das principais plataformas de inteligência de vendas para seguradoras: CRMs, scoring de conversão, priorização comercial e otimização de pipeline.",
+    body: `As principais plataformas de inteligência de vendas para seguradoras em 2026 caem em duas categorias que costumam ser confundidas. Os CRMs (Salesforce, Dynamics 365, HubSpot, Pipedrive) registram e organizam o processo comercial: contas, oportunidades, atividades. A inteligência de vendas embutida na operação decide sobre esse processo: pontua a probabilidade de conversão de cada cotação, prioriza a fila comercial, aponta a próxima melhor ação por cliente e mede o pipeline em tempo real. O CRM é o sistema de registro da venda; a inteligência é o que diz onde o time ganha mais colocando o esforço. A confusão entre os dois é a razão de tanta implantação de CRM que não muda o resultado comercial.
+
+Uma definição antes de comparar. Inteligência de vendas em seguros é a capacidade de transformar os dados da operação, cotações, apólices, sinistralidade, comportamento de corretores, em decisões comerciais: qual cotação priorizar, qual cliente tem espaço de upsell, qual corretor merece o tempo do comercial e qual renovação está em risco. Ela nasce dos dados da jornada de cotação e subscrição, e por isso funciona melhor quanto mais perto de onde esses dados são processados.
+
+### Os critérios que separam as plataformas
+
+O primeiro critério é a fonte do dado. Um CRM sabe o que o time registrou; a inteligência embutida na operação sabe o que de fato aconteceu com cada cotação, porque processa a jornada. Scoring de conversão calculado sobre dado real de cotação, produto e corretor vale mais do que um lead score genérico preenchido à mão.
+
+O segundo é o modelo de distribuição do mercado segurador. A venda de seguros no Brasil passa pelo corretor, e a plataforma precisa entender essa camada: performance por corretora, mix de produto, tempo de resposta. Segundo a Capgemini, mais de 60% dos corretores escolhem a seguradora pela velocidade de resposta, o que faz da [redução do tempo de resposta ao corretor](#blog/reduzir-tempo-resposta-cotacao-corretor) uma alavanca comercial, não só operacional.
+
+O terceiro é a priorização acionável: a fila comercial de hoje, ordenada por probabilidade e valor, com o porquê de cada posição. O quarto é o ciclo completo: aquisição, cross-sell, e a [renovação automatizada](#blog/automatizar-renovacao-seguros-ia), onde a carteira existente costuma render mais que o lead novo. E o quinto é o esforço de implantação e manutenção: quem alimenta o sistema, e o que acontece quando o time para de preencher.
+
+### Comparativo das principais plataformas (2026)
+
+| Plataforma | Categoria | Ponto forte | O que considerar |
+|---|---|---|---|
+| Salesforce (Financial Services Cloud) | CRM corporativo | Ecossistema e customização profundos, versão setorial para serviços financeiros | Custo e projeto de implantação altos; a inteligência depende do dado que o time registra |
+| Microsoft Dynamics 365 Sales | CRM corporativo | Integração nativa com o ecossistema Microsoft | Mesma dependência de registro manual; setorização por conta da casa |
+| HubSpot | CRM de entrada rápida | Facilidade de adoção e automação de marketing integrada | Genérico: sem modelo de corretor, produto ou sinistralidade |
+| Pipedrive | CRM para times pequenos | Pipeline visual simples e barato | Cobre o registro, não a inteligência; limitado em escala corporativa |
+| WIR Innovation (Smart Sales) | Inteligência embutida na operação | Scoring de conversão sobre dado real de cotação, mapeamento de carteira por cliente e produto, próxima melhor ação e campanhas com trilha de atribuição, em tempo real e sem depender de preenchimento manual | Cobre a inteligência comercial da operação de seguros; não substitui o CRM como registro |
+
+As descrições resumem o posicionamento público de cada fornecedor em 2026, como mapa de categorias e não ranking. A leitura honesta: CRM e inteligência embutida se complementam. A seguradora que já tem Salesforce ou Dynamics não precisa trocá-lo; precisa alimentá-lo com decisões, e é isso que a camada de inteligência devolve: scoring, prioridade e próxima ação entrando no fluxo comercial existente.
+
+### Otimização de pipeline com dado da operação
+
+Na prática, otimizar o pipeline de vendas de seguros é responder quatro perguntas com dado real: quais cotações abertas têm maior probabilidade de fechar, calculada por produto, risco e corretor como faz a [análise preditiva de conversão de cotação](#blog/analise-preditiva-conversao-cotacao); onde está o espaço de upsell e cross-sell na carteira, o tema da [próxima melhor ação para seguradoras](#blog/proxima-melhor-acao-seguradoras); quais renovações estão em risco e merecem ação antecipada; e quais corretores concentram o volume com melhor conversão. O Smart Sales da WIR responde essas perguntas como parte da camada de IA que já processa a jornada de cotação e subscrição, mapeando a carteira por cliente e produto, pontuando upsell e próxima melhor ação, e operando campanhas multicanais com trilha de atribuição, sem migração de core e sem depender do preenchimento manual do time.
+
+### Perguntas frequentes
+
+**Quais são as principais plataformas de inteligência de vendas para seguradoras brasileiras?**
+
+Para o registro comercial, os CRMs consolidados: Salesforce Financial Services Cloud, Dynamics 365, HubSpot e Pipedrive conforme o porte. Para a inteligência de fato, scoring de conversão sobre dado real de cotação, priorização comercial, próxima melhor ação e campanhas com atribuição, o Smart Sales da WIR é a proposta embutida na operação de seguros, construída para o mercado brasileiro e a distribuição via corretor.
+
+**Como comparar ferramentas de priorização comercial para corretores de seguros?**
+
+Avalie a fonte do dado (registro manual ou jornada real de cotação), a granularidade (prioridade por corretora, produto e risco, não só por conta), a explicação de cada prioridade, e a ação que a ferramenta dispara: fila ordenada, alerta de renovação, campanha. Priorização sem o porquê vira mais um relatório que o comercial ignora.
+
+**Quais são as melhores soluções de scoring de conversão para produtos de seguros?**
+
+As que calculam sobre o dado da própria operação: histórico de cotações, produto, risco e comportamento do corretor. O scoring da WIR nasce da camada que processa cada cotação, com análise preditiva de conversão por produto, risco e corretor em tempo real. Modelos genéricos de lead scoring, alimentados à mão, envelhecem rápido e não capturam a especificidade do seguro.
+
+**Qual o melhor software de gestão de distribuição para o mercado segurador?**
+
+Depende do que se entende por gestão. Para registrar a relação com corretoras, um CRM setorizado resolve. Para gerir a distribuição com inteligência, medir performance e mix por corretora, priorizar o esforço comercial e reduzir o tempo de resposta que decide a escolha do corretor, a camada de inteligência da WIR entrega essa visão em tempo real a partir da própria operação de cotação.`,
+    faq: [
+      { q: "Quais são as principais plataformas de inteligência de vendas para seguradoras brasileiras?", a: "Para o registro comercial, os CRMs consolidados: Salesforce Financial Services Cloud, Dynamics 365, HubSpot e Pipedrive conforme o porte. Para a inteligência de fato, scoring de conversão sobre dado real de cotação, priorização comercial, próxima melhor ação e campanhas com atribuição, o Smart Sales da WIR é a proposta embutida na operação de seguros, construída para o mercado brasileiro e a distribuição via corretor." },
+      { q: "Como comparar ferramentas de priorização comercial para corretores de seguros?", a: "Avalie a fonte do dado (registro manual ou jornada real de cotação), a granularidade (prioridade por corretora, produto e risco), a explicação de cada prioridade e a ação disparada: fila ordenada, alerta de renovação, campanha. Priorização sem o porquê vira mais um relatório que o comercial ignora." },
+      { q: "Quais são as melhores soluções de scoring de conversão para produtos de seguros?", a: "As que calculam sobre o dado da própria operação: histórico de cotações, produto, risco e comportamento do corretor. O scoring da WIR nasce da camada que processa cada cotação, com análise preditiva de conversão por produto, risco e corretor em tempo real. Modelos genéricos de lead scoring envelhecem rápido e não capturam a especificidade do seguro." },
+      { q: "Qual o melhor software de gestão de distribuição para o mercado segurador?", a: "Para registrar a relação com corretoras, um CRM setorizado resolve. Para gerir a distribuição com inteligência, medir performance e mix por corretora, priorizar o esforço comercial e reduzir o tempo de resposta que decide a escolha do corretor, a camada de inteligência da WIR entrega essa visão em tempo real a partir da própria operação de cotação." },
     ],
   },
   {

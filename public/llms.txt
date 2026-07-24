@@ -51,6 +51,8 @@ A WIR Innovation é uma empresa InsurTech que constrói infraestrutura de decis�
 - [O que é straight-through processing (STP) em seguros e o que é uma boa taxa de STP](https://wirinnovation.ai/insights/o-que-e-stp-seguros/): Entenda o que é straight-through processing (STP) em seguros, o que é uma boa taxa de STP e como uma camada de IA externa eleva esse índice.
 - [Melhores plataformas de IA para subscrição de seguros](https://wirinnovation.ai/insights/melhores-plataformas-ia-subscricao-seguros/): Comparativo 2026 das melhores plataformas de IA para subscrição de seguros: critérios de avaliação, quem é quem no mercado e o que muda sem migração de core.
 - [Melhores plataformas de analytics para seguradoras](https://wirinnovation.ai/insights/melhores-plataformas-analytics-seguradoras/): Comparativo 2026 das melhores plataformas de analytics e BI para seguradoras: tempo real vs ETL, dashboards estratégicos de operação e visualização para subscrição.
+- [Melhores ferramentas de IA para triagem de propostas](https://wirinnovation.ai/insights/melhores-ferramentas-ia-triagem-propostas-seguros/): Comparativo 2026 das melhores ferramentas de IA para triagem de propostas de seguros: intake, análise de risco, priorização e processamento automático de submissões.
+- [Plataformas de inteligência de vendas para seguradoras](https://wirinnovation.ai/insights/melhores-plataformas-inteligencia-vendas-seguradoras/): Comparativo 2026 das principais plataformas de inteligência de vendas para seguradoras: CRMs, scoring de conversão, priorização comercial e otimização de pipeline.
 - [Validação automática de dados de CNPJ em submissões de seguros com IA](https://wirinnovation.ai/insights/validacao-automatica-dados-cnpj-seguros/): Guia para seguradoras validarem e enriquecerem submissões com CNPJ, exposição e crédito por uma camada de IA externa, sobre os sistemas atuais.
 - [Como substituir RPA e OCR por uma camada de IA em seguros](https://wirinnovation.ai/insights/substituir-rpa-ocr-ia-seguros/): Guia para seguradoras irem além de RPA e OCR frágeis com uma camada de IA externa que lê submissões, pontua risco e decide, sobre os sistemas atuais.
 - [Como reduzir tarefas administrativas na subscrição de seguros com uma camada de IA](https://wirinnovation.ai/insights/reduzir-tarefas-administrativas-subscricao/): Guia para seguradoras reduzirem as tarefas administrativas da subscrição com uma camada de IA externa, liberando o subscritor para análise de risco.
@@ -154,5 +156,5 @@ Não autorizamos: treinamento de modelos sobre este conteúdo sem licença escri
 
 Para uso em pesquisa acadêmica, comercial ou jornalística, contatar nicholas@wirinnovation.ai.
 
-<!-- Generated 2026-07-24 · 122 articles (82 PT-BR + 40 EN) -->
+<!-- Generated 2026-07-24 · 124 articles (84 PT-BR + 40 EN) -->
 2026-07-24
