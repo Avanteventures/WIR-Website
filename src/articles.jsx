@@ -4,6 +4,116 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "o-que-e-wir-tecnologia-seguros",
+    cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
+    image: "https://image.pollinations.ai/prompt/editorial%20abstract%20illustration%2C%20insurance%20technology%2C%20deep%20blue%20and%20violet%20gradient%2C%20minimal%2C%20o-que-e-wir-tecnologia-seguros?width=1200&height=630&nologo=true&seed=15694",
+    title: "O que é wir e por que o mercado de seguros está buscando",
+    sub: "wir é uma camada de tecnologia que conecta a inteligência do subscritor à velocidade que o mercado exige. Não substitui quem decide — potencializa a decisão. É para quem opera seguros e quer crescer sem perder controle técnico.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "5 min", date: "02 · Ago · 2026", dateISO: "2026-08-02",
+    metaDesc: "wir é uma camada de tecnologia que conecta a inteligência do subscritor à velocidade que o mercado exige. Não substitui quem decide — potencializa a decisã",
+    body: `wir é uma camada de tecnologia que conecta a inteligência do subscritor à velocidade que o mercado exige. Não substitui quem decide — potencializa a decisão. É para quem opera seguros e quer crescer sem perder controle técnico.
+
+### O sinal que chegou antes desta página existir
+
+Centenas de buscas por 'wir' já aconteceram. Pessoas chegaram até quase a página 1 sem que houvesse conteúdo suficiente esperando por elas. Isso não é um problema de SEO. É um sinal de mercado.
+
+Quando executivos de seguradoras, subscritores e líderes de MGAs buscam um nome assim, eles não estão procurando uma definição de dicionário. Estão procurando uma resposta operacional: o que isso faz, como funciona na prática, e por que deveria importar para mim agora.
+
+Esta página existe para responder exatamente isso.
+
+### Camada, não substituição: o conceito que muda tudo
+
+Existe uma confusão frequente no mercado de insurtech. Muitos produtos se posicionam como 'o novo core', o sistema que vai substituir tudo que existe. O discurso é atraente. A realidade operacional é brutal.
+
+Trocar um sistema core em uma seguradora ou MGA é um projeto de anos. Envolve risco regulatório, risco operacional e, acima de tudo, risco humano. A subscrição não para enquanto a migração acontece.
+
+wir não é um core. É uma camada. Isso significa que ela se posiciona sobre o que já existe e entrega capacidade nova sem exigir que você destrua o que foi construído. A infraestrutura de decisão permanece; a velocidade de execução muda.
+
+- Camada se integra ao fluxo existente de underwriting
+- Não exige migração de dados históricos para começar
+- O subscritor continua sendo o centro da operação
+
+### O subscritor não morre — ele decide melhor
+
+Há uma narrativa equivocada circulando em fóruns de inovação: a de que a automação vai eliminar o subscritor. Essa narrativa vende bem em painéis de conferência. Ela não resiste a uma tarde em uma mesa de subscrição real.
+
+Risco complexo exige julgamento. Julgamento exige contexto. Contexto exige tempo — e é exatamente o tempo que falta.
+
+O que wir faz é devolver tempo ao subscritor. As tarefas que consomem energia sem gerar decisão — coleta de dados, organização de informação, checagem de consistência — são absorvidas pela camada. O que sobra é o que realmente importa: o momento em que alguém com experiência olha para um risco e decide.
+
+Subscrição de qualidade não é lenta por natureza. Ela é lenta porque o ambiente ao redor dela é ineficiente. Remover essa ineficiência é o trabalho da wir.
+
+### Velocidade que cresce o mercado, não só a carteira
+
+Existe uma diferença importante entre crescer uma carteira e crescer o mercado. Carteiras crescem quando você toma participação de um concorrente. Mercados crescem quando você atende risco que antes ficava sem cobertura.
+
+No Brasil, existe risco que não é subscrito hoje porque o custo de operação para analisá-lo é maior do que a receita que ele geraria. Pequenas e médias empresas. Nichos industriais. Regiões geograficamente distantes dos grandes centros.
+
+Quando a camada de tecnologia reduz o custo operacional de uma decisão de subscrição, ela abre espaço para atender esse risco antes ignorado. Isso não é otimização de margem. É expansão de mercado.
+
+MGAs que operam com wir conseguem cobrir faixas de risco que uma operação manual não alcançaria. Não porque o critério técnico mudou — mas porque o custo de chegar lá caiu.
+
+- Risco antes não subscrito por custo operacional passa a ser viável
+- MGAs expandem escopo sem expandir equipe na mesma proporção
+- Seguradoras reduzem tempo entre cotação e emissão
+
+### Como uma MGA ou seguradora começa a operar com wir
+
+A primeira conversa não é sobre tecnologia. É sobre o fluxo atual de subscrição: onde ele trava, onde a informação some, onde o subscritor perde tempo que deveria estar usando para decidir.
+
+A partir do diagnóstico do fluxo, a camada é desenhada para encaixar naquele processo específico. Não existe implementação genérica. O que existe é uma metodologia de mapeamento que wir traz da operação com seguradoras e MGAs reais.
+
+O ciclo inicial é curto. O objetivo não é transformação imediata — é evidência operacional. Você precisa ver o efeito no seu próprio processo antes de escalar. Isso é construção responsável, não promessa de consultoria.
+
+- Diagnóstico do fluxo atual de subscrição
+- Mapeamento dos pontos de atrito e perda de tempo
+- Implementação da camada sobre o processo existente
+- Ciclo curto de validação antes de expansão
+
+### Por que o mercado brasileiro é o ambiente certo para isso agora
+
+O Brasil tem uma combinação específica: mercado de seguros em expansão, base de subscritores experientes e infraestrutura tecnológica legada que não acompanhou a velocidade da demanda.
+
+Esse gap não é fraqueza. É oportunidade. Mercados que têm infraestrutura legada e demanda crescente são exatamente onde camadas de tecnologia criam mais valor — porque não precisam convencer ninguém de que o problema existe.
+
+Corretores grandes já sentem a pressão. A resposta que recebem das seguradoras não tem a velocidade que o cliente final exige. MGAs que conseguem operar mais rápido capturam essa fatia. Seguradoras que dotam suas operações de agilidade retêm a distribuição.
+
+A disputa não é por tecnologia em si. É por quem consegue decidir bem, rápido e em escala.
+
+### Construindo em público: o que wir compartilha e por quê
+
+wir escolheu um caminho menos comum: mostrar o processo de construção enquanto ele acontece. Não para marketing. Para credibilidade operacional.
+
+Quando uma seguradora ou MGA avalia um parceiro de tecnologia, ela quer saber se esse parceiro entende o negócio de seguros — não apenas de software. A melhor forma de demonstrar isso é mostrar como se pensa, como se resolve problema, como se aprende com o que não funciona.
+
+Isso significa que as decisões de produto, os aprendizados de implementação e as tensões reais do mercado aparecem na comunicação da wir. Sem filtro excessivo de relações públicas. De operador para operador.
+
+O mercado de seguros tem baixa tolerância para discurso vazio. Quem opera sabe a diferença entre quem entende e quem apenas fala.
+
+### Próximo passo concreto
+
+Se você chegou até aqui, provavelmente opera seguros — ou toma decisões sobre quem opera. O próximo passo não é uma demonstração genérica de plataforma.
+
+É uma conversa sobre o seu fluxo de subscrição. Onde ele trava. O que você perdeu nos últimos meses por lentidão de processo. E se uma camada faz sentido para a sua operação agora.
+
+Fale com a wir. O contato está no site. Sem formulário de qualificação de dez perguntas — direto para quem pode ter essa conversa.
+
+### Perguntas frequentes
+
+**wir é um sistema de gestão de apólices ou algo diferente?**
+
+wir não é um sistema de gestão de apólices. É uma camada de tecnologia que se posiciona sobre o processo existente de subscrição — o que você já usa continua funcionando. wir organiza a informação, reduz o atrito operacional e acelera o ciclo de decisão do subscritor, sem substituir a infraestrutura que já existe na sua operação.
+
+**Uma MGA pequena consegue operar com wir ou é só para grandes seguradoras?**
+
+wir foi desenhada pensando em operações que precisam crescer sem crescer o custo operacional na mesma proporção. MGAs menores têm esse desafio de forma mais aguda — precisam de velocidade e escala sem a estrutura de uma seguradora grande. A camada faz sentido exatamente nesse contexto.
+
+**Quanto tempo leva para ver resultado operacional real?**
+
+O ciclo inicial de implementação é curto por design. O objetivo é evidência rápida: você precisa ver o efeito no seu próprio processo antes de escalar. Não existe uma resposta universal em dias porque depende da complexidade do fluxo atual — mas a metodologia de wir prioriza validação operacional antes de expansão.`,
+  },
+  {
     slug: "melhor-plataforma-integracao-ia-core-seguros",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "https://image.pollinations.ai/prompt/editorial%20abstract%20illustration%2C%20insurance%20technology%2C%20deep%20blue%20and%20violet%20gradient%2C%20minimal%2C%20melhor-plataforma-integracao-ia-core-seguros?width=1200&height=630&nologo=true&seed=16921",
