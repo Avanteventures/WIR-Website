@@ -4,6 +4,101 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "melhor-plataforma-integracao-ia-core-seguros",
+    cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
+    image: "https://image.pollinations.ai/prompt/editorial%20abstract%20illustration%2C%20insurance%20technology%2C%20deep%20blue%20and%20violet%20gradient%2C%20minimal%2C%20melhor-plataforma-integracao-ia-core-seguros?width=1200&height=630&nologo=true&seed=16921",
+    title: "Melhor plataforma de integração de IA para core de seguros",
+    sub: "A melhor plataforma de integração de IA para sistemas core de seguros não substitui o core — ela opera como uma camada separada que conversa com ele. Isso muda tudo na escolha: você não está comprando um sistema novo, está comprando a capacidade de mover inteligência sem travar a operação que já funciona.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "5 min", date: "02 · Ago · 2026", dateISO: "2026-08-02",
+    metaDesc: "A melhor plataforma de integração de IA para sistemas core de seguros não substitui o core — ela opera como uma camada separada que conversa com ele. Isso ",
+    body: `A melhor plataforma de integração de IA para sistemas core de seguros não substitui o core — ela opera como uma camada separada que conversa com ele. Isso muda tudo na escolha: você não está comprando um sistema novo, está comprando a capacidade de mover inteligência sem travar a operação que já funciona.
+
+### O problema real não é o core. É o que fica preso dentro dele.
+
+Todo executivo de seguradora ou MGA que já tentou adicionar inteligência ao processo de subscrição conhece o ciclo. A demanda chega. O time de tecnologia mapeia. O fornecedor do core é acionado. O prazo para uma integração básica vira um projeto de seis meses com escopo aberto.
+
+O core não é o vilão. Ele foi construído para estabilidade, para processar apólices, para manter dados íntegros. Ele faz o que foi projetado para fazer. O problema é que a lógica de negócio — as regras de subscrição, os sinais de risco, o conhecimento do subscritor — ficou enterrada dentro dele ao longo dos anos.
+
+Quando você tenta acrescentar IA a esse ambiente, o atrito não é técnico. É arquitetural. Você está tentando mover rápido dentro de uma estrutura que foi desenhada para não mover rápido.
+
+### Camada vs. core: a distinção que decide o projeto
+
+Existe uma diferença fundamental entre integrar IA ao core e integrar IA sobre o core. A primeira abordagem exige que o fornecedor do sistema principal participe de cada mudança. A segunda coloca uma camada de inteligência que lê, processa e devolve dados ao core — sem depender do roadmap dele para evoluir.
+
+A camada funciona como um tradutor e um processador simultâneo. Ela recebe os dados brutos do core, aplica modelos, regras e sinais externos, e entrega uma decisão ou recomendação de volta para o fluxo operacional. O core continua fazendo o que faz. A inteligência fica em um ambiente que você controla.
+
+Para subscritores e gerentes de produto, isso tem uma consequência direta: você consegue alterar a lógica de análise de risco sem abrir um ticket para o time de TI do core. Você consegue testar um novo critério de subscrição em dias, não em trimestres.
+
+- Core: estabilidade, persistência, conformidade regulatória
+- Camada de integração: velocidade, experimentação, inteligência contextual
+- Os dois coexistem — a camada não ameaça o core, ela o complementa
+
+### O que uma plataforma de integração de IA precisa fazer, na prática
+
+Quando um executivo pergunta qual é a melhor plataforma de integração de IA para sistemas core de seguros, a resposta depende do que 'melhor' significa na operação dele. Mas existem critérios que não são negociáveis independente do contexto.
+
+A plataforma precisa falar com os sistemas legados sem exigir reescrita. A maioria dos cores no mercado brasileiro tem APIs limitadas, documentação parcial e versões com anos de customização. Uma boa plataforma de integração sabe trabalhar com isso — via conectores, via leitura de bancos de dados, via webhooks simples.
+
+A plataforma precisa preservar o subscritor no loop. Não existe decisão automatizada de risco complexo que dispense julgamento humano. O que muda é o que chega até o subscritor: em vez de dados brutos, ele recebe sinais organizados, flags de atenção e contexto histórico. Ele decide mais rápido e com mais informação — não é substituído.
+
+- Conectividade com sistemas legados sem refatoração do core
+- Fluxos configuráveis sem dependência de código novo a cada mudança
+- Rastreabilidade de cada decisão assistida — auditável, regulatório-compatível
+- Feedback loop: a plataforma aprende com as decisões do subscritor ao longo do tempo
+
+### O subscritor não some — ele decide melhor
+
+Um dos medos que paralisa a adoção de IA em subscrição é a narrativa de que o modelo vai substituir o profissional. Essa narrativa é imprecisa e, para fins práticos, contraproducente.
+
+O subscritor experiente carrega conhecimento que nenhum modelo captura sozinho: o histórico de um cliente específico, a peculiaridade de um segmento regional, a intuição sobre um risco que não aparece nos dados estruturados. Uma boa plataforma de integração usa IA para amplificar esse conhecimento, não para arquivá-lo.
+
+Na prática, o que muda é o seguinte: o subscritor que antes passava quarenta minutos coletando dados de três fontes diferentes agora recebe um briefing estruturado em dois minutos. Ele usa os trinta e oito minutos restantes para pensar no risco de verdade. O volume que ele consegue processar com a mesma qualidade de análise aumenta. Isso é o que escala um portfólio.
+
+### Velocidade não é só prazo — é o que permite crescer
+
+Seguradoras e MGAs que integram IA de forma funcional não competem só por preço. Elas competem por velocidade de resposta ao mercado. Um novo critério de underwriting que leva três semanas para ser testado e validado, em vez de três meses, muda a capacidade de resposta a movimentos do mercado.
+
+Isso importa especialmente para MGAs que dependem de agilidade para justificar sua existência frente às seguradoras parceiras. Se o MGA consegue adaptar sua lógica de subscrição mais rápido que o processo interno da seguradora, ele entrega valor real — não só distribuição.
+
+A velocidade também opera no nível da proposta. Um corretor grande que recebe uma cotação complexa em horas, com justificativa técnica clara, fecha mais do que o concorrente que leva dias. A plataforma de integração está diretamente ligada a essa equação.
+
+### Como avaliar se uma plataforma serve para o seu core específico
+
+Não existe plataforma universal. O que existe são plataformas com diferentes capacidades de adaptação ao ambiente que você já tem. A avaliação começa pelo inventário do que você opera hoje.
+
+Mapeie os pontos de entrada e saída de dados no seu core atual. Onde os dados de proposta chegam? Onde as decisões de subscrição são registradas? Onde as apólices emitidas são persistidas? Esses pontos são os nós que a camada de integração vai tocar.
+
+Depois, mapeie onde está o atrito humano. Qual etapa do processo faz o subscritor parar e esperar? Qual etapa gera mais retrabalho? A plataforma certa ataca esses pontos primeiro — não tenta automatizar tudo de uma vez.
+
+- Inventário dos pontos de dados do core (entrada, processamento, saída)
+- Mapeamento de atrito humano no fluxo de subscrição atual
+- Avaliação de capacidade de conexão: APIs disponíveis, acesso a banco, suporte do fornecedor do core
+- Critério de auditoria: toda decisão assistida precisa ser rastreável
+
+### O que a wir. faz nesse contexto
+
+A wir. foi construída para operar exatamente nessa camada — entre o core que você tem e a inteligência que você precisa mover. Não somos um sistema de gestão de apólices. Não somos um CRM. Somos a camada que lê o que o seu core produz, processa com a lógica que faz sentido para o seu portfólio e devolve decisão estruturada para quem vai assinar embaixo.
+
+Isso significa que você não precisa trocar o que funciona. Você acrescenta capacidade de decisão ao que já existe. E o subscritor continua no centro — com mais contexto, menos espera e rastreabilidade completa de cada análise.
+
+Se você opera uma MGA, uma seguradora ou uma corretora de grande porte e está mapeando como adicionar inteligência ao processo de subscrição sem refatorar o core, faz sentido conversar. O próximo passo é uma conversa técnica direta — sem demo genérico, sem apresentação de funcionalidades desconectadas do seu ambiente real.
+
+### Perguntas frequentes
+
+**Preciso substituir meu sistema core para usar uma plataforma de integração de IA?**
+
+Não. Uma plataforma de integração de IA bem construída opera como uma camada separada que se conecta ao core existente via APIs, conectores ou acesso direto a banco de dados. O core continua fazendo o que faz — a plataforma adiciona inteligência ao fluxo sem exigir migração ou reescrita.
+
+**Como a IA afeta o papel do subscritor no processo?**
+
+O subscritor continua sendo quem decide. O que muda é o que chega até ele: em vez de dados brutos dispersos em múltiplas fontes, ele recebe um briefing estruturado com sinais de risco organizados e contexto histórico. Ele processa mais riscos com a mesma qualidade de análise — o conhecimento dele é amplificado, não arquivado.
+
+**Qual é o primeiro passo para avaliar uma plataforma de integração de IA para o meu core?**
+
+Mapeie os pontos de entrada e saída de dados no seu core atual e identifique onde está o maior atrito no fluxo de subscrição — qual etapa faz o subscritor parar, esperar ou retrabalhar. Com esse mapeamento em mãos, fica claro quais capacidades de conectividade a plataforma precisa ter e onde o retorno operacional aparece primeiro.`,
+  },
+  {
     // Flagship quarterly report. The page is hand-authored and lives as a static
     // file at public/insights/wir-index/index.html. The `linkOnly` flag makes
     // scripts/build-articles.cjs list it in the Insights index (and cross-link it)
