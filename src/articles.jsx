@@ -4,6 +4,109 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "mercado-seguro-cyber-brasil",
+    cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#FE8B77)",
+    image: "https://image.pollinations.ai/prompt/editorial%20abstract%20illustration%2C%20insurance%20technology%2C%20deep%20blue%20and%20violet%20gradient%2C%20minimal%2C%20mercado-seguro-cyber-brasil?width=1200&height=630&nologo=true&seed=69433",
+    title: "Mercado de Seguro Cyber no Brasil: o que está acontecendo agora",
+    sub: "O mercado de seguro cyber no Brasil está crescendo, mas a subscrição ainda é manual, lenta e baseada em questionários que não refletem o risco real. Quem resolver isso primeiro vai dominar uma carteira que mal começou a ser escrita.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "5 min", date: "03 · Ago · 2026", dateISO: "2026-08-03",
+    metaDesc: "O mercado de seguro cyber no Brasil está crescendo, mas a subscrição ainda é manual, lenta e baseada em questionários que não refletem o risco real. Quem r",
+    body: `O mercado de seguro cyber no Brasil está crescendo, mas a subscrição ainda é manual, lenta e baseada em questionários que não refletem o risco real. Quem resolver isso primeiro vai dominar uma carteira que mal começou a ser escrita.
+
+### O mercado existe. O produto ainda não amadureceu.
+
+Toda seguradora grande no Brasil já tem uma linha cyber. Mas ter o produto no portfólio é diferente de saber precificá-lo com consistência.
+
+O que acontece na prática: o corretor traz uma empresa de médio porte, o subscritor pede um questionário de 40 perguntas, o cliente responde pela metade, e a seguradora devolve uma proposta conservadora com franquia alta e cobertura estreita. Negócio fechado? Raramente.
+
+Esse atrito não é falta de vontade. É falta de sinal. O subscritor não tem como avaliar risco cyber com a mesma objetividade com que avalia frota ou propriedade. E sem sinal confiável, a resposta natural é apertar os termos.
+
+### Por que o risco cyber é diferente de qualquer outro ramo
+
+Risco de incêndio tem física. Risco de vida tem atuária histórica densa. Risco cyber tem comportamento humano, superfície de ataque dinâmica e um adversário que atualiza o método de ataque mais rápido do que o ciclo de renovação da apólice.
+
+Isso cria três problemas específicos para o subscritor brasileiro:
+
+- Assimetria de informação: o segurado sabe (ou deveria saber) mais sobre sua postura de segurança do que a seguradora.
+- Correlação de sinistros: um único evento — ransomware em infraestrutura crítica, por exemplo — pode afetar dezenas de segurados ao mesmo tempo.
+- Velocidade de mudança: a empresa que tinha um bom programa de segurança em janeiro pode estar exposta em julho por uma mudança de fornecedor ou uma aquisição.
+
+### O subscritor não some — ele precisa de instrumentos melhores
+
+Existe uma narrativa no mercado de que a automação vai eliminar a subscrição. Essa narrativa é errada e prejudica a conversa produtiva.
+
+O subscritor cyber de alta performance no Brasil não vai desaparecer. Ele vai parar de gastar tempo em coleta manual de dados e começar a gastar tempo no que realmente importa: interpretação, negociação de termos e relacionamento com o corretor.
+
+A questão não é substituir o julgamento humano. É dar ao subscritor um painel de risco que chegue pronto antes da reunião com o corretor — não depois de três e-mails e uma planilha preenchida à mão.
+
+Esse é exatamente o ponto que exploramos ao construir a wir: a inteligência fica em uma camada separada do core, alimenta o subscritor com sinal estruturado, e o decision-maker continua sendo a pessoa. Para entender melhor como essa arquitetura funciona na prática, vale ler [O que é wir e por que o mercado de seguros está buscando](https://wirinnovation.ai/insights/o-que-e-wir-tecnologia-seguros).
+
+### O que trava a expansão do seguro cyber no Brasil hoje
+
+Conversando com subscritores e corretores especializados, três bloqueios aparecem de forma consistente:
+
+- Questionários estáticos: o formulário foi desenhado uma vez e nunca mudou. Ele não captura cloud, SaaS de terceiros nem trabalho remoto como variáveis de risco.
+- Dados fragmentados: o histórico de sinistros cyber no Brasil ainda é curto. Sem base histórica local robusta, a precificação tende a importar referências do mercado norte-americano sem calibragem para o contexto brasileiro.
+- Falta de padronização de cobertura: cada seguradora chama a mesma coisa com um nome diferente. O corretor gasta tempo traduzindo apólices em vez de assessorar o cliente.
+
+### A oportunidade real: PMEs e o mercado que ainda não foi subscrito
+
+O segmento enterprise já tem acesso a seguro cyber — com dificuldades, mas tem. O gap está nas pequenas e médias empresas.
+
+PMEs brasileiras são alvo frequente de ataques de ransomware justamente porque têm menos defesa. Mas o produto atual de cyber não foi desenhado para elas: os questionários são complexos demais, o processo é lento demais e o prêmio mínimo inviabiliza a operação para ticketes menores.
+
+A seguradora ou MGA que conseguir criar um fluxo de subscrição simplificado — sem abrir mão de sinal de risco real — captura uma carteira que praticamente não existe ainda. Isso não é especulação. É uma lacuna visível no portfólio de qualquer corretora especializada no Brasil.
+
+Velocidade de processo e qualidade de dado não são opostos. Quando a camada de inteligência está bem construída, você pode ter os dois. É o que abordamos em [Melhor plataforma de integração de IA para core de seguros](https://wirinnovation.ai/insights/melhor-plataforma-integracao-ia-core-seguros).
+
+### Como uma camada de dados muda a equação
+
+A lógica de camada versus core é simples: você não precisa trocar o sistema de gestão da seguradora para mudar a qualidade da subscrição cyber.
+
+Uma camada externa conectada ao fluxo de proposta pode entregar ao subscritor, antes da decisão:
+
+- Score de exposição baseado em dados públicos de infraestrutura digital da empresa (domínios, certificados, portas abertas, vazamentos conhecidos).
+- Comparativo setorial: como a postura de segurança do segurado se compara com empresas do mesmo porte e setor.
+- Alertas de mudança: quando algo no perfil digital do segurado muda entre renovações.
+
+### O que o corretor grande precisa entender agora
+
+Para corretoras com carteira diversificada, o seguro cyber ainda é tratado como especialidade de nicho — algo que se oferece quando o cliente pergunta, não algo que se propõe ativamente.
+
+Essa postura vai mudar por pressão do próprio cliente. Regulação de proteção de dados, exigências contratuais de parceiros e uma percepção crescente de risco vão fazer o CFO de uma média empresa perguntar ao corretor sobre cyber antes que o corretor traga o assunto.
+
+O corretor que chegar preparado — com um processo de avaliação rápido e uma proposta que faça sentido para o perfil do cliente — vai fechar. O que chegar com um formulário de 40 campos vai perder para quem tiver processo.
+
+Preparar o processo é o trabalho de agora, não depois que o cliente perguntar.
+
+### Por onde começar se você está dentro de uma seguradora ou MGA
+
+Não comece pelo produto. Comece pelo processo de subscrição.
+
+Mapeie onde o tempo está sendo perdido: é na coleta de dados? Na aprovação interna? Na devolutiva ao corretor? Cada gargalo tem uma solução diferente, e tentar resolver tudo de uma vez não resolve nada.
+
+Se o gargalo está na qualidade do dado de entrada, vale avaliar como uma camada de inteligência externa pode alimentar o fluxo atual sem exigir integração profunda com o core — algo que pode ser pilotado em semanas, não em meses.
+
+Se o gargalo está na velocidade de resposta ao corretor, o problema pode ser de workflow interno antes de ser de tecnologia.
+
+A wir trabalha com equipes de subscrição e produto para mapear exatamente esse diagnóstico. Se você quer entender onde está o seu gargalo específico, fale com a gente — sem pitch, com conversa.
+
+### Perguntas frequentes
+
+**O seguro cyber no Brasil cobre ataques de ransomware?**
+
+Depende da apólice e da seguradora. A maioria das coberturas cyber no Brasil inclui algum grau de proteção para ransomware — custos de resposta a incidente, negociação, restauração de dados. Mas os termos variam muito: franquias, sublimites e exclusões específicas precisam ser lidos com atenção. O corretor especializado faz diferença aqui, porque a análise do contrato é tão importante quanto o preço do prêmio.
+
+**PMEs conseguem contratar seguro cyber no Brasil?**
+
+Conseguem, mas o processo atual ainda não foi desenhado para elas. Os produtos existem, mas os questionários são complexos e os prêmios mínimos de algumas seguradoras tornam a operação inviável para ticketes menores. Esse é um gap real no mercado — e também é onde está a maior oportunidade para seguradoras e MGAs que conseguirem simplificar o fluxo sem perder qualidade na subscrição.
+
+**Como a inteligência artificial entra na subscrição de seguro cyber?**
+
+Não substituindo o subscritor — melhorando o sinal que ele recebe. Na prática, isso significa entregar, antes da decisão, dados estruturados sobre a postura digital do segurado: exposição de infraestrutura, histórico de vazamentos, comparativos setoriais. O subscritor continua sendo quem decide. A IA resolve o problema de coleta e estruturação de dado que hoje toma tempo e introduz ruído no processo.`,
+  },
+  {
     slug: "automacao-intake-submissions-escalabilidade",
     cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#FE8B77)",
     image: "https://image.pollinations.ai/prompt/editorial%20abstract%20illustration%2C%20insurance%20technology%2C%20deep%20blue%20and%20violet%20gradient%2C%20minimal%2C%20automacao-intake-submissions-escalabilidade?width=1200&height=630&nologo=true&seed=32484",
