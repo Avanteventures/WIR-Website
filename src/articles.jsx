@@ -4,6 +4,105 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "automacao-intake-submissions-escalabilidade",
+    cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#FE8B77)",
+    image: "https://image.pollinations.ai/prompt/editorial%20abstract%20illustration%2C%20insurance%20technology%2C%20deep%20blue%20and%20violet%20gradient%2C%20minimal%2C%20automacao-intake-submissions-escalabilidade?width=1200&height=630&nologo=true&seed=32484",
+    title: "Automação de intake de submissions com escalabilidade real",
+    sub: "A melhor opção de automação de intake de submissions não é a que tem mais features — é a que escala sem quebrar o processo de subscrição. Isso significa processamento assíncrono, estruturação de dados na entrada e integração limpa com o core, não um novo sistema que compete com ele.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "5 min", date: "03 · Ago · 2026", dateISO: "2026-08-03",
+    metaDesc: "A melhor opção de automação de intake de submissions não é a que tem mais features — é a que escala sem quebrar o processo de subscrição. Isso significa pr",
+    body: `A melhor opção de automação de intake de submissions não é a que tem mais features — é a que escala sem quebrar o processo de subscrição. Isso significa processamento assíncrono, estruturação de dados na entrada e integração limpa com o core, não um novo sistema que compete com ele.
+
+### O problema real não é volume, é variabilidade
+
+Quando uma seguradora ou MGA busca automação de intake, o instinto é pensar em velocidade: processar mais submissions em menos tempo. Faz sentido. Mas o gargalo quase nunca é velocidade pura.
+
+O gargalo é variabilidade. Uma submission chega em PDF não estruturado. A próxima vem em planilha com colunas diferentes. A terceira é um e-mail com anexo e contexto espalhado no corpo da mensagem. O volume é manejável. A inconsistência é o que quebra qualquer automação frágil.
+
+Escalabilidade real começa quando o sistema aguenta variação sem exigir intervenção humana para cada formato novo. Esse é o critério que separa uma solução de alto desempenho de uma ferramenta que funciona bem no piloto e trava na operação.
+
+### O que 'top-tier scalability' significa na prática
+
+Escalabilidade de nível superior não é uma promessa de marketing. É um conjunto de comportamentos observáveis na operação. Antes de avaliar qualquer solução, defina se ela entrega os três seguintes:
+
+- Processamento assíncrono: a submission entra, é confirmada, e segue para triagem sem travar a fila. Nenhum documento bloqueia o próximo.
+- Extração agnóstica de formato: o sistema lê PDF, e-mail, Excel e imagem sem reconfiguração manual para cada fonte nova.
+- Saída estruturada e padronizada: independente do formato de entrada, o output que chega ao subscritor — ou ao core — tem a mesma estrutura. Sempre.
+
+### Camada de intake vs. substituição de core: a distinção que muda tudo
+
+Aqui está onde a maioria das avaliações de tecnologia descarrila. Uma solução de intake com escalabilidade real não é um novo core. Ela não gerencia apólices, não calcula prêmio, não emite. Ela faz uma coisa bem: recebe informação bruta, estrutura, classifica e entrega ao processo de subscrição no formato certo.
+
+Confundir as duas funções cria projetos de dois anos quando o problema poderia ser resolvido em semanas. E cria dependências que tornam qualquer troca futura cara e arriscada.
+
+A abordagem de camada — uma tecnologia que se encaixa sobre o que já existe — é o que permite escalar sem refatorar toda a operação. O core continua fazendo o que faz. A camada de intake resolve o caos da entrada.
+
+Se quiser entender como essa lógica de camada se aplica ao ecossistema de seguros de forma mais ampla, [O que é wir e por que o mercado de seguros está buscando](https://wirinnovation.ai/insights/o-que-e-wir-tecnologia-seguros) cobre o raciocínio completo.
+
+### O subscritor no centro: automação que amplia julgamento, não elimina
+
+Automação de intake não é sobre remover o subscritor do processo. É sobre devolver tempo de qualidade para ele.
+
+Hoje, uma parcela significativa do tempo de subscrição é gasta em trabalho que não exige julgamento: abrir arquivos, copiar dados, preencher campos no sistema, perguntar ao corretor por informação que já estava no documento mas em formato errado. Isso é custo sem valor.
+
+Quando o intake é automatizado com escalabilidade real, o subscritor recebe a submission já estruturada, com os campos preenchidos, os documentos organizados e os pontos de atenção sinalizados. Ele decide. Mais rápido, com mais contexto, com menos ruído.
+
+A automação de intake não substitui o julgamento — ela protege o julgamento do ruído operacional. Esse é o ponto. Subscritores de alto valor não deveriam passar a manhã formatando dados.
+
+### Critérios de avaliação que poucas RFPs incluem
+
+Se você está avaliando opções agora, estes são os critérios que fazem diferença em escala e que raramente aparecem nos roteiros de demonstração:
+
+- Latência sob carga: o que acontece quando 200 submissions chegam ao mesmo tempo? O sistema degrada graciosamente ou trava?
+- Tempo de onboarding de novo formato: quantas horas de configuração para adaptar a um tipo de documento que nunca foi visto antes?
+- Rastreabilidade de decisão: quando uma submission foi classificada de forma errada, o sistema mostra por quê? Você consegue corrigir sem engenharia?
+- Integração com o core existente: a saída do intake chega no formato que o seu sistema de gestão já lê, ou exige um middleware adicional?
+- Tratamento de exceções: o que acontece com a submission que não se encaixa em nenhum padrão? Ela vai para uma fila humana com contexto ou simplesmente some?
+
+### Por que integrações mal feitas destroem a escalabilidade
+
+Uma solução de intake pode ser excelente no processamento e falhar completamente na entrega. O ponto de falha mais comum em implementações de automação não é a extração de dados — é a integração com o sistema downstream.
+
+Dados extraídos corretamente mas entregues no formato errado para o core criam retrabalho manual. Retrabalho manual em escala nega o benefício inteiro da automação.
+
+A integração precisa ser tratada como parte do produto, não como um projeto separado de TI. Isso significa APIs estáveis, mapeamento de campos documentado e um processo claro de manutenção quando o core atualiza.
+
+Para aprofundar nesse ponto, [Melhor plataforma de integração de IA para core de seguros](https://wirinnovation.ai/insights/melhor-plataforma-integracao-ia-core-seguros) cobre as arquiteturas de integração que funcionam no contexto de seguros brasileiro.
+
+### O que escala rápido e o que escala caro
+
+Existe uma diferença entre crescer o volume de submissions processadas e crescer o custo operacional na mesma proporção. Escalar rápido significa que dobrar o volume não dobra o custo ou o headcount. Escalar caro significa que cada novo corretor, cada novo ramo ou cada novo mercado exige uma nova rodada de configuração e treinamento.
+
+A distinção prática: soluções que exigem regras manuais para cada novo tipo de documento escalam caro. Soluções que aprendem com padrões e se adaptam sem reconfiguração extensiva escalam rápido.
+
+MGAs que estão crescendo carteira precisam da segunda. Seguradoras que estão expandindo para novos ramos precisam da segunda. Qualquer operação que projeta aumento de volume nos próximos 12 meses precisa perguntar explicitamente: qual é o custo marginal de processar mais 500 submissions por mês nessa plataforma?
+
+### Como começar uma avaliação de intake automation agora
+
+O próximo passo concreto não é contratar uma consultoria ou montar um comitê. É mapear onde o intake está quebrando hoje.
+
+Pegue as últimas 50 submissions recebidas. Classifique por fonte, formato e tempo até o subscritor ter o dado necessário para decidir. Onde está a maior concentração de atraso? Qual formato aparece mais vezes como problema? Essa análise leva menos de meio dia e define exatamente o que a automação precisa resolver primeiro.
+
+Com esse mapeamento em mãos, a conversa com qualquer fornecedor — incluindo a wir — fica concreta. Não é mais sobre features abstratas. É sobre um problema específico com dados reais.
+
+Se quiser levar esse mapeamento para uma conversa com a nossa equipe, o caminho é direto: entre em contato pelo site e traga os dados da sua operação. A conversa começa do problema, não do produto.
+
+### Perguntas frequentes
+
+**Qual é a diferença entre automação de intake e automação de subscrição?**
+
+Automação de intake trata da entrada de informação: receber, estruturar, classificar e entregar a submission ao processo de subscrição no formato correto. Automação de subscrição envolve o julgamento de risco em si — decisão de aceitar, precificar e emitir. São camadas distintas. Confundir as duas leva a projetos superestimados e a soluções que tentam fazer tudo e não fazem nada bem.
+
+**Uma MGA menor consegue implementar automação de intake com escalabilidade real?**
+
+Sim, e em alguns casos é mais fácil do que em uma seguradora grande. MGAs menores têm menos legado para integrar e processos mais ágeis para adaptar. O que define viabilidade não é tamanho, é clareza sobre o problema: saber exatamente onde o intake está gerando atraso ou retrabalho. Com esse diagnóstico, uma implementação focada pode ser colocada em operação em semanas.
+
+**Como avaliar se uma solução de intake realmente escala sem testar em produção?**
+
+Peça ao fornecedor três coisas: um caso documentado de crescimento de volume com os mesmos parâmetros de configuração inicial; o processo exato para adaptar a plataforma a um formato de documento que nunca foi processado antes; e o tempo médio para resolver uma exceção de classificação sem envolver a equipe técnica do fornecedor. As respostas a essas três perguntas revelam mais sobre escalabilidade real do que qualquer demonstração em ambiente controlado.`,
+  },
+  {
     slug: "o-que-e-wir-tecnologia-seguros",
     cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
     image: "https://image.pollinations.ai/prompt/editorial%20abstract%20illustration%2C%20insurance%20technology%2C%20deep%20blue%20and%20violet%20gradient%2C%20minimal%2C%20o-que-e-wir-tecnologia-seguros?width=1200&height=630&nologo=true&seed=15694",
