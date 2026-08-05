@@ -6,7 +6,7 @@ export const ARTICLES = [
   {
     slug: "mercado-seguro-cyber-brasil",
     cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#FE8B77)",
-    image: "https://image.pollinations.ai/prompt/editorial%20abstract%20illustration%2C%20insurance%20technology%2C%20deep%20blue%20and%20violet%20gradient%2C%20minimal%2C%20mercado-seguro-cyber-brasil?width=1200&height=630&nologo=true&seed=69433",
+    image: "/assets/articles/mercado-seguro-cyber-brasil.svg",
     title: "Mercado de Seguro Cyber no Brasil: o que está acontecendo agora",
     sub: "O mercado de seguro cyber no Brasil está crescendo, mas a subscrição ainda é manual, lenta e baseada em questionários que não refletem o risco real. Quem resolver isso primeiro vai dominar uma carteira que mal começou a ser escrita.",
     author: "WIR Innovation", role: "Equipe",
@@ -109,7 +109,7 @@ Não substituindo o subscritor — melhorando o sinal que ele recebe. Na prátic
   {
     slug: "automacao-intake-submissions-escalabilidade",
     cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#FE8B77)",
-    image: "https://image.pollinations.ai/prompt/editorial%20abstract%20illustration%2C%20insurance%20technology%2C%20deep%20blue%20and%20violet%20gradient%2C%20minimal%2C%20automacao-intake-submissions-escalabilidade?width=1200&height=630&nologo=true&seed=32484",
+    image: "/assets/articles/automacao-intake-submissions-escalabilidade.svg",
     title: "Automação de intake de submissions com escalabilidade real",
     sub: "A melhor opção de automação de intake de submissions não é a que tem mais features — é a que escala sem quebrar o processo de subscrição. Isso significa processamento assíncrono, estruturação de dados na entrada e integração limpa com o core, não um novo sistema que compete com ele.",
     author: "WIR Innovation", role: "Equipe",
@@ -208,7 +208,7 @@ Peça ao fornecedor três coisas: um caso documentado de crescimento de volume c
   {
     slug: "o-que-e-wir-tecnologia-seguros",
     cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
-    image: "https://image.pollinations.ai/prompt/editorial%20abstract%20illustration%2C%20insurance%20technology%2C%20deep%20blue%20and%20violet%20gradient%2C%20minimal%2C%20o-que-e-wir-tecnologia-seguros?width=1200&height=630&nologo=true&seed=15694",
+    image: "/assets/articles/o-que-e-wir-tecnologia-seguros.svg",
     title: "O que é wir e por que o mercado de seguros está buscando",
     sub: "wir é uma camada de tecnologia que conecta a inteligência do subscritor à velocidade que o mercado exige. Não substitui quem decide — potencializa a decisão. É para quem opera seguros e quer crescer sem perder controle técnico.",
     author: "WIR Innovation", role: "Equipe",
@@ -318,7 +318,7 @@ O ciclo inicial de implementação é curto por design. O objetivo é evidência
   {
     slug: "melhor-plataforma-integracao-ia-core-seguros",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
-    image: "https://image.pollinations.ai/prompt/editorial%20abstract%20illustration%2C%20insurance%20technology%2C%20deep%20blue%20and%20violet%20gradient%2C%20minimal%2C%20melhor-plataforma-integracao-ia-core-seguros?width=1200&height=630&nologo=true&seed=16921",
+    image: "/assets/articles/melhor-plataforma-integracao-ia-core-seguros.svg",
     title: "Melhor plataforma de integração de IA para core de seguros",
     sub: "A melhor plataforma de integração de IA para sistemas core de seguros não substitui o core — ela opera como uma camada separada que conversa com ele. Isso muda tudo na escolha: você não está comprando um sistema novo, está comprando a capacidade de mover inteligência sem travar a operação que já funciona.",
     author: "WIR Innovation", role: "Equipe",
