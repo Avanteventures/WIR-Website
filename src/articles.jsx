@@ -4,6 +4,118 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "seguro-parametrico-como-funciona-mercado-brasil",
+    cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#FE8B77)",
+    image: "/assets/articles/seguro-parametrico-como-funciona-mercado-brasil.svg",
+    title: "Seguro Paramétrico: como funciona e por que o mercado acorda agora",
+    sub: "Seguro paramétrico paga com base em um evento mensurável, não em perícia de dano. Quando o gatilho dispara, o pagamento segue. Sem ajuste, sem disputa, sem espera.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "4 min", date: "11 · Ago · 2026", dateISO: "2026-08-11",
+    metaDesc: "Seguro paramétrico paga com base em um evento mensurável, não em perícia de dano. Quando o gatilho dispara, o pagamento segue. Sem ajuste, sem disputa, sem",
+    body: `Seguro paramétrico paga com base em um evento mensurável, não em perícia de dano. Quando o gatilho dispara, o pagamento segue. Sem ajuste, sem disputa, sem espera.
+
+### O que muda na lógica de indenização
+
+No seguro tradicional, o sinistro abre um processo. Alguém vai ao campo, avalia o dano, cruza com a apólice, negocia o valor. Isso funciona. Mas tem fricção.
+
+No seguro paramétrico, o contrato define um índice. Chuva acima de X milímetros em 48 horas. Vento acima de Y km/h. Queda de energia por mais de Z horas. Se o índice é atingido, o pagamento é acionado automaticamente.
+
+Não existe discussão sobre o tamanho do dano. O dano pode ser maior ou menor do que o pago. Esse é o trade-off que o segurado aceita em troca de velocidade e previsibilidade.
+
+### Por que esse modelo cresce agora, não há dez anos
+
+Três condições precisam existir ao mesmo tempo para o paramétrico funcionar: dados de qualidade, distribuição capaz de explicar o produto e regulação que aceite o modelo. As três estão convergindo no Brasil agora.
+
+Dados climáticos, sensores IoT, APIs de estações meteorológicas e telemetria agrícola melhoraram em profundidade e cobertura. O subscritor consegue definir gatilhos com muito mais precisão do que antes.
+
+A SUSEP avançou em sandbox regulatório e em diálogo com novos modelos de produto. Não é aprovação ampla, mas é abertura real. E onde há abertura, a velocidade de experimentação aumenta.
+
+O terceiro fator é o mercado corporativo. Empresas de logística, agronegócio, energia e eventos querem proteção rápida. Não querem esperar 60 dias para receber enquanto o fluxo de caixa sangra.
+
+### O subscritor no centro: quem decide o gatilho
+
+Existe uma percepção equivocada de que o paramétrico automatiza o subscritor para fora do processo. O oposto é verdadeiro.
+
+A decisão mais crítica no seguro paramétrico é a definição do índice e do threshold. Escolher o gatilho errado cria risco de base: o segurado sofre o dano, o índice não dispara, a cobertura não ativa. Isso destrói a confiança no produto.
+
+Quem define o threshold certo é o subscritor. Com dados, com experiência de portfólio, com entendimento da exposição real do cliente. A automação processa o gatilho. O subscritor projeta o gatilho.
+
+Isso é o pilar central da nossa visão: [O que é wir e por que o mercado de seguros está buscando](https://wirinnovation.ai/insights/o-que-e-wir-tecnologia-seguros). Tecnologia não substitui julgamento técnico. Ela amplifica o julgamento de quem sabe o que está fazendo.
+
+### Onde o paramétrico encaixa melhor hoje
+
+Nem todo risco é candidato. O índice precisa ser objetivo, verificável por fonte independente e correlacionado com a perda real do segurado. Se a correlação é fraca, o risco de base mina o produto.
+
+Os verticais com melhor fit hoje:
+
+- Agronegócio: seca, excesso de chuva, geada — índices climáticos com fontes consolidadas.
+- Energia: interrupção de fornecimento acima de threshold por ponto de medição.
+- Logística e eventos: condições climáticas que inviabilizam operação em janela definida.
+- Infraestrutura: exposição a catástrofe natural em região com histórico e modelo de perda confiável.
+- Saúde corporativa: alguns modelos de absenteísmo vinculados a surtos verificáveis por dados públicos.
+
+### O que o processo de emissão precisa suportar
+
+Parametric insurance não é só um produto diferente. É uma operação diferente.
+
+O intake de dados precisa capturar o índice de referência, a fonte de dados, o threshold, a cobertura máxima e a janela temporal. Isso não cabe em um formulário genérico de submissão.
+
+A plataforma de subscrição precisa conectar com as fontes de dados externas que vão acionar o gatilho. Se isso não está integrado desde o início, o produto vira manual na pior hora: na hora do sinistro.
+
+Discutimos a estrutura de intake que suporta isso em [Automação de intake de submissions com escalabilidade real](https://wirinnovation.ai/insights/automacao-intake-submissions-escalabilidade). O ponto central é o mesmo: o processo de entrada define a qualidade do processo de saída.
+
+### O risco de base: o problema que ninguém quer discutir abertamente
+
+Quando o índice não captura a perda do segurado, o produto falha. O cliente pagou prêmio, sofreu o dano e não recebeu. Isso é pior do que não ter seguro. Porque gerou expectativa e não entregou.
+
+O risco de base é o principal ponto de atenção técnico no paramétrico. Ele não é eliminável. Mas é gerenciável com bom design de produto.
+
+Algumas táticas que reduzem o risco de base:
+
+Escolher índices com alta correlação histórica com a perda real na geografia específica.
+
+Usar múltiplos índices combinados em vez de um único gatilho.
+
+- Escolher índices com alta correlação histórica com a perda real na geografia específica.
+- Usar múltiplos índices combinados em vez de um único gatilho.
+- Definir zonas geográficas menores, com fontes de dados locais em vez de regionais.
+- Ser transparente com o segurado sobre o que o produto cobre e o que não cobre.
+
+### Como MGAs e subscritores podem começar antes do mercado escalar
+
+O momento de construir capacidade paramétrica não é quando todo mundo já tem. É agora, quando ainda há espaço para errar com volume pequeno e aprender com custo controlado.
+
+A curva de aprendizado no paramétrico está no design do índice e na gestão da expectativa do cliente. As duas coisas levam tempo. Quem começa hoje chega ao mercado escalado com portfólio real, não com PowerPoint.
+
+Para subscritores dentro de seguradoras, o caminho começa em definir um vertical com dados disponíveis e uma carteira pequena de clientes dispostos a testar. Para MGAs, começa em mapear quais fronting carriers têm apetite e estruturar o produto como camada sobre capacidade existente.
+
+Isso é o modelo de camada versus core que defende a construção de capacidade diferenciada sem trocar o core no processo.
+
+### O que acompanhar nos próximos meses
+
+O interesse em seguro paramétrico no Brasil está crescendo. O sinal de busca é real. Mas interesse não é capacidade instalada.
+
+O que vai separar quem opera parametric de quem só fala sobre é: acesso a dados de qualidade, capacidade de subscrição técnica para definir índices, plataforma que automatiza o gatilho sem fricção operacional, e apetite regulatório confirmado por produto.
+
+Os primeiros movimentos já estão acontecendo no agronegócio e em algumas iniciativas de risco climático corporativo. O próximo ciclo vai trazer logística e energia com mais força.
+
+Quem está construindo agora vai ter portfólio e aprendizado quando o mercado pedir escala.
+
+### Perguntas frequentes
+
+**Seguro paramétrico é regulado no Brasil?**
+
+A SUSEP avançou com sandbox regulatório e há espaço para produtos paramétricos no mercado brasileiro, especialmente em agronegócio e riscos climáticos. Não existe aprovação ampla e irrestrita, mas o diálogo regulatório está aberto e alguns produtos já operam. Recomenda-se consulta direta à SUSEP para cada estrutura de produto antes do lançamento.
+
+**O que é risco de base no seguro paramétrico?**
+
+Risco de base é a diferença entre o que o índice paramétrico indica e o dano real sofrido pelo segurado. Se o threshold não dispara mas o segurado teve perda, a cobertura não ativa. É o principal ponto de atenção técnico no design de produto paramétrico e é gerenciado com bom mapeamento de correlação histórica entre índice e perda.
+
+**Qual a diferença entre seguro paramétrico e seguro índice?**
+
+Os termos são usados de forma intercambiável no mercado, mas há nuance. Seguro índice geralmente se refere a produtos vinculados a índices climáticos ou de mercado já estabelecidos, como índice de chuva do INMET. Seguro paramétrico é o termo mais amplo, que inclui qualquer estrutura onde o pagamento segue um parâmetro mensurável, seja climático, energético, logístico ou outro. Na prática, o que importa é a qualidade do índice e sua correlação com a exposição do segurado.`,
+  },
+  {
     slug: "mercado-seguro-cyber-brasil",
     cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#FE8B77)",
     image: "/assets/articles/mercado-seguro-cyber-brasil.svg",
