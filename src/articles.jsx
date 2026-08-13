@@ -102,7 +102,7 @@ Automatize esse ramo completamente, meça o resultado em tempo de resposta e tax
 
 Não tente automatizar tudo de uma vez. O projeto que tenta fazer tudo junto é o projeto que não termina.
 
-Se a sua dúvida é sobre como estruturar a camada de tecnologia que suporta isso sem depender de uma reforma completa do core, a wir trabalha exatamente com esse modelo. Faz sentido conversar sobre o que você tem hoje e onde faz sentido começar.
+Se a sua dúvida é sobre como estruturar a camada de tecnologia que suporta isso sem depender de uma reforma completa do core, a WIR trabalha exatamente com esse modelo. Faz sentido conversar sobre o que você tem hoje e onde faz sentido começar.
 
 ### Perguntas frequentes
 
@@ -155,7 +155,7 @@ A decisão mais crítica no seguro paramétrico é a definição do índice e do
 
 Quem define o threshold certo é o subscritor. Com dados, com experiência de portfólio, com entendimento da exposição real do cliente. A automação processa o gatilho. O subscritor projeta o gatilho.
 
-Isso é o pilar central da nossa visão: [O que é wir e por que o mercado de seguros está buscando](https://wirinnovation.ai/insights/o-que-e-wir-tecnologia-seguros). Tecnologia não substitui julgamento técnico. Ela amplifica o julgamento de quem sabe o que está fazendo.
+Isso é o pilar central da nossa visão: [O que é WIR e por que o mercado de seguros está buscando](https://wirinnovation.ai/insights/o-que-e-wir-tecnologia-seguros). Tecnologia não substitui julgamento técnico. Ela amplifica o julgamento de quem sabe o que está fazendo.
 
 ### Onde o paramétrico encaixa melhor hoje
 
@@ -267,7 +267,7 @@ O subscritor cyber de alta performance no Brasil não vai desaparecer. Ele vai p
 
 A questão não é substituir o julgamento humano. É dar ao subscritor um painel de risco que chegue pronto antes da reunião com o corretor — não depois de três e-mails e uma planilha preenchida à mão.
 
-Esse é exatamente o ponto que exploramos ao construir a wir: a inteligência fica em uma camada separada do core, alimenta o subscritor com sinal estruturado, e o decision-maker continua sendo a pessoa. Para entender melhor como essa arquitetura funciona na prática, vale ler [O que é wir e por que o mercado de seguros está buscando](https://wirinnovation.ai/insights/o-que-e-wir-tecnologia-seguros).
+Esse é exatamente o ponto que exploramos ao construir a WIR: a inteligência fica em uma camada separada do core, alimenta o subscritor com sinal estruturado, e o decision-maker continua sendo a pessoa. Para entender melhor como essa arquitetura funciona na prática, vale ler [O que é WIR e por que o mercado de seguros está buscando](https://wirinnovation.ai/insights/o-que-e-wir-tecnologia-seguros).
 
 ### O que trava a expansão do seguro cyber no Brasil hoje
 
@@ -317,7 +317,7 @@ Se o gargalo está na qualidade do dado de entrada, vale avaliar como uma camada
 
 Se o gargalo está na velocidade de resposta ao corretor, o problema pode ser de workflow interno antes de ser de tecnologia.
 
-A wir trabalha com equipes de subscrição e produto para mapear exatamente esse diagnóstico. Se você quer entender onde está o seu gargalo específico, fale com a gente — sem pitch, com conversa.
+A WIR trabalha com equipes de subscrição e produto para mapear exatamente esse diagnóstico. Se você quer entender onde está o seu gargalo específico, fale com a gente — sem pitch, com conversa.
 
 ### Perguntas frequentes
 
@@ -368,7 +368,7 @@ Confundir as duas funções cria projetos de dois anos quando o problema poderia
 
 A abordagem de camada — uma tecnologia que se encaixa sobre o que já existe — é o que permite escalar sem refatorar toda a operação. O core continua fazendo o que faz. A camada de intake resolve o caos da entrada.
 
-Se quiser entender como essa lógica de camada se aplica ao ecossistema de seguros de forma mais ampla, [O que é wir e por que o mercado de seguros está buscando](https://wirinnovation.ai/insights/o-que-e-wir-tecnologia-seguros) cobre o raciocínio completo.
+Se quiser entender como essa lógica de camada se aplica ao ecossistema de seguros de forma mais ampla, [O que é WIR e por que o mercado de seguros está buscando](https://wirinnovation.ai/insights/o-que-e-wir-tecnologia-seguros) cobre o raciocínio completo.
 
 ### O subscritor no centro: automação que amplia julgamento, não elimina
 
@@ -414,7 +414,7 @@ O próximo passo concreto não é contratar uma consultoria ou montar um comitê
 
 Pegue as últimas 50 submissions recebidas. Classifique por fonte, formato e tempo até o subscritor ter o dado necessário para decidir. Onde está a maior concentração de atraso? Qual formato aparece mais vezes como problema? Essa análise leva menos de meio dia e define exatamente o que a automação precisa resolver primeiro.
 
-Com esse mapeamento em mãos, a conversa com qualquer fornecedor — incluindo a wir — fica concreta. Não é mais sobre features abstratas. É sobre um problema específico com dados reais.
+Com esse mapeamento em mãos, a conversa com qualquer fornecedor — incluindo a WIR — fica concreta. Não é mais sobre features abstratas. É sobre um problema específico com dados reais.
 
 Se quiser levar esse mapeamento para uma conversa com a nossa equipe, o caminho é direto: entre em contato pelo site e traga os dados da sua operação. A conversa começa do problema, não do produto.
 
@@ -436,16 +436,16 @@ Peça ao fornecedor três coisas: um caso documentado de crescimento de volume c
     slug: "o-que-e-wir-tecnologia-seguros",
     cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
     image: "/assets/articles/o-que-e-wir-tecnologia-seguros.svg",
-    title: "O que é wir e por que o mercado de seguros está buscando",
-    sub: "wir é uma camada de tecnologia que conecta a inteligência do subscritor à velocidade que o mercado exige. Não substitui quem decide — potencializa a decisão. É para quem opera seguros e quer crescer sem perder controle técnico.",
+    title: "O que é WIR e por que o mercado de seguros está buscando",
+    sub: "WIR é uma camada de tecnologia que conecta a inteligência do subscritor à velocidade que o mercado exige. Não substitui quem decide — potencializa a decisão. É para quem opera seguros e quer crescer sem perder controle técnico.",
     author: "WIR Innovation", role: "Equipe",
     time: "5 min", date: "02 · Ago · 2026", dateISO: "2026-08-02",
-    metaDesc: "wir é uma camada de tecnologia que conecta a inteligência do subscritor à velocidade que o mercado exige. Não substitui quem decide — potencializa a decisã",
-    body: `wir é uma camada de tecnologia que conecta a inteligência do subscritor à velocidade que o mercado exige. Não substitui quem decide — potencializa a decisão. É para quem opera seguros e quer crescer sem perder controle técnico.
+    metaDesc: "WIR é uma camada de tecnologia que conecta a inteligência do subscritor à velocidade que o mercado exige. Não substitui quem decide — potencializa a decisã",
+    body: `WIR é uma camada de tecnologia que conecta a inteligência do subscritor à velocidade que o mercado exige. Não substitui quem decide — potencializa a decisão. É para quem opera seguros e quer crescer sem perder controle técnico.
 
 ### O sinal que chegou antes desta página existir
 
-Centenas de buscas por 'wir' já aconteceram. Pessoas chegaram até quase a página 1 sem que houvesse conteúdo suficiente esperando por elas. Isso não é um problema de SEO. É um sinal de mercado.
+Centenas de buscas por 'WIR' já aconteceram. Pessoas chegaram até quase a página 1 sem que houvesse conteúdo suficiente esperando por elas. Isso não é um problema de SEO. É um sinal de mercado.
 
 Quando executivos de seguradoras, subscritores e líderes de MGAs buscam um nome assim, eles não estão procurando uma definição de dicionário. Estão procurando uma resposta operacional: o que isso faz, como funciona na prática, e por que deveria importar para mim agora.
 
@@ -457,7 +457,7 @@ Existe uma confusão frequente no mercado de insurtech. Muitos produtos se posic
 
 Trocar um sistema core em uma seguradora ou MGA é um projeto de anos. Envolve risco regulatório, risco operacional e, acima de tudo, risco humano. A subscrição não para enquanto a migração acontece.
 
-wir não é um core. É uma camada. Isso significa que ela se posiciona sobre o que já existe e entrega capacidade nova sem exigir que você destrua o que foi construído. A infraestrutura de decisão permanece; a velocidade de execução muda.
+WIR não é um core. É uma camada. Isso significa que ela se posiciona sobre o que já existe e entrega capacidade nova sem exigir que você destrua o que foi construído. A infraestrutura de decisão permanece; a velocidade de execução muda.
 
 - Camada se integra ao fluxo existente de underwriting
 - Não exige migração de dados históricos para começar
@@ -469,7 +469,7 @@ Há uma narrativa equivocada circulando em fóruns de inovação: a de que a aut
 
 Risco complexo exige julgamento. Julgamento exige contexto. Contexto exige tempo — e é exatamente o tempo que falta.
 
-O que wir faz é devolver tempo ao subscritor. As tarefas que consomem energia sem gerar decisão — coleta de dados, organização de informação, checagem de consistência — são absorvidas pela camada. O que sobra é o que realmente importa: o momento em que alguém com experiência olha para um risco e decide.
+O que WIR faz é devolver tempo ao subscritor. As tarefas que consomem energia sem gerar decisão — coleta de dados, organização de informação, checagem de consistência — são absorvidas pela camada. O que sobra é o que realmente importa: o momento em que alguém com experiência olha para um risco e decide.
 
 Subscrição de qualidade não é lenta por natureza. Ela é lenta porque o ambiente ao redor dela é ineficiente. Remover essa ineficiência é o trabalho da wir.
 
@@ -481,17 +481,17 @@ No Brasil, existe risco que não é subscrito hoje porque o custo de operação 
 
 Quando a camada de tecnologia reduz o custo operacional de uma decisão de subscrição, ela abre espaço para atender esse risco antes ignorado. Isso não é otimização de margem. É expansão de mercado.
 
-MGAs que operam com wir conseguem cobrir faixas de risco que uma operação manual não alcançaria. Não porque o critério técnico mudou — mas porque o custo de chegar lá caiu.
+MGAs que operam com WIR conseguem cobrir faixas de risco que uma operação manual não alcançaria. Não porque o critério técnico mudou — mas porque o custo de chegar lá caiu.
 
 - Risco antes não subscrito por custo operacional passa a ser viável
 - MGAs expandem escopo sem expandir equipe na mesma proporção
 - Seguradoras reduzem tempo entre cotação e emissão
 
-### Como uma MGA ou seguradora começa a operar com wir
+### Como uma MGA ou seguradora começa a operar com WIR
 
 A primeira conversa não é sobre tecnologia. É sobre o fluxo atual de subscrição: onde ele trava, onde a informação some, onde o subscritor perde tempo que deveria estar usando para decidir.
 
-A partir do diagnóstico do fluxo, a camada é desenhada para encaixar naquele processo específico. Não existe implementação genérica. O que existe é uma metodologia de mapeamento que wir traz da operação com seguradoras e MGAs reais.
+A partir do diagnóstico do fluxo, a camada é desenhada para encaixar naquele processo específico. Não existe implementação genérica. O que existe é uma metodologia de mapeamento que WIR traz da operação com seguradoras e MGAs reais.
 
 O ciclo inicial é curto. O objetivo não é transformação imediata — é evidência operacional. Você precisa ver o efeito no seu próprio processo antes de escalar. Isso é construção responsável, não promessa de consultoria.
 
@@ -510,9 +510,9 @@ Corretores grandes já sentem a pressão. A resposta que recebem das seguradoras
 
 A disputa não é por tecnologia em si. É por quem consegue decidir bem, rápido e em escala.
 
-### Construindo em público: o que wir compartilha e por quê
+### Construindo em público: o que WIR compartilha e por quê
 
-wir escolheu um caminho menos comum: mostrar o processo de construção enquanto ele acontece. Não para marketing. Para credibilidade operacional.
+WIR escolheu um caminho menos comum: mostrar o processo de construção enquanto ele acontece. Não para marketing. Para credibilidade operacional.
 
 Quando uma seguradora ou MGA avalia um parceiro de tecnologia, ela quer saber se esse parceiro entende o negócio de seguros — não apenas de software. A melhor forma de demonstrar isso é mostrar como se pensa, como se resolve problema, como se aprende com o que não funciona.
 
@@ -530,17 +530,17 @@ Fale com a wir. O contato está no site. Sem formulário de qualificação de de
 
 ### Perguntas frequentes
 
-**wir é um sistema de gestão de apólices ou algo diferente?**
+**WIR é um sistema de gestão de apólices ou algo diferente?**
 
-wir não é um sistema de gestão de apólices. É uma camada de tecnologia que se posiciona sobre o processo existente de subscrição — o que você já usa continua funcionando. wir organiza a informação, reduz o atrito operacional e acelera o ciclo de decisão do subscritor, sem substituir a infraestrutura que já existe na sua operação.
+WIR não é um sistema de gestão de apólices. É uma camada de tecnologia que se posiciona sobre o processo existente de subscrição — o que você já usa continua funcionando. WIR organiza a informação, reduz o atrito operacional e acelera o ciclo de decisão do subscritor, sem substituir a infraestrutura que já existe na sua operação.
 
-**Uma MGA pequena consegue operar com wir ou é só para grandes seguradoras?**
+**Uma MGA pequena consegue operar com WIR ou é só para grandes seguradoras?**
 
-wir foi desenhada pensando em operações que precisam crescer sem crescer o custo operacional na mesma proporção. MGAs menores têm esse desafio de forma mais aguda — precisam de velocidade e escala sem a estrutura de uma seguradora grande. A camada faz sentido exatamente nesse contexto.
+WIR foi desenhada pensando em operações que precisam crescer sem crescer o custo operacional na mesma proporção. MGAs menores têm esse desafio de forma mais aguda — precisam de velocidade e escala sem a estrutura de uma seguradora grande. A camada faz sentido exatamente nesse contexto.
 
 **Quanto tempo leva para ver resultado operacional real?**
 
-O ciclo inicial de implementação é curto por design. O objetivo é evidência rápida: você precisa ver o efeito no seu próprio processo antes de escalar. Não existe uma resposta universal em dias porque depende da complexidade do fluxo atual — mas a metodologia de wir prioriza validação operacional antes de expansão.`,
+O ciclo inicial de implementação é curto por design. O objetivo é evidência rápida: você precisa ver o efeito no seu próprio processo antes de escalar. Não existe uma resposta universal em dias porque depende da complexidade do fluxo atual — mas a metodologia de WIR prioriza validação operacional antes de expansão.`,
   },
   {
     slug: "melhor-plataforma-integracao-ia-core-seguros",
