@@ -4,6 +4,121 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "automacao-cotacao-seguros-o-que-funciona",
+    cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
+    image: "/assets/articles/automacao-cotacao-seguros-o-que-funciona.svg",
+    title: "Automação de cotação de seguros: o que funciona de verdade",
+    sub: "Automatizar cotação de seguros não é substituir o subscritor. É eliminar o trabalho manual que consome o tempo dele antes de qualquer decisão real acontecer. Quem entende essa distinção já saiu na frente.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "5 min", date: "13 · Ago · 2026", dateISO: "2026-08-13",
+    metaDesc: "Automatizar cotação de seguros não é substituir o subscritor. É eliminar o trabalho manual que consome o tempo dele antes de qualquer decisão real acontece",
+    body: `Automatizar cotação de seguros não é substituir o subscritor. É eliminar o trabalho manual que consome o tempo dele antes de qualquer decisão real acontecer. Quem entende essa distinção já saiu na frente.
+
+### Por que o interesse em automação de cotação subiu agora
+
+O sinal é claro: mais gente buscando ativamente por automação de cotação de seguros. Não é curiosidade acadêmica. É operador com problema real procurando solução real.
+
+O problema tem nome: volume de submissions cresceu, equipe não cresceu no mesmo ritmo, e o tempo entre receber um risco e responder com uma cotação virou vantagem competitiva. Quem responde primeiro, com qualidade, fecha mais.
+
+O mercado percebeu que velocidade não é só conveniência. É fator de retenção de corretor, de taxa de conversão e, no fim, de crescimento de carteira.
+
+### O que automação de cotação significa na prática
+
+Automação de cotação não é um botão que gera preço sem critério. É um processo estruturado que move dados do ponto A ao ponto B sem intervenção humana nas etapas que não precisam de julgamento.
+
+Na vida real, isso inclui:
+
+O subscritor entra onde precisa entrar: na análise de risco complexo, na exceção, na negociação. Não no preenchimento de formulário ou na conferência de CNPJ.
+
+- Leitura e extração de dados do submission recebido por e-mail, portal ou API
+- Validação automática das informações contra fontes internas e externas
+- Aplicação de regras de underwriting pré-aprovadas para riscos dentro do apetite padrão
+- Geração e envio da proposta ao corretor sem toque humano
+- Escalada automática para o subscritor quando o risco foge do padrão
+
+### O subscritor não é o problema, é o ativo
+
+Existe um medo legítimo no mercado: automação vai substituir subscritor. Esse medo nasce de uma confusão sobre o que o subscritor realmente faz de valor.
+
+O subscritor de valor não passa o dia digitando dados. Ele julga risco. Ele enxerga o que a régua não captura. Ele decide aceitar ou declinar com base em experiência acumulada que nenhum formulário automatiza.
+
+O que a automação faz é devolver esse tempo para ele. Risco simples, dentro do apetite definido, com informações completas? A máquina resolve. Risco com histórico complicado, setor novo, estrutura societária estranha? O subscritor entra com tudo que ele tem de melhor: atenção e julgamento.
+
+Quem trata automação como ameaça ao subscritor está olhando para o problema errado. O problema real é subscritor caro demais para ficar copiando e colando CNPJ em planilha.
+
+### Por que a maioria das tentativas de automação trava no meio
+
+O padrão é sempre parecido: a seguradora ou MGA começa um projeto de automação, vai bem nos primeiros ramos, trava quando o volume de exceções aparece, e volta para o processo manual com um sistema paralelo que ninguém usa direito.
+
+Os motivos são técnicos e organizacionais ao mesmo tempo.
+
+Do lado técnico: a automação foi construída diretamente no core. Qualquer mudança de regra vira um projeto de TI. Qualquer novo ramo começa do zero. A rigidez do core mata a velocidade que a automação deveria criar.
+
+Do lado organizacional: as regras de underwriting nunca foram formalizadas. Estavam na cabeça do subscritor sênior. Sem isso documentado, a automação não tem critério para operar.
+
+A saída é construir a automação como uma camada separada do core, que conversa com ele via API mas não depende do ciclo de release dele para evoluir. Isso é o que permite iterar rápido e escalar sem reescrever tudo.
+
+### Camada de automação vs. reformar o core: a decisão que define o projeto
+
+Reformar o core para automatizar cotação é como trocar o motor do carro enquanto dirige. É possível, mas ninguém faz isso se tiver outra opção.
+
+A abordagem de camada resolve isso. Você mantém o core fazendo o que ele faz bem — registro, emissão, contabilidade — e coloca a inteligência de cotação em uma camada separada, agnóstica de sistema, que pode ser atualizada sem depender do roadmap do core.
+
+Na prática, isso significa que quando uma nova linha de negócio entra, ou quando o apetite de risco muda, a camada de automação é ajustada sem impactar a emissão, o financeiro ou qualquer outro processo que depende do core.
+
+Esse modelo também facilita integração com corretores que operam em sistemas diferentes. A camada fala com cada um via API, padroniza o dado recebido e processa com as mesmas regras independentemente de onde o submission veio.
+
+Se quiser aprofundar como essa lógica se aplica ao intake de submissions em escala, o artigo [Automação de intake de submissions com escalabilidade real](https://wirinnovation.ai/insights/automacao-intake-submissions-escalabilidade) explora exatamente esse ponto.
+
+### O que é preciso ter antes de automatizar qualquer coisa
+
+Automação mal alimentada gera lixo mais rápido. Antes de ligar qualquer processo automatizado, três coisas precisam estar resolvidas:
+
+Sem esses três elementos, a automação vai produzir cotações que o subscritor vai rejeitar ou, pior, cotações erradas que chegam ao corretor e criam problema comercial.
+
+Estruturar esses elementos é a parte mais trabalhosa do projeto. E é exatamente onde a maioria das iniciativas internas subestima o esforço necessário.
+
+- Regras de underwriting documentadas e aprovadas: o que entra no apetite padrão, o que precisa de olho humano, o que é declínio automático
+- Dados de entrada padronizados: o submission precisa chegar em formato que a automação consiga ler, seja por portal estruturado, por extração de PDF ou por integração com o sistema do corretor
+- Critérios claros de escalada: a automação precisa saber quando parar e chamar o subscritor, e precisa chamar com contexto, não só com um alerta genérico
+
+### Velocidade de cotação como diferencial de mercado
+
+Corretor grande trabalha com múltiplas seguradoras. Quando precisa de cotação rápida para fechar negócio, ele liga para quem responde. Não necessariamente para quem tem o melhor preço.
+
+Isso cria uma dinâmica direta: seguradora que cotiza em minutos para riscos padrão ganha acesso preferencial ao corretor. Acesso preferencial significa mais submissions. Mais submissions significa mais oportunidade de crescer carteira.
+
+A velocidade não é só eficiência interna. É política comercial. É o ativo que determina quem o corretor liga primeiro.
+
+Ramos com alta rotatividade de cotações — automóvel de frota, PME, vida em grupo — são os que sentem esse efeito mais rápido. Mas a lógica se aplica a qualquer linha onde o tempo de resposta impacta a conversão.
+
+O mercado de seguros no Brasil ainda tem muito espaço para velocidade ser diferencial. Quem chegar primeiro nesse patamar operacional não vai precisar competir só em preço.
+
+### Por onde começar se você está avaliando isso agora
+
+O caminho mais seguro é começar pelo ramo mais simples da sua operação. Aquele onde as regras de underwriting são mais claras, o volume é alto e o risco de erro é mais controlado.
+
+Automatize esse ramo completamente, meça o resultado em tempo de resposta e taxa de aceitação, e use esse aprendizado para expandir para ramos mais complexos.
+
+Não tente automatizar tudo de uma vez. O projeto que tenta fazer tudo junto é o projeto que não termina.
+
+Se a sua dúvida é sobre como estruturar a camada de tecnologia que suporta isso sem depender de uma reforma completa do core, a wir trabalha exatamente com esse modelo. Faz sentido conversar sobre o que você tem hoje e onde faz sentido começar.
+
+### Perguntas frequentes
+
+**Automação de cotação funciona para todos os ramos de seguro?**
+
+Funciona melhor onde as regras de underwriting são mais objetivas e o volume de cotações é alto. Ramos como automóvel de frota, PME e vida em grupo são os casos mais diretos. Ramos complexos como grandes riscos ou riscos especiais se beneficiam de automação parcial, onde a máquina prepara o dossiê e o subscritor toma a decisão final com mais contexto e menos trabalho manual.
+
+**Quanto tempo leva para implementar um processo de cotação automatizado?**
+
+Depende de dois fatores: a complexidade do ramo escolhido para começar e o quanto as regras de underwriting já estão documentadas. Quando as regras existem e o ramo é simples, o tempo de implementação cai substancialmente. O maior gasto de tempo costuma ser justamente a formalização das regras, não a tecnologia em si.
+
+**A automação de cotação substitui o sistema de core da seguradora?**
+
+Não substitui e não deveria tentar. A automação funciona como uma camada separada que conversa com o core via integração. O core continua fazendo o que faz bem: emissão, registro, contabilidade. A camada de automação cuida do fluxo de cotação, das regras de underwriting e da comunicação com o corretor. Essa separação é o que permite evoluir a automação sem travar no ciclo de atualização do core.`,
+  },
+  {
     slug: "seguro-parametrico-como-funciona-mercado-brasil",
     cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#FE8B77)",
     image: "/assets/articles/seguro-parametrico-como-funciona-mercado-brasil.svg",
