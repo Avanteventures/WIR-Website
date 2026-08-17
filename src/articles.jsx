@@ -4,6 +4,110 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "submission-intake-automation-mecanismo-por-dentro",
+    cat: "Artigo", grad: "linear-gradient(135deg,#FE8B77,#AE46C0)",
+    image: "/assets/articles/submission-intake-automation-mecanismo-por-dentro.svg",
+    title: "Submission intake automation: o mecanismo por dentro",
+    sub: "Submission intake automation é o conjunto de etapas que captura, classifica e enriquece cada solicitação de subscrição antes de ela chegar ao underwriter. Quando esse mecanismo funciona bem, o subscritor decide mais rápido e com mais informação. Quando falha, o gargalo aparece como perda de negócio — não como falha de tecnologia.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "5 min", date: "17 · Ago · 2026", dateISO: "2026-08-17",
+    metaDesc: "Submission intake automation é o conjunto de etapas que captura, classifica e enriquece cada solicitação de subscrição antes de ela chegar ao underwriter. ",
+    body: `Submission intake automation é o conjunto de etapas que captura, classifica e enriquece cada solicitação de subscrição antes de ela chegar ao underwriter. Quando esse mecanismo funciona bem, o subscritor decide mais rápido e com mais informação. Quando falha, o gargalo aparece como perda de negócio — não como falha de tecnologia.
+
+### O problema real não é volume, é atrito invisível
+
+Toda seguradora e MGA recebe submissions por canais diferentes: e-mail, portal, planilha, PDF, formulário ad hoc. O volume cresce. O time de subscrição não cresce na mesma proporção.
+
+O resultado não é um colapso visível. É atrito silencioso: submissões que ficam horas em uma fila de triagem manual, dados que precisam ser recopiados de um sistema para outro, campos que chegam inconsistentes e exigem uma rodada de perguntas ao corretor.
+
+Esse atrito tem custo duplo. Para a operação: horas de trabalho técnico aplicadas em tarefa administrativa. Para o mercado: o corretor que não recebe resposta rápida aprende a mandar o risco bom para outro lugar primeiro.
+
+### O que o mecanismo de intake faz, etapa por etapa
+
+Submission intake automation não é um produto único. É uma sequência de decisões técnicas que, encadeadas, transformam um arquivo ou formulário bruto em um objeto estruturado, pronto para análise.
+
+As etapas centrais são:
+
+- Captura multicanal: e-mail, API, portal, upload direto — o sistema lê independente da origem.
+- Extração de dados: OCR e modelos de linguagem identificam campos relevantes dentro de documentos não estruturados — ACORD, propostas livres, laudos técnicos.
+- Validação e completude: o sistema detecta campos ausentes ou inconsistentes antes de o underwriter abrir o arquivo.
+- Classificação de risco: ramo, linha de negócio, perfil preliminar — o intake já organiza a fila por prioridade e complexidade.
+- Enriquecimento: dados externos relevantes são consultados automaticamente para complementar o que veio na submissão.
+- Entrega estruturada: o underwriter recebe um objeto limpo, não um e-mail com três anexos.
+
+### Por que a camada de intake fica fora do core — e por que isso importa
+
+Uma dúvida frequente em operações de seguros: isso não deveria estar dentro do sistema de gestão de apólices? A resposta prática é não.
+
+O core system tem uma função diferente: ele mantém a apólice emitida, os endossos, a vigência. Ele foi construído para estabilidade transacional. Mudar a lógica de intake dentro do core significa mexer em um sistema que afeta tudo que já está em produção.
+
+A camada de intake fica antes do core. Ela recebe o risco bruto, processa, e entrega ao core um registro limpo. Essa separação permite iterar rápido — mudar regras de classificação, adicionar um novo campo obrigatório, integrar uma nova fonte de dados — sem tocar na estabilidade da operação central.
+
+Esse é o mesmo princípio que sustenta a arquitetura de muitas operações modernas de subscrição: a inovação acontece na camada, não no núcleo. Para aprofundar essa lógica de separação de responsabilidades, vale ler [Automação de intake de submissions com escalabilidade real](https://wirinnovation.ai/insights/automacao-intake-submissions-escalabilidade).
+
+### O subscritor não é substituído — ele é deslocado para onde importa
+
+Há uma narrativa errada circulando no mercado: a automação de intake eliminaria a função do underwriter. Essa leitura desconhece o que o mecanismo realmente faz.
+
+O intake automatizado remove da mesa do subscritor as decisões de triagem — que não são decisões de subscrição. Separar um PDF, recopiar um CNPJ, verificar se o formulário está completo: isso não é julgamento técnico, é trabalho administrativo.
+
+Quando o intake funciona, o underwriter chega ao risco com contexto. Ele lê um resumo estruturado, não um e-mail. Ele vê os pontos de atenção já sinalizados. Ele decide — com velocidade e com mais informação disponível.
+
+A função do subscritor não some. Ela se concentra onde o julgamento humano é insubstituível: na avaliação do risco complexo, na negociação com o corretor, na decisão de aceitar, declinar ou contra-propor condições.
+
+### Onde os mecanismos de intake costumam quebrar
+
+Implementações mal desenhadas criam problemas novos sem resolver os antigos. Os pontos de falha mais comuns:
+
+- Extração sem validação: o sistema lê o dado errado com alta confiança e ninguém percebe até o underwriter abrir o arquivo.
+- Automação de um canal só: o e-mail é automatizado, mas o portal e o WhatsApp continuam manuais. O atrito migra, não some.
+- Falta de feedback loop: o sistema não aprende com os campos que chegam consistentemente errados ou ausentes, então o problema se repete.
+- Entrega sem contexto: o intake estrutura os dados mas não entrega ao underwriter uma visão do que importa verificar naquele risco específico.
+- Integração frágil com o core: a entrega ao sistema de gestão depende de um campo que nem sempre chega, causando falhas silenciosas na fila.
+
+### Velocidade de resposta como variável de crescimento de mercado
+
+Existe uma relação direta entre tempo de resposta na submissão e market share em linhas competitivas. Corretores grandes trabalham com múltiplas seguradoras simultaneamente. O risco bom não espera.
+
+Quando uma operação reduz o tempo entre recebimento da submissão e primeira resposta qualificada do underwriter, ela muda sua posição competitiva. Não porque oferece preço menor — mas porque está presente quando o corretor precisa de uma resposta.
+
+Esse ponto é especialmente relevante em linhas como cyber, onde a janela de decisão do segurado é estreita e o corretor precisa de velocidade para fechar. Para entender o que está acontecendo nesse segmento especificamente, vale acompanhar [Mercado de Seguro Cyber no Brasil: o que está acontecendo agora](https://wirinnovation.ai/insights/mercado-seguro-cyber-brasil).
+
+A automação de intake não é uma iniciativa de redução de custo. É uma iniciativa de capacidade de resposta — e capacidade de resposta, nesse mercado, é capacidade de crescimento.
+
+### O que avaliar antes de implementar
+
+Antes de escolher uma solução de intake, a operação precisa responder algumas perguntas concretas:
+
+- Quais são os canais reais de entrada de submissão hoje — e qual o volume em cada um?
+- Quais campos chegam incompletos com mais frequência? Isso define onde a validação precisa ser mais robusta.
+- O core system tem API disponível para receber dados estruturados, ou a integração vai exigir outro caminho?
+- Quem mantém as regras de classificação quando o negócio muda — o time interno ou o fornecedor?
+- Como o underwriter vai receber o output? A interface importa tanto quanto a extração.
+
+### O próximo passo concreto
+
+Se a sua operação está avaliando automação de intake — seja em uma MGA, em uma seguradora com operação de specialty, ou em uma corretora grande que quer dar mais velocidade ao processo de colocação — o caminho começa com um mapeamento honesto do fluxo atual.
+
+WIR trabalha com operações de subscrição para desenhar e implementar mecanismos de intake que funcionam dentro da realidade do mercado brasileiro: documentação variada, múltiplos canais, e underwriters que precisam de contexto, não de mais uma tela para abrir.
+
+Entre em contato com o time WIR para uma conversa técnica sobre o seu fluxo atual.
+
+### Perguntas frequentes
+
+**Submission intake automation funciona com documentos em português e formatos não padronizados?**
+
+Sim — e esse é exatamente o desafio central no mercado brasileiro. Documentos em português, propostas livres sem estrutura ACORD, PDFs digitalizados com qualidade variável. Um mecanismo de intake bem construído precisa lidar com essa variação desde o primeiro dia. Soluções que funcionam apenas com formulários padronizados têm utilidade limitada na operação real.
+
+**Quanto tempo leva para implementar um mecanismo de intake automatizado?**
+
+Depende do escopo: número de canais de entrada, complexidade dos documentos, e profundidade da integração com o core. Implementações focadas — um canal, uma linha de negócio — podem entrar em produção em semanas. Operações multicanal com integração completa ao sistema de gestão levam mais tempo. O ponto crítico é não tentar automatizar tudo de uma vez: comece pelo canal com maior volume e maior atrito, valide, depois expanda.
+
+**A automação de intake substitui o sistema de gestão de apólices?**
+
+Não. O intake opera antes do core — ele captura, estrutura e entrega. O sistema de gestão de apólices começa a partir do momento em que o risco foi aceito e precisa ser formalizado. São camadas com funções distintas. A automação de intake bem implementada melhora a qualidade dos dados que chegam ao core, reduzindo retrabalho e erros de cadastro.`,
+  },
+  {
     slug: "automacao-cotacao-seguros-o-que-funciona",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/automacao-cotacao-seguros-o-que-funciona.svg",
