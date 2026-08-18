@@ -4,6 +4,113 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "mercado-seguros-brasil-fevereiro-2026",
+    cat: "Artigo", grad: "linear-gradient(135deg,#FE8B77,#AE46C0)",
+    image: "/assets/articles/mercado-seguros-brasil-fevereiro-2026.svg",
+    title: "Mercado de seguros no Brasil em 2026: o que está mudando agora",
+    sub: "O mercado brasileiro de seguros entrou em 2026 com movimentos concretos: mais volume de submissions, pressão por velocidade na subscrição e uma demanda crescente por tecnologia que opere na camada de dados — não no core das seguradoras. Quem está no centro dessa operação sente isso no dia a dia antes de ler em qualquer relatório.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "5 min", date: "18 · Ago · 2026", dateISO: "2026-08-18",
+    metaDesc: "O mercado brasileiro de seguros entrou em 2026 com movimentos concretos: mais volume de submissions, pressão por velocidade na subscrição e uma demanda cre",
+    body: `O mercado brasileiro de seguros entrou em 2026 com movimentos concretos: mais volume de submissions, pressão por velocidade na subscrição e uma demanda crescente por tecnologia que opere na camada de dados — não no core das seguradoras. Quem está no centro dessa operação sente isso no dia a dia antes de ler em qualquer relatório.
+
+### Por que fevereiro de 2026 virou um ponto de atenção
+
+Buscas por 'brazil insurance market news february 2026' quase dobraram em uma semana. Isso não é coincidência de calendário. É sinal de que executivos, subscritores e líderes de inovação estão procurando contexto — tentando entender o que mudou, o que está prestes a mudar e onde colocar energia.
+
+Esse tipo de sinal de demanda é exatamente o que a WIR monitora. Não para especular, mas para responder de forma direta: o que está acontecendo e o que isso significa para quem opera seguros no Brasil.
+
+O mercado não está em crise. Está em aceleração. E aceleração coloca pressão nos pontos mais frágeis da operação — intake de submissions, velocidade de cotação, capacidade de subscrição sem contratar dez pessoas novas.
+
+### O volume cresce, o processo não cresceu junto
+
+Seguradoras e MGAs no Brasil estão recebendo mais submissions do que antes. Corretores maiores estão colocando mais negócios na rua. Isso é bom. Mas o processo interno de muitas operações ainda funciona da mesma forma: e-mail, planilha, analista humano lendo PDF.
+
+O gargalo não está na capacidade de aceitar risco. Está na capacidade de processar informação rápido o suficiente para não perder negócio. Um corretor que manda o mesmo risco para três seguradoras vai fechar com a primeira que responder com clareza.
+
+Esse é o custo real da lentidão: não é visível no balanço, mas aparece na carteira que não cresceu.
+
+- Submissions chegam por e-mail, WhatsApp, portal próprio — sem padronização
+- O analista gasta tempo buscando dado que já existe em algum lugar
+- A decisão de subscrição atrasa por falta de dado estruturado, não por falta de critério
+
+### O subscritor não morre — ele decide mais rápido
+
+Existe um medo recorrente no mercado: a tecnologia vai substituir o subscritor. Isso é uma leitura errada do problema.
+
+O subscritor é quem decide. A tecnologia é o que elimina o tempo entre a submission chegar e o subscritor ter o que precisa para decidir. São funções diferentes. Confundir as duas é o motivo pelo qual muitas iniciativas de automação falham — elas tentam automatizar a decisão em vez de automatizar o preparo.
+
+Quando a WIR constrói automação de intake, o objetivo é simples: o subscritor abre o sistema e encontra o risco já lido, estruturado e com os campos que importam preenchidos. Ele decide. A máquina preparou o terreno.
+
+Esse modelo respeita o conhecimento técnico de quem subscreve e elimina o trabalho administrativo que não agrega julgamento. Para entender o mecanismo por dentro, vale a leitura de [Submission intake automation: o mecanismo por dentro](https://wirinnovation.ai/insights/submission-intake-automation-mecanismo-por-dentro).
+
+### A camada que não mexe no core — e por que isso importa
+
+Um dos maiores freios à adoção de tecnologia em seguradoras é o medo de integração com o sistema legado. Não é um medo irracional. Projetos de substituição de core já consumiram anos e orçamentos inteiros sem resultado.
+
+A WIR opera em camada. Isso significa: a solução se conecta ao que já existe, processa os dados que já chegam e entrega output estruturado para o sistema que a seguradora já usa. Não existe proposta de substituir o core. Existe a proposta de trabalhar sobre ele.
+
+Na prática, isso reduz o tempo de implementação, reduz o risco de projeto e permite que a operação comece a ganhar velocidade sem depender de um roadmap de TI de dois anos.
+
+Para quem quer ver como isso funciona em cotação, o artigo [Automação de cotação de seguros: o que funciona de verdade](https://wirinnovation.ai/insights/automacao-cotacao-seguros-o-que-funciona) detalha os casos onde a camada faz sentido — e onde ela não resolve sozinha.
+
+### O que 2026 está cobrando de seguradoras e MGAs
+
+O ambiente regulatório no Brasil continua evoluindo. A digitalização dos processos de distribuição avança. Corretores grandes estão profissionalizando suas operações e exigindo mais das contrapartes.
+
+Esse conjunto cria uma pressão específica para seguradoras e MGAs: precisam operar com mais eficiência sem perder o controle técnico da subscrição. Não é uma escolha entre velocidade e qualidade. É a exigência de ter as duas.
+
+Mercados específicos estão crescendo com força — cyber é um exemplo claro. A demanda existe, os corretores estão colocando o risco na rua, mas o processo interno de muitas seguradoras ainda não está calibrado para esse volume. Quem quiser contexto sobre esse movimento pode consultar [Mercado de Seguro Cyber no Brasil: o que está acontecendo agora](https://wirinnovation.ai/insights/mercado-seguro-cyber-brasil).
+
+Paramétrico também está ganhando tração — não como nicho experimental, mas como produto viável para riscos climáticos e agrícolas. O mercado acordou para isso com mais força do que esperava.
+
+- Corretores grandes exigem resposta rápida e estruturada
+- Novos ramos (cyber, paramétrico) chegam com volume antes do processo interno estar pronto
+- Regulação avança — operar no improviso fica mais caro
+
+### Velocidade que cresce o mercado — não só a operação
+
+Existe uma tese que a WIR carrega desde o início: velocidade operacional não é só eficiência interna. É o que expande o mercado.
+
+Quando uma seguradora responde uma submission em horas em vez de dias, ela fecha mais negócios. Quando fecha mais negócios, cresce a carteira. Quando a carteira cresce com qualidade, o mercado como um todo se desenvolve.
+
+Velocidade lenta não protege o mercado de risco ruim. Apenas atrasa a resposta e entrega o negócio bom para quem opera mais rápido.
+
+Esse raciocínio é direto: otimizar o processo não é concessão à pressão de custo. É o mecanismo pelo qual seguradoras e MGAs crescem de forma sustentável.
+
+### O que a WIR está construindo — e por que fazemos isso em público
+
+A WIR publica o que aprende porque o mercado de seguros no Brasil precisa de mais conversa técnica real — não de white papers genéricos sobre o futuro da insurtech.
+
+Cada artigo publicado nasce de um sinal de demanda real: uma busca que cresceu, uma pergunta que subscritores fazem com frequência, um problema que aparece repetido nas operações que a WIR atende.
+
+Este artigo existe porque a busca por contexto sobre o mercado brasileiro de seguros em fevereiro de 2026 quase dobrou em uma semana. Isso é relevante. A resposta certa é escrever sobre o que está acontecendo, com base no que sabemos — não no que imaginamos.
+
+Esse é o modelo de construção da WIR: transparente, baseado em operação real, voltado para quem toma decisões técnicas e estratégicas no mercado.
+
+### O próximo passo concreto
+
+Se você está em uma seguradora, MGA ou corretora grande e está sentindo a pressão de volume de submissions sem o processo interno para acompanhar — vale uma conversa direta.
+
+A WIR não vende plataforma. Constrói automação de intake e subscrição que opera na camada da sua operação, sem substituir o que funciona e sem projeto de dois anos para entregar resultado.
+
+O ponto de partida é entender onde está o gargalo real. Às vezes é o intake. Às vezes é a cotação. Às vezes é a comunicação entre o corretor e o subscritor. A conversa começa aí — e é técnica desde o primeiro contato.
+
+### Perguntas frequentes
+
+**O que está mudando no mercado de seguros no Brasil em 2026?**
+
+O volume de submissions está crescendo, corretores grandes estão profissionalizando suas operações e ramos como cyber e paramétrico estão ganhando tração real. A pressão principal está na velocidade de resposta — seguradoras e MGAs que não conseguem processar submissions com agilidade perdem negócio para quem opera mais rápido, independentemente da qualidade técnica da subscrição.
+
+**Automação de subscrição substitui o subscritor?**
+
+Não. O subscritor decide — e continua sendo o centro da operação. A automação elimina o tempo gasto em trabalho administrativo: ler PDFs, estruturar dados, buscar informações que já existem em algum lugar. O resultado é que o subscritor chega à decisão mais rápido, com mais contexto, sem esforço manual repetitivo.
+
+**A WIR exige substituição do sistema legado para implementar automação?**
+
+Não. A WIR opera em camada — conecta ao que já existe, processa os dados que já chegam e entrega output estruturado para o sistema que a seguradora ou MGA já utiliza. Isso reduz o risco de projeto, encurta o tempo de implementação e permite ganhar velocidade operacional sem depender de um roadmap de TI de longo prazo.`,
+  },
+  {
     slug: "submission-intake-automation-mecanismo-por-dentro",
     cat: "Artigo", grad: "linear-gradient(135deg,#FE8B77,#AE46C0)",
     image: "/assets/articles/submission-intake-automation-mecanismo-por-dentro.svg",
