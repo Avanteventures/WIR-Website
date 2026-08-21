@@ -4,6 +4,99 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "arquitetura-camada-vs-core-decisor-tecnico-seguros",
+    cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
+    image: "/assets/articles/arquitetura-camada-vs-core-decisor-tecnico-seguros.svg",
+    title: "Arquitetura camada vs. core: o que o decisor técnico precisa saber",
+    sub: "Integrar tecnologia ao core system de uma seguradora ou MGA não é a única opção — e raramente é a mais rápida. A arquitetura em camada coloca inteligência na borda do processo, sem tocar no legado. Entender a diferença entre as duas abordagens é o que separa um projeto que entra em produção de um projeto que fica no PowerPoint.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "5 min", date: "21 · Ago · 2026", dateISO: "2026-08-21",
+    metaDesc: "Integrar tecnologia ao core system de uma seguradora ou MGA não é a única opção — e raramente é a mais rápida. A arquitetura em camada coloca inteligência ",
+    body: `Integrar tecnologia ao core system de uma seguradora ou MGA não é a única opção — e raramente é a mais rápida. A arquitetura em camada coloca inteligência na borda do processo, sem tocar no legado. Entender a diferença entre as duas abordagens é o que separa um projeto que entra em produção de um projeto que fica no PowerPoint.
+
+### O problema que ninguém nomeia direito
+
+Toda conversa de inovação em seguros chega ao mesmo ponto de tensão: 'Mas isso vai precisar integrar com o nosso core?' A pergunta parece técnica. Na prática, é uma pergunta sobre risco, sobre prazo e sobre quem vai assinar embaixo se der errado.
+
+O que falta no mercado não é tecnologia. É uma explicação clara, de operador para operador, sobre o que é arquitetura em camada, o que é substituição de core, e quando cada uma faz sentido. Esse artigo existe para preencher esse vazio.
+
+### O que é o core system de uma seguradora
+
+Core system é o sistema que detém a apólice, o prêmio, a sinistralidade e a contabilidade da seguradora. É o registro oficial do negócio. Pode ser um sistema legado de vinte anos ou uma plataforma moderna — o que define o core não é a idade, é a posição de registro.
+
+Trocar o core é um projeto de dois a quatro anos, alto custo, alto risco de interrupção operacional e exige alinhamento entre TI, atuarial, compliance e regulatório. É uma decisão legítima em alguns contextos. Mas não é a única decisão possível quando o problema que está sendo resolvido é velocidade de subscrição, automação de intake ou cotação digital.
+
+### O que é arquitetura em camada
+
+Arquitetura em camada significa colocar uma camada de software entre o usuário — ou o processo — e o core. Essa camada faz o trabalho pesado de automação, decisão e experiência, e só escreve no core quando há algo para registrar.
+
+A camada não substitui o core. Ela o preserva e o isola. O core continua fazendo o que faz bem: guardar o dado oficial. A camada passa a fazer o que o core nunca foi projetado para fazer: mover rápido, testar regras, automatizar triagem, conectar com fontes externas de dado.
+
+Para o decisor técnico, a diferença prática é esta: uma mudança na camada vai para produção em semanas. Uma mudança no core vai para produção em meses — quando vai.
+
+- Camada: opera na borda do processo, sem alterar o registro oficial
+- Core: mantém apólice, prêmio, sinistro, contabilidade
+- Integração entre camada e core: via API ou batch, dependendo da maturidade do core
+- Tempo de mudança na camada: semanas. No core: meses a anos
+
+### Onde a camada entrega resultado concreto
+
+O ponto mais visível hoje é o intake de submissões. Um corretor envia um e-mail com anexo, um formulário preenchido pela metade, ou uma mensagem no WhatsApp. O core não foi projetado para receber isso. A camada pode. Ela extrai dado, estrutura, classifica risco e devolve uma resposta ao corretor — tudo antes de o subscritor abrir o e-mail.
+
+Cotação é outro ponto. Regras de aceitação, tabelas de prêmio, perguntas de qualificação: tudo isso pode viver na camada, ser alterado pelo time de subscrição sem ticket de TI, e responder em tempo real. Para entender como isso funciona na prática, veja [Automação de cotação de seguros: o que funciona de verdade](https://wirinnovation.ai/insights/automacao-cotacao-seguros-o-que-funciona).
+
+O subscritor não perde controle nesse modelo. Ele ganha contexto. A camada traz o dado organizado; o subscritor decide. O julgamento humano continua no centro — só que operando sobre informação estruturada, não sobre PDF desorganizado.
+
+- Intake: captura e estrutura submissão antes do subscritor ver
+- Cotação: regras de negócio editáveis sem TI
+- Triagem: separa risco fora de apetite antes de consumir tempo de subscrição
+- Comunicação com corretor: resposta automática com SLA visível
+
+### Quando faz sentido tocar no core
+
+Existem situações em que a camada não resolve. Se o core não expõe API e não suporta batch confiável, a integração fica frágil demais para operar em produção com volume. Se o dado de apólice no core está inconsistente, automatizar a camada amplia o erro, não resolve.
+
+Há também o caso de seguradoras que estão nascendo agora ou fazendo greenfield de um ramo novo. Nesse contexto, escolher um core moderno desde o início elimina a dívida técnica antes de ela existir. A camada ainda vai existir — mas sobre uma base sólida.
+
+A decisão não é ideológica. É uma análise de onde está o gargalo real, qual o prazo aceitável para ver resultado e qual o nível de risco que a organização consegue absorver durante a mudança.
+
+### O erro que repete no mercado brasileiro
+
+O erro mais comum não é escolher core quando devia escolher camada. É tratar as duas coisas como excludentes e travar a decisão por meses enquanto o projeto fica no comitê.
+
+O segundo erro é comprar uma plataforma de camada pensando que ela vai se integrar sozinha ao core legado. Integração exige esforço de ambos os lados. Quem vende camada precisa ser honesto sobre isso. Quem compra precisa mapear o estado real do core antes de assinar contrato.
+
+O mercado brasileiro tem acelerado em ritmo que não permite projetos de dezoito meses para ver o primeiro resultado. Para entender o contexto mais amplo dessa pressão, vale ler [Mercado de seguros no Brasil em 2026: o que está mudando agora](https://wirinnovation.ai/insights/mercado-seguros-brasil-fevereiro-2026).
+
+### Como WIR posiciona a camada na operação
+
+WIR opera como camada de inteligência sobre o processo de subscrição. Não substitui o core da seguradora ou da MGA. Conecta com ele — via API ou por outros meios acordados — e entrega automação onde o processo trava hoje: intake, triagem, cotação, comunicação com corretor.
+
+A premissa de WIR é que o subscritor decide. A camada organiza o dado, aplica as regras que o time de negócio definiu e apresenta o risco estruturado. O julgamento final é humano. Isso não é limitação — é desenho intencional. Subscrição de risco complexo exige julgamento. O que não exige é gastar tempo de subscritor em tarefa que software resolve.
+
+Para ver como o mecanismo de intake funciona por dentro, leia [Submission intake automation: o mecanismo por dentro](https://wirinnovation.ai/insights/submission-intake-automation-mecanismo-por-dentro).
+
+### O próximo passo concreto
+
+Se você é decisor técnico em uma seguradora, MGA ou corretora de grande porte e está avaliando onde colocar inteligência no seu processo de subscrição, o ponto de partida não é uma demo. É um mapeamento honesto: onde o seu core está hoje, onde está o gargalo real e qual a janela de tempo que você tem para ver resultado.
+
+WIR faz essa conversa. Sem apresentação genérica, sem promessa de transformação digital. Operador para operador, olhando para o processo real. Se isso faz sentido, o caminho é falar com o time de WIR diretamente.
+
+### Perguntas frequentes
+
+**Arquitetura em camada exige substituir o core system existente?**
+
+Não. Esse é o ponto central da abordagem. A camada opera sobre o core sem substituí-lo. Ela se integra via API ou batch e executa automação na borda do processo — intake, cotação, triagem — sem alterar o sistema de registro oficial. O core continua guardando apólice, prêmio e sinistro. A camada passa a fazer o trabalho que o core nunca foi projetado para fazer.
+
+**Quanto tempo leva para colocar uma camada em produção comparado com uma troca de core?**
+
+Uma camada bem desenhada vai para produção em semanas, às vezes em dois ou três meses dependendo da complexidade da integração com o core legado. Troca de core é um projeto de dois a quatro anos em média, com alto risco de interrupção operacional durante a migração. A diferença não é marginal — é da ordem de grandeza do prazo e do risco assumido.
+
+**O subscritor perde autonomia com automação em camada?**
+
+O oposto. O subscritor deixa de gastar tempo em triagem manual, leitura de PDF e formatação de dado. Passa a receber o risco estruturado, com contexto organizado, e decide com mais informação em menos tempo. A automação em camada retira a tarefa operacional do subscritor, não a decisão. Julgamento de risco complexo continua sendo humano — por desenho, não por limitação.`,
+  },
+  {
     slug: "mercado-seguros-brasil-fevereiro-2026",
     cat: "Artigo", grad: "linear-gradient(135deg,#FE8B77,#AE46C0)",
     image: "/assets/articles/mercado-seguros-brasil-fevereiro-2026.svg",
