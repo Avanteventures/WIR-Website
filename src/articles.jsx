@@ -5,6 +5,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 export const ARTICLES = [
   {
     slug: "what-is-an-algorithmic-mga",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#0E7C86)",
     image: "/assets/articles/what-is-an-algorithmic-mga.jpg",
     title: "What Is an Algorithmic MGA? Model, Stack, Proof",
@@ -96,6 +97,7 @@ WIR Innovation is an external AI layer for insurers and MGAs that automates subm
   },
   {
     slug: "what-is-fnol-first-notice-of-loss-process",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
     image: "/assets/articles/what-is-fnol-first-notice-of-loss-process.jpg",
     title: "What Is FNOL? First Notice of Loss, Step by Step",
@@ -197,6 +199,7 @@ WIR Innovation is an external AI layer for insurers and MGAs that structures uns
   },
   {
     slug: "what-is-an-underwriting-intelligence-layer",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#7540AC)",
     image: "/assets/articles/what-is-an-underwriting-intelligence-layer.jpg",
     title: "What Is an Underwriting Intelligence Layer?",
@@ -294,6 +297,7 @@ WIR Innovation is an external AI layer for insurers and MGAs that automates the 
   },
   {
     slug: "parametric-vs-indemnity-insurance",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#0E7C86)",
     image: "/assets/articles/parametric-vs-indemnity-insurance.jpg",
     title: "Parametric vs Indemnity Insurance: The Real Difference",
@@ -404,6 +408,7 @@ WIR Innovation is an external AI layer for insurers and MGAs that automates inta
   },
   {
     slug: "what-is-shadow-mode-underwriting",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/what-is-shadow-mode-underwriting.jpg",
     title: "Shadow Mode Underwriting: Test AI Without Risking a Book",
@@ -494,6 +499,7 @@ WIR Innovation is an external AI layer for insurers and MGAs that automates subm
   },
   {
     slug: "pricing-engine-vs-underwriting-decision-platform",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#3222E9)",
     image: "/assets/articles/pricing-engine-vs-underwriting-decision-platform.jpg",
     title: "Pricing Engine vs Underwriting Decision Platform",
@@ -1547,6 +1553,7 @@ Mapeie os pontos de entrada e saída de dados no seu core atual e identifique on
   },
   {
     slug: "ai-underwriting-regulation-global-2026",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/ai-underwriting-regulation-global-2026.jpg",
     title: "Is AI Underwriting High-Risk? EU, US, Brazil 2026",
@@ -1613,6 +1620,7 @@ One caveat on positioning. An external AI layer is infrastructure that produces 
   },
   {
     slug: "build-vs-buy-ai-underwriting",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/build-vs-buy-ai-underwriting.jpg",
     title: "Build vs Buy AI Underwriting: A Decision Guide",
@@ -1687,6 +1695,7 @@ If most answers point to speed, low switching risk, and leaving the core alone, 
   },
   {
     slug: "how-ai-matches-submissions-to-underwriting-appetite",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-ai-matches-submissions-to-underwriting-appetite.jpg",
     title: "How AI Matches Submissions to Underwriting Appetite",
@@ -1770,6 +1779,7 @@ This is why appetite matching is a decisioning aid, not an autonomous binder. Th
   },
   {
     slug: "how-ai-processes-statement-of-values-for-underwriting",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-ai-processes-statement-of-values-for-underwriting.jpg",
     title: "How AI Processes a Statement of Values (SOV)",
@@ -1849,6 +1859,7 @@ AI can process a statement of values, and for high-volume property books it is f
   },
   {
     slug: "how-to-run-ai-underwriting-pilot",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-to-run-ai-underwriting-pilot.jpg",
     title: "How to Run an AI Underwriting Pilot That Works",
@@ -1917,6 +1928,7 @@ There is also a market-context reason to log everything the pilot does. Regimes 
   },
   {
     slug: "roi-of-ai-in-insurance-underwriting",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/roi-of-ai-in-insurance-underwriting.jpg",
     title: "The ROI of AI in Insurance Underwriting Explained",
@@ -1987,6 +1999,7 @@ Credibility comes from using your baseline and refusing borrowed numbers. Run a 
   },
   {
     slug: "what-is-an-underwriting-copilot",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/what-is-an-underwriting-copilot.jpg",
     title: "Underwriting Copilot in Insurance, Explained",
@@ -2065,6 +2078,7 @@ Insurance underwriting, dense with unstructured documents and repetitive review,
   },
   {
     slug: "what-is-flow-algorithmic-underwriting",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/what-is-flow-algorithmic-underwriting.jpg",
     title: "What Is Flow Underwriting (Algorithmic)?",
@@ -2142,6 +2156,7 @@ A flow model does not require ripping out your policy administration system. Thi
 
   {
     slug: "delegated-authority-technology-for-mgas-2026",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/delegated-authority-technology-for-mgas-2026.jpg",
     title: "Delegated Authority Technology for MGAs in 2026",
@@ -2194,6 +2209,7 @@ In a proof of concept with a global insurer in the Transport line, WIR's externa
   },
   {
     slug: "how-ai-analyzes-loss-run-reports-for-underwriting",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-ai-analyzes-loss-run-reports-for-underwriting.jpg",
     title: "How AI Analyzes Loss Run Reports for Underwriting",
@@ -2267,6 +2283,7 @@ A loss run report holds the clearest signal an underwriter has about how a risk 
   },
   {
     slug: "how-ai-automates-fnol-first-notice-of-loss",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-ai-automates-fnol-first-notice-of-loss.jpg",
     title: "How AI Automates FNOL (First Notice of Loss)",
@@ -2328,6 +2345,7 @@ The first notice of loss is where claims are made slow or made fast, clean or me
   },
   {
     slug: "how-ai-automates-insurance-claims-processing",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-ai-automates-insurance-claims-processing.jpg",
     title: "How AI Automates Insurance Claims Processing",
@@ -2389,6 +2407,7 @@ The AI layer for insurance. On top of the systems the insurer already runs, neve
   },
   {
     slug: "how-ai-powers-embedded-insurance-decisioning",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-ai-powers-embedded-insurance-decisioning.jpg",
     title: "How AI Powers Embedded Insurance Decisioning",
@@ -2458,6 +2477,7 @@ Begin with one product, one partner, and one clearly bounded risk. Externalize t
   },
   {
     slug: "how-to-automate-bordereaux-processing-with-ai",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-to-automate-bordereaux-processing-with-ai.jpg",
     title: "How to Automate Bordereaux Processing with AI",
@@ -2522,6 +2542,7 @@ Begin with your highest volume coverholders, the ones whose bordereaux consume t
   },
   {
     slug: "how-to-extract-data-from-acord-forms-with-ai",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-to-extract-data-from-acord-forms-with-ai.jpg",
     title: "How to Extract Data from ACORD Forms with AI",
@@ -2572,6 +2593,7 @@ WIR is the AI layer for insurance, on top of the systems the insurer already run
   },
   {
     slug: "what-is-parametric-insurance-and-how-ai-enables-faster-payouts",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/what-is-parametric-insurance-and-how-ai-enables-faster-payouts.jpg",
     title: "What Is Parametric Insurance and How AI Enables Faster Payouts",
@@ -2672,6 +2694,7 @@ Related reading: [AI underwriting without replacing your core system](/ai-underw
 
   {
     slug: "ai-fraud-detection-underwriting-vs-claims",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/ai-fraud-detection-underwriting-vs-claims.jpg",
     title: "AI Fraud Detection at Underwriting vs Claims",
@@ -2725,6 +2748,7 @@ Fraud detection at claims will always be part of insurance, because not every ba
   },
   {
     slug: "ai-in-commercial-and-specialty-insurance-underwriting",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/ai-in-commercial-and-specialty-insurance-underwriting.jpg",
     title: "How AI Is Used in Commercial and Specialty Insurance Underwriting",
@@ -2785,6 +2809,7 @@ In commercial and specialty insurance, AI earns its place by removing the fricti
   },
   {
     slug: "how-to-audit-ai-underwriting-decisions-for-compliance",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-to-audit-ai-underwriting-decisions-for-compliance.jpg",
     title: "How to Audit AI Underwriting Decisions for Compliance",
@@ -2837,6 +2862,7 @@ Sequence it. Logging and explainability come first, because every other control 
   },
   {
     slug: "reduce-quote-turnaround-time-with-ai",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/reduce-quote-turnaround-time-with-ai.jpg",
     title: "How to Reduce Quote Turnaround Time in Insurance With AI",
@@ -2871,6 +2897,7 @@ WIR is the AI layer for insurance. Its Underwriter Intelligence module automates
   },
   {
     slug: "what-is-an-mga-and-how-mgas-use-ai",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/what-is-an-mga-and-how-mgas-use-ai.jpg",
     title: "What Is an MGA, and How Do MGAs Use AI in Underwriting?",
@@ -2936,6 +2963,7 @@ An MGA is a carrier's delegated underwriter, trusted to hold the pen but rarely 
   },
   {
     slug: "what-is-underwriting-leakage-and-how-ai-reduces-it",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/what-is-underwriting-leakage-and-how-ai-reduces-it.jpg",
     title: "What Is Underwriting Leakage, and How Can AI Reduce It?",
@@ -3018,6 +3046,7 @@ Underwriting leakage is the quiet tax an insurer pays for inconsistency at the p
 
   {
     slug: "agentic-ai-insurance-underwriting",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/agentic-ai-insurance-underwriting.jpg",
     title: "Agentic AI in insurance underwriting",
@@ -3072,6 +3101,7 @@ The approach is being proven in practice. WIR is currently running a proof of co
   },
   {
     slug: "ai-underwriting-without-replacing-core-system",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/ai-underwriting-without-replacing-core-system.jpg",
     title: "How to Automate Underwriting Without Replacing Your Core System",
@@ -3141,6 +3171,7 @@ You do not need to replace your core to modernize underwriting. You need to stop
   },
   {
     slug: "how-ai-integrates-with-guidewire-without-replacing-it",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-ai-integrates-with-guidewire-without-replacing-it.jpg",
     title: "AI and Guidewire Integration: Adding Intelligence Without Replacing the Core",
@@ -3195,6 +3226,7 @@ WIR is currently running its first proof of concept with a global insurer in the
   },
   {
     slug: "how-to-increase-straight-through-processing-rate-insurance",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/how-to-increase-straight-through-processing-rate-insurance.jpg",
     title: "How to Increase Your Straight-Through Processing Rate in Insurance",
@@ -3266,6 +3298,7 @@ WIR is currently in a proof-of-concept with a global insurer in the Transport li
   },
   {
     slug: "insurance-submission-intake-automation",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/insurance-submission-intake-automation.jpg",
     title: "Insurance submission intake automation for underwriting teams",
@@ -3324,6 +3357,7 @@ WIR was built with Mahway, a Venture Builder in California, and Avante, a Ventur
   },
   {
     slug: "insurance-submission-triage-automation",
+    lang: "en",
     canonical: "triagem-automatica-submissoes-seguro-en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/insurance-submission-triage-automation.jpg",
@@ -3375,6 +3409,7 @@ Two modules carry the work. Underwriter Intelligence scores in real time and rou
   },
   {
     slug: "what-is-ai-underwriting-workbench",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/what-is-ai-underwriting-workbench.jpg",
     title: "What Is an AI Underwriting Workbench?",
@@ -3443,6 +3478,7 @@ For an insurer or MGA weighing how to modernize underwriting without a core repl
   },
   {
     slug: "what-is-insurance-decisioning",
+    lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/what-is-insurance-decisioning.jpg",
     title: "What is insurance decisioning, and how does it differ from scoring",

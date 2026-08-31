@@ -3,8 +3,11 @@ import { useReveal } from './shared.jsx';
 import { LANG, INSIGHTS_HREF } from './i18n.js';
 import { BlogArticle, ARTICLES } from './articles.jsx';
 
-// Match the static archives: PT tree lists PT articles, EN tree the -en ones (ES → PT set)
-const BLOG_ARTICLES = ARTICLES.filter(a => (LANG === "en") === a.slug.endsWith("-en"));
+// Match the static archives: PT tree lists PT articles, EN tree the English ones (ES → PT set).
+// Same language rule as scripts/build-articles.cjs: an explicit `lang: "en"` wins, and the
+// `-en` suffix is the fallback for articles that are translations of a PT original.
+const isEnArticle = (a) => a.lang === "en" || a.slug.endsWith("-en");
+const BLOG_ARTICLES = ARTICLES.filter(a => (LANG === "en") === isEnArticle(a));
 
 // The destaque/hero slot at the top of the listing. An explicit `featured` entry
 // (e.g. the WIR Index report) wins; otherwise we fall back to the legacy `hero`

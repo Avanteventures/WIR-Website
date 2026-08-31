@@ -25,8 +25,10 @@ for (let i = startIdx; i < src.length; i++) {
 const ARTICLES = eval(src.slice(arrStart, arrEnd));
 
 // ---- Split PT and EN for clearer listing ----
-const ptArticles = ARTICLES.filter(a => !a.slug.endsWith("-en"));
-const enArticles = ARTICLES.filter(a => a.slug.endsWith("-en"));
+// Same rule as build-articles.cjs: an explicit `lang: "en"` wins, `-en` suffix is the fallback.
+const isEnArticle = (a) => a.lang === "en" || a.slug.endsWith("-en");
+const ptArticles = ARTICLES.filter(a => !isEnArticle(a));
+const enArticles = ARTICLES.filter(a => isEnArticle(a));
 
 // ---- Generate listing markdown ----
 const articleLine = (a) => {

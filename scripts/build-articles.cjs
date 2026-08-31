@@ -84,10 +84,18 @@ function renderBody(body) {
   }).join("\n");
 }
 
-// Slug-based language detection: -en suffix means English version
-const isEnglish = (slug) => slug.endsWith("-en");
-const ptSlug = (slug) => isEnglish(slug) ? slug.slice(0, -3) : slug;
-const enSlug = (slug) => isEnglish(slug) ? slug : `${slug}-en`;
+// Language detection, in priority order:
+//   1. An explicit `lang: "en"` on the entry. English-native cluster pages carry no `-en`
+//      suffix because they were never translations of a PT article, so the suffix rule
+//      alone mislabels them as pt-BR (wrong <html lang>, PT chrome, wrong index).
+//   2. Legacy fallback: a `-en` suffix marks the English translation of a PT article.
+const EN_LANG_SLUGS = new Set(ARTICLES.filter(a => a.lang === "en").map(a => a.slug));
+const hasEnSuffix = (slug) => slug.endsWith("-en");
+const isEnglish = (slug) => EN_LANG_SLUGS.has(slug) || hasEnSuffix(slug);
+// Sibling helpers stay purely suffix-based: they express the PT<->EN translation pairing,
+// which only exists for `-en` articles. An English-native page has no PT sibling.
+const ptSlug = (slug) => hasEnSuffix(slug) ? slug.slice(0, -3) : slug;
+const enSlug = (slug) => hasEnSuffix(slug) ? slug : `${slug}-en`;
 
 // Build a Set of all known slugs once so we can detect siblings cheaply.
 const ALL_SLUGS = new Set(ARTICLES.map(a => a.slug));
@@ -103,10 +111,14 @@ function renderHead(article) {
   const lang = isEn ? "en" : "pt-BR";
   const ogLocale = isEn ? "en_US" : "pt_BR";
   // Hreflang: include alternate ONLY if the sibling actually exists
+  // An English-native page (lang:"en", no `-en` suffix) has no translation pair. Without this
+  // guard ptSlug() returns the page itself, so it would advertise itself as its own pt-BR
+  // alternate and x-default, telling Google an English page is the Brazilian one.
+  const standaloneEn = isEn && !hasEnSuffix(article.slug);
   const ptSibling = ptSlug(article.slug);
   const enSibling = enSlug(article.slug);
-  const hasPT = ALL_SLUGS.has(ptSibling);
-  const hasEN = ALL_SLUGS.has(enSibling);
+  const hasPT = !standaloneEn && ALL_SLUGS.has(ptSibling);
+  const hasEN = !standaloneEn && ALL_SLUGS.has(enSibling);
   let hreflangTags = "";
   if (hasPT) hreflangTags += `\n<link rel="alternate" hreflang="pt-BR" href="${SITE_URL}/insights/${ptSibling}/" />`;
   if (hasEN) hreflangTags += `\n<link rel="alternate" hreflang="en" href="${SITE_URL}/insights/${enSibling}/" />`;
