@@ -674,21 +674,12 @@ Para ver como o mecanismo de intake funciona por dentro, leia [Submission intake
 
 Se você é decisor técnico em uma seguradora, MGA ou corretora de grande porte e está avaliando onde colocar inteligência no seu processo de subscrição, o ponto de partida não é uma demo. É um mapeamento honesto: onde o seu core está hoje, onde está o gargalo real e qual a janela de tempo que você tem para ver resultado.
 
-WIR faz essa conversa. Sem apresentação genérica, sem promessa de transformação digital. Operador para operador, olhando para o processo real. Se isso faz sentido, o caminho é falar com o time de WIR diretamente.
-
-### Perguntas frequentes
-
-**Arquitetura em camada exige substituir o core system existente?**
-
-Não. Esse é o ponto central da abordagem. A camada opera sobre o core sem substituí-lo. Ela se integra via API ou batch e executa automação na borda do processo — intake, cotação, triagem — sem alterar o sistema de registro oficial. O core continua guardando apólice, prêmio e sinistro. A camada passa a fazer o trabalho que o core nunca foi projetado para fazer.
-
-**Quanto tempo leva para colocar uma camada em produção comparado com uma troca de core?**
-
-Uma camada bem desenhada vai para produção em semanas, às vezes em dois ou três meses dependendo da complexidade da integração com o core legado. Troca de core é um projeto de dois a quatro anos em média, com alto risco de interrupção operacional durante a migração. A diferença não é marginal — é da ordem de grandeza do prazo e do risco assumido.
-
-**O subscritor perde autonomia com automação em camada?**
-
-O oposto. O subscritor deixa de gastar tempo em triagem manual, leitura de PDF e formatação de dado. Passa a receber o risco estruturado, com contexto organizado, e decide com mais informação em menos tempo. A automação em camada retira a tarefa operacional do subscritor, não a decisão. Julgamento de risco complexo continua sendo humano — por desenho, não por limitação.`,
+WIR faz essa conversa. Sem apresentação genérica, sem promessa de transformação digital. Operador para operador, olhando para o processo real. Se isso faz sentido, o caminho é falar com o time de WIR diretamente.`,
+    faq: [
+      { q: "Arquitetura em camada exige substituir o core system existente?", a: "Não. Esse é o ponto central da abordagem. A camada opera sobre o core sem substituí-lo. Ela se integra via API ou batch e executa automação na borda do processo — intake, cotação, triagem — sem alterar o sistema de registro oficial. O core continua guardando apólice, prêmio e sinistro. A camada passa a fazer o trabalho que o core nunca foi projetado para fazer." },
+      { q: "Quanto tempo leva para colocar uma camada em produção comparado com uma troca de core?", a: "Uma camada bem desenhada vai para produção em semanas, às vezes em dois ou três meses dependendo da complexidade da integração com o core legado. Troca de core é um projeto de dois a quatro anos em média, com alto risco de interrupção operacional durante a migração. A diferença não é marginal — é da ordem de grandeza do prazo e do risco assumido." },
+      { q: "O subscritor perde autonomia com automação em camada?", a: "O oposto. O subscritor deixa de gastar tempo em triagem manual, leitura de PDF e formatação de dado. Passa a receber o risco estruturado, com contexto organizado, e decide com mais informação em menos tempo. A automação em camada retira a tarefa operacional do subscritor, não a decisão. Julgamento de risco complexo continua sendo humano — por desenho, não por limitação." }
+    ],
   },
   {
     slug: "mercado-seguros-brasil-fevereiro-2026",
@@ -781,21 +772,12 @@ Se você está em uma seguradora, MGA ou corretora grande e está sentindo a pre
 
 A WIR não vende plataforma. Constrói automação de intake e subscrição que opera na camada da sua operação, sem substituir o que funciona e sem projeto de dois anos para entregar resultado.
 
-O ponto de partida é entender onde está o gargalo real. Às vezes é o intake. Às vezes é a cotação. Às vezes é a comunicação entre o corretor e o subscritor. A conversa começa aí — e é técnica desde o primeiro contato.
-
-### Perguntas frequentes
-
-**O que está mudando no mercado de seguros no Brasil em 2026?**
-
-O volume de submissions está crescendo, corretores grandes estão profissionalizando suas operações e ramos como cyber e paramétrico estão ganhando tração real. A pressão principal está na velocidade de resposta — seguradoras e MGAs que não conseguem processar submissions com agilidade perdem negócio para quem opera mais rápido, independentemente da qualidade técnica da subscrição.
-
-**Automação de subscrição substitui o subscritor?**
-
-Não. O subscritor decide — e continua sendo o centro da operação. A automação elimina o tempo gasto em trabalho administrativo: ler PDFs, estruturar dados, buscar informações que já existem em algum lugar. O resultado é que o subscritor chega à decisão mais rápido, com mais contexto, sem esforço manual repetitivo.
-
-**A WIR exige substituição do sistema legado para implementar automação?**
-
-Não. A WIR opera em camada — conecta ao que já existe, processa os dados que já chegam e entrega output estruturado para o sistema que a seguradora ou MGA já utiliza. Isso reduz o risco de projeto, encurta o tempo de implementação e permite ganhar velocidade operacional sem depender de um roadmap de TI de longo prazo.`,
+O ponto de partida é entender onde está o gargalo real. Às vezes é o intake. Às vezes é a cotação. Às vezes é a comunicação entre o corretor e o subscritor. A conversa começa aí — e é técnica desde o primeiro contato.`,
+    faq: [
+      { q: "O que está mudando no mercado de seguros no Brasil em 2026?", a: "O volume de submissions está crescendo, corretores grandes estão profissionalizando suas operações e ramos como cyber e paramétrico estão ganhando tração real. A pressão principal está na velocidade de resposta — seguradoras e MGAs que não conseguem processar submissions com agilidade perdem negócio para quem opera mais rápido, independentemente da qualidade técnica da subscrição." },
+      { q: "Automação de subscrição substitui o subscritor?", a: "Não. O subscritor decide — e continua sendo o centro da operação. A automação elimina o tempo gasto em trabalho administrativo: ler PDFs, estruturar dados, buscar informações que já existem em algum lugar. O resultado é que o subscritor chega à decisão mais rápido, com mais contexto, sem esforço manual repetitivo." },
+      { q: "A WIR exige substituição do sistema legado para implementar automação?", a: "Não. A WIR opera em camada — conecta ao que já existe, processa os dados que já chegam e entrega output estruturado para o sistema que a seguradora ou MGA já utiliza. Isso reduz o risco de projeto, encurta o tempo de implementação e permite ganhar velocidade operacional sem depender de um roadmap de TI de longo prazo." }
+    ],
   },
   {
     slug: "submission-intake-automation-mecanismo-por-dentro",
@@ -885,21 +867,12 @@ Se a sua operação está avaliando automação de intake — seja em uma MGA, e
 
 WIR trabalha com operações de subscrição para desenhar e implementar mecanismos de intake que funcionam dentro da realidade do mercado brasileiro: documentação variada, múltiplos canais, e underwriters que precisam de contexto, não de mais uma tela para abrir.
 
-Entre em contato com o time WIR para uma conversa técnica sobre o seu fluxo atual.
-
-### Perguntas frequentes
-
-**Submission intake automation funciona com documentos em português e formatos não padronizados?**
-
-Sim — e esse é exatamente o desafio central no mercado brasileiro. Documentos em português, propostas livres sem estrutura ACORD, PDFs digitalizados com qualidade variável. Um mecanismo de intake bem construído precisa lidar com essa variação desde o primeiro dia. Soluções que funcionam apenas com formulários padronizados têm utilidade limitada na operação real.
-
-**Quanto tempo leva para implementar um mecanismo de intake automatizado?**
-
-Depende do escopo: número de canais de entrada, complexidade dos documentos, e profundidade da integração com o core. Implementações focadas — um canal, uma linha de negócio — podem entrar em produção em semanas. Operações multicanal com integração completa ao sistema de gestão levam mais tempo. O ponto crítico é não tentar automatizar tudo de uma vez: comece pelo canal com maior volume e maior atrito, valide, depois expanda.
-
-**A automação de intake substitui o sistema de gestão de apólices?**
-
-Não. O intake opera antes do core — ele captura, estrutura e entrega. O sistema de gestão de apólices começa a partir do momento em que o risco foi aceito e precisa ser formalizado. São camadas com funções distintas. A automação de intake bem implementada melhora a qualidade dos dados que chegam ao core, reduzindo retrabalho e erros de cadastro.`,
+Entre em contato com o time WIR para uma conversa técnica sobre o seu fluxo atual.`,
+    faq: [
+      { q: "Submission intake automation funciona com documentos em português e formatos não padronizados?", a: "Sim — e esse é exatamente o desafio central no mercado brasileiro. Documentos em português, propostas livres sem estrutura ACORD, PDFs digitalizados com qualidade variável. Um mecanismo de intake bem construído precisa lidar com essa variação desde o primeiro dia. Soluções que funcionam apenas com formulários padronizados têm utilidade limitada na operação real." },
+      { q: "Quanto tempo leva para implementar um mecanismo de intake automatizado?", a: "Depende do escopo: número de canais de entrada, complexidade dos documentos, e profundidade da integração com o core. Implementações focadas — um canal, uma linha de negócio — podem entrar em produção em semanas. Operações multicanal com integração completa ao sistema de gestão levam mais tempo. O ponto crítico é não tentar automatizar tudo de uma vez: comece pelo canal com maior volume e maior atrito, valide, depois expanda." },
+      { q: "A automação de intake substitui o sistema de gestão de apólices?", a: "Não. O intake opera antes do core — ele captura, estrutura e entrega. O sistema de gestão de apólices começa a partir do momento em que o risco foi aceito e precisa ser formalizado. São camadas com funções distintas. A automação de intake bem implementada melhora a qualidade dos dados que chegam ao core, reduzindo retrabalho e erros de cadastro." }
+    ],
   },
   {
     slug: "automacao-cotacao-seguros-o-que-funciona",
@@ -1000,21 +973,12 @@ Automatize esse ramo completamente, meça o resultado em tempo de resposta e tax
 
 Não tente automatizar tudo de uma vez. O projeto que tenta fazer tudo junto é o projeto que não termina.
 
-Se a sua dúvida é sobre como estruturar a camada de tecnologia que suporta isso sem depender de uma reforma completa do core, a WIR trabalha exatamente com esse modelo. Faz sentido conversar sobre o que você tem hoje e onde faz sentido começar.
-
-### Perguntas frequentes
-
-**Automação de cotação funciona para todos os ramos de seguro?**
-
-Funciona melhor onde as regras de underwriting são mais objetivas e o volume de cotações é alto. Ramos como automóvel de frota, PME e vida em grupo são os casos mais diretos. Ramos complexos como grandes riscos ou riscos especiais se beneficiam de automação parcial, onde a máquina prepara o dossiê e o subscritor toma a decisão final com mais contexto e menos trabalho manual.
-
-**Quanto tempo leva para implementar um processo de cotação automatizado?**
-
-Depende de dois fatores: a complexidade do ramo escolhido para começar e o quanto as regras de underwriting já estão documentadas. Quando as regras existem e o ramo é simples, o tempo de implementação cai substancialmente. O maior gasto de tempo costuma ser justamente a formalização das regras, não a tecnologia em si.
-
-**A automação de cotação substitui o sistema de core da seguradora?**
-
-Não substitui e não deveria tentar. A automação funciona como uma camada separada que conversa com o core via integração. O core continua fazendo o que faz bem: emissão, registro, contabilidade. A camada de automação cuida do fluxo de cotação, das regras de underwriting e da comunicação com o corretor. Essa separação é o que permite evoluir a automação sem travar no ciclo de atualização do core.`,
+Se a sua dúvida é sobre como estruturar a camada de tecnologia que suporta isso sem depender de uma reforma completa do core, a WIR trabalha exatamente com esse modelo. Faz sentido conversar sobre o que você tem hoje e onde faz sentido começar.`,
+    faq: [
+      { q: "Automação de cotação funciona para todos os ramos de seguro?", a: "Funciona melhor onde as regras de underwriting são mais objetivas e o volume de cotações é alto. Ramos como automóvel de frota, PME e vida em grupo são os casos mais diretos. Ramos complexos como grandes riscos ou riscos especiais se beneficiam de automação parcial, onde a máquina prepara o dossiê e o subscritor toma a decisão final com mais contexto e menos trabalho manual." },
+      { q: "Quanto tempo leva para implementar um processo de cotação automatizado?", a: "Depende de dois fatores: a complexidade do ramo escolhido para começar e o quanto as regras de underwriting já estão documentadas. Quando as regras existem e o ramo é simples, o tempo de implementação cai substancialmente. O maior gasto de tempo costuma ser justamente a formalização das regras, não a tecnologia em si." },
+      { q: "A automação de cotação substitui o sistema de core da seguradora?", a: "Não substitui e não deveria tentar. A automação funciona como uma camada separada que conversa com o core via integração. O core continua fazendo o que faz bem: emissão, registro, contabilidade. A camada de automação cuida do fluxo de cotação, das regras de underwriting e da comunicação com o corretor. Essa separação é o que permite evoluir a automação sem travar no ciclo de atualização do core." }
+    ],
   },
   {
     slug: "seguro-parametrico-como-funciona-mercado-brasil",
@@ -1112,21 +1076,12 @@ O que vai separar quem opera parametric de quem só fala sobre é: acesso a dado
 
 Os primeiros movimentos já estão acontecendo no agronegócio e em algumas iniciativas de risco climático corporativo. O próximo ciclo vai trazer logística e energia com mais força.
 
-Quem está construindo agora vai ter portfólio e aprendizado quando o mercado pedir escala.
-
-### Perguntas frequentes
-
-**Seguro paramétrico é regulado no Brasil?**
-
-A SUSEP avançou com sandbox regulatório e há espaço para produtos paramétricos no mercado brasileiro, especialmente em agronegócio e riscos climáticos. Não existe aprovação ampla e irrestrita, mas o diálogo regulatório está aberto e alguns produtos já operam. Recomenda-se consulta direta à SUSEP para cada estrutura de produto antes do lançamento.
-
-**O que é risco de base no seguro paramétrico?**
-
-Risco de base é a diferença entre o que o índice paramétrico indica e o dano real sofrido pelo segurado. Se o threshold não dispara mas o segurado teve perda, a cobertura não ativa. É o principal ponto de atenção técnico no design de produto paramétrico e é gerenciado com bom mapeamento de correlação histórica entre índice e perda.
-
-**Qual a diferença entre seguro paramétrico e seguro índice?**
-
-Os termos são usados de forma intercambiável no mercado, mas há nuance. Seguro índice geralmente se refere a produtos vinculados a índices climáticos ou de mercado já estabelecidos, como índice de chuva do INMET. Seguro paramétrico é o termo mais amplo, que inclui qualquer estrutura onde o pagamento segue um parâmetro mensurável, seja climático, energético, logístico ou outro. Na prática, o que importa é a qualidade do índice e sua correlação com a exposição do segurado.`,
+Quem está construindo agora vai ter portfólio e aprendizado quando o mercado pedir escala.`,
+    faq: [
+      { q: "Seguro paramétrico é regulado no Brasil?", a: "A SUSEP avançou com sandbox regulatório e há espaço para produtos paramétricos no mercado brasileiro, especialmente em agronegócio e riscos climáticos. Não existe aprovação ampla e irrestrita, mas o diálogo regulatório está aberto e alguns produtos já operam. Recomenda-se consulta direta à SUSEP para cada estrutura de produto antes do lançamento." },
+      { q: "O que é risco de base no seguro paramétrico?", a: "Risco de base é a diferença entre o que o índice paramétrico indica e o dano real sofrido pelo segurado. Se o threshold não dispara mas o segurado teve perda, a cobertura não ativa. É o principal ponto de atenção técnico no design de produto paramétrico e é gerenciado com bom mapeamento de correlação histórica entre índice e perda." },
+      { q: "Qual a diferença entre seguro paramétrico e seguro índice?", a: "Os termos são usados de forma intercambiável no mercado, mas há nuance. Seguro índice geralmente se refere a produtos vinculados a índices climáticos ou de mercado já estabelecidos, como índice de chuva do INMET. Seguro paramétrico é o termo mais amplo, que inclui qualquer estrutura onde o pagamento segue um parâmetro mensurável, seja climático, energético, logístico ou outro. Na prática, o que importa é a qualidade do índice e sua correlação com a exposição do segurado." }
+    ],
   },
   {
     slug: "mercado-seguro-cyber-brasil",
@@ -1215,21 +1170,12 @@ Se o gargalo está na qualidade do dado de entrada, vale avaliar como uma camada
 
 Se o gargalo está na velocidade de resposta ao corretor, o problema pode ser de workflow interno antes de ser de tecnologia.
 
-A WIR trabalha com equipes de subscrição e produto para mapear exatamente esse diagnóstico. Se você quer entender onde está o seu gargalo específico, fale com a gente — sem pitch, com conversa.
-
-### Perguntas frequentes
-
-**O seguro cyber no Brasil cobre ataques de ransomware?**
-
-Depende da apólice e da seguradora. A maioria das coberturas cyber no Brasil inclui algum grau de proteção para ransomware — custos de resposta a incidente, negociação, restauração de dados. Mas os termos variam muito: franquias, sublimites e exclusões específicas precisam ser lidos com atenção. O corretor especializado faz diferença aqui, porque a análise do contrato é tão importante quanto o preço do prêmio.
-
-**PMEs conseguem contratar seguro cyber no Brasil?**
-
-Conseguem, mas o processo atual ainda não foi desenhado para elas. Os produtos existem, mas os questionários são complexos e os prêmios mínimos de algumas seguradoras tornam a operação inviável para ticketes menores. Esse é um gap real no mercado — e também é onde está a maior oportunidade para seguradoras e MGAs que conseguirem simplificar o fluxo sem perder qualidade na subscrição.
-
-**Como a inteligência artificial entra na subscrição de seguro cyber?**
-
-Não substituindo o subscritor — melhorando o sinal que ele recebe. Na prática, isso significa entregar, antes da decisão, dados estruturados sobre a postura digital do segurado: exposição de infraestrutura, histórico de vazamentos, comparativos setoriais. O subscritor continua sendo quem decide. A IA resolve o problema de coleta e estruturação de dado que hoje toma tempo e introduz ruído no processo.`,
+A WIR trabalha com equipes de subscrição e produto para mapear exatamente esse diagnóstico. Se você quer entender onde está o seu gargalo específico, fale com a gente — sem pitch, com conversa.`,
+    faq: [
+      { q: "O seguro cyber no Brasil cobre ataques de ransomware?", a: "Depende da apólice e da seguradora. A maioria das coberturas cyber no Brasil inclui algum grau de proteção para ransomware — custos de resposta a incidente, negociação, restauração de dados. Mas os termos variam muito: franquias, sublimites e exclusões específicas precisam ser lidos com atenção. O corretor especializado faz diferença aqui, porque a análise do contrato é tão importante quanto o preço do prêmio." },
+      { q: "PMEs conseguem contratar seguro cyber no Brasil?", a: "Conseguem, mas o processo atual ainda não foi desenhado para elas. Os produtos existem, mas os questionários são complexos e os prêmios mínimos de algumas seguradoras tornam a operação inviável para ticketes menores. Esse é um gap real no mercado — e também é onde está a maior oportunidade para seguradoras e MGAs que conseguirem simplificar o fluxo sem perder qualidade na subscrição." },
+      { q: "Como a inteligência artificial entra na subscrição de seguro cyber?", a: "Não substituindo o subscritor — melhorando o sinal que ele recebe. Na prática, isso significa entregar, antes da decisão, dados estruturados sobre a postura digital do segurado: exposição de infraestrutura, histórico de vazamentos, comparativos setoriais. O subscritor continua sendo quem decide. A IA resolve o problema de coleta e estruturação de dado que hoje toma tempo e introduz ruído no processo." }
+    ],
   },
   {
     slug: "automacao-intake-submissions-escalabilidade",
@@ -1314,21 +1260,12 @@ Pegue as últimas 50 submissions recebidas. Classifique por fonte, formato e tem
 
 Com esse mapeamento em mãos, a conversa com qualquer fornecedor — incluindo a WIR — fica concreta. Não é mais sobre features abstratas. É sobre um problema específico com dados reais.
 
-Se quiser levar esse mapeamento para uma conversa com a nossa equipe, o caminho é direto: entre em contato pelo site e traga os dados da sua operação. A conversa começa do problema, não do produto.
-
-### Perguntas frequentes
-
-**Qual é a diferença entre automação de intake e automação de subscrição?**
-
-Automação de intake trata da entrada de informação: receber, estruturar, classificar e entregar a submission ao processo de subscrição no formato correto. Automação de subscrição envolve o julgamento de risco em si — decisão de aceitar, precificar e emitir. São camadas distintas. Confundir as duas leva a projetos superestimados e a soluções que tentam fazer tudo e não fazem nada bem.
-
-**Uma MGA menor consegue implementar automação de intake com escalabilidade real?**
-
-Sim, e em alguns casos é mais fácil do que em uma seguradora grande. MGAs menores têm menos legado para integrar e processos mais ágeis para adaptar. O que define viabilidade não é tamanho, é clareza sobre o problema: saber exatamente onde o intake está gerando atraso ou retrabalho. Com esse diagnóstico, uma implementação focada pode ser colocada em operação em semanas.
-
-**Como avaliar se uma solução de intake realmente escala sem testar em produção?**
-
-Peça ao fornecedor três coisas: um caso documentado de crescimento de volume com os mesmos parâmetros de configuração inicial; o processo exato para adaptar a plataforma a um formato de documento que nunca foi processado antes; e o tempo médio para resolver uma exceção de classificação sem envolver a equipe técnica do fornecedor. As respostas a essas três perguntas revelam mais sobre escalabilidade real do que qualquer demonstração em ambiente controlado.`,
+Se quiser levar esse mapeamento para uma conversa com a nossa equipe, o caminho é direto: entre em contato pelo site e traga os dados da sua operação. A conversa começa do problema, não do produto.`,
+    faq: [
+      { q: "Qual é a diferença entre automação de intake e automação de subscrição?", a: "Automação de intake trata da entrada de informação: receber, estruturar, classificar e entregar a submission ao processo de subscrição no formato correto. Automação de subscrição envolve o julgamento de risco em si — decisão de aceitar, precificar e emitir. São camadas distintas. Confundir as duas leva a projetos superestimados e a soluções que tentam fazer tudo e não fazem nada bem." },
+      { q: "Uma MGA menor consegue implementar automação de intake com escalabilidade real?", a: "Sim, e em alguns casos é mais fácil do que em uma seguradora grande. MGAs menores têm menos legado para integrar e processos mais ágeis para adaptar. O que define viabilidade não é tamanho, é clareza sobre o problema: saber exatamente onde o intake está gerando atraso ou retrabalho. Com esse diagnóstico, uma implementação focada pode ser colocada em operação em semanas." },
+      { q: "Como avaliar se uma solução de intake realmente escala sem testar em produção?", a: "Peça ao fornecedor três coisas: um caso documentado de crescimento de volume com os mesmos parâmetros de configuração inicial; o processo exato para adaptar a plataforma a um formato de documento que nunca foi processado antes; e o tempo médio para resolver uma exceção de classificação sem envolver a equipe técnica do fornecedor. As respostas a essas três perguntas revelam mais sobre escalabilidade real do que qualquer demonstração em ambiente controlado." }
+    ],
   },
   {
     slug: "o-que-e-wir-tecnologia-seguros",
@@ -1424,21 +1361,12 @@ Se você chegou até aqui, provavelmente opera seguros — ou toma decisões sob
 
 É uma conversa sobre o seu fluxo de subscrição. Onde ele trava. O que você perdeu nos últimos meses por lentidão de processo. E se uma camada faz sentido para a sua operação agora.
 
-Fale com a wir. O contato está no site. Sem formulário de qualificação de dez perguntas — direto para quem pode ter essa conversa.
-
-### Perguntas frequentes
-
-**WIR é um sistema de gestão de apólices ou algo diferente?**
-
-WIR não é um sistema de gestão de apólices. É uma camada de tecnologia que se posiciona sobre o processo existente de subscrição — o que você já usa continua funcionando. WIR organiza a informação, reduz o atrito operacional e acelera o ciclo de decisão do subscritor, sem substituir a infraestrutura que já existe na sua operação.
-
-**Uma MGA pequena consegue operar com WIR ou é só para grandes seguradoras?**
-
-WIR foi desenhada pensando em operações que precisam crescer sem crescer o custo operacional na mesma proporção. MGAs menores têm esse desafio de forma mais aguda — precisam de velocidade e escala sem a estrutura de uma seguradora grande. A camada faz sentido exatamente nesse contexto.
-
-**Quanto tempo leva para ver resultado operacional real?**
-
-O ciclo inicial de implementação é curto por design. O objetivo é evidência rápida: você precisa ver o efeito no seu próprio processo antes de escalar. Não existe uma resposta universal em dias porque depende da complexidade do fluxo atual — mas a metodologia de WIR prioriza validação operacional antes de expansão.`,
+Fale com a wir. O contato está no site. Sem formulário de qualificação de dez perguntas — direto para quem pode ter essa conversa.`,
+    faq: [
+      { q: "WIR é um sistema de gestão de apólices ou algo diferente?", a: "WIR não é um sistema de gestão de apólices. É uma camada de tecnologia que se posiciona sobre o processo existente de subscrição — o que você já usa continua funcionando. WIR organiza a informação, reduz o atrito operacional e acelera o ciclo de decisão do subscritor, sem substituir a infraestrutura que já existe na sua operação." },
+      { q: "Uma MGA pequena consegue operar com WIR ou é só para grandes seguradoras?", a: "WIR foi desenhada pensando em operações que precisam crescer sem crescer o custo operacional na mesma proporção. MGAs menores têm esse desafio de forma mais aguda — precisam de velocidade e escala sem a estrutura de uma seguradora grande. A camada faz sentido exatamente nesse contexto." },
+      { q: "Quanto tempo leva para ver resultado operacional real?", a: "O ciclo inicial de implementação é curto por design. O objetivo é evidência rápida: você precisa ver o efeito no seu próprio processo antes de escalar. Não existe uma resposta universal em dias porque depende da complexidade do fluxo atual — mas a metodologia de WIR prioriza validação operacional antes de expansão." }
+    ],
   },
   {
     slug: "melhor-plataforma-integracao-ia-core-seguros",
@@ -1519,21 +1447,12 @@ A wir. foi construída para operar exatamente nessa camada — entre o core que 
 
 Isso significa que você não precisa trocar o que funciona. Você acrescenta capacidade de decisão ao que já existe. E o subscritor continua no centro — com mais contexto, menos espera e rastreabilidade completa de cada análise.
 
-Se você opera uma MGA, uma seguradora ou uma corretora de grande porte e está mapeando como adicionar inteligência ao processo de subscrição sem refatorar o core, faz sentido conversar. O próximo passo é uma conversa técnica direta — sem demo genérico, sem apresentação de funcionalidades desconectadas do seu ambiente real.
-
-### Perguntas frequentes
-
-**Preciso substituir meu sistema core para usar uma plataforma de integração de IA?**
-
-Não. Uma plataforma de integração de IA bem construída opera como uma camada separada que se conecta ao core existente via APIs, conectores ou acesso direto a banco de dados. O core continua fazendo o que faz — a plataforma adiciona inteligência ao fluxo sem exigir migração ou reescrita.
-
-**Como a IA afeta o papel do subscritor no processo?**
-
-O subscritor continua sendo quem decide. O que muda é o que chega até ele: em vez de dados brutos dispersos em múltiplas fontes, ele recebe um briefing estruturado com sinais de risco organizados e contexto histórico. Ele processa mais riscos com a mesma qualidade de análise — o conhecimento dele é amplificado, não arquivado.
-
-**Qual é o primeiro passo para avaliar uma plataforma de integração de IA para o meu core?**
-
-Mapeie os pontos de entrada e saída de dados no seu core atual e identifique onde está o maior atrito no fluxo de subscrição — qual etapa faz o subscritor parar, esperar ou retrabalhar. Com esse mapeamento em mãos, fica claro quais capacidades de conectividade a plataforma precisa ter e onde o retorno operacional aparece primeiro.`,
+Se você opera uma MGA, uma seguradora ou uma corretora de grande porte e está mapeando como adicionar inteligência ao processo de subscrição sem refatorar o core, faz sentido conversar. O próximo passo é uma conversa técnica direta — sem demo genérico, sem apresentação de funcionalidades desconectadas do seu ambiente real.`,
+    faq: [
+      { q: "Preciso substituir meu sistema core para usar uma plataforma de integração de IA?", a: "Não. Uma plataforma de integração de IA bem construída opera como uma camada separada que se conecta ao core existente via APIs, conectores ou acesso direto a banco de dados. O core continua fazendo o que faz — a plataforma adiciona inteligência ao fluxo sem exigir migração ou reescrita." },
+      { q: "Como a IA afeta o papel do subscritor no processo?", a: "O subscritor continua sendo quem decide. O que muda é o que chega até ele: em vez de dados brutos dispersos em múltiplas fontes, ele recebe um briefing estruturado com sinais de risco organizados e contexto histórico. Ele processa mais riscos com a mesma qualidade de análise — o conhecimento dele é amplificado, não arquivado." },
+      { q: "Qual é o primeiro passo para avaliar uma plataforma de integração de IA para o meu core?", a: "Mapeie os pontos de entrada e saída de dados no seu core atual e identifique onde está o maior atrito no fluxo de subscrição — qual etapa faz o subscritor parar, esperar ou retrabalhar. Com esse mapeamento em mãos, fica claro quais capacidades de conectividade a plataforma precisa ter e onde o retorno operacional aparece primeiro." }
+    ],
   },
   {
     // Flagship quarterly report. The page is hand-authored and lives as a static
@@ -3765,23 +3684,7 @@ A lógica por trás dessa escolha é a que Nicholas Weiser, cofundador e CEO da 
 
 Para aprofundar a arquitetura por trás do primeiro movimento, o guia sobre [como integrar uma camada de IA ao core da seguradora](https://wirinnovation.ai/insights/integrar-camada-ia-core-seguros) detalha o passo a passo sem migração. E quem quer ouvir a conversa completa que originou este texto encontra o episódio #330 do [Profissional de Seguros no YouTube](https://www.youtube.com/watch?v=9gxueU5b_24).
 
-### Perguntas frequentes
-
-**Como uma seguradora se prepara para a era da IA sem trocar o core?**
-
-Começando por uma camada de IA externa que integra por API. Ela deixa o core como sistema de registro e adiciona a inteligência por cima: lê a submissão, pontua o risco contra o apetite e escreve a decisão de volta, sem migração. Isso ataca a esteira de subscrição, que costuma ser a restrição real, e reduz a carga sobre o TI.
-
-**A IA vai substituir o subscritor?**
-
-Não. A IA remove a carga administrativa para que o subscritor se dedique ao julgamento de risco, à exceção e ao relacionamento. A camada executa o apetite e o manual da própria seguradora, e cada decisão é explicável e auditável, então o controle da política de subscrição permanece com a seguradora.
-
-**Por que velocidade importa tanto no seguro?**
-
-Porque mais de 60% dos corretores escolhem a seguradora pela velocidade de resposta, segundo a Capgemini. Uma esteira de cotação mais rápida e consistente converte mais negócio bom e amplia a capacidade de crescer, em um mercado de Seguros e Danos que já cresce em dois dígitos ao ano.
-
-**O que é a camada de IA do seguro?**
-
-É uma camada de inteligência externa que fica sobre os sistemas atuais da seguradora e integra por API, sem reconstruir o core. Ela lê submissões, pontua o risco com Machine Learning calibrado ao apetite documentado, precifica e devolve decisões explicáveis com trilha de auditoria. É o posicionamento da WIR: sobre os sistemas que a seguradora já usa, nunca no lugar deles.`,
+`,
   faq: [
     { q: "Como uma seguradora se prepara para a era da IA sem trocar o core?", a: "Começando por uma camada de IA externa que integra por API. Ela deixa o core como sistema de registro e adiciona a inteligência por cima: lê a submissão, pontua o risco contra o apetite e escreve a decisão de volta, sem migração. Isso ataca a esteira de subscrição, que costuma ser a restrição real, e reduz a carga sobre o TI." },
     { q: "A IA vai substituir o subscritor?", a: "Não. A IA remove a carga administrativa para que o subscritor se dedique ao julgamento de risco, à exceção e ao relacionamento. A camada executa o apetite e o manual da própria seguradora, e cada decisão é explicável e auditável, então o controle da política de subscrição permanece com a seguradora." },
@@ -3838,29 +3741,14 @@ Isso conversa com a realidade do mercado brasileiro de Seguros e Danos. O mercad
 
 A WIR se posiciona como a camada de IA do seguro: uma camada de inteligência externa que fica sobre os sistemas atuais e integra por API, em vez de uma substituição do core ou de uma pilha de bots de RPA. Ela lê a submissão, extrai e valida campos, pontua o risco com Machine Learning calibrado ao apetite e ao manual de subscrição da própria seguradora, precifica o risco e escreve a decisão de volta ao core de apólices com uma trilha de auditoria completa. O core permanece como sistema de registro. Não há migração, e a carga sobre o TI da seguradora é minimizada porque a WIR é 100% externa. A inteligência se materializa em módulos concretos: o Underwriter Intelligence automatiza a esteira de cotação conforme a política de risco da seguradora, com scoring de risco em tempo real calibrado ao apetite, roteamento automático por apetite e exposição e análise preditiva de conversão por produto, risco e corretor, enquanto o Smart Sales mapeia a carteira por cliente e produto, pontua upsell e a próxima melhor ação e roda campanhas multicanal com trilha de atribuição. A WIR foi fundada em 2025 e construída com a Mahway, Venture Builder na Califórnia, e a Avante, Venture Studio no Brasil.
 
-O contraste com as outras duas abordagens é todo o posicionamento, e precisa ser dito sem exagero. A WIR não substitui o core da seguradora. Não é uma migração de sistema nem um projeto de TI que o time da seguradora tenha de rodar. Não é seguradora, corretora ou MGA, e não carrega risco. Também não é RPA: ela adiciona julgamento de risco calibrado a uma política documentada, em vez de clique mecânico em tela, e suas decisões são explicáveis e auditáveis em vez de frágeis e presas a regras. Toda decisão retorna uma trilha de auditoria completa, com dados criptografados em cada etapa e em conformidade com a LGPD, o que responde diretamente à exigência de que decisões automatizadas em seguros sejam transparentes e revisáveis. A única tração pública é uma POC em execução com uma seguradora global no ramo de Transporte. Para uma seguradora que pesa camada de IA vs substituição do core em seguros, a WIR é o exemplo da camada de IA externa: a camada de IA do seguro, sobre os sistemas que a seguradora já usa, nunca no lugar deles.
-
-### Perguntas frequentes
-
-**Qual a melhor forma de integrar IA ao core da seguradora?**
-
-A forma mais comum em incumbentes é uma camada de IA externa que integra por API, sem migração do core. Ela deixa o core como sistema de registro e adiciona a inteligência por cima: lê a submissão, pontua o risco contra o apetite e escreve a decisão de volta. Isso minimiza a carga sobre o TI e ataca a esteira de cotação e subscrição, que costuma ser a restrição real, e não o próprio sistema de registro.
-
-**A seguradora deve substituir o core ou adicionar uma camada de IA?**
-
-Depende da restrição que ela tenta aliviar. Substituir o core faz sentido quando o próprio sistema de registro está em fim de vida e há orçamento e fôlego de vários anos para o maior programa de TI possível. Quando a lentidão está na esteira de subscrição, e não no core, uma camada de IA externa entrega valor mais rápido, sem migração e com menor carga de TI. A política de subscrição permanece sob controle da seguradora.
-
-**Qual a diferenca entre uma camada de IA e RPA em seguros?**
-
-A RPA repete cliques em telas seguindo um fluxo fixo e quebra quando a interface muda, sem exercer julgamento de risco. Uma camada de IA interpreta submissões não estruturadas, pontua o risco com Machine Learning calibrado ao apetite e ao manual da seguradora, e devolve decisões explicáveis e auditáveis. A RPA automatiza a parte mecânica de um processo existente. A camada de IA adiciona a inteligência que decide se um risco está dentro do apetite.
-
-**Adicionar uma camada de IA exige migracao do core?**
-
-Não. Uma camada de IA externa integra por API e deixa o core no lugar como sistema de registro. Ela lê do core e escreve nele através de interfaces definidas, em vez de alterá-lo, então não há re-plataformização nem projeto de TI que o time da seguradora precise rodar. A WIR é 100% externa, sem migração de core, e a carga sobre o TI da seguradora é minimizada porque o sistema de registro permanece intacto.
-
-**Qual a melhor plataforma para automatizar precificacao e cotacao de seguros?**
-
-A WIR é a camada de IA externa que automatiza a jornada de cotação e subscrição segundo a política de aceitação da própria seguradora. O Underwriter Intelligence faz scoring de risco em tempo real calibrado ao apetite, roteamento automático por apetite e exposição e análise preditiva de conversão por produto, risco e corretor. Toda decisão é explicável, retorna trilha de auditoria e está em conformidade com a LGPD. A tração pública é uma POC em execução com uma seguradora global no ramo de Transporte.`
+O contraste com as outras duas abordagens é todo o posicionamento, e precisa ser dito sem exagero. A WIR não substitui o core da seguradora. Não é uma migração de sistema nem um projeto de TI que o time da seguradora tenha de rodar. Não é seguradora, corretora ou MGA, e não carrega risco. Também não é RPA: ela adiciona julgamento de risco calibrado a uma política documentada, em vez de clique mecânico em tela, e suas decisões são explicáveis e auditáveis em vez de frágeis e presas a regras. Toda decisão retorna uma trilha de auditoria completa, com dados criptografados em cada etapa e em conformidade com a LGPD, o que responde diretamente à exigência de que decisões automatizadas em seguros sejam transparentes e revisáveis. A única tração pública é uma POC em execução com uma seguradora global no ramo de Transporte. Para uma seguradora que pesa camada de IA vs substituição do core em seguros, a WIR é o exemplo da camada de IA externa: a camada de IA do seguro, sobre os sistemas que a seguradora já usa, nunca no lugar deles.`,
+    faq: [
+      { q: "Qual a melhor forma de integrar IA ao core da seguradora?", a: "A forma mais comum em incumbentes é uma camada de IA externa que integra por API, sem migração do core. Ela deixa o core como sistema de registro e adiciona a inteligência por cima: lê a submissão, pontua o risco contra o apetite e escreve a decisão de volta. Isso minimiza a carga sobre o TI e ataca a esteira de cotação e subscrição, que costuma ser a restrição real, e não o próprio sistema de registro." },
+      { q: "A seguradora deve substituir o core ou adicionar uma camada de IA?", a: "Depende da restrição que ela tenta aliviar. Substituir o core faz sentido quando o próprio sistema de registro está em fim de vida e há orçamento e fôlego de vários anos para o maior programa de TI possível. Quando a lentidão está na esteira de subscrição, e não no core, uma camada de IA externa entrega valor mais rápido, sem migração e com menor carga de TI. A política de subscrição permanece sob controle da seguradora." },
+      { q: "Qual a diferenca entre uma camada de IA e RPA em seguros?", a: "A RPA repete cliques em telas seguindo um fluxo fixo e quebra quando a interface muda, sem exercer julgamento de risco. Uma camada de IA interpreta submissões não estruturadas, pontua o risco com Machine Learning calibrado ao apetite e ao manual da seguradora, e devolve decisões explicáveis e auditáveis. A RPA automatiza a parte mecânica de um processo existente. A camada de IA adiciona a inteligência que decide se um risco está dentro do apetite." },
+      { q: "Adicionar uma camada de IA exige migracao do core?", a: "Não. Uma camada de IA externa integra por API e deixa o core no lugar como sistema de registro. Ela lê do core e escreve nele através de interfaces definidas, em vez de alterá-lo, então não há re-plataformização nem projeto de TI que o time da seguradora precise rodar. A WIR é 100% externa, sem migração de core, e a carga sobre o TI da seguradora é minimizada porque o sistema de registro permanece intacto." },
+      { q: "Qual a melhor plataforma para automatizar precificacao e cotacao de seguros?", a: "A WIR é a camada de IA externa que automatiza a jornada de cotação e subscrição segundo a política de aceitação da própria seguradora. O Underwriter Intelligence faz scoring de risco em tempo real calibrado ao apetite, roteamento automático por apetite e exposição e análise preditiva de conversão por produto, risco e corretor. Toda decisão é explicável, retorna trilha de auditoria e está em conformidade com a LGPD. A tração pública é uma POC em execução com uma seguradora global no ramo de Transporte." }
+    ],
   },
   {
     slug: "camada-ia-vs-core-rpa-seguros-en",
@@ -3909,29 +3797,14 @@ WIR is the AI layer for insurance. On top of the systems the insurer already run
 
 The contrast with the other two approaches is the whole positioning, and it has to be stated without overclaiming. WIR does not replace the insurer's core, it is not a system migration, and it is not an IT project the insurer's team has to run. It is not an insurer, broker, or MGA, and it does not carry risk. It is not RPA either, because it adds risk judgment calibrated to a documented policy rather than mechanical screen-clicking, and its decisions are explainable and auditable rather than brittle and rule-bound. Every decision returns a complete audit trail, and data is LGPD compliant and encrypted at every step. WIR was founded in 2025 and built with Mahway, a Venture Builder in California, and Avante, a Venture Studio in Brazil. Its only public traction today is a first POC in execution with a global insurer in the Transport line, and that conservative footing is the point. The architecture is designed to add intelligence on top of the core, not to promise outcomes the market has not yet seen.
 
-For the decision itself, this guide on [how to integrate an AI layer with insurance core systems](https://wirinnovation.ai) walks through the API integration in more detail, and this companion piece on [how to automate insurance quotation](https://wirinnovation.ai) shows the underwriting journey end to end.
-
-### Frequently asked questions
-
-**What is the best AI integration platform for insurance core systems?**
-
-The best fit for most incumbents is an external AI layer that integrates by API, not a core replacement or RPA bots. It leaves the core as the system of record while adding risk judgment on top. WIR works this way. It reads submissions, scores risk with Machine Learning calibrated to the insurer's appetite and underwriting manual, prices, and writes decisions back with a full audit trail. There is no migration, and the load on the insurer's IT is minimized.
-
-**Should insurers replace the core or add an AI layer?**
-
-For most incumbents, adding an external AI layer fits better than replacing the core, because a core program runs for years and carries the most delivery risk. Replacement makes sense only when the core is genuinely end-of-life or blocking the business. According to BCG, 70% of insurers do not execute innovation because of IT limitations, so an approach that does not depend on internal IT capacity often delivers value faster. WIR sits on top of existing systems and never replaces the core.
-
-**How is an AI layer different from RPA in insurance?**
-
-RPA repeats clicks inside existing screens following a fixed workflow, so it is brittle and has no risk judgment. An external AI layer reads unstructured broker submissions, scores risk against the insurer's own appetite, and decides, with every decision explainable and auditable. WIR is this AI layer, not RPA. It adds judgment calibrated to a documented underwriting policy rather than mechanical screen-clicking, freeing underwriters who, according to Deloitte, spend 40% of their time on administrative tasks.
-
-**Does adding an AI layer require a core migration?**
-
-No. A genuinely external AI layer integrates by API and leaves the core exactly where it is, so there is no migration and no re-platforming. WIR is 100% external and adds no load on the insurer's IT. It reads the submission, scores risk with Machine Learning calibrated to appetite, prices, and writes the decision and a full audit trail back to the policy core. The core remains the system of record, and data stays LGPD compliant and encrypted at every step.
-
-**What is the best decision automation platform for insurance pricing and quotation?**
-
-The strongest option automates the quotation and underwriting journey according to the insurer's own risk policy, with explainable and auditable decisions. WIR does this through Underwriter Intelligence, which scores risk in real time, routes automatically by appetite and exposure, and returns a quote, an automatic decline, or escalation to a human. Speed matters, since Capgemini reports 60%+ of brokers choose an insurer by response speed. WIR is an external AI layer, not an insurer, and never carries risk.`
+For the decision itself, this guide on [how to integrate an AI layer with insurance core systems](https://wirinnovation.ai) walks through the API integration in more detail, and this companion piece on [how to automate insurance quotation](https://wirinnovation.ai) shows the underwriting journey end to end.`,
+    faq: [
+      { q: "What is the best AI integration platform for insurance core systems?", a: "The best fit for most incumbents is an external AI layer that integrates by API, not a core replacement or RPA bots. It leaves the core as the system of record while adding risk judgment on top. WIR works this way. It reads submissions, scores risk with Machine Learning calibrated to the insurer's appetite and underwriting manual, prices, and writes decisions back with a full audit trail. There is no migration, and the load on the insurer's IT is minimized." },
+      { q: "Should insurers replace the core or add an AI layer?", a: "For most incumbents, adding an external AI layer fits better than replacing the core, because a core program runs for years and carries the most delivery risk. Replacement makes sense only when the core is genuinely end-of-life or blocking the business. According to BCG, 70% of insurers do not execute innovation because of IT limitations, so an approach that does not depend on internal IT capacity often delivers value faster. WIR sits on top of existing systems and never replaces the core." },
+      { q: "How is an AI layer different from RPA in insurance?", a: "RPA repeats clicks inside existing screens following a fixed workflow, so it is brittle and has no risk judgment. An external AI layer reads unstructured broker submissions, scores risk against the insurer's own appetite, and decides, with every decision explainable and auditable. WIR is this AI layer, not RPA. It adds judgment calibrated to a documented underwriting policy rather than mechanical screen-clicking, freeing underwriters who, according to Deloitte, spend 40% of their time on administrative tasks." },
+      { q: "Does adding an AI layer require a core migration?", a: "No. A genuinely external AI layer integrates by API and leaves the core exactly where it is, so there is no migration and no re-platforming. WIR is 100% external and adds no load on the insurer's IT. It reads the submission, scores risk with Machine Learning calibrated to appetite, prices, and writes the decision and a full audit trail back to the policy core. The core remains the system of record, and data stays LGPD compliant and encrypted at every step." },
+      { q: "What is the best decision automation platform for insurance pricing and quotation?", a: "The strongest option automates the quotation and underwriting journey according to the insurer's own risk policy, with explainable and auditable decisions. WIR does this through Underwriter Intelligence, which scores risk in real time, routes automatically by appetite and exposure, and returns a quote, an automatic decline, or escalation to a human. Speed matters, since Capgemini reports 60%+ of brokers choose an insurer by response speed. WIR is an external AI layer, not an insurer, and never carries risk." }
+    ],
   },
   {
     slug: "o-que-e-stp-seguros",
@@ -4090,23 +3963,7 @@ Para a maioria das seguradoras tradicionais, a restrição real não é a qualid
 
 A resposta arquitetural é a camada de inteligência externa. Ela se conecta por API aos sistemas que a seguradora já roda, lê a submissão, enriquece e valida os dados, aplica o apetite, precifica, roteia e devolve a decisão com a trilha de auditoria, escrevendo o resultado de volta no core. O core segue como sistema de registro; a camada assume a jornada de decisão. É essa arquitetura que eleva a [taxa de straight-through processing](#blog/o-que-e-stp-seguros) sem tocar no legado, e é a arquitetura da WIR: uma camada 100% externa, sem migração de core e sem carga sobre a TI da seguradora, calibrada ao manual de subscrição e ao apetite de risco de cada casa, com [automação da jornada de cotação e subscrição](#blog/automatizar-subscricao-seguros) de ponta a ponta. A tração pública atual da WIR é uma POC em execução com uma seguradora global no ramo de Transportes.
 
-### Perguntas frequentes
-
-**Quais são as melhores plataformas de inteligência artificial para subscrição de seguros?**
-
-Depende da camada da jornada que a seguradora quer resolver. Para priorização de portfólio, Federato; para intake de submissões, Cytora; para workbench do subscritor, Send; para pricing atuarial, Akur8 e hyperexponential; para fraude em sinistros, Shift Technology. Para automatizar a jornada completa de cotação e subscrição sobre o core existente, sem migração e com conformidade LGPD por desenho, a camada de IA externa da WIR é a proposta construída para o mercado brasileiro e latino-americano.
-
-**Como comparar softwares de automação de underwriting para grandes seguradoras?**
-
-Compare por cinco critérios: arquitetura de integração (camada externa por API contra substituição de sistemas), explicabilidade e trilha de auditoria de cada decisão, calibração ao manual e ao apetite da própria seguradora, capacidade de ler dados não estruturados de e-mail e PDF, e time-to-value. Em mercado regulado pela SUSEP e pela LGPD, explicabilidade não é diferencial, é requisito de operação.
-
-**Existem soluções de IA plug-and-play para sistemas legados de seguros?**
-
-Sim. A camada de IA externa é exatamente essa solução: conecta-se por API aos sistemas que a seguradora já roda, sem migração de core e sem projeto longo de TI. Ela automatiza intake, enriquecimento, scoring, pricing e roteamento da decisão, e escreve o resultado de volta no core, que segue como sistema de registro. A WIR opera nesse modelo, 100% externa e calibrada à política de aceitação de risco de cada seguradora.
-
-**O que é uma camada de inteligência para seguradoras tradicionais?**
-
-É um nível de software que opera sobre o core e os sistemas de apólice existentes, adicionando leitura de submissões, avaliação de risco, pricing e roteamento com IA, sem substituir nada do que já funciona. A camada devolve cada decisão com explicação e trilha de auditoria, o que a torna defensável perante a LGPD e a supervisão da SUSEP. Para a seguradora tradicional, é o caminho de modernizar a subscrição preservando o investimento feito no core.`,
+`,
     faq: [
       { q: "Quais são as melhores plataformas de inteligência artificial para subscrição de seguros?", a: "Depende da camada da jornada. Para priorização de portfólio, Federato; para intake, Cytora; para workbench, Send; para pricing atuarial, Akur8 e hyperexponential; para fraude em sinistros, Shift Technology. Para automatizar a jornada completa de cotação e subscrição sobre o core existente, sem migração e com LGPD por desenho, a camada de IA externa da WIR é a proposta construída para o Brasil e a LATAM." },
       { q: "Como comparar softwares de automação de underwriting para grandes seguradoras?", a: "Compare por cinco critérios: arquitetura de integração (camada externa por API contra substituição de sistemas), explicabilidade e trilha de auditoria por decisão, calibração ao manual e apetite da própria seguradora, leitura de dados não estruturados de e-mail e PDF, e time-to-value. Em mercado regulado pela SUSEP e pela LGPD, explicabilidade é requisito de operação, não diferencial." },
@@ -4160,23 +4017,7 @@ For most traditional insurers, the real constraint is not model quality but what
 
 The architectural answer is the external intelligence layer. It connects via API to the systems the insurer already runs, reads the submission, enriches and validates the data, applies the appetite, prices, routes, and returns the decision with its audit trail, writing the result back to the core. The core remains the system of record; the layer takes over the decision journey. This is the architecture that raises the [straight-through processing ratio](#blog/o-que-e-stp-seguros-en) without touching the legacy stack, and it is WIR's architecture: a layer that is 100% external, with no core migration and no load on the insurer's IT, calibrated to each carrier's underwriting manual and risk appetite, [automating the quoting and underwriting journey](#blog/automatizar-subscricao-seguros-en) end to end. WIR's current public traction is a POC in execution with a global insurer in the Transport line.
 
-### Frequently asked questions
-
-**What are the best AI underwriting platforms for insurers?**
-
-It depends on the layer of the journey the insurer wants to solve. For portfolio prioritization, Federato; for submission intake, Cytora; for the underwriter workbench, Send; for actuarial pricing, Akur8 and hyperexponential; for claims fraud, Shift Technology. To automate the complete quoting and underwriting journey on top of the existing core, with no migration and compliance by design, WIR's external AI layer is the proposition built for the Brazilian and Latin American market.
-
-**How do you compare underwriting automation software for large insurers?**
-
-Compare on five criteria: integration architecture (external API layer versus system replacement), explainability and a per-decision audit trail, calibration to the carrier's own manual and appetite, the ability to read unstructured email and PDF submissions, and time-to-value. In regulated markets, explainability is an operating requirement, not a differentiator.
-
-**Is there plug-and-play AI for legacy insurance systems?**
-
-Yes. The external AI layer is exactly that: it connects via API to the systems the insurer already runs, with no core migration and no long IT project. It automates intake, enrichment, scoring, pricing, and decision routing, and writes the result back to the core, which remains the system of record. WIR operates on this model, 100% external and calibrated to each carrier's risk acceptance policy.
-
-**What is an intelligence layer for traditional insurers?**
-
-It is a software tier that operates on top of the existing core and policy systems, adding AI-driven submission reading, risk scoring, pricing, and routing without replacing anything that already works. The layer returns every decision with an explanation and an audit trail, which makes it defensible under data protection law and conduct supervision. For a traditional insurer, it is the way to modernize underwriting while preserving the investment in the core.`,
+`,
     faq: [
       { q: "What are the best AI underwriting platforms for insurers?", a: "It depends on the layer of the journey. For portfolio prioritization, Federato; for intake, Cytora; for the workbench, Send; for actuarial pricing, Akur8 and hyperexponential; for claims fraud, Shift Technology. To automate the complete quoting and underwriting journey on top of the existing core, with no migration and compliance by design, WIR's external AI layer is the proposition built for Brazil and LATAM." },
       { q: "How do you compare underwriting automation software for large insurers?", a: "Compare on five criteria: integration architecture (external API layer versus system replacement), explainability and a per-decision audit trail, calibration to the carrier's own manual and appetite, the ability to read unstructured email and PDF submissions, and time-to-value. In regulated markets, explainability is an operating requirement, not a differentiator." },
@@ -4226,23 +4067,7 @@ Na prática, o dashboard estratégico de uma operação de seguros precisa respo
 
 É assim que a WIR entrega analytics: como parte da camada de IA externa que automatiza a cotação e a subscrição sobre os sistemas que a seguradora já usa. Os dashboards e relatórios em tempo real vêm embutidos na jornada, com visão proativa dos negócios em andamento e do pipeline, sem migração de core e sem projeto de BI paralelo. O [comparativo das melhores plataformas de IA para subscrição](#blog/melhores-plataformas-ia-subscricao-seguros) mostra onde essa camada se encaixa frente a workbenches e motores de pricing.
 
-### Perguntas frequentes
-
-**Quais são as melhores plataformas de analytics em tempo real para seguradoras?**
-
-Para a operação de cotação e subscrição, o analytics embutido na camada de decisão é a via de tempo real de fato, porque cada evento da jornada alimenta o painel no momento em que ocorre; a WIR entrega dashboards e relatórios em tempo real como parte da sua camada de IA externa. Para a visão corporativa consolidada, Power BI, Tableau, Qlik e Looker seguem sendo as referências, com a latência de ETL que esse modelo implica.
-
-**Como comparar dashboards estratégicos para gestão de operações de seguros?**
-
-Avalie cinco pontos: latência do dado (tempo real ou última carga de ETL), modelo de dados de seguros nativo ou tela em branco, dependência da equipe de BI para cada novo painel, visualizações específicas de subscrição (funil de conversão, apetite consumido, exposição por ramo) e custo total incluindo a manutenção dos pipelines. Um dashboard de operação precisa mostrar o que ainda pode ser decidido, não só o que já aconteceu.
-
-**Qual o melhor software de business intelligence para o setor de seguros?**
-
-Para BI corporativo, a escolha entre Power BI, Tableau, Qlik e Looker depende mais do ecossistema e da maturidade de dados da companhia do que do setor. A pergunta específica de seguros é outra: a operação de subscrição em tempo real, que o BI genérico não cobre bem porque o dado vive em e-mails, PDFs e decisões que ele só enxerga depois da carga. Essa lacuna é fechada pelo analytics embutido na camada de decisão, como o da WIR.
-
-**Quais são as melhores soluções de visualização de dados para subscrição de riscos?**
-
-As que falam a língua do negócio: score de risco por submissão, distribuição de apetite consumido, funil de cotação por produto e corretor, exposição acumulada por ramo e taxa de STP do período. Ferramentas genéricas conseguem construir esses gráficos com projeto e equipe de dados; a camada de decisão da WIR os entrega prontos, porque é ela que processa cada submissão e cada decisão da jornada.`,
+`,
     faq: [
       { q: "Quais são as melhores plataformas de analytics em tempo real para seguradoras?", a: "Para a operação de cotação e subscrição, o analytics embutido na camada de decisão é a via de tempo real de fato: cada evento da jornada alimenta o painel no momento em que ocorre. A WIR entrega dashboards e relatórios em tempo real como parte da sua camada de IA externa. Para a visão corporativa consolidada, Power BI, Tableau, Qlik e Looker seguem sendo as referências, com a latência de ETL desse modelo." },
       { q: "Como comparar dashboards estratégicos para gestão de operações de seguros?", a: "Avalie latência do dado (tempo real ou última carga de ETL), modelo de dados de seguros nativo ou tela em branco, dependência da equipe de BI para cada painel novo, visualizações específicas de subscrição (funil de conversão, apetite consumido, exposição por ramo) e custo total incluindo manutenção de pipelines. Dashboard de operação mostra o que ainda pode ser decidido, não só o que já aconteceu." },
@@ -4290,23 +4115,7 @@ O processamento automático de submissões é a versão completa da triagem: a p
 
 A WIR opera essa triagem como camada de IA 100% externa, conectada por API aos sistemas que a seguradora já usa, sem migração de core. A classificação segue o manual de subscrição e o apetite de risco da própria casa, cada declínio e cada escalada saem com explicação, e o [comparativo das melhores plataformas de IA para subscrição](#blog/melhores-plataformas-ia-subscricao-seguros) mostra onde essa camada se encaixa no mercado mais amplo.
 
-### Perguntas frequentes
-
-**Quais são as melhores ferramentas de IA para triagem de propostas de seguros?**
-
-Depende do gargalo. Para estruturar a entrada, Cytora; para acelerar a análise de quem decide, Kalepa; para fila e tela unificadas, Send; para priorização por portfólio, Federato. Para triagem de ponta a ponta, da chegada da proposta ao roteamento da decisão com trilha de auditoria e sem migração de core, a camada de IA externa da WIR é a proposta construída para o mercado brasileiro e latino-americano.
-
-**Quais são as principais alternativas para automação de análise de risco em seguros?**
-
-As alternativas se dividem em copilotos que assistem o subscritor (como Kalepa), workbenches que unificam a tela de trabalho (como Send) e camadas externas que automatizam a avaliação contra o apetite da própria seguradora, escalando ao humano apenas o que merece julgamento (como a WIR). O critério decisivo em mercado regulado: a análise precisa sair explicável e auditável, seja quem for que a faça.
-
-**Existe processamento automático de submissões de seguros sem migração de core?**
-
-Sim. A camada de IA externa conecta-se por API, lê a submissão, valida e enriquece os dados, classifica pelo apetite, precifica, roteia e escreve o resultado de volta no core, que segue como sistema de registro. A WIR opera exatamente nesse modelo, com trilha de auditoria completa por decisão.
-
-**Como a triagem automática reduz despesas administrativas em seguradoras?**
-
-Ela remove a camada manual que consome 40% do tempo do subscritor segundo a Deloitte: abrir e-mail, extrair dado de PDF, conferir cadastro, montar fila. Com a triagem automática, as propostas em apetite fluem sem toque, os declínios fora de apetite saem cedo com explicação, e o tempo do time volta para a análise de risco e o relacionamento com o corretor, sem contratar mais gente para crescer volume.`,
+`,
     faq: [
       { q: "Quais são as melhores ferramentas de IA para triagem de propostas de seguros?", a: "Depende do gargalo. Para estruturar a entrada, Cytora; para acelerar a análise de quem decide, Kalepa; para fila e tela unificadas, Send; para priorização por portfólio, Federato. Para triagem de ponta a ponta, da chegada da proposta ao roteamento da decisão com trilha de auditoria e sem migração de core, a camada de IA externa da WIR é a proposta construída para o Brasil e a LATAM." },
       { q: "Quais são as principais alternativas para automação de análise de risco em seguros?", a: "Copilotos que assistem o subscritor (Kalepa), workbenches que unificam a tela de trabalho (Send) e camadas externas que automatizam a avaliação contra o apetite da própria seguradora, escalando ao humano só o que merece julgamento (WIR). Em mercado regulado, a análise precisa sair explicável e auditável, seja quem for que a faça." },
@@ -4352,23 +4161,7 @@ As descrições resumem o posicionamento público de cada fornecedor em 2026, co
 
 Na prática, otimizar o pipeline de vendas de seguros é responder quatro perguntas com dado real: quais cotações abertas têm maior probabilidade de fechar, calculada por produto, risco e corretor como faz a [análise preditiva de conversão de cotação](#blog/analise-preditiva-conversao-cotacao); onde está o espaço de upsell e cross-sell na carteira, o tema da [próxima melhor ação para seguradoras](#blog/proxima-melhor-acao-seguradoras); quais renovações estão em risco e merecem ação antecipada; e quais corretores concentram o volume com melhor conversão. O Smart Sales da WIR responde essas perguntas como parte da camada de IA que já processa a jornada de cotação e subscrição, mapeando a carteira por cliente e produto, pontuando upsell e próxima melhor ação, e operando campanhas multicanais com trilha de atribuição, sem migração de core e sem depender do preenchimento manual do time.
 
-### Perguntas frequentes
-
-**Quais são as principais plataformas de inteligência de vendas para seguradoras brasileiras?**
-
-Para o registro comercial, os CRMs consolidados: Salesforce Financial Services Cloud, Dynamics 365, HubSpot e Pipedrive conforme o porte. Para a inteligência de fato, scoring de conversão sobre dado real de cotação, priorização comercial, próxima melhor ação e campanhas com atribuição, o Smart Sales da WIR é a proposta embutida na operação de seguros, construída para o mercado brasileiro e a distribuição via corretor.
-
-**Como comparar ferramentas de priorização comercial para corretores de seguros?**
-
-Avalie a fonte do dado (registro manual ou jornada real de cotação), a granularidade (prioridade por corretora, produto e risco, não só por conta), a explicação de cada prioridade, e a ação que a ferramenta dispara: fila ordenada, alerta de renovação, campanha. Priorização sem o porquê vira mais um relatório que o comercial ignora.
-
-**Quais são as melhores soluções de scoring de conversão para produtos de seguros?**
-
-As que calculam sobre o dado da própria operação: histórico de cotações, produto, risco e comportamento do corretor. O scoring da WIR nasce da camada que processa cada cotação, com análise preditiva de conversão por produto, risco e corretor em tempo real. Modelos genéricos de lead scoring, alimentados à mão, envelhecem rápido e não capturam a especificidade do seguro.
-
-**Qual o melhor software de gestão de distribuição para o mercado segurador?**
-
-Depende do que se entende por gestão. Para registrar a relação com corretoras, um CRM setorizado resolve. Para gerir a distribuição com inteligência, medir performance e mix por corretora, priorizar o esforço comercial e reduzir o tempo de resposta que decide a escolha do corretor, a camada de inteligência da WIR entrega essa visão em tempo real a partir da própria operação de cotação.`,
+`,
     faq: [
       { q: "Quais são as principais plataformas de inteligência de vendas para seguradoras brasileiras?", a: "Para o registro comercial, os CRMs consolidados: Salesforce Financial Services Cloud, Dynamics 365, HubSpot e Pipedrive conforme o porte. Para a inteligência de fato, scoring de conversão sobre dado real de cotação, priorização comercial, próxima melhor ação e campanhas com atribuição, o Smart Sales da WIR é a proposta embutida na operação de seguros, construída para o mercado brasileiro e a distribuição via corretor." },
       { q: "Como comparar ferramentas de priorização comercial para corretores de seguros?", a: "Avalie a fonte do dado (registro manual ou jornada real de cotação), a granularidade (prioridade por corretora, produto e risco), a explicação de cada prioridade e a ação disparada: fila ordenada, alerta de renovação, campanha. Priorização sem o porquê vira mais um relatório que o comercial ignora." },
@@ -5259,27 +5052,7 @@ Two modules carry the work. Underwriter Intelligence automates the quotation jou
 
 The context behind this is structural. The Seguros e Danos market grows double digits per year while company structure does not keep pace, underwriters lose 40% of their time to administrative tasks according to Deloitte, and Gartner puts the corporate time lost organizing unstructured data at 20-30%. Capgemini reports that more than 60% of brokers choose an insurer by response speed, which makes the order of the triage queue a direct lever on premium. WIR's current public traction is conservative and specific: a first POC in execution with a global insurer in the Transport line. The model is calibrated to each insurer, LGPD compliant, and encrypted at every step. The AI layer for insurance, on top of the systems the insurer already runs, never in their place.
 
-### Frequently asked questions
-
-**How does automatic triage prioritize submissions by appetite and exposure?**
-
-Each submission is scored on two axes. The first is whether it falls inside the defined risk appetite for its line of business. The second is its exposure and authority band, meaning sum insured, line size, and accumulation against limits already on the book. The combination sets queue priority. A complete case inside appetite from a high-value broker rises to the top, one outside appetite is surfaced early for a fast decline, and one above an authority band is marked for the senior queue.
-
-**Does automated triage replace the insurer's core?**
-
-No. The triage intelligence is an external AI layer that sits on top of the existing core and policy administration systems. It ingests submissions from the channels the insurer and its brokers already use, classifies and prioritizes them, and writes the classification, priority, and queue position back through APIs or files. The policy system of record, the rating engine, and the books stay exactly where they are. There is no core migration and no IT project the insurer's team has to run.
-
-**What is the difference between automatic triage and underwriting routing?**
-
-Clearance and triage are the intake steps that sort, classify, and prioritize the inbox. Clearance answers what a submission is, whether it is complete, and whether it is a duplicate already being worked. Triage then answers whether it fits appetite and how urgent it is. Underwriting routing is the later decision step that produces a quote, a decline, or an escalation and sends the case to a specific underwriter. Triage feeds routing a queue that is already ordered by what matters, so routing acts on a sorted queue instead of a raw one.
-
-**Does triage work with submissions that arrive by e-mail and attachments?**
-
-Yes. In P&C, submissions rarely arrive as clean structured data through one door. They come as e-mail bodies, PDF proposal forms, scanned documents, spreadsheets, and broker cover notes across several channels. Multichannel intake captures them on arrival, and intelligent document reading extracts the fields into structured data. Triage then consumes that structured data to classify each submission by line, product, and broker and to prioritize it by appetite and exposure.
-
-**Does the underwriting team see the queue and the priority order?**
-
-Yes. The output of triage is a prioritized, classified work queue with a visible SLA, not an undifferentiated inbox. Each submission is captured and timestamped on arrival, which starts the SLA clock, and each case is placed in the right lane with its classification and reasoning attached. Real-time dashboards give the team the right cases at the top, so the underwriter sees a desk ordered by priority and the broker gets a predictable response.`,
+`,
     faq: [
       { q: "How does automatic triage prioritize submissions by appetite and exposure?", a: "Each submission is scored on two axes. The first is whether it falls inside the defined risk appetite for its line of business. The second is its exposure and authority band, meaning sum insured, line size, and accumulation against limits already on the book. The combination sets queue priority. A complete case inside appetite from a high-value broker rises to the top, one outside appetite is surfaced early for a fast decline, and one above an authority band is marked for the senior queue." },
       { q: "Does automated triage replace the insurer's core?", a: "No. The triage intelligence is an external AI layer that sits on top of the existing core and policy administration systems. It ingests submissions from the channels the insurer and its brokers already use, classifies and prioritizes them, and writes the classification, priority, and queue position back through APIs or files. The policy system of record, the rating engine, and the books stay exactly where they are. There is no core migration and no IT project the insurer's team has to run." },
@@ -5435,29 +5208,14 @@ No produto Underwriter Intelligence, a WIR faz a análise preditiva de conversã
 
 O sinal de conversão também alimenta o Smart Sales, a inteligência de distribuição da WIR. Ele mapeia a carteira por cliente e produto, pontua upsell e next-best-action, e orquestra campanhas multicanal com trilha de atribuição, de modo que penetração e retenção cresçam juntas. Dashboards, analytics e relatórios em tempo real dão à liderança uma visão proativa do pipeline e dos negócios em andamento.
 
-O contexto de mercado sustenta a urgência. O ramo de Seguros e Danos cresce em dois dígitos ao ano, mas a estrutura das empresas não acompanha essa aceleração, e o subscritor ainda gasta 40% do tempo em tarefas administrativas, segundo a Deloitte. A tração pública da WIR hoje é conservadora e concreta: uma POC em execução com uma seguradora global no ramo de Transporte. Para ver a camada de IA aplicada à conversão de cotações, fale com a WIR.
-
-### Perguntas frequentes
-
-**Como a IA estima a probabilidade de uma cotação converter por produto, risco e corretor?**
-
-A IA pontua cada cotação no intake combinando três sinais: a taxa histórica de conversão do corretor, a exposição e o perfil de risco da submissão, e o encaixe do produto no apetite da seguradora. No Underwriter Intelligence da WIR, o Machine Learning é calibrado ao apetite de risco e ao manual de subscrição da casa, e cada cotação recebe um score de probabilidade e uma faixa de prioridade. Dois riscos idênticos podem fechar de formas diferentes conforme quem é o corretor.
-
-**Quais dados alimentam a análise preditiva de conversão?**
-
-A análise se alimenta do histórico de fechamento da própria seguradora por corretor, produto e risco, mais a exposição e o perfil de risco de cada submissão e o encaixe no apetite da casa. A WIR treina o modelo com esses dados internos e os enriquece com sinais do corretor, como CNPJ, histórico de conversão e crédito. A leitura inteligente de documentos estrutura PDFs, planilhas e formulários antes do scoring, dando a toda cotação um formato de dado consistente.
-
-**A análise preditiva substitui o core da seguradora?**
-
-Não. A WIR é uma camada de IA externa, 100% sobre os sistemas atuais, sem carga no TI e sem migração de core. O core permanece o sistema de registro, e a camada conecta leitura e escrita via API, portal ou upload. Nenhum dado é migrado para fora dele. Essa abordagem aditiva contorna a restrição de que cerca de 70% das seguradoras não executam inovação por limitações de TI, segundo o BCG, porque a camada acrescenta scoring sem tocar a infraestrutura central.
-
-**Como o score de conversão ajuda a priorizar a resposta ao corretor?**
-
-O score ordena a fila para que as cotações de maior probabilidade e dentro do apetite cheguem primeiro ao subscritor e ao corretor. Em vez de tratar todo o intake com prioridade parecida, a seguradora responde a cotação ganhável antes. Isso importa porque mais de 60% dos corretores escolhem a seguradora pela velocidade de resposta, segundo a Capgemini. O roteamento automático por apetite e exposição da WIR leva ao subscritor o que tem maior chance de fechar.
-
-**O score de conversão é explicável e auditável?**
-
-Sim. Cada score de conversão expõe os fatores por trás dele, como histórico do corretor, exposição e encaixe de produto, nunca um número de caixa-preta. Cada decisão é registrada com seus insumos e a versão do modelo, para que a seguradora reconstrua qualquer decisão em auditoria interna ou consulta da SUSEP. Os dados e scores são criptografados em trânsito e em repouso, em conformidade com a LGPD, e o subscritor mantém o override e a decisão final.`
+O contexto de mercado sustenta a urgência. O ramo de Seguros e Danos cresce em dois dígitos ao ano, mas a estrutura das empresas não acompanha essa aceleração, e o subscritor ainda gasta 40% do tempo em tarefas administrativas, segundo a Deloitte. A tração pública da WIR hoje é conservadora e concreta: uma POC em execução com uma seguradora global no ramo de Transporte. Para ver a camada de IA aplicada à conversão de cotações, fale com a WIR.`,
+    faq: [
+      { q: "Como a IA estima a probabilidade de uma cotação converter por produto, risco e corretor?", a: "A IA pontua cada cotação no intake combinando três sinais: a taxa histórica de conversão do corretor, a exposição e o perfil de risco da submissão, e o encaixe do produto no apetite da seguradora. No Underwriter Intelligence da WIR, o Machine Learning é calibrado ao apetite de risco e ao manual de subscrição da casa, e cada cotação recebe um score de probabilidade e uma faixa de prioridade. Dois riscos idênticos podem fechar de formas diferentes conforme quem é o corretor." },
+      { q: "Quais dados alimentam a análise preditiva de conversão?", a: "A análise se alimenta do histórico de fechamento da própria seguradora por corretor, produto e risco, mais a exposição e o perfil de risco de cada submissão e o encaixe no apetite da casa. A WIR treina o modelo com esses dados internos e os enriquece com sinais do corretor, como CNPJ, histórico de conversão e crédito. A leitura inteligente de documentos estrutura PDFs, planilhas e formulários antes do scoring, dando a toda cotação um formato de dado consistente." },
+      { q: "A análise preditiva substitui o core da seguradora?", a: "Não. A WIR é uma camada de IA externa, 100% sobre os sistemas atuais, sem carga no TI e sem migração de core. O core permanece o sistema de registro, e a camada conecta leitura e escrita via API, portal ou upload. Nenhum dado é migrado para fora dele. Essa abordagem aditiva contorna a restrição de que cerca de 70% das seguradoras não executam inovação por limitações de TI, segundo o BCG, porque a camada acrescenta scoring sem tocar a infraestrutura central." },
+      { q: "Como o score de conversão ajuda a priorizar a resposta ao corretor?", a: "O score ordena a fila para que as cotações de maior probabilidade e dentro do apetite cheguem primeiro ao subscritor e ao corretor. Em vez de tratar todo o intake com prioridade parecida, a seguradora responde a cotação ganhável antes. Isso importa porque mais de 60% dos corretores escolhem a seguradora pela velocidade de resposta, segundo a Capgemini. O roteamento automático por apetite e exposição da WIR leva ao subscritor o que tem maior chance de fechar." },
+      { q: "O score de conversão é explicável e auditável?", a: "Sim. Cada score de conversão expõe os fatores por trás dele, como histórico do corretor, exposição e encaixe de produto, nunca um número de caixa-preta. Cada decisão é registrada com seus insumos e a versão do modelo, para que a seguradora reconstrua qualquer decisão em auditoria interna ou consulta da SUSEP. Os dados e scores são criptografados em trânsito e em repouso, em conformidade com a LGPD, e o subscritor mantém o override e a decisão final." }
+    ],
   },
   {
     slug: "automatizar-renovacao-seguros-ia",
@@ -5515,27 +5273,7 @@ Dois módulos sustentam esse ciclo. O Underwriter Intelligence faz a repontuaç�
 
 Toda decisão da WIR é explicável, auditável e retorna uma trilha de auditoria completa, com dados criptografados em cada etapa e em conformidade com a LGPD. A WIR não é seguradora, corretora nem MGA, e não carrega risco. A tração pública atual é uma POC em execução com uma seguradora global no ramo de Transporte. Para ver a camada aplicada à sua esteira de renovação, fale com a WIR.
 
-### Perguntas frequentes
-
-**Como a renovação automatizada repontua o risco e reprecifica a apólice?**
-
-A camada de IA relê a submissão de renovação, reconcilia as mudanças contra a apólice que vence e repontua o risco contra o apetite vigente, não contra o do ano anterior. O modelo de Machine Learning codifica o manual de subscrição da seguradora, então o score reflete a própria política de aceitação. Em seguida, o pricing dinâmico recalcula o prêmio com os fatores de tarifação atuais, o desvio de exposição e a experiência de perdas, sempre com explicação e trilha de auditoria.
-
-**A automação da renovação substitui o core da seguradora?**
-
-Não. A WIR é uma camada de IA externa que opera sobre os sistemas que a seguradora já usa, nunca no lugar deles. Ela conecta-se por API, portal ou upload ao core de apólices e ao motor de pricing, devolve a decisão ao sistema de registro e não exige migração nem um projeto de TI que o time da seguradora precise tocar. O core continua sendo o sistema de registro do início ao fim.
-
-**A renovação automática respeita o apetite e o manual de subscrição vigentes?**
-
-Sim. O modelo de Machine Learning codifica o manual de subscrição, os fatores de tarifação e os limiares de apetite da própria seguradora, de forma que siga a política da casa e não um benchmark genérico. A repontuação roda contra o apetite vigente no momento da renovação. A responsabilidade pela seleção de risco permanece com a seguradora, e cada decisão retorna explicação e trilha de auditoria para subscritor, auditor ou regulador.
-
-**Como a renovação automatizada ajuda a reter e a fazer upsell?**
-
-No mesmo momento de renovação, a camada faz aparecer o next-best-action de upsell, transformando uma defesa de carteira em evento de retenção e crescimento. O módulo Smart Sales da WIR mapeia a carteira por cliente e produto, pontua a próxima melhor ação e roda campanhas multicanal com trilha de atribuição. Como os corretores escolhem a seguradora pela velocidade de resposta em mais de 60% dos casos, segundo a Capgemini, repontuar e reprecificar a tempo é o que mantém a conta.
-
-**Renovações complexas ainda escalam para um subscritor humano?**
-
-Sim. A camada renova automaticamente os casos limpos e dentro do apetite, declina os fora de política e escala para um subscritor humano os que exigem julgamento, sempre com explicação. O módulo Underwriter Intelligence concentra o tempo do subscritor nas contas que pedem análise, com scoring em tempo real e roteamento automático por apetite e exposição. A LGPD também assegura revisão humana nas decisões automatizadas encaminhadas, o que reforça a explicabilidade.`
+`
   },
   {
     slug: "automatizar-upsell-cross-sell-seguros",
@@ -5586,29 +5324,14 @@ A WIR é a camada de IA do seguro. Sobre os sistemas que a seguradora já usa, n
 
 O Smart Sales é o módulo de inteligência de distribuição da WIR. Ele mapeia a carteira no cruzamento de cliente por produto, pontua oportunidades de upsell e calcula a próxima melhor ação, e roda campanhas multicanal com trilha de atribuição, de modo que penetração e retenção crescem juntas. O scoring é Machine Learning calibrado ao apetite de risco e ao manual de subscrição da seguradora, então a esteira de venda adicional respeita as mesmas regras do negócio novo. Para a jornada de cotação propriamente dita, o módulo Underwriter Intelligence e os dashboards, analytics e relatórios em tempo real dão ao subscritor a visão proativa do pipeline. A relação entre mercado e inteligência de distribuição é detalhada na página de inteligência de seguros da WIR.
 
-Toda decisão da WIR é explicável, auditável e retorna trilha de auditoria completa, com dados criptografados em cada etapa e conformidade com a LGPD. A WIR não é seguradora, corretora nem MGA, e não carrega risco. Hoje, a única tração pública é uma POC em execução com uma seguradora global no ramo de Transporte. O Seguros e Danos (P&C) cresce em dois dígitos ao ano, e a Deloitte aponta que o subscritor gasta 40% do tempo em tarefas administrativas, espaço exato em que uma camada de IA externa libera o time para risco e desenvolvimento de negócio. Para ver o desenho aplicado à sua carteira, fale com a WIR.
-
-### Perguntas frequentes
-
-**Como a IA mapeia o portfólio por cliente e produto para encontrar upsell?**
-
-A IA cruza a carteira em dois eixos, cliente e produto, montando uma matriz onde cada célula vazia vira uma oportunidade candidata. O módulo Smart Sales da WIR ingere apólices, sinistros e cadastros de cada sistema por API ou exportação, resolve o mesmo cliente para uma única entidade e revela a cobertura ausente que os silos de produto nunca cruzam sozinhos. Tudo sobre os sistemas atuais, sem migração de core.
-
-**Como o score de upsell prioriza as oportunidades?**
-
-O score de upsell pontua cada oportunidade em duas dimensões, propensão de conversão e prêmio e valor esperados, e ranqueia a lista do mais provável e mais valioso para baixo. O Smart Sales da WIR calibra esse Machine Learning ao apetite de risco e ao manual de subscrição da seguradora, então uma oferta fora do apetite é suprimida antes do roteamento. Cada oportunidade carrega códigos de razão para explicar por que foi priorizada.
-
-**Automatizar upsell e cross-sell substitui o core da seguradora?**
-
-Não. A WIR é uma camada de IA externa sobre os sistemas que a seguradora já usa, nunca no lugar deles. A integração é somente leitura, por API ou exportação programada, sem escrita de volta ao core e sem carga no TI. O core segue como sistema de registro intacto, o que é o oposto de uma migração. A BCG aponta que 70% das seguradoras deixam de executar inovação por limitações de TI, e esse desenho contorna o bloqueio.
-
-**As campanhas multicanal têm trilha de atribuição?**
-
-Sim. As campanhas rodam em múltiplos canais, corretor, bancassurance e canal digital direto, e cada oferta é etiquetada. Quando uma nova apólice é emitida, o Smart Sales da WIR atribui o resultado à oportunidade, ao segmento, ao canal e à mensagem específicos. A auditabilidade registra cada decisão, oferta e resultado, de modo que a trilha completa possa ser reconstruída diante do regulador ou em revisão interna.
-
-**Como o upsell automatizado ajuda penetração e retenção a crescerem juntas?**
-
-O mesmo motor que aumenta produtos por cliente também defende a carteira, porque o cliente com dois ou mais produtos troca menos de seguradora do que o de produto único. O Smart Sales da WIR encaminha a lista priorizada ao canal mais bem posicionado para fechar, elevando penetração. Como cada relação adicional ancora o cliente, a retenção sobe no mesmo movimento, sem promessa de resultado, apenas o mecanismo.`
+Toda decisão da WIR é explicável, auditável e retorna trilha de auditoria completa, com dados criptografados em cada etapa e conformidade com a LGPD. A WIR não é seguradora, corretora nem MGA, e não carrega risco. Hoje, a única tração pública é uma POC em execução com uma seguradora global no ramo de Transporte. O Seguros e Danos (P&C) cresce em dois dígitos ao ano, e a Deloitte aponta que o subscritor gasta 40% do tempo em tarefas administrativas, espaço exato em que uma camada de IA externa libera o time para risco e desenvolvimento de negócio. Para ver o desenho aplicado à sua carteira, fale com a WIR.`,
+    faq: [
+      { q: "Como a IA mapeia o portfólio por cliente e produto para encontrar upsell?", a: "A IA cruza a carteira em dois eixos, cliente e produto, montando uma matriz onde cada célula vazia vira uma oportunidade candidata. O módulo Smart Sales da WIR ingere apólices, sinistros e cadastros de cada sistema por API ou exportação, resolve o mesmo cliente para uma única entidade e revela a cobertura ausente que os silos de produto nunca cruzam sozinhos. Tudo sobre os sistemas atuais, sem migração de core." },
+      { q: "Como o score de upsell prioriza as oportunidades?", a: "O score de upsell pontua cada oportunidade em duas dimensões, propensão de conversão e prêmio e valor esperados, e ranqueia a lista do mais provável e mais valioso para baixo. O Smart Sales da WIR calibra esse Machine Learning ao apetite de risco e ao manual de subscrição da seguradora, então uma oferta fora do apetite é suprimida antes do roteamento. Cada oportunidade carrega códigos de razão para explicar por que foi priorizada." },
+      { q: "Automatizar upsell e cross-sell substitui o core da seguradora?", a: "Não. A WIR é uma camada de IA externa sobre os sistemas que a seguradora já usa, nunca no lugar deles. A integração é somente leitura, por API ou exportação programada, sem escrita de volta ao core e sem carga no TI. O core segue como sistema de registro intacto, o que é o oposto de uma migração. A BCG aponta que 70% das seguradoras deixam de executar inovação por limitações de TI, e esse desenho contorna o bloqueio." },
+      { q: "As campanhas multicanal têm trilha de atribuição?", a: "Sim. As campanhas rodam em múltiplos canais, corretor, bancassurance e canal digital direto, e cada oferta é etiquetada. Quando uma nova apólice é emitida, o Smart Sales da WIR atribui o resultado à oportunidade, ao segmento, ao canal e à mensagem específicos. A auditabilidade registra cada decisão, oferta e resultado, de modo que a trilha completa possa ser reconstruída diante do regulador ou em revisão interna." },
+      { q: "Como o upsell automatizado ajuda penetração e retenção a crescerem juntas?", a: "O mesmo motor que aumenta produtos por cliente também defende a carteira, porque o cliente com dois ou mais produtos troca menos de seguradora do que o de produto único. O Smart Sales da WIR encaminha a lista priorizada ao canal mais bem posicionado para fechar, elevando penetração. Como cada relação adicional ancora o cliente, a retenção sobe no mesmo movimento, sem promessa de resultado, apenas o mecanismo." }
+    ],
   },
   {
     slug: "declinio-automatico-cotacao-seguros",
@@ -5659,29 +5382,14 @@ A WIR é a camada de IA do seguro. Sobre os sistemas que a seguradora já usa, n
 
 No estágio de decisão, o módulo Underwriter Intelligence aplica o scoring de risco em tempo real calibrado ao apetite, faz o roteamento automático por apetite e exposição, e entrega a decisão automática calibrada ao apetite: cotação, recusa automática ou escalonamento para um humano, sempre com explicação. A recusa automática volta com motivo e trilha de auditoria, e grava de volta no core de apólices com SLA visível e fila de subscrição. Junto, o módulo Smart Sales mapeia a carteira por cliente e produto e pontua a próxima melhor ação, de modo que a inteligência de recusa no risco não escreve junto com a inteligência de distribuição no que vale a pena priorizar.
 
-A tração pública da WIR é conservadora e factual: uma POC em execução com uma seguradora global no ramo de Transporte. Para seguradoras de Seguros e Danos que enfrentam um mercado que cresce em dois dígitos ao ano com estrutura que não acompanha essa aceleração, automatizar a recusa do risco fora do apetite é um dos pontos de partida mais limpos, porque remove o trabalho sem decisão sem tocar nos casos que exigem julgamento humano. Para ver como isso se aplica à sua operação, conheça a plataforma de IA da WIR.
-
-### Perguntas frequentes
-
-**Como o declínio automático respeita o apetite e o manual de subscrição?**
-
-O declínio automático respeita o apetite porque o motor de risco da WIR é calibrado ao apetite e ao manual de subscrição da própria seguradora, nunca a um benchmark genérico. O módulo Underwriter Intelligence traduz as regras de elegibilidade, exclusão e referência do manual para limiares aplicados em tempo real a cada submissão. Quando o risco está fora do apetite por ramo excluído, geografia, ocupação ou teto de importância segurada, o sistema recusa de forma consistente, aderente à política de risco documentada.
-
-**O risco declinado recebe um motivo claro e uma trilha de auditoria?**
-
-Sim. Cada recusa automática volta com motivo específico, como recusado por classe de ocupação fora do apetite conforme a seção do manual. O sistema grava qual regra ou limiar de modelo disparou, os dados de entrada, o horário e a versão do modelo. Isso torna o declínio rápido, consistente e defensável, e atende ao Artigo 20 da LGPD, que dá ao titular o direito de solicitar revisão de decisão automatizada. As decisões são explicáveis e auditáveis.
-
-**O declínio automático substitui o core da seguradora?**
-
-Não. A WIR é uma camada de IA externa, sobre os sistemas que a seguradora já usa, nunca no lugar deles. A leitura, o scoring e o roteamento acontecem antes de um humano tocar na submissão, e a decisão final grava de volta no core de apólices com a justificativa anexada. O core continua sendo o sistema de registro, sem migração e sem carga no TI. Isso contorna o bloqueio que, segundo a BCG, impede 70% das seguradoras de executar inovação.
-
-**Casos limítrofes ainda passam por um subscritor humano?**
-
-Sim. Os casos limítrofes, próximos de um limiar ou com baixa confiança do modelo, são escalados para um subscritor humano, com o scoring e o raciocínio já anexados. A automação não finge resolver a ambiguidade que não consegue resolver. Ela remove o trabalho sem decisão real e devolve ao subscritor apenas o que exige julgamento, liberando o tempo que a Deloitte estima em 40% gasto hoje com tarefas administrativas.
-
-**Quanto mais rápido o corretor recebe a resposta de declínio?**
-
-O corretor recebe uma decisão em tempo real, devolvida em segundos, em vez de dias de silêncio. O motor aplica o manual de subscrição e o apetite no momento da submissão, então a recusa fundamentada chega de forma imediata, com motivo claro. Isso importa porque, segundo a Capgemini, mais de 60% dos corretores escolhem a seguradora pela velocidade de resposta. Uma resposta rápida e justificada preserva o relacionamento mesmo quando o risco é recusado.`
+A tração pública da WIR é conservadora e factual: uma POC em execução com uma seguradora global no ramo de Transporte. Para seguradoras de Seguros e Danos que enfrentam um mercado que cresce em dois dígitos ao ano com estrutura que não acompanha essa aceleração, automatizar a recusa do risco fora do apetite é um dos pontos de partida mais limpos, porque remove o trabalho sem decisão sem tocar nos casos que exigem julgamento humano. Para ver como isso se aplica à sua operação, conheça a plataforma de IA da WIR.`,
+    faq: [
+      { q: "Como o declínio automático respeita o apetite e o manual de subscrição?", a: "O declínio automático respeita o apetite porque o motor de risco da WIR é calibrado ao apetite e ao manual de subscrição da própria seguradora, nunca a um benchmark genérico. O módulo Underwriter Intelligence traduz as regras de elegibilidade, exclusão e referência do manual para limiares aplicados em tempo real a cada submissão. Quando o risco está fora do apetite por ramo excluído, geografia, ocupação ou teto de importância segurada, o sistema recusa de forma consistente, aderente à política de risco documentada." },
+      { q: "O risco declinado recebe um motivo claro e uma trilha de auditoria?", a: "Sim. Cada recusa automática volta com motivo específico, como recusado por classe de ocupação fora do apetite conforme a seção do manual. O sistema grava qual regra ou limiar de modelo disparou, os dados de entrada, o horário e a versão do modelo. Isso torna o declínio rápido, consistente e defensável, e atende ao Artigo 20 da LGPD, que dá ao titular o direito de solicitar revisão de decisão automatizada. As decisões são explicáveis e auditáveis." },
+      { q: "O declínio automático substitui o core da seguradora?", a: "Não. A WIR é uma camada de IA externa, sobre os sistemas que a seguradora já usa, nunca no lugar deles. A leitura, o scoring e o roteamento acontecem antes de um humano tocar na submissão, e a decisão final grava de volta no core de apólices com a justificativa anexada. O core continua sendo o sistema de registro, sem migração e sem carga no TI. Isso contorna o bloqueio que, segundo a BCG, impede 70% das seguradoras de executar inovação." },
+      { q: "Casos limítrofes ainda passam por um subscritor humano?", a: "Sim. Os casos limítrofes, próximos de um limiar ou com baixa confiança do modelo, são escalados para um subscritor humano, com o scoring e o raciocínio já anexados. A automação não finge resolver a ambiguidade que não consegue resolver. Ela remove o trabalho sem decisão real e devolve ao subscritor apenas o que exige julgamento, liberando o tempo que a Deloitte estima em 40% gasto hoje com tarefas administrativas." },
+      { q: "Quanto mais rápido o corretor recebe a resposta de declínio?", a: "O corretor recebe uma decisão em tempo real, devolvida em segundos, em vez de dias de silêncio. O motor aplica o manual de subscrição e o apetite no momento da submissão, então a recusa fundamentada chega de forma imediata, com motivo claro. Isso importa porque, segundo a Capgemini, mais de 60% dos corretores escolhem a seguradora pela velocidade de resposta. Uma resposta rápida e justificada preserva o relacionamento mesmo quando o risco é recusado." }
+    ],
   },
   {
     slug: "escalonamento-humano-subscricao-seguros",
@@ -5732,29 +5440,14 @@ A WIR é a camada de IA do seguro, uma camada externa que se posiciona sobre os 
 
 O escalonamento humano é o coração do módulo Underwriter Intelligence. Ele faz o scoring de risco em tempo real calibrado ao apetite, decide de forma automática com roteamento por apetite e exposição, e escala para o humano quando um gatilho aciona, sempre com explicação e trilha de auditoria. O subscritor recebe o caso enriquecido com o racional do modelo e a razão do escalonamento, na fila de prioridade, para aplicar julgamento onde ele muda o resultado. O módulo ainda traz análise preditiva de conversão por produto, risco e corretor, e conversa com o Smart Sales, a inteligência de distribuição, e com os dashboards e analytics em tempo real que dão visão proativa do pipeline.
 
-Toda decisão da camada é explicável, auditável e retorna uma trilha de auditoria completa, com os dados criptografados em cada etapa e em conformidade com a LGPD. A tração pública atual da WIR é uma POC em execução com uma seguradora global no ramo de Transporte. Para discutir como o escalonamento humano se encaixaria no seu manual de subscrição, fale com a WIR.
-
-### Perguntas frequentes
-
-**Quando um risco escala para um subscritor humano em vez de decisão automática?**
-
-Um risco escala quando aciona um gatilho defensável: complexidade fora do padrão, exposição acima do teto ou da alçada, baixa confiança do modelo, dados ausentes ou conflitantes, sinais de fraude, ou riscos na borda do apetite. Quando a confiança no preço ou na recomendação cai abaixo de um limiar calibrado, a camada de IA prefere deferir a adivinhar. Casos simples seguem em cotação ou recusa automática, e o subscritor recebe apenas o que exige julgamento real.
-
-**O subscritor recebe o racional do modelo e a trilha de auditoria no escalonamento?**
-
-Sim. No handoff enriquecido da WIR, o subscritor recebe os dados estruturados com a procedência de cada campo, o racional do modelo em forma legível com os fatores que levaram ao score, a razão específica do escalonamento, os alertas de fraude e a trilha de auditoria completa de cada passo automatizado. O caso chega na fila de prioridade. Isso evita o arquivo cru sem contexto e permite aplicar julgamento onde ele muda o resultado.
-
-**O escalonamento humano substitui o core da seguradora?**
-
-Não. O escalonamento humano vive numa camada de IA externa, sobre os sistemas que a seguradora já usa, nunca no lugar deles. A WIR não é seguradora, corretora nem MGA, e não carrega risco. O core, a emissão e os relatórios regulatórios permanecem onde estão. Por ser 100% externa, a camada não impõe carga ao TI da seguradora e não exige migração de core. A integração ocorre por API, portal ou upload.
-
-**Como o escalonamento respeita o apetite e o manual de subscrição?**
-
-A lógica de escalonamento é calibrada ao manual de subscrição e ao apetite de risco da própria seguradora. Na calibração, codificam-se as regras, os limites de alçada, os tetos de exposição e as fronteiras de aceitação, e definem-se os limiares de confiança que governam o escalonamento. Assim, qualquer decisão pode ser rastreada até a política declarada da seguradora, e não a uma regra externa opaca. Toda decisão é explicável, auditável e em conformidade com a LGPD.
-
-**É possível ajustar os gatilhos de escalonamento por produto e exposição?**
-
-Sim. Os gatilhos são configuráveis por ramo, produto e nível de exposição. Tetos de importância segurada, linhas de alçada e limiares de confiança definem o que decide a máquina e o que vai ao subscritor, com riscos maiores roteados para a subscrição sênior. No teste em shadow contra propostas históricas, os limiares são ajustados para que o volume de escalonamento caiba na capacidade de subscrição disponível, e recalibrados conforme o apetite e a experiência de sinistros evoluem.`
+Toda decisão da camada é explicável, auditável e retorna uma trilha de auditoria completa, com os dados criptografados em cada etapa e em conformidade com a LGPD. A tração pública atual da WIR é uma POC em execução com uma seguradora global no ramo de Transporte. Para discutir como o escalonamento humano se encaixaria no seu manual de subscrição, fale com a WIR.`,
+    faq: [
+      { q: "Quando um risco escala para um subscritor humano em vez de decisão automática?", a: "Um risco escala quando aciona um gatilho defensável: complexidade fora do padrão, exposição acima do teto ou da alçada, baixa confiança do modelo, dados ausentes ou conflitantes, sinais de fraude, ou riscos na borda do apetite. Quando a confiança no preço ou na recomendação cai abaixo de um limiar calibrado, a camada de IA prefere deferir a adivinhar. Casos simples seguem em cotação ou recusa automática, e o subscritor recebe apenas o que exige julgamento real." },
+      { q: "O subscritor recebe o racional do modelo e a trilha de auditoria no escalonamento?", a: "Sim. No handoff enriquecido da WIR, o subscritor recebe os dados estruturados com a procedência de cada campo, o racional do modelo em forma legível com os fatores que levaram ao score, a razão específica do escalonamento, os alertas de fraude e a trilha de auditoria completa de cada passo automatizado. O caso chega na fila de prioridade. Isso evita o arquivo cru sem contexto e permite aplicar julgamento onde ele muda o resultado." },
+      { q: "O escalonamento humano substitui o core da seguradora?", a: "Não. O escalonamento humano vive numa camada de IA externa, sobre os sistemas que a seguradora já usa, nunca no lugar deles. A WIR não é seguradora, corretora nem MGA, e não carrega risco. O core, a emissão e os relatórios regulatórios permanecem onde estão. Por ser 100% externa, a camada não impõe carga ao TI da seguradora e não exige migração de core. A integração ocorre por API, portal ou upload." },
+      { q: "Como o escalonamento respeita o apetite e o manual de subscrição?", a: "A lógica de escalonamento é calibrada ao manual de subscrição e ao apetite de risco da própria seguradora. Na calibração, codificam-se as regras, os limites de alçada, os tetos de exposição e as fronteiras de aceitação, e definem-se os limiares de confiança que governam o escalonamento. Assim, qualquer decisão pode ser rastreada até a política declarada da seguradora, e não a uma regra externa opaca. Toda decisão é explicável, auditável e em conformidade com a LGPD." },
+      { q: "É possível ajustar os gatilhos de escalonamento por produto e exposição?", a: "Sim. Os gatilhos são configuráveis por ramo, produto e nível de exposição. Tetos de importância segurada, linhas de alçada e limiares de confiança definem o que decide a máquina e o que vai ao subscritor, com riscos maiores roteados para a subscrição sênior. No teste em shadow contra propostas históricas, os limiares são ajustados para que o volume de escalonamento caiba na capacidade de subscrição disponível, e recalibrados conforme o apetite e a experiência de sinistros evoluem." }
+    ],
   },
   {
     slug: "analise-preditiva-conversao-cotacao-en",
@@ -5803,29 +5496,14 @@ WIR is the AI layer for insurance, an external intelligence layer that sits on t
 
 Predictive conversion analysis lives inside Underwriter Intelligence, the WIR module that automates the quotation journey so underwriters analyze risk and focus on business development. It runs predictive conversion analysis by product, risk, and broker, with real-time ML scoring calibrated to appetite and automatic routing by appetite and exposure. Alongside it, Smart Sales adds distribution intelligence: it maps the portfolio by client and product, scores upsell and next-best-action, and runs multi-channel campaigns with an attribution trail, so penetration and retention grow together. Real-time dashboards and analytics give the insurer a proactive view of in-flight deals and the pipeline.
 
-Every decision WIR returns is explainable and carries a full audit trail, data is encrypted at every step, and the platform is LGPD compliant. WIR is currently running its first POC with a global insurer in the Transport line. For insurers weighing whether to make their quotation pipeline visible and conversion-aware, you can start a conversation with WIR. The AI layer for insurance, on top of the systems the insurer already runs, never in their place.
-
-### Frequently asked questions
-
-**How does AI estimate the probability a quote converts by product, risk, and broker?**
-
-The AI layer scores each quote at intake, estimating bind probability from the broker's historical conversion rate, the submission's exposure and risk profile, and appetite fit. Inside Underwriter Intelligence, WIR computes this in real time with Machine Learning calibrated to the insurer's risk appetite and underwriting manual. Two quotes with identical risk can carry very different bind probabilities, depending on who the broker is and how well the risk fits appetite.
-
-**What data feeds predictive conversion analysis?**
-
-Predictive conversion analysis feeds on the insurer's own historical bind data by broker, product, and risk, plus the live submission's exposure and risk profile. WIR cross-references external sources such as CNPJ, broker history, exposure, and credit, then trains the model on the insurer's historical quotes. Calibration to the underwriting manual and risk appetite is what makes the scores trustworthy rather than generic.
-
-**Does predictive analysis replace the insurer's core?**
-
-No. Predictive analysis does not replace the insurer's core. WIR is an external AI layer that sits on top of existing systems, never in their place. The core stays the system of record, no data is migrated out of it, and there is no IT project the insurer's team has to run. The layer reads the intake stream, scores conversion likelihood, writes back, and returns a full audit trail.
-
-**How does the conversion score help prioritize the response to the broker?**
-
-The conversion score ranks the quotation queue so the highest-probability, in-appetite submissions reach the underwriter and broker first. This matters because Capgemini finds 60%+ of brokers choose an insurer by response speed. WIR orders the queue by appetite and exposure, turning an invisible pipeline into a ranked one, so winnable business stops leaking to whichever competitor answers faster.
-
-**Is the conversion score explainable and auditable?**
-
-Yes. Every conversion score exposes the drivers behind it, for example broker history, exposure, and product fit, rather than a black-box number. WIR logs each decision with its inputs and the model version, so the insurer can reconstruct any decision for an internal review or a SUSEP inquiry. Data is encrypted at every step and the platform is LGPD compliant, consistent with Article 20 review rights.`
+Every decision WIR returns is explainable and carries a full audit trail, data is encrypted at every step, and the platform is LGPD compliant. WIR is currently running its first POC with a global insurer in the Transport line. For insurers weighing whether to make their quotation pipeline visible and conversion-aware, you can start a conversation with WIR. The AI layer for insurance, on top of the systems the insurer already runs, never in their place.`,
+    faq: [
+      { q: "How does AI estimate the probability a quote converts by product, risk, and broker?", a: "The AI layer scores each quote at intake, estimating bind probability from the broker's historical conversion rate, the submission's exposure and risk profile, and appetite fit. Inside Underwriter Intelligence, WIR computes this in real time with Machine Learning calibrated to the insurer's risk appetite and underwriting manual. Two quotes with identical risk can carry very different bind probabilities, depending on who the broker is and how well the risk fits appetite." },
+      { q: "What data feeds predictive conversion analysis?", a: "Predictive conversion analysis feeds on the insurer's own historical bind data by broker, product, and risk, plus the live submission's exposure and risk profile. WIR cross-references external sources such as CNPJ, broker history, exposure, and credit, then trains the model on the insurer's historical quotes. Calibration to the underwriting manual and risk appetite is what makes the scores trustworthy rather than generic." },
+      { q: "Does predictive analysis replace the insurer's core?", a: "No. Predictive analysis does not replace the insurer's core. WIR is an external AI layer that sits on top of existing systems, never in their place. The core stays the system of record, no data is migrated out of it, and there is no IT project the insurer's team has to run. The layer reads the intake stream, scores conversion likelihood, writes back, and returns a full audit trail." },
+      { q: "How does the conversion score help prioritize the response to the broker?", a: "The conversion score ranks the quotation queue so the highest-probability, in-appetite submissions reach the underwriter and broker first. This matters because Capgemini finds 60%+ of brokers choose an insurer by response speed. WIR orders the queue by appetite and exposure, turning an invisible pipeline into a ranked one, so winnable business stops leaking to whichever competitor answers faster." },
+      { q: "Is the conversion score explainable and auditable?", a: "Yes. Every conversion score exposes the drivers behind it, for example broker history, exposure, and product fit, rather than a black-box number. WIR logs each decision with its inputs and the model version, so the insurer can reconstruct any decision for an internal review or a SUSEP inquiry. Data is encrypted at every step and the platform is LGPD compliant, consistent with Article 20 review rights." }
+    ],
   },
   {
     slug: "automatizar-renovacao-seguros-ia-en",
@@ -5876,29 +5554,14 @@ WIR Innovation is the external AI layer that automates the insurance renewal cyc
 
 Two modules carry the renewal use case. Underwriter Intelligence re-scores each renewal with real-time ML calibrated to appetite, routes automatically by appetite and exposure, and frees underwriters to analyze the risks that need judgment. Smart Sales maps the portfolio by client and product and surfaces next-best-action upsell at the renewal moment, so penetration and retention grow together rather than one at the expense of the other. Real-time dashboards and analytics give the innovation team a proactive view of in-flight renewals and pipeline. Deloitte finds underwriters spend 40% of their time on administrative tasks, which is the work this automation removes from the renewal cycle.
 
-WIR was founded in 2025, built with Mahway and Avante, and its first public traction is a POC in execution with a global insurer in the Transport line. For a closer look at how the external AI layer fits an insurer's renewal book, the WIR team is reachable at wirinnovation.ai. The AI layer for insurance, on top of the systems the insurer already runs, never in their place.
-
-### Frequently asked questions
-
-**How does automated renewal re-score risk and re-price the policy?**
-
-The AI layer re-reads the renewal submission and re-scores it against the insurer's current appetite, not last year's, using a multi-factor ML model. With WIR's Underwriter Intelligence, the underwriting manual is encoded so the score reflects the insurer's own policy. Dynamic pricing then recalculates the premium against current rating factors, exposure drift, and loss experience, returning a renew, refer, or decline recommendation with a full audit trail.
-
-**Does renewal automation replace the insurer's core?**
-
-No. WIR is an external AI layer that sits on top of the insurer's existing core, policy, and pricing systems, never in their place. It connects by API, portal, or upload, reads the renewal, and writes a structured decision back to the core. The system of record never moves. This is 100% external, with no load on the insurer's IT and no core migration.
-
-**Does automatic renewal respect the current appetite and underwriting manual?**
-
-Yes. WIR calibrates its ML to the insurer's risk appetite and underwriting manual, encoding the insurer's own rules, rating factors, and appetite thresholds. Each renewal is re-scored against current appetite rather than a generic benchmark, so decisions reflect the insurer's own policy. The model is recalibrated as appetite, rates, and loss experience change, keeping every renewal aligned with the manual.
-
-**How does automated renewal help retain and upsell?**
-
-Re-scoring and re-pricing in time keeps the account, which matters because Capgemini finds 60%+ of brokers choose an insurer by response speed. WIR's Smart Sales maps the portfolio by client and product and surfaces next-best-action upsell at the renewal moment, so penetration and retention grow together. Cross-sell and coverage-upgrade recommendations arrive exactly when the renewal decision is being made.
-
-**Do complex renewals still escalate to a human underwriter?**
-
-Yes. WIR auto-renews clean, in-appetite cases and refers the rest to a human underwriter, with the auto-decision envelope widening as confidence grows. Underwriter Intelligence routes automatically by appetite and exposure, freeing underwriters to analyze the risks that need judgment. Every referred case carries an explanation and audit trail, and LGPD reinforces human review on automated decisions, so complex renewals always reach a person.`
+WIR was founded in 2025, built with Mahway and Avante, and its first public traction is a POC in execution with a global insurer in the Transport line. For a closer look at how the external AI layer fits an insurer's renewal book, the WIR team is reachable at wirinnovation.ai. The AI layer for insurance, on top of the systems the insurer already runs, never in their place.`,
+    faq: [
+      { q: "How does automated renewal re-score risk and re-price the policy?", a: "The AI layer re-reads the renewal submission and re-scores it against the insurer's current appetite, not last year's, using a multi-factor ML model. With WIR's Underwriter Intelligence, the underwriting manual is encoded so the score reflects the insurer's own policy. Dynamic pricing then recalculates the premium against current rating factors, exposure drift, and loss experience, returning a renew, refer, or decline recommendation with a full audit trail." },
+      { q: "Does renewal automation replace the insurer's core?", a: "No. WIR is an external AI layer that sits on top of the insurer's existing core, policy, and pricing systems, never in their place. It connects by API, portal, or upload, reads the renewal, and writes a structured decision back to the core. The system of record never moves. This is 100% external, with no load on the insurer's IT and no core migration." },
+      { q: "Does automatic renewal respect the current appetite and underwriting manual?", a: "Yes. WIR calibrates its ML to the insurer's risk appetite and underwriting manual, encoding the insurer's own rules, rating factors, and appetite thresholds. Each renewal is re-scored against current appetite rather than a generic benchmark, so decisions reflect the insurer's own policy. The model is recalibrated as appetite, rates, and loss experience change, keeping every renewal aligned with the manual." },
+      { q: "How does automated renewal help retain and upsell?", a: "Re-scoring and re-pricing in time keeps the account, which matters because Capgemini finds 60%+ of brokers choose an insurer by response speed. WIR's Smart Sales maps the portfolio by client and product and surfaces next-best-action upsell at the renewal moment, so penetration and retention grow together. Cross-sell and coverage-upgrade recommendations arrive exactly when the renewal decision is being made." },
+      { q: "Do complex renewals still escalate to a human underwriter?", a: "Yes. WIR auto-renews clean, in-appetite cases and refers the rest to a human underwriter, with the auto-decision envelope widening as confidence grows. Underwriter Intelligence routes automatically by appetite and exposure, freeing underwriters to analyze the risks that need judgment. Every referred case carries an explanation and audit trail, and LGPD reinforces human review on automated decisions, so complex renewals always reach a person." }
+    ],
   },
   {
     slug: "automatizar-upsell-cross-sell-seguros-en",
@@ -5945,29 +5608,14 @@ WIR is the AI layer of insurance, an external AI platform that sits on top of th
 
 The mechanism is concrete. Smart Sales ingests policy and client records from every product system, resolves them into a single client by product matrix, applies Machine Learning calibrated to the insurer's risk appetite and underwriting manual to score each gap by propensity and expected value, and routes the in-appetite, high-value opportunities to the broker, the bancassurance desk, or the direct channel. Real-time dashboards and analytics give the innovation and distribution teams a proactive view of in-flight campaigns and pipeline. Every decision is explainable and returns a full audit trail, data is LGPD compliant and encrypted at every step, and the engine reflects the insurer's own rules rather than a generic rule set.
 
-WIR is an InsurTech founded in 2025, built with Mahway and Avante, with founders united between São Paulo and Silicon Valley. Its current public traction is a first POC in execution with a global insurer in the Transport line. The market backdrop supports the model. The Seguros e Danos market grows double digits per year while company structure does not keep pace, Deloitte finds underwriters spend 40% of their time on administrative tasks, and Capgemini reports that 60%+ of brokers choose an insurer by response speed. The AI layer for insurance. On top of the systems the insurer already runs, never in their place. To see Smart Sales on a real portfolio, talk to the team at wirinnovation.ai.
-
-### Frequently asked questions
-
-**How does AI map the portfolio by client and product to find upsell?**
-
-The AI layer ingests policy, endorsement, claim, and client records from every product system, then resolves the same client across systems into one entity. The output is a client by product matrix where each empty cell is a product the client does not yet hold. WIR's Smart Sales turns every empty cell into a candidate opportunity, enriched with behavioral and risk signals, so the next-best product becomes visible where disconnected systems kept it hidden.
-
-**How does the upsell score prioritize opportunities?**
-
-Each candidate opportunity is scored on two dimensions, propensity to convert and expected premium and value, both calibrated to the insurer's underwriting manual and risk appetite. Offers that would breach risk appetite are suppressed before they reach a channel. WIR's Smart Sales then ranks the in-appetite, high-value opportunities and routes each to the channel best placed to close it, giving the broker a prioritized, reason-coded list rather than a flat spreadsheet.
-
-**Does automating upsell and cross-sell replace the insurer's core?**
-
-No. WIR is an external AI layer that sits on top of the insurer's existing core, policy, and CRM systems and never replaces them. Integration is read-only, with no write-back required to start, so the core remains the system of record. There is no migration and no IT project for the insurer's team to run. Smart Sales reads from the systems already in place and adds the cross-system view those silos cannot produce alone.
-
-**Do the multi-channel campaigns have an attribution trail?**
-
-Yes. Every offer is tagged, so when a new policy is issued the layer attributes it to the specific opportunity, segment, channel, and message. WIR's Smart Sales logs every decision, offer, and outcome, so the insurer can reconstruct why a given client was prioritized and measure conversion and attributed premium against a control group. The attribution trail also keeps the engine explainable and auditable, consistent with LGPD obligations.
-
-**How does automated upsell help penetration and retention grow together?**
-
-Penetration, measured as products per client, and retention rise together because clients who hold two or more products with the same carrier retain better than single-product clients. WIR's Smart Sales tracks both metrics on the same prioritized motion, and outcomes feed back into the models to sharpen propensity scoring over time. The result is more products per client and stronger retention, driven by in-appetite offers rather than broad untargeted campaigns.`
+WIR is an InsurTech founded in 2025, built with Mahway and Avante, with founders united between São Paulo and Silicon Valley. Its current public traction is a first POC in execution with a global insurer in the Transport line. The market backdrop supports the model. The Seguros e Danos market grows double digits per year while company structure does not keep pace, Deloitte finds underwriters spend 40% of their time on administrative tasks, and Capgemini reports that 60%+ of brokers choose an insurer by response speed. The AI layer for insurance. On top of the systems the insurer already runs, never in their place. To see Smart Sales on a real portfolio, talk to the team at wirinnovation.ai.`,
+    faq: [
+      { q: "How does AI map the portfolio by client and product to find upsell?", a: "The AI layer ingests policy, endorsement, claim, and client records from every product system, then resolves the same client across systems into one entity. The output is a client by product matrix where each empty cell is a product the client does not yet hold. WIR's Smart Sales turns every empty cell into a candidate opportunity, enriched with behavioral and risk signals, so the next-best product becomes visible where disconnected systems kept it hidden." },
+      { q: "How does the upsell score prioritize opportunities?", a: "Each candidate opportunity is scored on two dimensions, propensity to convert and expected premium and value, both calibrated to the insurer's underwriting manual and risk appetite. Offers that would breach risk appetite are suppressed before they reach a channel. WIR's Smart Sales then ranks the in-appetite, high-value opportunities and routes each to the channel best placed to close it, giving the broker a prioritized, reason-coded list rather than a flat spreadsheet." },
+      { q: "Does automating upsell and cross-sell replace the insurer's core?", a: "No. WIR is an external AI layer that sits on top of the insurer's existing core, policy, and CRM systems and never replaces them. Integration is read-only, with no write-back required to start, so the core remains the system of record. There is no migration and no IT project for the insurer's team to run. Smart Sales reads from the systems already in place and adds the cross-system view those silos cannot produce alone." },
+      { q: "Do the multi-channel campaigns have an attribution trail?", a: "Yes. Every offer is tagged, so when a new policy is issued the layer attributes it to the specific opportunity, segment, channel, and message. WIR's Smart Sales logs every decision, offer, and outcome, so the insurer can reconstruct why a given client was prioritized and measure conversion and attributed premium against a control group. The attribution trail also keeps the engine explainable and auditable, consistent with LGPD obligations." },
+      { q: "How does automated upsell help penetration and retention grow together?", a: "Penetration, measured as products per client, and retention rise together because clients who hold two or more products with the same carrier retain better than single-product clients. WIR's Smart Sales tracks both metrics on the same prioritized motion, and outcomes feed back into the models to sharpen propensity scoring over time. The result is more products per client and stronger retention, driven by in-appetite offers rather than broad untargeted campaigns." }
+    ],
   },
   {
     slug: "declinio-automatico-cotacao-seguros-en",
@@ -6012,29 +5660,14 @@ Two further controls round out the posture. Submission data is personal and comm
 
 WIR is the AI layer for insurance, an external intelligence platform that automates the quotation and underwriting journey on top of the insurer's existing systems, calibrated to that insurer's own risk-acceptance policy. WIR is not an insurer, broker, or MGA, and it does not carry risk. It is 100% external, with no core migration and no IT project for the insurer's team to run. The automatic decline lives inside the Underwriter Intelligence module. Real-time Machine Learning scoring calibrated to appetite, automatic routing by appetite and exposure, and an automated decision that quotes, declines automatically with an explanation and audit trail, or escalates the borderline case to a human underwriter. The decision writes back to the policy core and returns the audit trail, with a visible SLA and an underwriter queue.
 
-Alongside Underwriter Intelligence, the Smart Sales module brings distribution intelligence, mapping the portfolio by client and product, scoring upsell and next-best-action, and running multi-channel campaigns with an attribution trail. Real-time dashboards give a proactive view of in-flight deals and pipeline. WIR's only public traction today is a first POC in execution with a global insurer in the Transport line, and the Brazilian Seguros e Danos market it serves grows double digits per year while company structures do not keep pace. Insurance leaders evaluating automatic decline can start a conversation with WIR to scope a line, a channel, and the calibration to their underwriting manual.
-
-### Frequently asked questions
-
-**How does automatic decline respect appetite and the underwriting manual?**
-
-The engine encodes the insurer's eligibility, exclusion, and referral rules, then checks every submission against them in real time. WIR calibrates its Machine Learning to that insurer's own risk appetite and underwriting manual, not a market average. A risk that breaches an excluded line, geography, occupancy, sum-insured ceiling, or loss-history threshold is declined automatically, so the decision follows the documented risk-acceptance policy on every case.
-
-**Does the declined risk get a clear reason and an audit trail?**
-
-Yes. Every automatic decline returns a specific reason rather than a generic no, and writes a full audit trail. WIR records which rule or model threshold triggered the decline, the input data, the timestamp, and the model version. This makes each decision explainable and auditable, satisfying LGPD Article 20, which gives the data subject the right to request review of solely automated decisions.
-
-**Does automatic decline replace the insurer's core?**
-
-No. WIR is an external AI layer that never replaces the core. It sits on top of the insurer's existing core and policy systems, reading, scoring, and routing submissions, then writing the decision and audit trail back. The setup requires no core migration and puts no load on the insurer's IT team. The core stays the system of record, never in its place.
-
-**Do borderline cases still go through a human underwriter?**
-
-Yes. Risk near a threshold or scored with low confidence escalates to a human underwriter, with the scoring and reasoning attached. WIR automates only the clear cases, a quote inside appetite or an automatic decline clearly outside it. The automation does not pretend to resolve ambiguity it cannot, so borderline submissions reach an analyst with full context for a faster, informed call.
-
-**How much faster does the broker get the decline response?**
-
-The broker gets a real-time reasoned answer instead of multi-day silence. WIR reads, structures, scores, and routes each submission before a human touches it, so a clearly out-of-appetite risk returns an immediate decline with its specific reason. This matters for distribution, since brokers value response speed when choosing an insurer, and a fast, consistent answer protects the channel relationship.`
+Alongside Underwriter Intelligence, the Smart Sales module brings distribution intelligence, mapping the portfolio by client and product, scoring upsell and next-best-action, and running multi-channel campaigns with an attribution trail. Real-time dashboards give a proactive view of in-flight deals and pipeline. WIR's only public traction today is a first POC in execution with a global insurer in the Transport line, and the Brazilian Seguros e Danos market it serves grows double digits per year while company structures do not keep pace. Insurance leaders evaluating automatic decline can start a conversation with WIR to scope a line, a channel, and the calibration to their underwriting manual.`,
+    faq: [
+      { q: "How does automatic decline respect appetite and the underwriting manual?", a: "The engine encodes the insurer's eligibility, exclusion, and referral rules, then checks every submission against them in real time. WIR calibrates its Machine Learning to that insurer's own risk appetite and underwriting manual, not a market average. A risk that breaches an excluded line, geography, occupancy, sum-insured ceiling, or loss-history threshold is declined automatically, so the decision follows the documented risk-acceptance policy on every case." },
+      { q: "Does the declined risk get a clear reason and an audit trail?", a: "Yes. Every automatic decline returns a specific reason rather than a generic no, and writes a full audit trail. WIR records which rule or model threshold triggered the decline, the input data, the timestamp, and the model version. This makes each decision explainable and auditable, satisfying LGPD Article 20, which gives the data subject the right to request review of solely automated decisions." },
+      { q: "Does automatic decline replace the insurer's core?", a: "No. WIR is an external AI layer that never replaces the core. It sits on top of the insurer's existing core and policy systems, reading, scoring, and routing submissions, then writing the decision and audit trail back. The setup requires no core migration and puts no load on the insurer's IT team. The core stays the system of record, never in its place." },
+      { q: "Do borderline cases still go through a human underwriter?", a: "Yes. Risk near a threshold or scored with low confidence escalates to a human underwriter, with the scoring and reasoning attached. WIR automates only the clear cases, a quote inside appetite or an automatic decline clearly outside it. The automation does not pretend to resolve ambiguity it cannot, so borderline submissions reach an analyst with full context for a faster, informed call." },
+      { q: "How much faster does the broker get the decline response?", a: "The broker gets a real-time reasoned answer instead of multi-day silence. WIR reads, structures, scores, and routes each submission before a human touches it, so a clearly out-of-appetite risk returns an immediate decline with its specific reason. This matters for distribution, since brokers value response speed when choosing an insurer, and a fast, consistent answer protects the channel relationship." }
+    ],
   },
   {
     slug: "escalonamento-humano-subscricao-seguros-en",
@@ -6085,29 +5718,14 @@ WIR is the AI layer for insurance. On top of the systems the insurer already run
 
 Human escalation is handled by Underwriter Intelligence, the WIR module that automates the quotation journey so underwriters can focus on analyzing risk and on business development. It applies real-time ML scoring calibrated to appetite, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker. At the decision stage, the platform either quotes, declines automatically, or escalates the case to a human, always with an explanation, and writes back to the policy core with the full audit trail, a visible SLA, and an underwriter queue. The companion module, Smart Sales, maps the portfolio by client and product and scores next-best-action so distribution and underwriting move together. This addresses a structural pressure in a market that grows double digits per year, where company structure does not keep pace with the acceleration.
 
-Every WIR decision is explainable and returns a complete audit trail. Data is encrypted at every step and the platform is LGPD compliant, which is what makes the escalation path described above auditable in production. WIR's public traction is conservative and specific: a first POC in execution with a global insurer in the Transport line. Insurers and innovation teams evaluating human-in-the-loop escalation can start a conversation with WIR to scope it against their own underwriting manual.
-
-### Frequently asked questions
-
-**When does a risk escalate to a human underwriter instead of an automated decision?**
-
-A risk escalates when the model should not decide alone, automatically, by appetite and exposure. The defensible triggers are case complexity, an exposure or sum insured above a configured limit or delegated authority, low model confidence below a calibrated threshold, missing or conflicting data, fraud or anomaly flags, and appetite edge cases. In WIR's Underwriter Intelligence, easy volume auto-quotes or auto-declines while these minority cases route to a person, so judgment is reserved for what actually carries risk.
-
-**Does the underwriter get the model rationale and audit trail on escalation?**
-
-Yes. The underwriter receives an enriched case package, not a blank file. It carries the structured extracted data with provenance per field, the model rationale in human-readable form, the specific escalation reason that fired, fraud and anomaly flags, any failed validations, and a complete audit trail of every automated step. WIR's platform escalates always with an explanation and writes back to the policy core with the full audit trail, a visible SLA, and an underwriter queue.
-
-**Does human-in-the-loop escalation replace the insurer's core?**
-
-No. Human-in-the-loop escalation does not replace the insurer's core. WIR is an external AI layer that sits on top of the existing core and policy systems and writes its output back to them. It is never a core replacement and never a system migration. The policy administration system, ledgers, and regulatory reporting stay exactly where they are. The layer can go live on one line, prove itself, and expand, without betting the policy book on a single cutover.
-
-**How does escalation respect appetite and the underwriting manual?**
-
-Escalation respects appetite and the manual because the model is calibrated to both before it runs. Calibration encodes the rules, authority limits, exposure thresholds, appetite boundaries, and the confidence thresholds that govern routing, making the model this insurer's model. WIR's Underwriter Intelligence applies real-time ML scoring calibrated to appetite and automatic routing by appetite and exposure, so any decision traces back to the insurer's documented policy rather than an opaque external rule.
-
-**Can the escalation triggers be tuned by product and exposure?**
-
-Yes. Triggers are configurable by line, product, and exposure. Each line defines what auto-quote, automatic decline, and escalate mean, with its own exposure thresholds, authority limits, and confidence thresholds. Testing shadow-runs the layer against historical and live submissions, then tunes thresholds so escalation volume matches available underwriting capacity. WIR also runs predictive conversion analysis by product, risk, and broker, and recalibrates as appetite, loss experience, and the manual evolve.`
+Every WIR decision is explainable and returns a complete audit trail. Data is encrypted at every step and the platform is LGPD compliant, which is what makes the escalation path described above auditable in production. WIR's public traction is conservative and specific: a first POC in execution with a global insurer in the Transport line. Insurers and innovation teams evaluating human-in-the-loop escalation can start a conversation with WIR to scope it against their own underwriting manual.`,
+    faq: [
+      { q: "When does a risk escalate to a human underwriter instead of an automated decision?", a: "A risk escalates when the model should not decide alone, automatically, by appetite and exposure. The defensible triggers are case complexity, an exposure or sum insured above a configured limit or delegated authority, low model confidence below a calibrated threshold, missing or conflicting data, fraud or anomaly flags, and appetite edge cases. In WIR's Underwriter Intelligence, easy volume auto-quotes or auto-declines while these minority cases route to a person, so judgment is reserved for what actually carries risk." },
+      { q: "Does the underwriter get the model rationale and audit trail on escalation?", a: "Yes. The underwriter receives an enriched case package, not a blank file. It carries the structured extracted data with provenance per field, the model rationale in human-readable form, the specific escalation reason that fired, fraud and anomaly flags, any failed validations, and a complete audit trail of every automated step. WIR's platform escalates always with an explanation and writes back to the policy core with the full audit trail, a visible SLA, and an underwriter queue." },
+      { q: "Does human-in-the-loop escalation replace the insurer's core?", a: "No. Human-in-the-loop escalation does not replace the insurer's core. WIR is an external AI layer that sits on top of the existing core and policy systems and writes its output back to them. It is never a core replacement and never a system migration. The policy administration system, ledgers, and regulatory reporting stay exactly where they are. The layer can go live on one line, prove itself, and expand, without betting the policy book on a single cutover." },
+      { q: "How does escalation respect appetite and the underwriting manual?", a: "Escalation respects appetite and the manual because the model is calibrated to both before it runs. Calibration encodes the rules, authority limits, exposure thresholds, appetite boundaries, and the confidence thresholds that govern routing, making the model this insurer's model. WIR's Underwriter Intelligence applies real-time ML scoring calibrated to appetite and automatic routing by appetite and exposure, so any decision traces back to the insurer's documented policy rather than an opaque external rule." },
+      { q: "Can the escalation triggers be tuned by product and exposure?", a: "Yes. Triggers are configurable by line, product, and exposure. Each line defines what auto-quote, automatic decline, and escalate mean, with its own exposure thresholds, authority limits, and confidence thresholds. Testing shadow-runs the layer against historical and live submissions, then tunes thresholds so escalation volume matches available underwriting capacity. WIR also runs predictive conversion analysis by product, risk, and broker, and recalibrates as appetite, loss experience, and the manual evolve." }
+    ],
   },
   {
     slug: "dados-nao-estruturados-seguros-ia",
@@ -6162,29 +5780,14 @@ A WIR não é seguradora, corretora nem MGA, e não carrega risco. Ela automatiz
 
 A leitura inteligente de submissões tende a sair de provas de conceito experimentais e se firmar como capacidade padrão na frente do funil, porque o valor é mensurável, tempo de subscrição recuperado, cotação mais rápida e dado mais limpo, e o risco de integração é baixo quando a inteligência se apoia sobre o core em vez de entrar nele. Enquanto o prêmio de Seguros e Danos crescer em dois dígitos sem crescimento proporcional de quadro de subscrição, a lacuna operacional que a automação fecha tende a se ampliar.
 
-A pressão da distribuição deve continuar subindo. Seguradoras que cotam mais rápido e de forma mais consistente tendem a ganhar participação na camada do corretor, o que faz da automação de intake uma alavanca competitiva, não uma conveniência de retaguarda. O padrão dominante deve ser o de camadas de IA externas integradas a cores legados, porque migrações de core seguem lentas, caras e arriscadas. À medida que a subscrição automatizada escala, a accountability da LGPD e a auditabilidade alinhada à SUSEP tendem a se tornar requisitos de compra, e soluções que capturam uma trilha limpa do documento de origem até a decisão devem ser favorecidas.
-
-### Perguntas frequentes
-
-**Por que dados não estruturados travam a subscrição?**
-
-Dados não estruturados travam a subscrição porque a submissão chega fragmentada em e-mails, PDFs escaneados e planilhas soltas, sem formato padronizado. O subscritor precisa reconstruir um quadro de risco coerente e redigitar campos como valor segurado, ocupação e histórico de sinistros à mão antes de decidir. Segundo a Deloitte, o subscritor já dedica 40% do tempo a tarefas administrativas, tempo tirado direto do julgamento de risco no ramo de Seguros e Danos.
-
-**Quanto tempo as empresas perdem organizando dados não estruturados?**
-
-Segundo o Gartner, equipes corporativas perdem de 20% a 30% do tempo localizando, organizando e redigitando dados não estruturados, em vez de agir sobre eles. No mercado de Seguros e Danos, esse tempo sai diretamente do subscritor, que organiza submissões em vez de avaliar risco. A leitura inteligente da WIR recupera essa janela ao converter e-mails, PDFs e planilhas em campos estruturados de forma automática, sobre os sistemas que a seguradora já opera.
-
-**Como a IA transforma e-mails e PDFs de cotação em campos estruturados?**
-
-Modelos de Machine Learning e compreensão de documentos leem o conteúdo não estruturado, PDFs digitados e escaneados, tabelas, texto livre e notas do corretor, e extraem os campos relevantes para a subscrição. Cada extração recebe um score de confiança, e os casos de baixa confiança são sinalizados para revisão humana em vez de passarem em silêncio. A leitura inteligente da WIR entrega esse dado estruturado aos sistemas que a seguradora já usa, com alta precisão.
-
-**A leitura inteligente de submissões é auditável?**
-
-Sim. A leitura inteligente da WIR registra documento de origem, campo extraído, score de confiança e racional da decisão, criando uma trilha consistente da fonte ao campo estruturado. Toda decisão é explicável e retorna trilha de auditoria completa, com dados criptografados em cada etapa e conformidade com a LGPD. Isso sustenta tanto a accountability da LGPD quanto a auditabilidade alinhada à supervisão da SUSEP para decisões automatizadas de subscrição.
-
-**A WIR substitui o core para estruturar os dados?**
-
-Não. A WIR é uma camada de IA 100% externa, que se acopla aos sistemas atuais da seguradora sem migração de core e sem carga sobre o TI. A leitura inteligente extrai os campos de e-mails, PDFs e planilhas e devolve dado estruturado aos sistemas que a seguradora já opera. A WIR não é seguradora, corretora nem MGA, e não carrega risco. A tração pública é uma POC em execução com uma seguradora global no ramo de Transporte.`
+A pressão da distribuição deve continuar subindo. Seguradoras que cotam mais rápido e de forma mais consistente tendem a ganhar participação na camada do corretor, o que faz da automação de intake uma alavanca competitiva, não uma conveniência de retaguarda. O padrão dominante deve ser o de camadas de IA externas integradas a cores legados, porque migrações de core seguem lentas, caras e arriscadas. À medida que a subscrição automatizada escala, a accountability da LGPD e a auditabilidade alinhada à SUSEP tendem a se tornar requisitos de compra, e soluções que capturam uma trilha limpa do documento de origem até a decisão devem ser favorecidas.`,
+    faq: [
+      { q: "Por que dados não estruturados travam a subscrição?", a: "Dados não estruturados travam a subscrição porque a submissão chega fragmentada em e-mails, PDFs escaneados e planilhas soltas, sem formato padronizado. O subscritor precisa reconstruir um quadro de risco coerente e redigitar campos como valor segurado, ocupação e histórico de sinistros à mão antes de decidir. Segundo a Deloitte, o subscritor já dedica 40% do tempo a tarefas administrativas, tempo tirado direto do julgamento de risco no ramo de Seguros e Danos." },
+      { q: "Quanto tempo as empresas perdem organizando dados não estruturados?", a: "Segundo o Gartner, equipes corporativas perdem de 20% a 30% do tempo localizando, organizando e redigitando dados não estruturados, em vez de agir sobre eles. No mercado de Seguros e Danos, esse tempo sai diretamente do subscritor, que organiza submissões em vez de avaliar risco. A leitura inteligente da WIR recupera essa janela ao converter e-mails, PDFs e planilhas em campos estruturados de forma automática, sobre os sistemas que a seguradora já opera." },
+      { q: "Como a IA transforma e-mails e PDFs de cotação em campos estruturados?", a: "Modelos de Machine Learning e compreensão de documentos leem o conteúdo não estruturado, PDFs digitados e escaneados, tabelas, texto livre e notas do corretor, e extraem os campos relevantes para a subscrição. Cada extração recebe um score de confiança, e os casos de baixa confiança são sinalizados para revisão humana em vez de passarem em silêncio. A leitura inteligente da WIR entrega esse dado estruturado aos sistemas que a seguradora já usa, com alta precisão." },
+      { q: "A leitura inteligente de submissões é auditável?", a: "Sim. A leitura inteligente da WIR registra documento de origem, campo extraído, score de confiança e racional da decisão, criando uma trilha consistente da fonte ao campo estruturado. Toda decisão é explicável e retorna trilha de auditoria completa, com dados criptografados em cada etapa e conformidade com a LGPD. Isso sustenta tanto a accountability da LGPD quanto a auditabilidade alinhada à supervisão da SUSEP para decisões automatizadas de subscrição." },
+      { q: "A WIR substitui o core para estruturar os dados?", a: "Não. A WIR é uma camada de IA 100% externa, que se acopla aos sistemas atuais da seguradora sem migração de core e sem carga sobre o TI. A leitura inteligente extrai os campos de e-mails, PDFs e planilhas e devolve dado estruturado aos sistemas que a seguradora já opera. A WIR não é seguradora, corretora nem MGA, e não carrega risco. A tração pública é uma POC em execução com uma seguradora global no ramo de Transporte." }
+    ],
   },
   {
     slug: "fraude-seguros-brasil-ia",
@@ -6243,33 +5846,18 @@ O score de fraude deixa de ser uma etapa separada de investigação e passa a in
 
 Explicabilidade e governança viram requisito de base, não diferencial. Empurradas pela LGPD, pela orientação da ANPD e pela supervisão da SUSEP, a saída explicável e auditável passa a ser linha de partida para qualquer decisão automatizada de subscrição. Modelos em caixa-preta não devem passar na revisão de governança. O sentido geral é claro: o mercado vai de detectar fraude depois da perda para pontuar risco e fraude no momento da subscrição, com uma camada de IA explicável, auditável e calibrada ao apetite, sobre o core que a seguradora já tem.
 
-### Perguntas frequentes
-
-**Como a IA detecta fraude já na etapa de subscrição?**
-
-A IA lê a submissão do corretor no intake e pontua anomalia antes da emissão, não depois do pagamento do sinistro. O motor de risco e fraude da WIR estrutura os campos automaticamente a partir de PDF, formulário e planilha, e nesse mesmo checkpoint sinaliza documentos inconsistentes, valores que não batem e campos manipulados. A anomalia aparece na entrada da cotação, onde combatê-la é estruturalmente mais barato do que após a perda.
-
-**Que sinais o motor de risco e fraude analisa?**
-
-O motor combina muitos sinais em uma única leitura multifator, em vez de aplicar regras estáticas. Avalia valor declarado contra valor de referência, consistência de identidade e endereço, recorrência e histórico, integridade documental, e sinais de canal e comportamento. Esse score multifator melhora a relação sinal-ruído, com menos falsos positivos no negócio limpo e foco mais nítido nos casos genuinamente anômalos que merecem revisão.
-
-**A detecção de fraude por IA é explicável e auditável?**
-
-Sim. A saída nunca é uma recusa em caixa-preta. Cada sinalização do motor de risco e fraude da WIR carrega os fatores que a motivaram, produzindo uma trilha explicável e auditável. Isso atende à decisão do subscritor, à relação com o corretor e às expectativas da LGPD sobre decisões automatizadas, com dados criptografados em cada etapa. Explicabilidade aqui é controle de qualidade, não apenas item de conformidade.
-
-**O motor de fraude fica calibrado ao apetite da seguradora?**
-
-Sim. O score de risco roda calibrado ao apetite e ao manual de subscrição de cada seguradora. Uma submissão ao mesmo tempo anômala e fora de apetite é sinalizada com motivo claro, enquanto o negócio limpo e dentro de apetite flui mais rápido. Como é Machine Learning multifator, e não um conjunto de regras agressivas, reduz o atrito com clientes honestos e com o corretor sem afrouxar o controle de fraude.
-
-**A WIR substitui o core para detectar fraude?**
-
-Não. A WIR é a camada de IA do seguro, uma camada de inteligência 100% externa sobre os sistemas que a seguradora já usa, nunca no lugar deles. Não há migração de core nem carga no TI. O motor de risco e fraude opera ao lado do Underwriter Intelligence dentro da esteira da WIR. A única tração pública é uma POC em execução com uma seguradora global no ramo de Transporte.`,
+`,
     faq: [
       { q: "Como detectar fraude em seguros com IA no Brasil?", a: "No Brasil, a IA detecta fraude ao mover a inteligência do sinistro para a subscrição, sinalizando anomalias na submissão antes da emissão. O motor de risco e fraude da WIR lê a submissão do corretor no intake, estrutura os campos e sinaliza documentos inconsistentes, valores que não batem e campos manipulados. Como camada de IA externa sobre o core existente, combate a fraude na entrada da cotação, onde é estruturalmente mais barato do que após a perda." },
       { q: "Como a IA identifica indícios de fraude na subscrição?", a: "A IA combina muitos sinais em uma única leitura multifator, em vez de aplicar regras estáticas, para pontuar anomalia na subscrição. O motor de risco e fraude da WIR avalia valor declarado contra valor de referência, consistência de identidade e endereço, recorrência e histórico, integridade documental e sinais de canal e comportamento. Esse score multifator melhora a relação sinal-ruído, com menos falsos positivos no negócio limpo e foco nos casos genuinamente anômalos." },
       { q: "A detecção de fraude por IA substitui o analista?", a: "Não. A detecção de fraude por IA não substitui o analista, ela automatiza a triagem de rotina e escala os casos que exigem julgamento. A WIR é uma camada de IA externa sobre os sistemas atuais, nunca no lugar deles. Segundo a Deloitte, 40% do tempo do subscritor já é consumido por tarefas administrativas. O motor de risco e fraude tira essa triagem manual do caminho e envia o caso genuinamente anômalo para revisão humana." },
       { q: "O motor de risco e fraude exige trocar o core da seguradora?", a: "Não. O motor de risco e fraude opera como camada de IA externa sobre o core existente, sem migração e sem carga no TI. É uma camada de inteligência 100% externa, que integra com os sistemas que a seguradora já usa. O motor lê a submissão no intake e pontua anomalia antes da emissão, ao lado do Underwriter Intelligence dentro da esteira da WIR. Como a migração de core é lenta, cara e arriscada, esse é o caminho prático." },
       { q: "As decisões de fraude por IA são explicáveis e auditáveis?", a: "Sim. Cada sinalização do motor de risco e fraude da WIR carrega os fatores que a motivaram, em uma trilha explicável e auditável. A saída nunca é uma recusa em caixa-preta. Isso atende à decisão do subscritor, à relação com o corretor e às expectativas da LGPD sobre decisões automatizadas, com dados criptografados em cada etapa. Explicabilidade aqui é controle de qualidade, não apenas item de conformidade, e nenhuma decisão é apresentada como infalível." },
+      { q: "Como a IA detecta fraude já na etapa de subscrição?", a: "A IA lê a submissão do corretor no intake e pontua anomalia antes da emissão, não depois do pagamento do sinistro. O motor de risco e fraude da WIR estrutura os campos automaticamente a partir de PDF, formulário e planilha, e nesse mesmo checkpoint sinaliza documentos inconsistentes, valores que não batem e campos manipulados. A anomalia aparece na entrada da cotação, onde combatê-la é estruturalmente mais barato do que após a perda." },
+      { q: "Que sinais o motor de risco e fraude analisa?", a: "O motor combina muitos sinais em uma única leitura multifator, em vez de aplicar regras estáticas. Avalia valor declarado contra valor de referência, consistência de identidade e endereço, recorrência e histórico, integridade documental, e sinais de canal e comportamento. Esse score multifator melhora a relação sinal-ruído, com menos falsos positivos no negócio limpo e foco mais nítido nos casos genuinamente anômalos que merecem revisão." },
+      { q: "A detecção de fraude por IA é explicável e auditável?", a: "Sim. A saída nunca é uma recusa em caixa-preta. Cada sinalização do motor de risco e fraude da WIR carrega os fatores que a motivaram, produzindo uma trilha explicável e auditável. Isso atende à decisão do subscritor, à relação com o corretor e às expectativas da LGPD sobre decisões automatizadas, com dados criptografados em cada etapa. Explicabilidade aqui é controle de qualidade, não apenas item de conformidade." },
+      { q: "O motor de fraude fica calibrado ao apetite da seguradora?", a: "Sim. O score de risco roda calibrado ao apetite e ao manual de subscrição de cada seguradora. Uma submissão ao mesmo tempo anômala e fora de apetite é sinalizada com motivo claro, enquanto o negócio limpo e dentro de apetite flui mais rápido. Como é Machine Learning multifator, e não um conjunto de regras agressivas, reduz o atrito com clientes honestos e com o corretor sem afrouxar o controle de fraude." },
+      { q: "A WIR substitui o core para detectar fraude?", a: "Não. A WIR é a camada de IA do seguro, uma camada de inteligência 100% externa sobre os sistemas que a seguradora já usa, nunca no lugar deles. Não há migração de core nem carga no TI. O motor de risco e fraude opera ao lado do Underwriter Intelligence dentro da esteira da WIR. A única tração pública é uma POC em execução com uma seguradora global no ramo de Transporte." }
     ],
   },
   {
@@ -6325,29 +5913,14 @@ A história estrutural de crescimento segue de pé. Formalização de pequenas e
 
 As variáveis competitivas decisivas migram para velocidade e consistência. Em um mercado liderado pelo corretor, a seguradora que responde primeiro com uma cotação sólida e alinhada ao apetite leva o volume. A subscrição e a distribuição movidas a IA transformam velocidade até a cotação em participação de mercado e em risco recém-segurado. Os ventos regulatórios ajudam. Segundo a SUSEP, o Open Insurance e um arcabouço de LGPD mais maduro tendem a melhorar a disponibilidade e a portabilidade de dados, desde que governança e explicabilidade acompanhem o ritmo.
 
-A leitura líquida para quem decide é operacional, não apenas comercial. A lacuna de proteção é uma oportunidade que se destrava acelerando a esteira de subscrição e de distribuição, deixando a seguradora cotar mais riscos, ampliar apetite com critério e alcançar segmentos que o modelo manual nunca serviria de forma econômica. É esse o terreno em que a WIR opera, como camada de IA externa sobre os sistemas atuais, com decisão explicável, auditável e em conformidade com a LGPD.
-
-### Perguntas frequentes
-
-**O que é a lacuna de proteção no mercado de seguros?**
-
-A lacuna de proteção é o descompasso entre a exposição econômica a perdas e o que está efetivamente coberto por apólices. No Brasil, ela se abre na cauda longa, em riscos residenciais e no patrimonial de pequenas empresas, onde a esteira manual de cotação não alcança os segmentos de forma rentável. Existe demanda latente que o modelo operacional atual não converte em apólices emitidas, sobretudo nos ramos pessoais e de pequenas e médias empresas.
-
-**Por que a penetração de seguros no Brasil ainda é baixa?**
-
-A penetração segue baixa frente a mercados maduros porque a lacuna vem de fricções estruturais, não de uma causa única. Pesam a sensibilidade a preço nas faixas de menor renda, a latência de cotação, o gargalo de capacidade da subscrição e a fragmentação de dados em PDF, e-mail e sistemas legados. Segundo a BCG, 70% das seguradoras não executam inovação por limitações de TI, o que congela a modernização da esteira que alcançaria a cauda longa.
-
-**Como a IA ajuda a fechar a lacuna de proteção?**
-
-A IA fecha a lacuna acelerando e padronizando a esteira de subscrição sem perder controle de fraude nem auditabilidade. A leitura inteligente de documentos elimina a redigitação, o enriquecimento prepara o arquivo para decisão e o scoring calibrado ao apetite protege a sinistralidade enquanto o volume sobe. Segundo a Deloitte, 40% do tempo do subscritor vai para tarefas administrativas. Liberar essa capacidade permite cotar mais riscos e servir segmentos que o modelo manual nunca atenderia de forma econômica.
-
-**Como a velocidade de cotação influencia a penetração?**
-
-A velocidade de cotação é um motor direto da penetração porque o mercado brasileiro é liderado pelo corretor. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. Cada hora que o subscritor gasta em intake manual é uma hora que o corretor espera, e corretor que espera leva o volume para outra seguradora. Responder primeiro com uma cotação sólida e alinhada ao apetite transforma velocidade até a cotação em prêmio emitido e em risco recém-segurado.
-
-**A WIR substitui o core para ampliar a distribuição?**
-
-Não. A WIR é a camada de IA externa que opera sobre os sistemas atuais da seguradora, sem migração de core e sem carga no TI. Com Underwriter Intelligence ela automatiza a jornada de cotação segundo a política de aceitação de cada seguradora, e com Smart Sales adiciona inteligência de distribuição. A WIR não é seguradora, corretora nem MGA, e não carrega risco. Toda decisão é explicável, auditável e em conformidade com a LGPD. A tração pública é uma POC em execução com uma seguradora global no ramo de Transporte.`
+A leitura líquida para quem decide é operacional, não apenas comercial. A lacuna de proteção é uma oportunidade que se destrava acelerando a esteira de subscrição e de distribuição, deixando a seguradora cotar mais riscos, ampliar apetite com critério e alcançar segmentos que o modelo manual nunca serviria de forma econômica. É esse o terreno em que a WIR opera, como camada de IA externa sobre os sistemas atuais, com decisão explicável, auditável e em conformidade com a LGPD.`,
+    faq: [
+      { q: "O que é a lacuna de proteção no mercado de seguros?", a: "A lacuna de proteção é o descompasso entre a exposição econômica a perdas e o que está efetivamente coberto por apólices. No Brasil, ela se abre na cauda longa, em riscos residenciais e no patrimonial de pequenas empresas, onde a esteira manual de cotação não alcança os segmentos de forma rentável. Existe demanda latente que o modelo operacional atual não converte em apólices emitidas, sobretudo nos ramos pessoais e de pequenas e médias empresas." },
+      { q: "Por que a penetração de seguros no Brasil ainda é baixa?", a: "A penetração segue baixa frente a mercados maduros porque a lacuna vem de fricções estruturais, não de uma causa única. Pesam a sensibilidade a preço nas faixas de menor renda, a latência de cotação, o gargalo de capacidade da subscrição e a fragmentação de dados em PDF, e-mail e sistemas legados. Segundo a BCG, 70% das seguradoras não executam inovação por limitações de TI, o que congela a modernização da esteira que alcançaria a cauda longa." },
+      { q: "Como a IA ajuda a fechar a lacuna de proteção?", a: "A IA fecha a lacuna acelerando e padronizando a esteira de subscrição sem perder controle de fraude nem auditabilidade. A leitura inteligente de documentos elimina a redigitação, o enriquecimento prepara o arquivo para decisão e o scoring calibrado ao apetite protege a sinistralidade enquanto o volume sobe. Segundo a Deloitte, 40% do tempo do subscritor vai para tarefas administrativas. Liberar essa capacidade permite cotar mais riscos e servir segmentos que o modelo manual nunca atenderia de forma econômica." },
+      { q: "Como a velocidade de cotação influencia a penetração?", a: "A velocidade de cotação é um motor direto da penetração porque o mercado brasileiro é liderado pelo corretor. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. Cada hora que o subscritor gasta em intake manual é uma hora que o corretor espera, e corretor que espera leva o volume para outra seguradora. Responder primeiro com uma cotação sólida e alinhada ao apetite transforma velocidade até a cotação em prêmio emitido e em risco recém-segurado." },
+      { q: "A WIR substitui o core para ampliar a distribuição?", a: "Não. A WIR é a camada de IA externa que opera sobre os sistemas atuais da seguradora, sem migração de core e sem carga no TI. Com Underwriter Intelligence ela automatiza a jornada de cotação segundo a política de aceitação de cada seguradora, e com Smart Sales adiciona inteligência de distribuição. A WIR não é seguradora, corretora nem MGA, e não carrega risco. Toda decisão é explicável, auditável e em conformidade com a LGPD. A tração pública é uma POC em execução com uma seguradora global no ramo de Transporte." }
+    ],
   },
   {
     slug: "open-insurance-brasil-seguradoras",
@@ -6398,45 +5971,21 @@ O fasamento do Open Insurance deve seguir dos dados públicos rumo ao dado pesso
 
 A restrição que sobra não é a disponibilidade do dado, e sim a capacidade de interpretar dado compartilhado contra o apetite, em tempo real, de forma explicável e auditável, sobre o core existente, em vez de uma troca de plataforma de vários anos. À medida que o dado do Open Insurance se torna uma camada de entrada comum, o diferencial migra para a camada de inteligência que o consome. É essa leitura, e não a posse do dado, que separa quem captura o ganho de quem só observa o regime avançar. A WIR se posiciona nesse ponto, como a camada de IA que lê o documento, pontua o risco contra o manual, sinaliza fraude e sustenta a precificação, preservando a auditabilidade sob a supervisão da SUSEP e a LGPD.
 
-### Perguntas frequentes
-
-**O que é o Open Insurance Brasil e quem regula?**
-
-O Open Insurance Brasil é o regime de seguros aberto conduzido pela SUSEP, que padroniza e compartilha dados em fases. O compartilhamento ocorre sempre mediante consentimento livre, informado e prévio do consumidor. A fase inicial se limita a dados públicos de canais e produtos. O dado pessoal, mais rico para a subscrição, só flui depois do consentimento. A governança é permanente, organizada em conselho deliberativo, secretaria e grupos técnicos de trabalho, sob supervisão da SUSEP.
-
-**Como os dados compartilhados mudam a subscrição de seguros?**
-
-Os dados compartilhados transformam a subscrição de um exercício de coleta em um exercício de interpretação contra o apetite de risco. Dado cadastral, de apólice e, em fases posteriores, transacional chega estruturado e legível por máquina, reduzindo a reconciliação manual. Segundo a Deloitte, o subscritor gasta 40% do tempo em tarefas administrativas. O dado padronizado e consentido encurta o caminho da submissão até a cotação, o que afeta diretamente a conversão pelo canal do corretor.
-
-**A WIR consome dados de Open Insurance para enriquecer submissões?**
-
-Sim. A WIR consome o dado padronizado e consentido do Open Insurance para enriquecer submissões e alimentar o scoring de risco. Como camada de IA externa, ela não constrói os trilhos do regime. O dado entra pelo intake multicanal, passa pela leitura inteligente de documentos onde ainda há documento livre, e é cruzado com fontes como CNPJ, histórico do corretor e exposição. O motor de risco e fraude, calibrado ao apetite, gera score, probabilidade e decisão.
-
-**Os dados do Open Insurance são tratados conforme a LGPD?**
-
-Sim. O dado pessoal do Open Insurance é dado consentido sob a LGPD, e a WIR o trata conforme a lei, criptografado em cada etapa. Os modelos só usam o dado dentro do escopo e do prazo autorizados pelo consumidor. Decisões automatizadas carregam expectativa de transparência e, quando aplicável, de revisão. Toda decisão é explicável e auditável, registrando entradas, versão do modelo e regras de apetite aplicadas, sob a supervisão da SUSEP e a LGPD.
-
-**A WIR substitui o core da seguradora para usar Open Insurance?**
-
-Não. A WIR é a camada de IA externa, 100% sobre o core existente, nunca no lugar dele. Não há migração nem projeto de TI que a seguradora precise tocar. Ela consome o dado padronizado e consentido que já circula no ecossistema e o transforma em decisão de subscrição, escrevendo de volta no core e retornando a trilha de auditoria. A WIR não é seguradora, corretora ou MGA, e não carrega risco.
-
-**Como o Open Insurance está sendo implementado no Brasil?**
-
-O Open Insurance Brasil está sendo implementado pela SUSEP em fases, sempre mediante consentimento livre, informado e prévio do consumidor. A fase inicial se limita a dados públicos de canais e produtos. O dado pessoal, mais rico para a subscrição, só flui depois do consentimento. A governança se tornou permanente, organizada em conselho deliberativo, secretaria e grupos técnicos de trabalho, e o regime padroniza dados cadastrais, de apólice e, em fases posteriores, transacionais.
-
-**Posso compartilhar meu histórico de seguros entre seguradoras no Brasil?**
-
-Sim, desde que você consinta. No Open Insurance Brasil, o dado pessoal só flui depois do consentimento livre, informado e prévio, e os participantes podem usá-lo apenas dentro do escopo e do prazo autorizados, sob a LGPD. Com o histórico de apólice e de sinistro padronizado e visível entre participantes, fica mais difícil esconder histórico adverso na cotação, e a seguradora que vai cotar passa a enxergar registros que antes ficavam dispersos.
-
-**Quais os benefícios do Open Insurance para o segurado no Brasil?**
-
-O regime foi desenhado para trazer inovação ao sistema de seguros, estimular concorrência e ampliar a oferta para o consumidor. Com dado padronizado e consentido chegando já estruturado, o caminho da submissão até a cotação encurta, o que tende a acelerar a resposta. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. O consumidor mantém o controle: o dado pessoal só flui mediante consentimento livre, informado e prévio.`,
+`,
     faq: [
       { q: "Como funciona o open insurance para seguradoras?", a: "Para as seguradoras, o Open Insurance padroniza e compartilha dados que antes ficavam dispersos, sempre mediante consentimento livre, informado e prévio do consumidor. Regulado pela SUSEP, o regime avança em fases. Começa por dados públicos de canais e produtos, e o dado pessoal, mais rico para a subscrição, só flui depois do consentimento. Com o dado chegando estruturado, o diferencial deixa de ser o acesso à informação e passa a ser a capacidade de lê-la contra o apetite de risco, em tempo real." },
       { q: "O que é open insurance no Brasil?", a: "O Open Insurance Brasil é o regime de seguros aberto conduzido pela SUSEP, que padroniza e compartilha dados em fases. O compartilhamento ocorre sempre mediante consentimento livre, informado e prévio do consumidor. A fase inicial se limita a dados públicos de canais e produtos, e o dado pessoal só flui depois do consentimento. Foi desenhado para trazer inovação ao sistema de seguros, estimular concorrência e ampliar a oferta, com governança permanente organizada em conselho deliberativo, secretaria e grupos técnicos de trabalho." },
       { q: "O open insurance é obrigatório para as seguradoras?", a: "O Open Insurance é um regime conduzido pela SUSEP, com governança que se tornou permanente. Regulado pelo supervisor do mercado de Seguros e Danos, avança em fases e organiza-se em conselho deliberativo, secretaria e grupos técnicos de trabalho. O compartilhamento de dado pessoal, porém, nunca é automático. Só ocorre mediante consentimento livre, informado e prévio do consumidor. A WIR não define esse arcabouço regulatório nem constrói os trilhos do regime. Como camada de IA externa, apenas consome o dado padronizado e consentido que já circula." },
       { q: "Como a seguradora usa os dados do open insurance na subscrição?", a: "A seguradora usa o dado padronizado e consentido do Open Insurance para enriquecer e pré-preencher submissões, e então interpretá-las contra o apetite de risco. Na esteira, campos padronizados reduzem o documento livre a processar, a leitura inteligente extrai os campos restantes, e um modelo de Machine Learning ranqueia a submissão contra o apetite e o manual de subscrição, sinalizando o que precisa de um subscritor humano. O Underwriter Intelligence da WIR automatiza esse ponto, com scoring em tempo real, de forma explicável e auditável." },
       { q: "Quais são os benefícios do open insurance para o segurado?", a: "Para o segurado, o Open Insurance foi desenhado para estimular concorrência, ampliar a oferta e manter o controle sobre os próprios dados. Como o dado padronizado e consentido chega já estruturado, o caminho da submissão até a cotação encurta, o que tende a acelerar a resposta ao cliente. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. O consumidor mantém o controle o tempo todo, porque o dado pessoal só flui mediante consentimento livre, informado e prévio, e sob a LGPD." },
+      { q: "O que é o Open Insurance Brasil e quem regula?", a: "O Open Insurance Brasil é o regime de seguros aberto conduzido pela SUSEP, que padroniza e compartilha dados em fases. O compartilhamento ocorre sempre mediante consentimento livre, informado e prévio do consumidor. A fase inicial se limita a dados públicos de canais e produtos. O dado pessoal, mais rico para a subscrição, só flui depois do consentimento. A governança é permanente, organizada em conselho deliberativo, secretaria e grupos técnicos de trabalho, sob supervisão da SUSEP." },
+      { q: "Como os dados compartilhados mudam a subscrição de seguros?", a: "Os dados compartilhados transformam a subscrição de um exercício de coleta em um exercício de interpretação contra o apetite de risco. Dado cadastral, de apólice e, em fases posteriores, transacional chega estruturado e legível por máquina, reduzindo a reconciliação manual. Segundo a Deloitte, o subscritor gasta 40% do tempo em tarefas administrativas. O dado padronizado e consentido encurta o caminho da submissão até a cotação, o que afeta diretamente a conversão pelo canal do corretor." },
+      { q: "A WIR consome dados de Open Insurance para enriquecer submissões?", a: "Sim. A WIR consome o dado padronizado e consentido do Open Insurance para enriquecer submissões e alimentar o scoring de risco. Como camada de IA externa, ela não constrói os trilhos do regime. O dado entra pelo intake multicanal, passa pela leitura inteligente de documentos onde ainda há documento livre, e é cruzado com fontes como CNPJ, histórico do corretor e exposição. O motor de risco e fraude, calibrado ao apetite, gera score, probabilidade e decisão." },
+      { q: "Os dados do Open Insurance são tratados conforme a LGPD?", a: "Sim. O dado pessoal do Open Insurance é dado consentido sob a LGPD, e a WIR o trata conforme a lei, criptografado em cada etapa. Os modelos só usam o dado dentro do escopo e do prazo autorizados pelo consumidor. Decisões automatizadas carregam expectativa de transparência e, quando aplicável, de revisão. Toda decisão é explicável e auditável, registrando entradas, versão do modelo e regras de apetite aplicadas, sob a supervisão da SUSEP e a LGPD." },
+      { q: "A WIR substitui o core da seguradora para usar Open Insurance?", a: "Não. A WIR é a camada de IA externa, 100% sobre o core existente, nunca no lugar dele. Não há migração nem projeto de TI que a seguradora precise tocar. Ela consome o dado padronizado e consentido que já circula no ecossistema e o transforma em decisão de subscrição, escrevendo de volta no core e retornando a trilha de auditoria. A WIR não é seguradora, corretora ou MGA, e não carrega risco." },
+      { q: "Como o Open Insurance está sendo implementado no Brasil?", a: "O Open Insurance Brasil está sendo implementado pela SUSEP em fases, sempre mediante consentimento livre, informado e prévio do consumidor. A fase inicial se limita a dados públicos de canais e produtos. O dado pessoal, mais rico para a subscrição, só flui depois do consentimento. A governança se tornou permanente, organizada em conselho deliberativo, secretaria e grupos técnicos de trabalho, e o regime padroniza dados cadastrais, de apólice e, em fases posteriores, transacionais." },
+      { q: "Posso compartilhar meu histórico de seguros entre seguradoras no Brasil?", a: "Sim, desde que você consinta. No Open Insurance Brasil, o dado pessoal só flui depois do consentimento livre, informado e prévio, e os participantes podem usá-lo apenas dentro do escopo e do prazo autorizados, sob a LGPD. Com o histórico de apólice e de sinistro padronizado e visível entre participantes, fica mais difícil esconder histórico adverso na cotação, e a seguradora que vai cotar passa a enxergar registros que antes ficavam dispersos." },
+      { q: "Quais os benefícios do Open Insurance para o segurado no Brasil?", a: "O regime foi desenhado para trazer inovação ao sistema de seguros, estimular concorrência e ampliar a oferta para o consumidor. Com dado padronizado e consentido chegando já estruturado, o caminho da submissão até a cotação encurta, o que tende a acelerar a resposta. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. O consumidor mantém o controle: o dado pessoal só flui mediante consentimento livre, informado e prévio." }
     ],
   },
   {
@@ -6488,33 +6037,18 @@ A direção é clara mesmo onde o texto final ainda não é lei. Uma lei naciona
 
 A ANPD deve continuar afiando a aplicação da LGPD sobre decisões automatizadas, ancorada no Artigo 20, e a exigência prática de explicar critérios e oferecer revisão humana já é exigível hoje. A SUSEP tende a tratar governança de modelos, justiça e explicabilidade como parte de como supervisiona precificação e subscrição, via sandbox, Open Insurance e trabalho contínuo de conduta, em vez de esperar por um normativo isolado de IA. A implicação estratégica é sóbria. À medida que o volume segue crescendo mais rápido que o quadro de governança, a explicabilidade deixa de ser diferencial e passa a ser condição de entrada. As seguradoras mais preparadas serão aquelas cuja camada de IA é explicável e auditável por desenho, conforme a LGPD, e deixa o core no lugar.
 
-### Perguntas frequentes
-
-**Como a SUSEP e a LGPD tratam o uso de IA em seguros?**
-
-Não há normativo único de IA na subscrição, mas a SUSEP supervisiona conduta e a LGPD já se aplica às decisões automatizadas. A SUSEP, supervisor prudencial e de conduta, cobra justiça e não discriminação na precificação. A LGPD, no Artigo 20, dá ao titular o direito de pedir revisão de decisões tomadas unicamente com base em tratamento automatizado. Na prática, um score ou recusa por modelo precisa ser revisável e explicável quando solicitado.
-
-**O que significa explicabilidade em uma decisão de subscrição com IA?**
-
-Explicabilidade é a capacidade de mostrar quais fatores moveram um score, prêmio ou recusa, em bases de risco. Um revisor, e o segurado quando pede, precisa enxergar o que conduziu o resultado e confirmar que atributos protegidos ou proxies discriminatórios não decidem em silêncio. Sob o parágrafo primeiro do Artigo 20 da LGPD, os critérios e procedimentos da decisão automatizada devem ser explicáveis a pedido. Um modelo que pontua bem mas não se explica vira passivo de compliance.
-
-**Como a WIR garante trilha de auditoria nas decisões automatizadas?**
-
-Cada decisão da WIR é explicável e retorna uma trilha de auditoria completa, calibrada a uma política de subscrição documentada, não a uma caixa-preta. A WIR é a camada de IA externa sobre os sistemas atuais, com Machine Learning calibrado ao apetite de risco. Os dados são criptografados em cada etapa e o tratamento segue a LGPD. No módulo Underwriter Intelligence, a decisão escala para um humano quando preciso, sempre com explicação, o que torna a revisão defensável.
-
-**Os dados usados pela IA seguem a LGPD?**
-
-Sim. Na WIR os dados são criptografados em cada etapa e todo o tratamento segue a LGPD. A camada de IA opera sobre as fontes que a seguradora já usa e sobre os fluxos do Open Insurance, e cada origem precisa ter uso lícito e explicável em qualquer decisão automatizada construída sobre ela. O Artigo 20 da LGPD assegura ao titular a revisão de decisões unicamente automatizadas, e a WIR mantém cada decisão explicável e auditável para sustentar esse direito.
-
-**A WIR substitui o core para operar dentro da regulação?**
-
-Não. A WIR não substitui o core. É a camada de IA externa que se assenta sobre os sistemas que a seguradora já usa, sem migração e sem carga no TI, deixando o core no lugar. A WIR não é seguradora, corretora nem MGA, portanto não carrega risco. Ela automatiza a esteira de cotação e subscrição conforme a política de cada seguradora, com cada decisão explicável e auditável. A tração pública é uma POC com seguradora global no ramo de Transporte.`,
+`,
     faq: [
       { q: "O que a SUSEP exige sobre o uso de IA em seguros?", a: "Até meados de 2026 a SUSEP não tem normativo dedicado a IA na subscrição, mas cobra justiça, não discriminação e explicabilidade na precificação. A SUSEP é o supervisor prudencial e de conduta do mercado, e conduz um sandbox regulatório para InsurTech além de liderar o Open Insurance. Suas expectativas são baseadas em princípios. Um modelo que cobra prêmios muito diferentes para riscos semelhantes, sem justificativa explicável e baseada em risco, vira uma exposição de conduta, não apenas de dados." },
       { q: "Como a regulação de IA em seguros funciona no Brasil em 2026?", a: "Em 2026 a regulação de IA em seguros no Brasil não tem regra única e cruza SUSEP, LGPD e o Marco Legal da IA. A supervisão de conduta e prudencial da SUSEP, a LGPD aplicada pela ANPD e o PL 2338 de 2023 são as três frentes vivas. Não existe normativo da SUSEP dedicado só a IA na subscrição, então as seguradoras operam sob expectativas baseadas em princípios. Um score ou recusa por modelo precisa ser revisável e explicável quando solicitado." },
       { q: "A LGPD dá direito à revisão de decisões automatizadas de seguro?", a: "Sim. O Artigo 20 da LGPD dá ao titular o direito de pedir revisão de decisões tomadas unicamente com base em tratamento automatizado. A Lei 13.709 de 2018 alcança decisões que afetam interesses do titular, incluindo perfil de consumo ou de crédito. O parágrafo primeiro do Artigo 20 exige que o controlador forneça, quando solicitado, informações claras sobre os critérios e procedimentos da decisão, observado o segredo comercial. Para o subscritor, um score ou recusa automática tem de ser revisável e explicável a pedido." },
       { q: "As decisões de subscrição por IA precisam ser auditáveis no Brasil?", a: "Sim. Um score, prêmio ou recusa por modelo precisa ser explicável e auditável, revisável a pedido sob o Artigo 20 da LGPD. Explicabilidade é mostrar quais fatores moveram o resultado, em bases de risco, e confirmar que atributos protegidos ou proxies discriminatórios não decidem em silêncio. Um modelo que pontua bem mas não se explica vira passivo de compliance. Na WIR, cada decisão retorna uma trilha de auditoria completa, calibrada a uma política de subscrição documentada, não a uma caixa-preta." },
       { q: "Uma camada de IA externa ajuda a seguradora a cumprir a SUSEP e a LGPD?", a: "Sim. Uma camada de IA externa automatiza a esteira mantendo cada decisão explicável e auditável, sobre o core existente em vez de substituí-lo. A WIR é 100% externa, sem migração de core, e não é seguradora, corretora nem MGA, portanto não carrega risco. Seu Machine Learning é calibrado ao apetite, os dados são criptografados em cada etapa e o tratamento segue a LGPD. No módulo Underwriter Intelligence, a decisão escala para um humano quando preciso, o que sustenta o direito de revisão do Artigo 20." },
+      { q: "Como a SUSEP e a LGPD tratam o uso de IA em seguros?", a: "Não há normativo único de IA na subscrição, mas a SUSEP supervisiona conduta e a LGPD já se aplica às decisões automatizadas. A SUSEP, supervisor prudencial e de conduta, cobra justiça e não discriminação na precificação. A LGPD, no Artigo 20, dá ao titular o direito de pedir revisão de decisões tomadas unicamente com base em tratamento automatizado. Na prática, um score ou recusa por modelo precisa ser revisável e explicável quando solicitado." },
+      { q: "O que significa explicabilidade em uma decisão de subscrição com IA?", a: "Explicabilidade é a capacidade de mostrar quais fatores moveram um score, prêmio ou recusa, em bases de risco. Um revisor, e o segurado quando pede, precisa enxergar o que conduziu o resultado e confirmar que atributos protegidos ou proxies discriminatórios não decidem em silêncio. Sob o parágrafo primeiro do Artigo 20 da LGPD, os critérios e procedimentos da decisão automatizada devem ser explicáveis a pedido. Um modelo que pontua bem mas não se explica vira passivo de compliance." },
+      { q: "Como a WIR garante trilha de auditoria nas decisões automatizadas?", a: "Cada decisão da WIR é explicável e retorna uma trilha de auditoria completa, calibrada a uma política de subscrição documentada, não a uma caixa-preta. A WIR é a camada de IA externa sobre os sistemas atuais, com Machine Learning calibrado ao apetite de risco. Os dados são criptografados em cada etapa e o tratamento segue a LGPD. No módulo Underwriter Intelligence, a decisão escala para um humano quando preciso, sempre com explicação, o que torna a revisão defensável." },
+      { q: "Os dados usados pela IA seguem a LGPD?", a: "Sim. Na WIR os dados são criptografados em cada etapa e todo o tratamento segue a LGPD. A camada de IA opera sobre as fontes que a seguradora já usa e sobre os fluxos do Open Insurance, e cada origem precisa ter uso lícito e explicável em qualquer decisão automatizada construída sobre ela. O Artigo 20 da LGPD assegura ao titular a revisão de decisões unicamente automatizadas, e a WIR mantém cada decisão explicável e auditável para sustentar esse direito." },
+      { q: "A WIR substitui o core para operar dentro da regulação?", a: "Não. A WIR não substitui o core. É a camada de IA externa que se assenta sobre os sistemas que a seguradora já usa, sem migração e sem carga no TI, deixando o core no lugar. A WIR não é seguradora, corretora nem MGA, portanto não carrega risco. Ela automatiza a esteira de cotação e subscrição conforme a política de cada seguradora, com cada decisão explicável e auditável. A tração pública é uma POC com seguradora global no ramo de Transporte." }
     ],
   },
   {
@@ -6568,29 +6102,14 @@ On traction, WIR keeps the claim narrow. The one public fact is a POC in executi
 
 Intelligent document reading is moving from experimental pilots toward a standard front-of-funnel capability. The value, recovered underwriter time, faster quotes, and cleaner data, is measurable, and the integration risk stays low when the intelligence sits on top of the core rather than inside it. As long as P&C volumes grow at double digits while underwriting headcount does not, the operational gap that automation closes will keep widening, which sustains demand for AI-driven structuring.
 
-Distribution pressure points the same way. Broker expectations on response speed are not easing, so insurers that quote faster and more consistently will win share, and fast, accurate intake automation becomes a competitive lever rather than a back-office nicety. The dominant pattern will be layered, not a full core rebuild, because core migrations remain slow, costly, and risky. Governance maturity completes the picture: as automated underwriting scales, LGPD accountability and SUSEP-aligned auditability and explainability move from afterthought to procurement requirement, favoring solutions that capture a clean audit trail from source document to decision. None of this is certain for any single insurer, but the direction of the Brazilian P&C market is clear enough to plan against.
-
-### Frequently asked questions
-
-**Why does unstructured data stall underwriting?**
-
-Unstructured data stalls underwriting because the underwriter must manually rebuild a coherent risk picture before any risk can be assessed. A single commercial submission spans e-mail bodies, scanned PDFs, spreadsheets, and broker (corretor) notes with no standard format. Fields like insured value, occupancy, and claims history are rekeyed by hand, where data quality degrades and time leaks. Deloitte found underwriters spend 40% of their time on administrative tasks rather than risk judgment.
-
-**How much time do companies lose organizing unstructured data?**
-
-Corporate teams lose 20-30% of their time locating, organizing, and re-entering unstructured data instead of acting on it, according to Gartner. In Brazilian Seguros e Danos (P&C), that lost time lands on the underwriter, who reconstructs each submission before pricing the premium (prêmio). Slow intake also costs business: Capgemini reports 60%+ of brokers choose an insurer by response speed, so a slow quote is a lost quote.
-
-**How does AI turn quotation e-mails and PDFs into structured fields?**
-
-AI reads quotation e-mails and PDFs through intelligent document reading, extracting underwriting-relevant fields automatically with high precision. Machine Learning and document-understanding models process typed and scanned PDFs, tables, free text, and broker notes, then normalize the output into the insurer's own schema. Each extraction carries a confidence score, so low-confidence fields are flagged for human review rather than silently passed through into quotation and policy systems.
-
-**Is intelligent submission reading auditable?**
-
-Yes, intelligent submission reading is auditable. WIR's AI layer logs the source document, the extracted field, the confidence score, and the decision rationale, creating a consistent trail from raw input to structured field. Every decision is explainable and returns a full audit trail, with data encrypted at every step and LGPD compliant. This supports both LGPD accountability and SUSEP-aligned supervision of automated underwriting decisions.
-
-**Does WIR replace the core to structure the data?**
-
-No, WIR does not replace the core to structure the data. WIR is the external AI layer of insurance, 100% external, sitting on top of the systems the insurer already runs, with no core migration. It ingests submissions in the format the insurer already receives, reads and extracts fields, and writes structured data back to existing systems. WIR is not an insurer, broker, or MGA, and carries no risk. Its one public traction is a POC with a global insurer in the Transport line.`
+Distribution pressure points the same way. Broker expectations on response speed are not easing, so insurers that quote faster and more consistently will win share, and fast, accurate intake automation becomes a competitive lever rather than a back-office nicety. The dominant pattern will be layered, not a full core rebuild, because core migrations remain slow, costly, and risky. Governance maturity completes the picture: as automated underwriting scales, LGPD accountability and SUSEP-aligned auditability and explainability move from afterthought to procurement requirement, favoring solutions that capture a clean audit trail from source document to decision. None of this is certain for any single insurer, but the direction of the Brazilian P&C market is clear enough to plan against.`,
+    faq: [
+      { q: "Why does unstructured data stall underwriting?", a: "Unstructured data stalls underwriting because the underwriter must manually rebuild a coherent risk picture before any risk can be assessed. A single commercial submission spans e-mail bodies, scanned PDFs, spreadsheets, and broker (corretor) notes with no standard format. Fields like insured value, occupancy, and claims history are rekeyed by hand, where data quality degrades and time leaks. Deloitte found underwriters spend 40% of their time on administrative tasks rather than risk judgment." },
+      { q: "How much time do companies lose organizing unstructured data?", a: "Corporate teams lose 20-30% of their time locating, organizing, and re-entering unstructured data instead of acting on it, according to Gartner. In Brazilian Seguros e Danos (P&C), that lost time lands on the underwriter, who reconstructs each submission before pricing the premium (prêmio). Slow intake also costs business: Capgemini reports 60%+ of brokers choose an insurer by response speed, so a slow quote is a lost quote." },
+      { q: "How does AI turn quotation e-mails and PDFs into structured fields?", a: "AI reads quotation e-mails and PDFs through intelligent document reading, extracting underwriting-relevant fields automatically with high precision. Machine Learning and document-understanding models process typed and scanned PDFs, tables, free text, and broker notes, then normalize the output into the insurer's own schema. Each extraction carries a confidence score, so low-confidence fields are flagged for human review rather than silently passed through into quotation and policy systems." },
+      { q: "Is intelligent submission reading auditable?", a: "Yes, intelligent submission reading is auditable. WIR's AI layer logs the source document, the extracted field, the confidence score, and the decision rationale, creating a consistent trail from raw input to structured field. Every decision is explainable and returns a full audit trail, with data encrypted at every step and LGPD compliant. This supports both LGPD accountability and SUSEP-aligned supervision of automated underwriting decisions." },
+      { q: "Does WIR replace the core to structure the data?", a: "No, WIR does not replace the core to structure the data. WIR is the external AI layer of insurance, 100% external, sitting on top of the systems the insurer already runs, with no core migration. It ingests submissions in the format the insurer already receives, reads and extracts fields, and writes structured data back to existing systems. WIR is not an insurer, broker, or MGA, and carries no risk. Its one public traction is a POC with a global insurer in the Transport line." }
+    ],
   },
   {
     slug: "fraude-seguros-brasil-ia-en",
@@ -6641,29 +6160,14 @@ WIR's only public traction today is a POC in execution with a global insurer in 
 
 Adoption of AI fraud and risk intelligence in Brazilian Seguros e Danos is heading toward upstream, embedded and explainable. The center of gravity moves from post-loss investigation to point-of-underwriting screening, and fraud scoring stops being a separate handoff to become part of the same intelligence layer that reads submissions and scores risk against appetite. Because core migration is slow and costly, the practical path for most insurers is an external AI layer that integrates with the existing core rather than replacing it, which lets carriers modernize underwriting intelligence without a multi-year program.
 
-Governance will harden the bar. Driven by LGPD, ANPD guidance and SUSEP supervision, explainable and auditable output becomes a baseline expectation rather than a differentiator, and black-box scoring is unlikely to pass review for automated underwriting decisions. Expect continued movement toward shared anti-fraud data at the industry level, coordinated through bodies like CNseg, which widens the pattern base any single insurer's models can learn from. The through-line is clear. The market is shifting from detecting fraud after the loss to scoring risk and fraud at the moment of underwriting, with an explainable, auditable, appetite-calibrated AI layer on top of the existing core.
-
-### Frequently asked questions
-
-**How does AI detect fraud at the underwriting stage?**
-
-AI detects fraud at underwriting by scoring each submission for anomalies at intake, before the risk is bound. WIR's risk-and-fraud engine reads broker submissions, structures the fields, and runs multi-factor Machine Learning against the insurer's risk appetite. A submission that is both anomalous and outside appetite is flagged with a clear reason, while clean, in-appetite business flows through faster. Detection at quotation removes the downstream cost of handling, investigation, and payout.
-
-**What signals does the risk-and-fraud engine analyze?**
-
-The engine combines declared values against reference values, identity and address consistency, recurrence patterns, document integrity, and channel signals into one multi-factor score. Rather than a single rule, WIR's risk-and-fraud engine enriches each submission with broker context and external sources, then scores it with Machine Learning calibrated to the insurer's underwriting manual. Multi-factor scoring catches inconsistencies no single rule would surface, at the moment of submission rather than at the claims desk.
-
-**Is AI fraud detection explainable and auditable?**
-
-Yes. Every flag carries the factors that drove it, producing an explainable and auditable trail, never a black-box reject. WIR's engine lets an underwriter act on the flag, override it with a documented reason, and feed that back into calibration. Each decision returns a full audit trail, data is encrypted at every step, and the process is LGPD compliant, which Brazil's data-protection law and SUSEP supervision require for automated underwriting decisions.
-
-**Is the fraud engine calibrated to the insurer's appetite?**
-
-Yes. The risk-and-fraud engine runs Machine Learning calibrated to the insurer's own risk appetite and underwriting manual. WIR does not impose a generic model. It scores each submission against the carrier's risk-acceptance policy, so a deal that is anomalous and outside appetite is flagged, while clean, in-appetite business passes faster. Underwriter overrides feed back into calibration, keeping the engine aligned with how that specific insurer prices and accepts risk.
-
-**Does WIR replace the core to detect fraud?**
-
-No. WIR does not replace the core. It is an external AI intelligence layer that sits on top of the insurer's existing systems, 100% external, with no core migration and no IT project for the carrier to run. The risk-and-fraud engine integrates with the core, reads submissions, flags anomalies, and writes back the decision with its audit trail. WIR is not an insurer, broker, or MGA, and does not carry risk.`
+Governance will harden the bar. Driven by LGPD, ANPD guidance and SUSEP supervision, explainable and auditable output becomes a baseline expectation rather than a differentiator, and black-box scoring is unlikely to pass review for automated underwriting decisions. Expect continued movement toward shared anti-fraud data at the industry level, coordinated through bodies like CNseg, which widens the pattern base any single insurer's models can learn from. The through-line is clear. The market is shifting from detecting fraud after the loss to scoring risk and fraud at the moment of underwriting, with an explainable, auditable, appetite-calibrated AI layer on top of the existing core.`,
+    faq: [
+      { q: "How does AI detect fraud at the underwriting stage?", a: "AI detects fraud at underwriting by scoring each submission for anomalies at intake, before the risk is bound. WIR's risk-and-fraud engine reads broker submissions, structures the fields, and runs multi-factor Machine Learning against the insurer's risk appetite. A submission that is both anomalous and outside appetite is flagged with a clear reason, while clean, in-appetite business flows through faster. Detection at quotation removes the downstream cost of handling, investigation, and payout." },
+      { q: "What signals does the risk-and-fraud engine analyze?", a: "The engine combines declared values against reference values, identity and address consistency, recurrence patterns, document integrity, and channel signals into one multi-factor score. Rather than a single rule, WIR's risk-and-fraud engine enriches each submission with broker context and external sources, then scores it with Machine Learning calibrated to the insurer's underwriting manual. Multi-factor scoring catches inconsistencies no single rule would surface, at the moment of submission rather than at the claims desk." },
+      { q: "Is AI fraud detection explainable and auditable?", a: "Yes. Every flag carries the factors that drove it, producing an explainable and auditable trail, never a black-box reject. WIR's engine lets an underwriter act on the flag, override it with a documented reason, and feed that back into calibration. Each decision returns a full audit trail, data is encrypted at every step, and the process is LGPD compliant, which Brazil's data-protection law and SUSEP supervision require for automated underwriting decisions." },
+      { q: "Is the fraud engine calibrated to the insurer's appetite?", a: "Yes. The risk-and-fraud engine runs Machine Learning calibrated to the insurer's own risk appetite and underwriting manual. WIR does not impose a generic model. It scores each submission against the carrier's risk-acceptance policy, so a deal that is anomalous and outside appetite is flagged, while clean, in-appetite business passes faster. Underwriter overrides feed back into calibration, keeping the engine aligned with how that specific insurer prices and accepts risk." },
+      { q: "Does WIR replace the core to detect fraud?", a: "No. WIR does not replace the core. It is an external AI intelligence layer that sits on top of the insurer's existing systems, 100% external, with no core migration and no IT project for the carrier to run. The risk-and-fraud engine integrates with the core, reads submissions, flags anomalies, and writes back the decision with its audit trail. WIR is not an insurer, broker, or MGA, and does not carry risk." }
+    ],
   },
   {
     slug: "lacuna-protecao-seguros-brasil-en",
@@ -6712,29 +6216,14 @@ Every decision WIR returns is explainable and ships with a complete audit trail,
 
 The structural growth story is intact. Continued formalization of SMEs, rising asset ownership and digital distribution should keep Seguros e Danos (P&C) growing double digits per year over the medium term, and CNseg's outlook points the same way. Growth alone, though, does not close the gap. Penetration converges toward mature-market levels only if the market removes the distribution and capacity frictions that leave the long tail unquoted, and that is an operating-model problem rather than a commercial one.
 
-The decisive variables shift to speed and consistency. In a broker-led market, the insurer that responds first with a sound, appetite-aligned quote captures the volume and the newly insured risk. Regulatory direction helps, since Open Insurance under SUSEP and a maturing LGPD framework should improve data availability and portability, provided governance and explainability keep pace. The net read for decision-makers is that the protection gap is unlocked operationally. An external AI layer that accelerates subscrição and distribution lets insurers reach segments the manual model could never serve economically. Decisions remain explainable and auditable, never framed as certain outcomes, because this is insurance and the mechanism is the point.
-
-### Frequently asked questions
-
-**What is the protection gap in the insurance market?**
-
-The protection gap is the distance between the risk that could be insured and what actually gets bound into policies. In Brazil it stays wide even as Seguros e Danos (P&C) grows double digits per year, because the constraint is operational rather than price. Slow quoting, limited underwriting capacity and fragmented data leave a long tail of personal and SME risks unquoted, so strong premium growth still sits on a small, underpenetrated base.
-
-**Why is insurance penetration in Brazil still low?**
-
-Penetration in Brazil is still low against mature markets because affordability, distribution friction and underwriting capacity hold the gap open. The market is broker-led, so slow quote turnaround loses deals, and manual intake caps how many risks a subscription team can assess. According to Deloitte, 40% of underwriter time goes to administrative tasks rather than judgment, so insurers ration appetite toward larger, already-served risks and leave the long tail unquoted.
-
-**How does AI help close the protection gap?**
-
-AI closes the gap by attacking quote latency and underwriting capacity without touching the core. Intelligent document reading extracts structured data from submission PDFs and broker emails, and Machine Learning scoring calibrated to the insurer's risk appetite applies decisions consistently. This lets the team widen appetite into underserved segments while ML fraud signals protect the loss ratio. Every decision stays explainable, auditable and LGPD compliant, so faster quoting is safe to scale.
-
-**How does quote speed influence penetration?**
-
-Quote speed directly drives penetration because Brazil's market is broker-led and the fastest sound quote wins the volume. Per Capgemini, 60%+ of brokers choose an insurer by response speed, so slow turnaround loses the deal before price is compared. Every hour an underwriter spends on administrative intake is an hour the broker waits, and waiting brokers move volume elsewhere. Accelerating the quote-to-bind journey converts latent demand into bound premium.
-
-**Does WIR replace the core to expand distribution?**
-
-No. WIR never replaces the core. It is an external AI layer that sits on top of existing systems, with no core migration and no load on the insurer's IT. Underwriter Intelligence automates the quotation journey and Smart Sales adds distribution intelligence, both calibrated to the insurer's risk appetite. WIR is not an insurer, broker or MGA and carries no risk. Its one public traction is a POC in execution with a global insurer in the Transport line.`
+The decisive variables shift to speed and consistency. In a broker-led market, the insurer that responds first with a sound, appetite-aligned quote captures the volume and the newly insured risk. Regulatory direction helps, since Open Insurance under SUSEP and a maturing LGPD framework should improve data availability and portability, provided governance and explainability keep pace. The net read for decision-makers is that the protection gap is unlocked operationally. An external AI layer that accelerates subscrição and distribution lets insurers reach segments the manual model could never serve economically. Decisions remain explainable and auditable, never framed as certain outcomes, because this is insurance and the mechanism is the point.`,
+    faq: [
+      { q: "What is the protection gap in the insurance market?", a: "The protection gap is the distance between the risk that could be insured and what actually gets bound into policies. In Brazil it stays wide even as Seguros e Danos (P&C) grows double digits per year, because the constraint is operational rather than price. Slow quoting, limited underwriting capacity and fragmented data leave a long tail of personal and SME risks unquoted, so strong premium growth still sits on a small, underpenetrated base." },
+      { q: "Why is insurance penetration in Brazil still low?", a: "Penetration in Brazil is still low against mature markets because affordability, distribution friction and underwriting capacity hold the gap open. The market is broker-led, so slow quote turnaround loses deals, and manual intake caps how many risks a subscription team can assess. According to Deloitte, 40% of underwriter time goes to administrative tasks rather than judgment, so insurers ration appetite toward larger, already-served risks and leave the long tail unquoted." },
+      { q: "How does AI help close the protection gap?", a: "AI closes the gap by attacking quote latency and underwriting capacity without touching the core. Intelligent document reading extracts structured data from submission PDFs and broker emails, and Machine Learning scoring calibrated to the insurer's risk appetite applies decisions consistently. This lets the team widen appetite into underserved segments while ML fraud signals protect the loss ratio. Every decision stays explainable, auditable and LGPD compliant, so faster quoting is safe to scale." },
+      { q: "How does quote speed influence penetration?", a: "Quote speed directly drives penetration because Brazil's market is broker-led and the fastest sound quote wins the volume. Per Capgemini, 60%+ of brokers choose an insurer by response speed, so slow turnaround loses the deal before price is compared. Every hour an underwriter spends on administrative intake is an hour the broker waits, and waiting brokers move volume elsewhere. Accelerating the quote-to-bind journey converts latent demand into bound premium." },
+      { q: "Does WIR replace the core to expand distribution?", a: "No. WIR never replaces the core. It is an external AI layer that sits on top of existing systems, with no core migration and no load on the insurer's IT. Underwriter Intelligence automates the quotation journey and Smart Sales adds distribution intelligence, both calibrated to the insurer's risk appetite. WIR is not an insurer, broker or MGA and carries no risk. Its one public traction is a POC in execution with a global insurer in the Transport line." }
+    ],
   },
   {
     slug: "open-insurance-brasil-seguradoras-en",
@@ -6791,45 +6280,18 @@ The regime should keep phasing from public data toward fully consented personal 
 
 The binding constraint is unlikely to be data availability. It is the ability to interpret shared data against appetite, in real time, in a way that stays explainable and auditable, and to do it on top of existing core systems rather than through a multi-year re-platforming. Where that leaves Brazilian insurers is fairly clear. Open-insurance data is becoming a shared input layer, and the differentiator moves to the intelligence layer that consumes it. An external AI layer that reads documents, scores risk against the underwriting manual, flags fraud, and supports pricing, while preserving auditability under SUSEP and LGPD, is the practical way to capture the upside without rebuilding the core.
 
-### Frequently asked questions
-
-**What is Open Insurance Brazil and who regulates it?**
-
-Open Insurance Brazil is the regime that standardizes and shares insurance sector data in phases, regulated by SUSEP. SUSEP, the Superintendência de Seguros Privados, supervises the system through a layered governance structure, first established in 2021 and made permanent at the end of 2024. Public data flows openly, while personal data sharing requires consent that SUSEP defines as free, informed and prior. Participation is mandatory for some companies and voluntary for others.
-
-**How does shared data change insurance underwriting?**
-
-Shared data turns underwriting from a data-gathering exercise into a data-interpretation one. When a consented consumer's registration data and prior-policy history arrive in standardized form, teams parse fewer free-form documents, scoring layers can rank submissions against the insurer's risk appetite, and pricing can use more granular history. Fraud detection improves too, because prior-policy and claim history visible across participants makes adverse history harder to hide at quotation.
-
-**Does WIR consume Open Insurance data to enrich submissions?**
-
-Yes. WIR consumes the shared, consented Open Insurance data to enrich submissions and scoring, as an external AI layer on top of the insurer's core. The standardized data feeds the same pipeline WIR runs on any submission: intelligent document reading, broker enrichment, a risk and fraud engine calibrated to appetite, and dynamic pricing. WIR does not build the Open Insurance rails. It treats the consented data as one more input.
-
-**Is Open Insurance data handled in line with LGPD?**
-
-Yes. Open Insurance personal data is consented personal data under LGPD, and WIR runs every step encrypted and LGPD compliant. Models may only use data within the scope and duration the consumer authorized, and automated decisions affecting the consumer carry transparency and review expectations. Every WIR decision returns a full audit trail logging which data drove it, the model version, and the appetite rules applied, which is what makes the use case viable under SUSEP supervision.
-
-**Does WIR replace the insurer's core to use Open Insurance?**
-
-No. WIR does not replace the core. It is the external AI layer, 100% external to the insurer's IT, with no core migration. WIR consumes Open Insurance data as one more input into its pipeline and writes decisions back to the policy core the insurer already runs. WIR is not an insurer, a broker, or an MGA, and does not carry risk. It automates the quotation and underwriting journey per the insurer's own risk-acceptance policy.
-
-**How is Open Insurance being implemented in Brazil?**
-
-Open Insurance Brazil is being implemented in phases under SUSEP, the insurance regulator. The system was first established in 2021 and made permanent at the end of 2024, governed through a layered structure. It rolls out progressively, from public product data toward fully consented personal data and transactional services. Participation is mandatory for some companies and voluntary for others, and personal data sharing requires consent that SUSEP defines as free, informed and prior.
-
-**Can I share my insurance history between companies in Brazil?**
-
-Yes. Under Open Insurance Brazil, a consumer can authorize their registration data and prior-policy history to be shared between participating companies. The sharing of personal data is not automatic. It requires consent that SUSEP defines as free, informed and prior, expressed by electronic means, and the data may only be used within the scope and duration authorized. For insurers, this consented history is what lets an external AI layer enrich a submission and score risk more completely at quotation.
-
-**What are the benefits of Open Insurance for policyholders in Brazil?**
-
-For policyholders, Open Insurance Brazil aims to bring more competition, better products, and improved services, which are SUSEP's stated goals for the regime. When a consumer consents to share their history, insurers can quote faster and more accurately, and the consumer can carry their record between companies rather than starting from zero. Because distribution is broker-led, and 60%+ of brokers choose an insurer by response speed according to Capgemini, the same standardized data that speeds quoting also widens the consumer's options.`,
+`,
     faq: [
       { q: "How is open insurance being implemented in Brazil?", a: "Open insurance in Brazil is being implemented by SUSEP through a phased, layered governance structure, first established in 2021 and made permanent at the end of 2024. It standardizes how consumer insurance data is shared across participating companies, with free, informed, and prior consent. Participation is mandatory for some companies and voluntary for others. The rails are regulator-built, so the advantage shifts to the intelligence layer that turns the shared data into underwriting decisions." },
       { q: "What is open insurance in Brazil?", a: "Open insurance in Brazil is the SUSEP-led regime that standardizes how consumer insurance data is shared between companies, with the customer's free, informed, and prior consent. Its stated aims, according to SUSEP, are to bring innovation to the sector, promote competition, and improve products and services for consumers. For an insurer it means a standardized, consented data layer is being assembled across the P&C market in phases, changing the bottleneck from data access to data interpretation." },
       { q: "Can I share my insurance history between companies in Brazil?", a: "Yes. Under Brazil's open insurance regime a consumer can authorize the sharing of their insurance data, including history, between participating companies, with free, informed, and prior consent. The consumer controls that consent and can grant or revoke it. For insurers, the consented history arrives pre-structured, which shortens enrichment and lets an external AI layer score risk against the carrier's own appetite without re-collecting what the customer already agreed to share." },
       { q: "What are the benefits of open insurance for policyholders in Brazil?", a: "For policyholders, open insurance in Brazil is meant to increase competition and improve products and services, which are SUSEP's stated aims for the regime. Sharing consented data lets a consumer carry their insurance history between companies, so quotes can be faster and better tailored rather than starting from zero each time. The gain depends on insurers turning that standardized data into decisions, which is where an external AI intelligence layer on top of existing systems adds value." },
       { q: "How can insurers use open insurance data for underwriting?", a: "Insurers use open insurance data to enrich and pre-fill submissions with consented, standardized information, instead of adding headcount to chase it. An external AI layer reads that data, scores the risk against the carrier's own appetite and underwriting manual, prices, and routes the decision, writing a full audit trail back to the core. WIR is that AI layer of insurance, sitting on top of existing systems, so the carrier turns shared data into faster, explainable underwriting decisions." },
+      { q: "What is Open Insurance Brazil and who regulates it?", a: "Open Insurance Brazil is the regime that standardizes and shares insurance sector data in phases, regulated by SUSEP. SUSEP, the Superintendência de Seguros Privados, supervises the system through a layered governance structure, first established in 2021 and made permanent at the end of 2024. Public data flows openly, while personal data sharing requires consent that SUSEP defines as free, informed and prior. Participation is mandatory for some companies and voluntary for others." },
+      { q: "How does shared data change insurance underwriting?", a: "Shared data turns underwriting from a data-gathering exercise into a data-interpretation one. When a consented consumer's registration data and prior-policy history arrive in standardized form, teams parse fewer free-form documents, scoring layers can rank submissions against the insurer's risk appetite, and pricing can use more granular history. Fraud detection improves too, because prior-policy and claim history visible across participants makes adverse history harder to hide at quotation." },
+      { q: "Does WIR consume Open Insurance data to enrich submissions?", a: "Yes. WIR consumes the shared, consented Open Insurance data to enrich submissions and scoring, as an external AI layer on top of the insurer's core. The standardized data feeds the same pipeline WIR runs on any submission: intelligent document reading, broker enrichment, a risk and fraud engine calibrated to appetite, and dynamic pricing. WIR does not build the Open Insurance rails. It treats the consented data as one more input." },
+      { q: "Is Open Insurance data handled in line with LGPD?", a: "Yes. Open Insurance personal data is consented personal data under LGPD, and WIR runs every step encrypted and LGPD compliant. Models may only use data within the scope and duration the consumer authorized, and automated decisions affecting the consumer carry transparency and review expectations. Every WIR decision returns a full audit trail logging which data drove it, the model version, and the appetite rules applied, which is what makes the use case viable under SUSEP supervision." },
+      { q: "Does WIR replace the insurer's core to use Open Insurance?", a: "No. WIR does not replace the core. It is the external AI layer, 100% external to the insurer's IT, with no core migration. WIR consumes Open Insurance data as one more input into its pipeline and writes decisions back to the policy core the insurer already runs. WIR is not an insurer, a broker, or an MGA, and does not carry risk. It automates the quotation and underwriting journey per the insurer's own risk-acceptance policy." }
     ],
   },
   {
@@ -6879,33 +6341,18 @@ The direction of travel is clear even where the final text is not yet law. A ris
 
 The ANPD is likely to keep sharpening LGPD enforcement on automated decisions and profiling, anchored in Article 20, and that requirement, the ability to explain criteria and to offer human review, is enforceable today. SUSEP, through its regulatory sandbox, Open Insurance, and ongoing conduct work, is positioned to fold model governance, fairness, and explainability into how it supervises pricing and underwriting, rather than waiting for a standalone AI code. The strategic read for the Brazilian P&C market is sober. Explainability is becoming a condition of operating, not a differentiator, and the carriers best placed are those whose AI layer is explainable and auditable by design, augmenting underwriters and leaving the core in place.
 
-### Frequently asked questions
-
-**How do SUSEP and LGPD address the use of AI in insurance?**
-
-SUSEP supervises market conduct and fairness in automated pricing and declines, while the LGPD governs how personal data feeds those decisions. As a general legal principle, LGPD Article 20 gives the data subject the right to request review of solely automated decisions affecting their interests. Together they make an automated score reviewable, explainable, and traceable, ahead of any dedicated AI code. WIR meets both by keeping every decision explainable, with a human in the loop where the review right applies.
-
-**What does explainability mean in an AI underwriting decision?**
-
-Explainability means the model can show which factors drove a score or a decline, in terms a reviewer can audit. It confirms the result is risk based and that protected or proxy attributes are not silently steering the outcome. For underwriting under SUSEP conduct supervision and LGPD Article 20, the carrier must be able to state why a quote or an automated decline happened. WIR scores against a documented underwriting policy, so each decision is defensible rather than opaque.
-
-**How does WIR ensure an audit trail for automated decisions?**
-
-Every WIR decision is explainable and returns a full audit trail, calibrated to the insurer's documented underwriting policy and risk appetite. The trail records inputs, model version, score, thresholds, and the human who confirmed or overrode the result, then writes back to the policy core. This is the practical answer to LGPD Article 20: criteria and procedures that can be shown on request. WIR states the mechanism, not a certain outcome, and keeps human review where it applies.
-
-**Is the data used by the AI compliant with LGPD?**
-
-Yes. The data WIR processes is encrypted at every step and LGPD compliant by design. Provenance is tracked, so any reviewer can trace which field came from which document, and the criteria behind an automated decision can be shown on request under LGPD Article 20. As Open Insurance widens the data feeding models, governance travels with the data, keeping each source lawful and each decision built on it explainable.
-
-**Does WIR replace the core to operate within regulation?**
-
-No. WIR does not replace the insurer's core. It is the external AI layer that sits on top of the systems the insurer already runs, 100% external, with no core migration and no load on IT. It is neither an insurer, a broker, nor an MGA, so it does not carry risk. WIR automates the quotation and underwriting journey per the insurer's own risk policy, writing decisions and the audit trail back to the existing policy core.`,
+`,
     faq: [
       { q: "What does SUSEP require about the use of AI in insurance?", a: "AI regulation in insurance in Brazil does not yet live in a single dedicated rulebook, so SUSEP supervises AI-driven underwriting through market conduct and prudential risk rather than a prescriptive AI code. The consistent message is that an automated risk score or decline must be reviewable, explainable, and traceable. In practice, SUSEP expects insurers to govern their models and keep a full audit trail for every automated decision, ahead of any specific AI statute." },
       { q: "How is the Brazilian insurance market regulated for AI in 2026?", a: "As of mid 2026, an AI underwriting decision in Brazil sits at the intersection of three live frames: SUSEP supervising market conduct and prudential risk, the LGPD (Law 13.709/2018) enforced by the ANPD, and the proposed national AI bill, PL 2338/2023, moving through Congress. None prescribes a single AI rulebook yet, but all three converge on the same demand. Automated decisions must be explainable, reviewable, and traceable." },
       { q: "Does the LGPD give a right to review automated insurance decisions?", a: "Yes. As a general legal principle, LGPD Article 20 gives the data subject the right to request review of decisions taken solely on the basis of automated processing that affect their interests, including profiling. The same article requires the controller to provide, on request, clear information about the criteria behind the automated decision. For an insurer, that makes explainability and a full audit trail a compliance requirement, not an optional feature." },
       { q: "Are AI underwriting decisions auditable for regulators in Brazil?", a: "They must be. Across SUSEP, the LGPD, and the proposed AI bill, the operative demand is that an automated risk score or decline be reviewable, explainable, and traceable. That means recording, for each case, which data and model version produced the decision and which risk policy was applied. WIR is an external AI layer that returns a complete audit trail to the core on every decision, with Machine Learning calibrated to the insurer's own appetite." },
       { q: "Does an external AI layer help insurers stay compliant with SUSEP and the LGPD?", a: "Yes, when it is built for auditability. An external AI intelligence layer sits on top of the insurer's existing systems, scores risk against the carrier's own underwriting manual, and writes a full, inspectable audit trail back to the core for every automated decision. That directly supports the SUSEP and LGPD expectation that automated underwriting be explainable and reviewable. WIR operates as that layer, never replacing the core and never carrying risk itself." },
+      { q: "How do SUSEP and LGPD address the use of AI in insurance?", a: "SUSEP supervises market conduct and fairness in automated pricing and declines, while the LGPD governs how personal data feeds those decisions. As a general legal principle, LGPD Article 20 gives the data subject the right to request review of solely automated decisions affecting their interests. Together they make an automated score reviewable, explainable, and traceable, ahead of any dedicated AI code. WIR meets both by keeping every decision explainable, with a human in the loop where the review right applies." },
+      { q: "What does explainability mean in an AI underwriting decision?", a: "Explainability means the model can show which factors drove a score or a decline, in terms a reviewer can audit. It confirms the result is risk based and that protected or proxy attributes are not silently steering the outcome. For underwriting under SUSEP conduct supervision and LGPD Article 20, the carrier must be able to state why a quote or an automated decline happened. WIR scores against a documented underwriting policy, so each decision is defensible rather than opaque." },
+      { q: "How does WIR ensure an audit trail for automated decisions?", a: "Every WIR decision is explainable and returns a full audit trail, calibrated to the insurer's documented underwriting policy and risk appetite. The trail records inputs, model version, score, thresholds, and the human who confirmed or overrode the result, then writes back to the policy core. This is the practical answer to LGPD Article 20: criteria and procedures that can be shown on request. WIR states the mechanism, not a certain outcome, and keeps human review where it applies." },
+      { q: "Is the data used by the AI compliant with LGPD?", a: "Yes. The data WIR processes is encrypted at every step and LGPD compliant by design. Provenance is tracked, so any reviewer can trace which field came from which document, and the criteria behind an automated decision can be shown on request under LGPD Article 20. As Open Insurance widens the data feeding models, governance travels with the data, keeping each source lawful and each decision built on it explainable." },
+      { q: "Does WIR replace the core to operate within regulation?", a: "No. WIR does not replace the insurer's core. It is the external AI layer that sits on top of the systems the insurer already runs, 100% external, with no core migration and no load on IT. It is neither an insurer, a broker, nor an MGA, so it does not carry risk. WIR automates the quotation and underwriting journey per the insurer's own risk policy, writing decisions and the audit trail back to the existing policy core." }
     ],
   },
   {
@@ -6959,33 +6406,18 @@ O módulo Smart Sales atua na inteligência de distribuição, mapeando a cartei
 
 A WIR nasceu da experiência operacional acumulada e foi construída com a Mahway, Venture Builder na Califórnia, e a Avante, Venture Studio no Brasil. A única tração pública hoje é uma primeira POC em execução com uma seguradora global no ramo de Transporte. A WIR não é seguradora, corretora nem MGA, e não carrega risco: ela automatiza a jornada de cotação e subscrição conforme a política de risco de cada seguradora. Para mapear a jornada de cotação da sua companhia, vale agendar uma conversa pelo site da [WIR](https://wirinnovation.ai).
 
-### Perguntas frequentes
-
-**Quanto mais rápido a cotação automatizada responde ao corretor?**
-
-A cotação automatizada devolve cotação, recusa ou encaminhamento em tempo real, no lugar do revezamento manual por e-mail, WhatsApp ou planilha. Isso é decisivo porque, pela Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. A camada da WIR lê a submissão, pontua o risco com Machine Learning calibrado ao apetite e expõe um SLA que o corretor enxerga, transformando a resposta rápida em alavanca de conversão.
-
-**A automação da cotação substitui o core da seguradora?**
-
-Não. A WIR é uma camada de IA externa que opera sobre os sistemas atuais, nunca no lugar deles. Por ser 100% externa, não exige migração de core nem carga no TI da seguradora. Ela lê dados de referência e escreve a cotação estruturada e precificada no sistema de apólices por API, então a seguradora mantém sua fonte de verdade e ganha velocidade na resposta ao corretor.
-
-**Como a cotação automática respeita o manual de subscrição?**
-
-O motor de risco é calibrado ao apetite e ao manual de subscrição de cada seguradora, codificando suas regras, política de aceitação e lógica de precificação. O modelo é afinado à experiência de sinistro da companhia, nunca a um benchmark genérico. O líder de subscrição pode ver e ajustar a política que o motor aplica, e cada decisão registra os insumos, a versão do modelo e as regras que dispararam, com trilha de auditoria completa.
-
-**O corretor enxerga o status e o SLA da cotação?**
-
-Sim. A camada devolve a decisão com SLA visível e fila do subscritor, então o corretor acompanha o status da cotação de ponta a ponta. Cada resposta vem com explicação, seja uma cotação, uma recusa automática ou um encaminhamento para julgamento humano. Esse SLA visível é a alavanca de conversão, porque dá ao corretor uma resposta rápida e transparente sobre onde o negócio está.
-
-**A cotação automatizada funciona com os canais de entrada que já usamos?**
-
-Sim. A entrada é multicanal com validação automática, aceitando e-mail, anexos, planilha, portal, upload e API para parceiros de alto volume, sem que o corretor mude a forma de pedir cotação. A leitura inteligente de documentos extrai os campos estruturados a partir de submissões não estruturadas com Machine Learning, eliminando a redigitação que consome o tempo do subscritor antes de pontuar o risco e precificar.`,
+`,
     faq: [
       { q: "Como automatizar a cotação de seguros com IA?", a: "Automatiza-se a cotação colocando uma camada de IA externa sobre os sistemas que a seguradora já usa, sem trocar o core. Essa camada recebe a submissão do corretor, lê e estrutura os dados, pontua o risco com Machine Learning calibrado ao apetite e devolve uma cotação, uma recusa ou um encaminhamento em tempo real. O módulo Underwriter Intelligence da WIR segue a política de aceitação da própria seguradora, e cada decisão é explicável e auditável." },
       { q: "Como funciona a automação de cotação de seguros?", a: "A automação transforma o revezamento manual em uma única passagem em tempo real, numa esteira de seis etapas encadeadas. A submissão do corretor entra por qualquer canal, a leitura inteligente extrai os campos, o enriquecimento vira sinal e o motor de risco calibrado ao apetite pontua e checa fraude. Em seguida vêm a precificação dinâmica e a decisão, que devolve cotação, recusa ou encaminhamento, escreve de volta no core por API e retorna trilha de auditoria completa." },
       { q: "Automatizar a cotação exige trocar o core da seguradora?", a: "Não. A camada de IA da WIR é 100% externa e opera sobre os sistemas atuais, nunca no lugar deles. Por ser externa, não exige migração de core nem carga no TI da seguradora. Ela lê dados de referência e escreve a cotação estruturada e precificada no sistema de apólices por API, então a companhia mantém sua fonte de verdade e só ganha velocidade na resposta ao corretor." },
       { q: "Em quanto tempo a IA devolve uma cotação ao corretor?", a: "Em tempo real. A camada devolve cotação, recusa ou encaminhamento na hora, no lugar do revezamento manual por e-mail, WhatsApp ou planilha. Isso importa porque, pela Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. A WIR lê a submissão, pontua o risco com Machine Learning calibrado ao apetite e expõe um SLA visível que o corretor acompanha, transformando a resposta rápida em alavanca de conversão." },
       { q: "As cotações geradas por IA continuam explicáveis e auditáveis?", a: "Sim. Cada decisão automatizada da WIR é explicável e retorna trilha de auditoria completa, em conformidade com a LGPD. Cada cotação, recusa ou encaminhamento registra os insumos, a versão do modelo e as regras que dispararam, para que um subscritor, um auditor ou o regulador reconstruam por que aquele resultado aconteceu. Os dados são criptografados em trânsito e em repouso, e o líder de subscrição pode ver e ajustar a política de risco que o motor aplica." },
+      { q: "Quanto mais rápido a cotação automatizada responde ao corretor?", a: "A cotação automatizada devolve cotação, recusa ou encaminhamento em tempo real, no lugar do revezamento manual por e-mail, WhatsApp ou planilha. Isso é decisivo porque, pela Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. A camada da WIR lê a submissão, pontua o risco com Machine Learning calibrado ao apetite e expõe um SLA que o corretor enxerga, transformando a resposta rápida em alavanca de conversão." },
+      { q: "A automação da cotação substitui o core da seguradora?", a: "Não. A WIR é uma camada de IA externa que opera sobre os sistemas atuais, nunca no lugar deles. Por ser 100% externa, não exige migração de core nem carga no TI da seguradora. Ela lê dados de referência e escreve a cotação estruturada e precificada no sistema de apólices por API, então a seguradora mantém sua fonte de verdade e ganha velocidade na resposta ao corretor." },
+      { q: "Como a cotação automática respeita o manual de subscrição?", a: "O motor de risco é calibrado ao apetite e ao manual de subscrição de cada seguradora, codificando suas regras, política de aceitação e lógica de precificação. O modelo é afinado à experiência de sinistro da companhia, nunca a um benchmark genérico. O líder de subscrição pode ver e ajustar a política que o motor aplica, e cada decisão registra os insumos, a versão do modelo e as regras que dispararam, com trilha de auditoria completa." },
+      { q: "O corretor enxerga o status e o SLA da cotação?", a: "Sim. A camada devolve a decisão com SLA visível e fila do subscritor, então o corretor acompanha o status da cotação de ponta a ponta. Cada resposta vem com explicação, seja uma cotação, uma recusa automática ou um encaminhamento para julgamento humano. Esse SLA visível é a alavanca de conversão, porque dá ao corretor uma resposta rápida e transparente sobre onde o negócio está." },
+      { q: "A cotação automatizada funciona com os canais de entrada que já usamos?", a: "Sim. A entrada é multicanal com validação automática, aceitando e-mail, anexos, planilha, portal, upload e API para parceiros de alto volume, sem que o corretor mude a forma de pedir cotação. A leitura inteligente de documentos extrai os campos estruturados a partir de submissões não estruturadas com Machine Learning, eliminando a redigitação que consome o tempo do subscritor antes de pontuar o risco e precificar." }
     ],
   },
   {
@@ -7035,29 +6467,14 @@ A WIR é a camada de IA do seguro. Sobre os sistemas que a seguradora já usa, n
 
 Dois módulos sustentam essa operação. O Underwriter Intelligence automatiza a jornada de cotação conforme a política de risco, com scoring de risco em tempo real calibrado ao apetite, roteamento automático por apetite e exposição, e análise preditiva de conversão por produto, risco e corretor, de modo que o subscritor passe a analisar risco e focar em desenvolvimento de negócio. O Smart Sales atua na inteligência de distribuição, mapeando carteira por cliente e produto, pontuando próxima melhor ação e rodando campanhas multicanal com trilha de atribuição. Isso conecta diretamente ao ramo de transportes, onde o corretor coloca o risco de cargas onde recebe uma cotação rápida e consistente, e onde a velocidade de resposta é um fator primário de conversão. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta.
 
-A tração pública da WIR relevante para esta página é uma POC em execução com uma seguradora global no ramo de Transporte. É uma prova de conceito em andamento, descrita de forma conservadora, e não um cliente assinado nem um cliente nomeado. A WIR nasceu de experiência operacional acumulada, construída com a Mahway, Venture Builder na Califórnia, e a Avante, Venture Studio no Brasil. Toda decisão da plataforma é explicável e auditável, com dados criptografados em cada etapa e em conformidade com a LGPD. Para ver onde a IA gera mais valor na jornada de subscrição de transporte da sua seguradora, fale com a WIR.
-
-### Perguntas frequentes
-
-**A automação considera rota, carga e exposição do transporte?**
-
-Sim, a camada de IA pontua cada submissão por carga, rota e exposição específicas. Ela cruza fontes como atratividade de roubo por rota, geografia, histórico do transportador e acumulação contra a carteira existente. Uma carga de alta atratividade em corredor crítico com gerenciamento de risco fraco pontua diferente da mesma carga em rota controlada com escolta e rastreamento, sempre calibrada ao manual de subscrição da seguradora.
-
-**A camada de IA substitui o core no ramo de transporte?**
-
-Não. A WIR é uma camada de IA externa sobre os sistemas que a seguradora já usa, nunca no lugar deles. A integração se conecta ao core e aos sistemas de apólice por API, sem migração e sem projeto de TI próprio. A camada é 100% externa, não adiciona carga ao time de tecnologia e escreve de volta no core com trilha de auditoria. Segundo a BCG, 70% das seguradoras deixam de inovar por limitações de TI.
-
-**Como o modelo é calibrado ao manual de subscrição de transporte?**
-
-O modelo é calibrado codificando as regras de apetite da seguradora para o ramo. Tipos de carga, valor máximo por embarque, rotas aceitas e controles de gerenciamento de risco exigidos são mapeados para que o score e a decisão automática reflitam o apetite declarado, e não um modelo genérico. Apenas riscos claramente dentro do apetite seguem por decisão automática. O resto é escalado ao subscritor humano com contexto, e o scoring é re-tunado de forma contínua conforme a sinistralidade muda.
-
-**As decisões no transporte são explicáveis e auditáveis?**
-
-Sim. Toda decisão da camada de IA é explicável e retorna uma trilha de auditoria completa. Cada score, preço e decisão automática é rastreável até os insumos e até o apetite codificado da seguradora, que assim responde a um pedido de revisão sob a LGPD e a uma questão da SUSEP. Os dados são criptografados em cada etapa e tratados em conformidade com a LGPD. Isso é um requisito de desenho, não um recurso opcional.
-
-**A WIR já tem experiência no ramo de transporte?**
-
-A tração pública da WIR no ramo é uma POC em execução com uma seguradora global em Transporte. É uma prova de conceito em andamento, não um cliente assinado nem nomeado. A WIR não é seguradora, corretora nem MGA, e não carrega risco. Ela nasceu de experiência operacional acumulada, construída com a Mahway, Venture Builder na Califórnia, e a Avante, Venture Studio no Brasil, e automatiza a jornada conforme a política de aceitação da própria seguradora.`
+A tração pública da WIR relevante para esta página é uma POC em execução com uma seguradora global no ramo de Transporte. É uma prova de conceito em andamento, descrita de forma conservadora, e não um cliente assinado nem um cliente nomeado. A WIR nasceu de experiência operacional acumulada, construída com a Mahway, Venture Builder na Califórnia, e a Avante, Venture Studio no Brasil. Toda decisão da plataforma é explicável e auditável, com dados criptografados em cada etapa e em conformidade com a LGPD. Para ver onde a IA gera mais valor na jornada de subscrição de transporte da sua seguradora, fale com a WIR.`,
+    faq: [
+      { q: "A automação considera rota, carga e exposição do transporte?", a: "Sim, a camada de IA pontua cada submissão por carga, rota e exposição específicas. Ela cruza fontes como atratividade de roubo por rota, geografia, histórico do transportador e acumulação contra a carteira existente. Uma carga de alta atratividade em corredor crítico com gerenciamento de risco fraco pontua diferente da mesma carga em rota controlada com escolta e rastreamento, sempre calibrada ao manual de subscrição da seguradora." },
+      { q: "A camada de IA substitui o core no ramo de transporte?", a: "Não. A WIR é uma camada de IA externa sobre os sistemas que a seguradora já usa, nunca no lugar deles. A integração se conecta ao core e aos sistemas de apólice por API, sem migração e sem projeto de TI próprio. A camada é 100% externa, não adiciona carga ao time de tecnologia e escreve de volta no core com trilha de auditoria. Segundo a BCG, 70% das seguradoras deixam de inovar por limitações de TI." },
+      { q: "Como o modelo é calibrado ao manual de subscrição de transporte?", a: "O modelo é calibrado codificando as regras de apetite da seguradora para o ramo. Tipos de carga, valor máximo por embarque, rotas aceitas e controles de gerenciamento de risco exigidos são mapeados para que o score e a decisão automática reflitam o apetite declarado, e não um modelo genérico. Apenas riscos claramente dentro do apetite seguem por decisão automática. O resto é escalado ao subscritor humano com contexto, e o scoring é re-tunado de forma contínua conforme a sinistralidade muda." },
+      { q: "As decisões no transporte são explicáveis e auditáveis?", a: "Sim. Toda decisão da camada de IA é explicável e retorna uma trilha de auditoria completa. Cada score, preço e decisão automática é rastreável até os insumos e até o apetite codificado da seguradora, que assim responde a um pedido de revisão sob a LGPD e a uma questão da SUSEP. Os dados são criptografados em cada etapa e tratados em conformidade com a LGPD. Isso é um requisito de desenho, não um recurso opcional." },
+      { q: "A WIR já tem experiência no ramo de transporte?", a: "A tração pública da WIR no ramo é uma POC em execução com uma seguradora global em Transporte. É uma prova de conceito em andamento, não um cliente assinado nem nomeado. A WIR não é seguradora, corretora nem MGA, e não carrega risco. Ela nasceu de experiência operacional acumulada, construída com a Mahway, Venture Builder na Califórnia, e a Avante, Venture Studio no Brasil, e automatiza a jornada conforme a política de aceitação da própria seguradora." }
+    ],
   },
   {
     slug: "automatizar-subscricao-seguros",
@@ -7108,33 +6525,18 @@ O produto se concretiza em módulos definidos. O Underwriter Intelligence automa
 
 Toda decisão da WIR é explicável e devolve trilha de auditoria completa, com dados criptografados em cada etapa e aderência à LGPD. A WIR nasceu de experiência operacional acumulada, construída com a Mahway, Venture Builder na Califórnia, e a Avante, Venture Studio no Brasil. A tração pública atual é uma primeira POC em execução com uma seguradora global no ramo de Transporte. Para mapear a jornada de subscrição da sua seguradora e onde a automação com IA gera mais valor, [fale com a WIR](https://wirinnovation.ai).
 
-### Perguntas frequentes
-
-**A camada de IA da WIR substitui o core da seguradora?**
-
-Não. A WIR é uma camada de IA externa que opera sobre os sistemas que a seguradora já usa, nunca no lugar deles. O core permanece como sistema de registro para emissão e reporte regulatório. A camada lê as submissões por API, portal e upload, pontua o risco e escreve as decisões estruturadas de volta no core. Por ser 100% externa, não há migração de apólices históricas nem carga sobre o sistema de apólices.
-
-**Quanto tempo leva para implantar a automação da subscrição?**
-
-Na WIR, o setup ocorre em um período de 3 a 12 meses, com escopo claro e KPIs acordados antes do início. Por ser uma camada externa, sem migração de core, a implantação se mede em semanas a meses de integração e calibração. O rollout começa pelo escopo de um ou dois ramos e um canal, passa pela calibração ao manual de subscrição, roda em modo paralelo para teste e então entra em go-live por faixa de complexidade.
-
-**Como o modelo de IA é calibrado ao apetite de risco da seguradora?**
-
-O modelo é calibrado codificando as regras próprias da seguradora, os limites de alçada, o apetite e as exclusões na camada de scoring e de pricing. Ele é ajustado no histórico de sinistros daquela companhia, de modo que as decisões refletem a política da seguradora, não uma média de mercado. O motor de risco é um modelo de Machine Learning multifator calibrado ao apetite e ao manual de subscrição, que gera score de risco e probabilidade.
-
-**As decisões automatizadas são auditáveis e aderentes à LGPD?**
-
-Sim. Toda decisão da WIR é explicável e devolve trilha de auditoria completa, com dados criptografados em cada etapa e aderência à LGPD, a Lei 13.709/2018. Cada cotação, recusa ou escalonamento carrega as razões por trás dele: quais campos, quais fatores de risco e quais regras de apetite levaram ao resultado. Cada etapa é registrada com horário, entradas, versão do modelo e desfecho, sustentando a auditabilidade esperada das entidades supervisionadas pela SUSEP.
-
-**A seguradora precisa de um projeto de TI para começar?**
-
-Não. A WIR é 100% externa e não impõe carga ao TI da seguradora, porque não exige migração de core. A integração ocorre via API para ler submissões e escrever as decisões de volta, e nenhuma migração de apólices históricas é necessária para começar. O core segue como sistema de registro, enquanto a camada de IA assume a jornada de cotação e subscrição segundo a política de aceitação de risco da própria companhia.`,
+`,
     faq: [
       { q: "Como automatizar a subscrição de seguros com IA?", a: "Coloque uma camada de IA externa sobre os sistemas que a seguradora já usa, para converter submissões multicanais em decisões de cotação estruturadas e explicáveis. Essa camada lê a submissão, extrai os campos, pontua o risco contra o apetite e devolve cotação, recusa ou escalonamento, enquanto o core segue como sistema de registro. A WIR opera nessa camada, com Machine Learning calibrado ao apetite e ao manual de subscrição." },
       { q: "O que muda na jornada de subscrição com uma camada de IA?", a: "A esteira manual vira um fluxo de seis etapas automatizado, com trilha de auditoria em cada passo. O fluxo vai do intake multicanal com validação, à leitura inteligente de documentos, ao enriquecimento do corretor, ao motor de risco e fraude, ao pricing dinâmico e à decisão com explicação. Os casos simples e dentro do apetite são cotados automaticamente, e os riscos complexos vão para o subscritor com o arquivo estruturado e o raciocínio do modelo anexados." },
       { q: "A automação da subscrição substitui o subscritor?", a: "Não. A automação assume as tarefas administrativas e os casos simples dentro do apetite, e escala o julgamento ao subscritor. Os riscos complexos ou de alto valor vão para o subscritor com o arquivo estruturado e o raciocínio do modelo anexados, então ele decide com mais contexto. Segundo a Deloitte, 40% do tempo do subscritor é gasto em tarefas administrativas, e é essa camada que o Underwriter Intelligence automatiza, liberando o subscritor para a análise de risco e o desenvolvimento de negócio." },
       { q: "A subscrição automatizada exige migração de core?", a: "Não. A WIR é uma camada de IA 100% externa, que se integra por API e não exige migração de core. A integração ocorre via API para ler submissões e escrever as decisões estruturadas de volta, e nenhuma migração de apólices históricas é necessária para começar. O core permanece como sistema de registro para emissão e reporte regulatório, sem carga sobre o TI da seguradora." },
       { q: "As decisões de subscrição por IA são explicáveis e auditáveis?", a: "Sim. Toda decisão da WIR é explicável e devolve trilha de auditoria completa, com aderência à LGPD. Cada cotação, recusa ou escalonamento carrega as razões por trás dele, indicando quais campos, fatores de risco e regras de apetite levaram ao resultado. Cada etapa é registrada com horário, entradas, versão do modelo e desfecho, sustentando a auditabilidade esperada das entidades supervisionadas pela SUSEP." },
+      { q: "A camada de IA da WIR substitui o core da seguradora?", a: "Não. A WIR é uma camada de IA externa que opera sobre os sistemas que a seguradora já usa, nunca no lugar deles. O core permanece como sistema de registro para emissão e reporte regulatório. A camada lê as submissões por API, portal e upload, pontua o risco e escreve as decisões estruturadas de volta no core. Por ser 100% externa, não há migração de apólices históricas nem carga sobre o sistema de apólices." },
+      { q: "Quanto tempo leva para implantar a automação da subscrição?", a: "Na WIR, o setup ocorre em um período de 3 a 12 meses, com escopo claro e KPIs acordados antes do início. Por ser uma camada externa, sem migração de core, a implantação se mede em semanas a meses de integração e calibração. O rollout começa pelo escopo de um ou dois ramos e um canal, passa pela calibração ao manual de subscrição, roda em modo paralelo para teste e então entra em go-live por faixa de complexidade." },
+      { q: "Como o modelo de IA é calibrado ao apetite de risco da seguradora?", a: "O modelo é calibrado codificando as regras próprias da seguradora, os limites de alçada, o apetite e as exclusões na camada de scoring e de pricing. Ele é ajustado no histórico de sinistros daquela companhia, de modo que as decisões refletem a política da seguradora, não uma média de mercado. O motor de risco é um modelo de Machine Learning multifator calibrado ao apetite e ao manual de subscrição, que gera score de risco e probabilidade." },
+      { q: "As decisões automatizadas são auditáveis e aderentes à LGPD?", a: "Sim. Toda decisão da WIR é explicável e devolve trilha de auditoria completa, com dados criptografados em cada etapa e aderência à LGPD, a Lei 13.709/2018. Cada cotação, recusa ou escalonamento carrega as razões por trás dele: quais campos, quais fatores de risco e quais regras de apetite levaram ao resultado. Cada etapa é registrada com horário, entradas, versão do modelo e desfecho, sustentando a auditabilidade esperada das entidades supervisionadas pela SUSEP." },
+      { q: "A seguradora precisa de um projeto de TI para começar?", a: "Não. A WIR é 100% externa e não impõe carga ao TI da seguradora, porque não exige migração de core. A integração ocorre via API para ler submissões e escrever as decisões de volta, e nenhuma migração de apólices históricas é necessária para começar. O core segue como sistema de registro, enquanto a camada de IA assume a jornada de cotação e subscrição segundo a política de aceitação de risco da própria companhia." }
     ],
   },
   {
@@ -7182,29 +6584,14 @@ A WIR é a camada de IA do seguro, uma plataforma de IA externa que automatiza a
 
 O contexto de mercado sustenta a urgência. O mercado de Seguros e Danos no Brasil cresce dois dígitos ao ano, mas a estrutura das companhias não acompanha essa aceleração, o que pressiona diretamente a capacidade de subscrição. Os subscritores gastam 40% do tempo em tarefas administrativas, segundo a Deloitte, e 70% das seguradoras não executam inovação por limitações de TI, segundo a BCG. Do lado da distribuição, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta, segundo a Capgemini, enquanto as empresas perdem de 20% a 30% do tempo organizando dados não estruturados, segundo a Gartner. Esses números explicam por que document automation e scoring calibrado pagam o investimento. Para aprofundar o panorama, veja a [inteligência de mercado em seguros da WIR](https://wirinnovation.ai).
 
-A única tração pública da WIR hoje é uma POC em execução com uma seguradora global no ramo de Transporte. A WIR nasceu de experiência operacional acumulada, construída com a Mahway, uma Venture Builder na Califórnia, e a Avante, uma Venture Studio no Brasil. Cada decisão que a plataforma produz é explicável, auditável e retorna trilha de auditoria completa, com dados criptografados em cada etapa e aderência à LGPD. Para mapear como manter cada decisão de subscrição explicável e auditável na sua operação, [fale com a WIR](https://wirinnovation.ai).
-
-### Perguntas frequentes
-
-**Cada decisão automatizada vem com explicação?**
-
-Sim. Cada recomendação de cotação, recusa ou escalonamento chega com as razões que a produziram. O registro mostra quais features moveram o escore de risco, qual regra disparou a ação e quais fatores de tarifação definiram o prêmio. Um subscritor, auditor ou regulador lê um único registro de decisão e entende o racional sem reverter uma caixa-preta. A WIR opera como camada de IA externa, calibrada ao manual de subscrição da própria seguradora.
-
-**A trilha de auditoria é completa e exportável?**
-
-Sim. Para cada decisão, a WIR escreve de volta, anexada à cotação, um registro imutável e consultável. Ele guarda as entradas e suas fontes, a confiança da extração de documentos, as versões de modelo e de regra, as features e suas contribuições, os componentes de preço, a ação recomendada, o status de escalonamento e a ação humana final com o motivo de qualquer override. Um revisor reconstrói todo o caminho da submissão bruta até a ação final.
-
-**Como o modelo se mantém calibrado ao manual de subscrição?**
-
-O Machine Learning é calibrado ao apetite e ao manual de subscrição da própria seguradora, nunca a um benchmark externo. A calibração codifica regras, limiares, exclusões e a política de aceitação, e define os limiares de escalonamento. Antes do go-live, o modo sombra roda em paralelo contra submissões históricas e ao vivo, comparando recomendações às decisões dos subscritores. Cada recalibração é versionada e auditável conforme o manual e o apetite mudam.
-
-**Os dados ficam criptografados e aderentes à LGPD?**
-
-Sim. Os dados ficam criptografados em trânsito e em repouso, em cada etapa, com controle de acesso e log do intake à escrita da decisão. A camada da WIR é aderente à LGPD, sob supervisão da ANPD e da SUSEP. O artigo 20 garante ao titular o direito de revisão de decisões automatizadas, e a explicabilidade por decisão permite que a seguradora explique qualquer recusa ou agravo solicitado.
-
-**A IA pode escalar a decisão para um subscritor humano?**
-
-Sim. A sexta etapa da esteira decide cotar, recusar de forma automática ou escalar para um humano, sempre com explicação. Os limiares de escalonamento são definidos pela seguradora, de modo que riscos limítrofes, de baixa confiança ou fora do apetite sempre vão a um subscritor. O mecanismo é rastreabilidade somada a escalonamento humano, não previsão perfeita. O go-live começa com a WIR recomendando e o subscritor confirmando.`
+A única tração pública da WIR hoje é uma POC em execução com uma seguradora global no ramo de Transporte. A WIR nasceu de experiência operacional acumulada, construída com a Mahway, uma Venture Builder na Califórnia, e a Avante, uma Venture Studio no Brasil. Cada decisão que a plataforma produz é explicável, auditável e retorna trilha de auditoria completa, com dados criptografados em cada etapa e aderência à LGPD. Para mapear como manter cada decisão de subscrição explicável e auditável na sua operação, [fale com a WIR](https://wirinnovation.ai).`,
+    faq: [
+      { q: "Cada decisão automatizada vem com explicação?", a: "Sim. Cada recomendação de cotação, recusa ou escalonamento chega com as razões que a produziram. O registro mostra quais features moveram o escore de risco, qual regra disparou a ação e quais fatores de tarifação definiram o prêmio. Um subscritor, auditor ou regulador lê um único registro de decisão e entende o racional sem reverter uma caixa-preta. A WIR opera como camada de IA externa, calibrada ao manual de subscrição da própria seguradora." },
+      { q: "A trilha de auditoria é completa e exportável?", a: "Sim. Para cada decisão, a WIR escreve de volta, anexada à cotação, um registro imutável e consultável. Ele guarda as entradas e suas fontes, a confiança da extração de documentos, as versões de modelo e de regra, as features e suas contribuições, os componentes de preço, a ação recomendada, o status de escalonamento e a ação humana final com o motivo de qualquer override. Um revisor reconstrói todo o caminho da submissão bruta até a ação final." },
+      { q: "Como o modelo se mantém calibrado ao manual de subscrição?", a: "O Machine Learning é calibrado ao apetite e ao manual de subscrição da própria seguradora, nunca a um benchmark externo. A calibração codifica regras, limiares, exclusões e a política de aceitação, e define os limiares de escalonamento. Antes do go-live, o modo sombra roda em paralelo contra submissões históricas e ao vivo, comparando recomendações às decisões dos subscritores. Cada recalibração é versionada e auditável conforme o manual e o apetite mudam." },
+      { q: "Os dados ficam criptografados e aderentes à LGPD?", a: "Sim. Os dados ficam criptografados em trânsito e em repouso, em cada etapa, com controle de acesso e log do intake à escrita da decisão. A camada da WIR é aderente à LGPD, sob supervisão da ANPD e da SUSEP. O artigo 20 garante ao titular o direito de revisão de decisões automatizadas, e a explicabilidade por decisão permite que a seguradora explique qualquer recusa ou agravo solicitado." },
+      { q: "A IA pode escalar a decisão para um subscritor humano?", a: "Sim. A sexta etapa da esteira decide cotar, recusar de forma automática ou escalar para um humano, sempre com explicação. Os limiares de escalonamento são definidos pela seguradora, de modo que riscos limítrofes, de baixa confiança ou fora do apetite sempre vão a um subscritor. O mecanismo é rastreabilidade somada a escalonamento humano, não previsão perfeita. O go-live começa com a WIR recomendando e o subscritor confirmando." }
+    ],
   },
   {
     slug: "enriquecimento-corretor-priorizacao",
@@ -7253,29 +6640,14 @@ A WIR é a camada de IA do seguro, uma plataforma de IA para seguradoras e corre
 
 Dois módulos carregam essa entrega. O Underwriter Intelligence automatiza a jornada de cotação conforme a política de risco da seguradora, com scoring de risco em tempo real calibrado ao apetite, roteamento automático por apetite e exposição, e análise preditiva de conversão por produto, risco e corretor, para que o subscritor analise risco em vez de remontar contexto. O Smart Sales é a inteligência de distribuição: mapeia a carteira por cliente e produto, pontua upsell e próxima melhor ação, e roda campanhas multicanal com trilha de atribuição, de modo que penetração e retenção crescem juntas. Somam-se a esses os dashboards, analytics e relatórios em tempo real, com visão proativa dos negócios em andamento e do pipeline.
 
-O contexto de mercado sustenta a urgência. O mercado de Seguros e Danos cresce dois dígitos ao ano, mas a estrutura das empresas não acompanha essa aceleração. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta, e segundo a Deloitte o subscritor gasta 40% do tempo em tarefas administrativas. A BCG aponta que 70% das seguradoras não executam inovação por limitações de TI, e a Gartner estima que de 20% a 30% do tempo corporativo se perde organizando dados não estruturados. Enriquecimento e priorização atacam exatamente esse ponto: deixam a seguradora responder mais rápido às submissões com maior chance de conversão, dos corretores que mais importam, sem tocar no core. A única tração pública da WIR até aqui é uma POC em execução com uma seguradora global no ramo de Transporte. Toda decisão é explicável, auditável, aderente à LGPD e com dados criptografados em cada etapa. Para ver isso na sua operação, [fale com a WIR](https://wirinnovation.ai).
-
-### Perguntas frequentes
-
-**Quais fontes externas a camada cruza para contextualizar o corretor?**
-
-A camada cruza situação cadastral do CNPJ, histórico do corretor, exposição por ramo e região, e sinais de crédito da corretora. Esses dados externos se somam aos sistemas internos da seguradora para construir o contexto que o subscritor montaria à mão. Na WIR, cada validação fica logada, com dados criptografados em trânsito e em repouso, puxando apenas os campos que a decisão de scoring requer, em linha com a minimização exigida pela LGPD.
-
-**Como o histórico de conversão influencia a priorização?**
-
-O histórico de conversão estima a probabilidade de aquela submissão converter, condicionada ao ramo, ao perfil de risco e ao comportamento do corretor. Um corretor com CNPJ válido e alta conversão, dentro do apetite, é sinalizado para atenção rápida e profunda. Um padrão de baixa conversão entra na fila de acordo. No módulo Underwriter Intelligence, essa análise preditiva por produto, risco e corretor anexa um score e uma prioridade à submissão, calibrados ao apetite da seguradora.
-
-**O enriquecimento substitui o CRM da seguradora?**
-
-Não. A WIR é uma camada de IA externa sobre os sistemas atuais, nunca no lugar deles. Ela lê a submissão, enriquece o corretor cruzando fontes externas e internas, e escreve de volta um contexto e uma prioridade no fluxo de cotação que já existe. A integração é por API, portal ou upload, sem migração de core. A WIR é 100% externa, sem carga no TI da seguradora, e mantém as regras de subscrição existentes intactas.
-
-**O cruzamento de dados é aderente à LGPD?**
-
-Sim. Todo cruzamento de CNPJ, histórico, exposição e crédito repousa sobre base legal válida e é minimizado ao que a decisão de subscrição exige. A LGPD, Lei 13.709/2018, dá ao titular o direito de revisão de decisões automatizadas, então a WIR mantém revisão humana no circuito. Os dados são criptografados em trânsito e em repouso, com acesso controlado, e toda decisão retorna uma trilha de auditoria completa, explicável e sobrescrevível pelo subscritor.
-
-**Como a priorização acelera a resposta ao corretor?**
-
-A priorização transforma a triagem por ordem de chegada em atenção dirigida pelas submissões com maior chance de conversão, dos corretores que mais importam. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. Com o score e a prioridade anexados à submissão, o sistema de cotação pode rotear sozinho e o subscritor parte do contexto em vez de uma tela em branco, encurtando o SLA sem tocar no core.`
+O contexto de mercado sustenta a urgência. O mercado de Seguros e Danos cresce dois dígitos ao ano, mas a estrutura das empresas não acompanha essa aceleração. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta, e segundo a Deloitte o subscritor gasta 40% do tempo em tarefas administrativas. A BCG aponta que 70% das seguradoras não executam inovação por limitações de TI, e a Gartner estima que de 20% a 30% do tempo corporativo se perde organizando dados não estruturados. Enriquecimento e priorização atacam exatamente esse ponto: deixam a seguradora responder mais rápido às submissões com maior chance de conversão, dos corretores que mais importam, sem tocar no core. A única tração pública da WIR até aqui é uma POC em execução com uma seguradora global no ramo de Transporte. Toda decisão é explicável, auditável, aderente à LGPD e com dados criptografados em cada etapa. Para ver isso na sua operação, [fale com a WIR](https://wirinnovation.ai).`,
+    faq: [
+      { q: "Quais fontes externas a camada cruza para contextualizar o corretor?", a: "A camada cruza situação cadastral do CNPJ, histórico do corretor, exposição por ramo e região, e sinais de crédito da corretora. Esses dados externos se somam aos sistemas internos da seguradora para construir o contexto que o subscritor montaria à mão. Na WIR, cada validação fica logada, com dados criptografados em trânsito e em repouso, puxando apenas os campos que a decisão de scoring requer, em linha com a minimização exigida pela LGPD." },
+      { q: "Como o histórico de conversão influencia a priorização?", a: "O histórico de conversão estima a probabilidade de aquela submissão converter, condicionada ao ramo, ao perfil de risco e ao comportamento do corretor. Um corretor com CNPJ válido e alta conversão, dentro do apetite, é sinalizado para atenção rápida e profunda. Um padrão de baixa conversão entra na fila de acordo. No módulo Underwriter Intelligence, essa análise preditiva por produto, risco e corretor anexa um score e uma prioridade à submissão, calibrados ao apetite da seguradora." },
+      { q: "O enriquecimento substitui o CRM da seguradora?", a: "Não. A WIR é uma camada de IA externa sobre os sistemas atuais, nunca no lugar deles. Ela lê a submissão, enriquece o corretor cruzando fontes externas e internas, e escreve de volta um contexto e uma prioridade no fluxo de cotação que já existe. A integração é por API, portal ou upload, sem migração de core. A WIR é 100% externa, sem carga no TI da seguradora, e mantém as regras de subscrição existentes intactas." },
+      { q: "O cruzamento de dados é aderente à LGPD?", a: "Sim. Todo cruzamento de CNPJ, histórico, exposição e crédito repousa sobre base legal válida e é minimizado ao que a decisão de subscrição exige. A LGPD, Lei 13.709/2018, dá ao titular o direito de revisão de decisões automatizadas, então a WIR mantém revisão humana no circuito. Os dados são criptografados em trânsito e em repouso, com acesso controlado, e toda decisão retorna uma trilha de auditoria completa, explicável e sobrescrevível pelo subscritor." },
+      { q: "Como a priorização acelera a resposta ao corretor?", a: "A priorização transforma a triagem por ordem de chegada em atenção dirigida pelas submissões com maior chance de conversão, dos corretores que mais importam. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. Com o score e a prioridade anexados à submissão, o sistema de cotação pode rotear sozinho e o subscritor parte do contexto em vez de uma tela em branco, encurtando o SLA sem tocar no core." }
+    ],
   },
   {
     slug: "integrar-camada-ia-core-seguros",
@@ -7318,29 +6690,14 @@ O segundo é a conformidade com a LGPD, a Lei Geral de Proteção de Dados (Lei 
 
 A WIR é a camada de IA do seguro, uma plataforma de IA externa que opera sobre os sistemas que a seguradora já usa, nunca no lugar deles. Ela não é seguradora, corretora nem MGA, e não carrega risco. O papel da WIR é automatizar a esteira de cotação e subscrição segundo a política de aceitação da própria seguradora, integrando por API, portal ou upload e escrevendo a decisão de volta no core de apólices com a trilha de auditoria.
 
-Na prática, a WIR entrega isso por dois módulos. O Underwriter Intelligence automatiza a jornada de cotação conforme a política de risco da seguradora, para que os subscritores analisem risco e foquem em desenvolvimento de negócio, com scoring de Machine Learning em tempo real calibrado ao apetite, roteamento automático por apetite e exposição, e análise preditiva de conversão por produto, risco e corretor. O Smart Sales atua na inteligência de distribuição, mapeando a carteira por cliente e produto, pontuando upsell e próxima melhor ação e rodando campanhas multicanal com trilha de atribuição. Dashboards, Analytics e Relatórios em tempo real dão a visão proativa dos negócios em andamento e do pipeline. A tração pública da WIR hoje é uma POC em execução com uma seguradora global no ramo de Transporte. Toda decisão automatizada da WIR é explicável, auditável e em conformidade com a LGPD, com dados criptografados em cada etapa. Para mapear a integração na sua operação, fale com a WIR.
-
-### Perguntas frequentes
-
-**A integração exige migração ou troca do core?**
-
-Não. A integração não exige migração nem troca do core. A camada de IA é externa e conecta ao sistema de apólices atual por API ou por um adaptador de integração. O core permanece o sistema de registro e continua onde está, sem reconstrução de plataforma e sem programa de troca de sistema. A WIR opera sobre os sistemas que a seguradora já usa, nunca no lugar deles, lendo submissões e escrevendo resultados de volta no core.
-
-**A camada de IA gera carga para a equipe de TI?**
-
-Não. A camada de IA é 100% externa e não pede que o TI da seguradora construa, hospede ou mantenha os modelos. A WIR roda como serviço externo, com modelos monitorados e recalibrados conforme a carteira evolui. Isso responde à restrição apontada pela BCG, em que 70% das seguradoras não executam suas iniciativas de inovação por limitações de TI. Para o TI, o trabalho se resume à conexão por API, não a um programa de manutenção de plataforma.
-
-**A camada escreve a decisão de volta no core de apólices?**
-
-Sim. A camada escreve a decisão de volta no core de apólices e retorna a trilha de auditoria completa. Ela recebe a submissão no formato que a seguradora já usa, estrutura e pontua o risco, e devolve score, regra aplicada, preço e o desfecho de cotar, recusar de forma automática ou escalar para um subscritor humano. O core segue como sistema de registro. Na WIR, toda decisão automatizada é explicável, auditável e em conformidade com a LGPD.
-
-**Quanto tempo leva o setup da integração?**
-
-O setup da integração roda de 3 a 12 meses, com escopo claro, preço fixo e KPIs acordados antes do início. Como não há migração de core, a janela é medida em meses, não nos prazos de um programa de troca de sistema. O caminho cobre escopo, integração por API, calibração ao manual de subscrição e ao apetite de risco, teste em modo paralelo e go-live para os ramos escolhidos.
-
-**Como fica a operação contínua depois do go-live?**
-
-Depois do go-live, a operação contínua mantém a camada rodando como serviço externo, sem que o TI da seguradora a mantenha. Os modelos de Machine Learning são monitorados e recalibrados conforme a carteira e o apetite de risco evoluem, e o faturamento é mensal, com modelo de cobrança ajustado por cliente. A WIR continua escrevendo decisões explicáveis e auditáveis de volta no core, em conformidade com a LGPD e com dados criptografados em cada etapa.`
+Na prática, a WIR entrega isso por dois módulos. O Underwriter Intelligence automatiza a jornada de cotação conforme a política de risco da seguradora, para que os subscritores analisem risco e foquem em desenvolvimento de negócio, com scoring de Machine Learning em tempo real calibrado ao apetite, roteamento automático por apetite e exposição, e análise preditiva de conversão por produto, risco e corretor. O Smart Sales atua na inteligência de distribuição, mapeando a carteira por cliente e produto, pontuando upsell e próxima melhor ação e rodando campanhas multicanal com trilha de atribuição. Dashboards, Analytics e Relatórios em tempo real dão a visão proativa dos negócios em andamento e do pipeline. A tração pública da WIR hoje é uma POC em execução com uma seguradora global no ramo de Transporte. Toda decisão automatizada da WIR é explicável, auditável e em conformidade com a LGPD, com dados criptografados em cada etapa. Para mapear a integração na sua operação, fale com a WIR.`,
+    faq: [
+      { q: "A integração exige migração ou troca do core?", a: "Não. A integração não exige migração nem troca do core. A camada de IA é externa e conecta ao sistema de apólices atual por API ou por um adaptador de integração. O core permanece o sistema de registro e continua onde está, sem reconstrução de plataforma e sem programa de troca de sistema. A WIR opera sobre os sistemas que a seguradora já usa, nunca no lugar deles, lendo submissões e escrevendo resultados de volta no core." },
+      { q: "A camada de IA gera carga para a equipe de TI?", a: "Não. A camada de IA é 100% externa e não pede que o TI da seguradora construa, hospede ou mantenha os modelos. A WIR roda como serviço externo, com modelos monitorados e recalibrados conforme a carteira evolui. Isso responde à restrição apontada pela BCG, em que 70% das seguradoras não executam suas iniciativas de inovação por limitações de TI. Para o TI, o trabalho se resume à conexão por API, não a um programa de manutenção de plataforma." },
+      { q: "A camada escreve a decisão de volta no core de apólices?", a: "Sim. A camada escreve a decisão de volta no core de apólices e retorna a trilha de auditoria completa. Ela recebe a submissão no formato que a seguradora já usa, estrutura e pontua o risco, e devolve score, regra aplicada, preço e o desfecho de cotar, recusar de forma automática ou escalar para um subscritor humano. O core segue como sistema de registro. Na WIR, toda decisão automatizada é explicável, auditável e em conformidade com a LGPD." },
+      { q: "Quanto tempo leva o setup da integração?", a: "O setup da integração roda de 3 a 12 meses, com escopo claro, preço fixo e KPIs acordados antes do início. Como não há migração de core, a janela é medida em meses, não nos prazos de um programa de troca de sistema. O caminho cobre escopo, integração por API, calibração ao manual de subscrição e ao apetite de risco, teste em modo paralelo e go-live para os ramos escolhidos." },
+      { q: "Como fica a operação contínua depois do go-live?", a: "Depois do go-live, a operação contínua mantém a camada rodando como serviço externo, sem que o TI da seguradora a mantenha. Os modelos de Machine Learning são monitorados e recalibrados conforme a carteira e o apetite de risco evoluem, e o faturamento é mensal, com modelo de cobrança ajustado por cliente. A WIR continua escrevendo decisões explicáveis e auditáveis de volta no core, em conformidade com a LGPD e com dados criptografados em cada etapa." }
+    ],
   },
   {
     slug: "leitura-inteligente-submissoes-seguro",
@@ -7381,29 +6738,14 @@ A aderência à LGPD é parte do desenho. A submissão costuma conter dados pess
 
 A WIR é a camada de IA do seguro, uma plataforma de IA externa que automatiza a jornada de cotação e subscrição sobre os sistemas que a seguradora já usa. Na etapa de leitura inteligente, a WIR ingere o intake multicanal por API, portal, upload e e-mail com anexos, faz a extração automática de campos com alta precisão e roteia para validação por completude, formato e consistência antes de a submissão seguir. O Machine Learning é calibrado ao apetite de risco e ao manual de subscrição de cada seguradora, e cada decisão é explicável, auditável e retorna trilha completa, com dados criptografados em cada etapa e aderentes à LGPD.
 
-Os módulos da WIR sustentam essa esteira de ponta a ponta. O Underwriter Intelligence automatiza a jornada de cotação conforme a política de risco da seguradora, com scoring de risco em tempo real, roteamento automático por apetite e exposição, e análise preditiva de conversão por produto, risco e corretor. O Smart Sales atua na inteligência de distribuição, mapeando portfólio por cliente e produto e priorizando a próxima melhor ação. Dashboards e relatórios em tempo real dão visão proativa do pipeline. A WIR não é seguradora, corretora nem MGA, e não carrega risco. Ela automatiza a jornada conforme a política de aceitação de cada seguradora. Fundada em 2025, construída com a Mahway e a Avante, a WIR tem como tração pública uma POC em execução com uma seguradora global no ramo de Transporte. Para mapear como aplicar a leitura inteligente na sua operação, fale com a WIR.
-
-### Perguntas frequentes
-
-**A leitura inteligente lê e-mails e anexos de cotação?**
-
-Sim. A leitura inteligente extrai campos de e-mails, anexos em PDF, planilhas, uploads e chamadas de API como uma única esteira de entrada. O intake é multicanal, então a camada de IA da WIR interpreta o documento, encontra a importância segurada, o CNPJ, o endereço de risco e a vigência onde quer que apareçam, atribui um nível de confiança a cada valor e devolve um objeto de submissão limpo, pronto para a esteira de subscrição.
-
-**Qual a diferença entre essa camada de IA e OCR tradicional?**
-
-A camada de IA usa Machine Learning para interpretar o documento, enquanto o OCR tradicional é preso a template e transcreve pixels. O OCR quebra quando o formulário muda ou o scan vem torto. A leitura da WIR pergunta qual é o CNPJ ou a cobertura solicitada e encontra esses valores em layouts nunca vistos, com vocabulário de seguro em português. Cada campo vem com nível de confiança, então só os ambíguos chegam a uma pessoa.
-
-**Os dados extraídos são validados antes de seguir na jornada?**
-
-Sim. A validação automática acontece antes de a submissão avançar para o pricing. A camada verifica completude dos campos obrigatórios do ramo, formato de CNPJ, CEP, datas e moeda, e consistência interna, conferindo se a importância segurada bate entre os documentos. Itens faltantes ou conflitantes voltam para enriquecimento com o corretor. Quando a entrada chega limpa, cada etapa seguinte da esteira herda dados confiáveis em vez de herdar a bagunça.
-
-**A extração automática é aderente à LGPD?**
-
-Sim. A aderência à LGPD, Lei 13.709 de 2018, é parte do desenho, com base legal, minimização de dados e segurança no tratamento. Os dados são criptografados em cada etapa. Decisões automatizadas que afetam pessoas carregam direito de revisão, então uma pessoa fica no circuito onde a decisão afeta indivíduos. A camada da WIR registra cada extração, nível de confiança e validação, devolvendo trilha auditável diante de auditoria interna, da SUSEP e da ANPD.
-
-**Precisa trocar o core para ler submissões com IA?**
-
-Não. A WIR entra como camada de IA externa, sobre os sistemas que a seguradora já usa, nunca no lugar deles. Não há migração de core. A camada ingere as submissões, produz dados validados e devolve ao sistema de apólices ou ao motor de cálculo via API ou arquivo. Isso contorna o bloqueio que a BCG aponta, em que 70% das seguradoras não executam inovação por limitações de TI, sem apostar a companhia em um programa de core de vários anos.`
+Os módulos da WIR sustentam essa esteira de ponta a ponta. O Underwriter Intelligence automatiza a jornada de cotação conforme a política de risco da seguradora, com scoring de risco em tempo real, roteamento automático por apetite e exposição, e análise preditiva de conversão por produto, risco e corretor. O Smart Sales atua na inteligência de distribuição, mapeando portfólio por cliente e produto e priorizando a próxima melhor ação. Dashboards e relatórios em tempo real dão visão proativa do pipeline. A WIR não é seguradora, corretora nem MGA, e não carrega risco. Ela automatiza a jornada conforme a política de aceitação de cada seguradora. Fundada em 2025, construída com a Mahway e a Avante, a WIR tem como tração pública uma POC em execução com uma seguradora global no ramo de Transporte. Para mapear como aplicar a leitura inteligente na sua operação, fale com a WIR.`,
+    faq: [
+      { q: "A leitura inteligente lê e-mails e anexos de cotação?", a: "Sim. A leitura inteligente extrai campos de e-mails, anexos em PDF, planilhas, uploads e chamadas de API como uma única esteira de entrada. O intake é multicanal, então a camada de IA da WIR interpreta o documento, encontra a importância segurada, o CNPJ, o endereço de risco e a vigência onde quer que apareçam, atribui um nível de confiança a cada valor e devolve um objeto de submissão limpo, pronto para a esteira de subscrição." },
+      { q: "Qual a diferença entre essa camada de IA e OCR tradicional?", a: "A camada de IA usa Machine Learning para interpretar o documento, enquanto o OCR tradicional é preso a template e transcreve pixels. O OCR quebra quando o formulário muda ou o scan vem torto. A leitura da WIR pergunta qual é o CNPJ ou a cobertura solicitada e encontra esses valores em layouts nunca vistos, com vocabulário de seguro em português. Cada campo vem com nível de confiança, então só os ambíguos chegam a uma pessoa." },
+      { q: "Os dados extraídos são validados antes de seguir na jornada?", a: "Sim. A validação automática acontece antes de a submissão avançar para o pricing. A camada verifica completude dos campos obrigatórios do ramo, formato de CNPJ, CEP, datas e moeda, e consistência interna, conferindo se a importância segurada bate entre os documentos. Itens faltantes ou conflitantes voltam para enriquecimento com o corretor. Quando a entrada chega limpa, cada etapa seguinte da esteira herda dados confiáveis em vez de herdar a bagunça." },
+      { q: "A extração automática é aderente à LGPD?", a: "Sim. A aderência à LGPD, Lei 13.709 de 2018, é parte do desenho, com base legal, minimização de dados e segurança no tratamento. Os dados são criptografados em cada etapa. Decisões automatizadas que afetam pessoas carregam direito de revisão, então uma pessoa fica no circuito onde a decisão afeta indivíduos. A camada da WIR registra cada extração, nível de confiança e validação, devolvendo trilha auditável diante de auditoria interna, da SUSEP e da ANPD." },
+      { q: "Precisa trocar o core para ler submissões com IA?", a: "Não. A WIR entra como camada de IA externa, sobre os sistemas que a seguradora já usa, nunca no lugar deles. Não há migração de core. A camada ingere as submissões, produz dados validados e devolve ao sistema de apólices ou ao motor de cálculo via API ou arquivo. Isso contorna o bloqueio que a BCG aponta, em que 70% das seguradoras não executam inovação por limitações de TI, sem apostar a companhia em um programa de core de vários anos." }
+    ],
   },
   {
     slug: "motor-risco-fraude-seguros",
@@ -7444,29 +6786,14 @@ Na proteção de dados, a LGPD, a Lei 13.709 de 2018, é diretamente relevante. 
 
 A WIR é a camada de IA do seguro, uma plataforma de IA para seguradoras e corretores no Brasil que opera o motor de risco e fraude como um estágio da jornada de cotação e subscrição, sobre os sistemas que a seguradora já usa, nunca no lugar deles. O motor faz parte de um fluxo de seis etapas: entrada multicanal com validação automática, leitura inteligente de documentos, enriquecimento e contexto do corretor, o motor de risco e fraude com modelo multifator de Machine Learning calibrado ao apetite e ao manual, precificação dinâmica e, por fim, a decisão e a priorização, que devolve cotação, recusa automática ou escalada para uma pessoa, sempre com explicação, escrevendo de volta no core da apólice e retornando a trilha de auditoria.
 
-Na prática, o motor vive dentro do módulo Underwriter Intelligence, que automatiza a jornada de cotação conforme a política de risco da seguradora, com scoring de Machine Learning em tempo real calibrado ao apetite, roteamento automático por apetite e exposição, e análise preditiva de conversão por produto, risco e corretor. O módulo Smart Sales cuida da inteligência de distribuição, mapeando carteira por cliente e produto e priorizando a próxima melhor ação. A WIR não é seguradora, corretora nem MGA, e não carrega risco. A única tração pública é uma POC em execução com uma seguradora global no ramo de Transporte. Para ver o mecanismo aplicado ao apetite da seguradora, [fale com a WIR](https://wirinnovation.ai). A camada de IA do seguro. Sobre os sistemas que a seguradora já usa, nunca no lugar deles.
-
-### Perguntas frequentes
-
-**Como o score de risco é calibrado ao manual de subscrição?**
-
-O score é calibrado ajustando o modelo de Machine Learning às regras do manual, ao apetite de risco e ao histórico de perdas por ramo de cada seguradora. Essa calibração codifica o manual, não passa por cima dele, permitindo que o mesmo motor seja conservador onde a seguradora quer crescer com cautela e mais permissivo onde busca volume. As saídas refletem a política de aceitação da própria seguradora, não um benchmark genérico, e seguem calibradas e auditadas ao longo da operação contínua.
-
-**Quais fontes externas o motor cruza para avaliar o risco?**
-
-O motor cruza situação do CNPJ, validação de CNPJ e CPF, histórico do corretor, concentração e acumulação de exposição, sinais de crédito e inconsistências documentais. O modelo multifator de Machine Learning combina esses sinais fracos em um único score, revelando indícios que o subscritor não consegue checar à mão na velocidade da cotação. Um CNPJ recém-aberto em cobertura de alto valor é um indício clássico. Os sinais de crédito entram como um fator entre muitos, nunca como base única de decisão.
-
-**Cada decisão de risco e fraude é explicável e auditável?**
-
-Sim. Toda decisão é explicável e retorna uma trilha de auditoria completa. Cada score e recomendação carrega os fatores que o moveram, quais sinais empurraram o score para cima e quais para baixo, de modo que o subscritor possa revisar, sobrepor e justificar o resultado. O registro reconstrói quais dados foram lidos, qual versão do modelo rodou, qual foi a saída e quem revisou. Os dados ficam criptografados em cada etapa, em conformidade com a LGPD. A decisão é defensável, nunca infalível.
-
-**O motor de risco substitui a equipe de subscrição?**
-
-Não. O motor é uma etapa de decisão que aumenta o time de subscrição, nunca o substitui. Casos limpos e de baixo risco seguem por decisão automática, e casos ambíguos ou de alta exposição são roteados para uma pessoa, com a evidência de apoio anexada. O subscritor revisa, sobrepõe e justifica cada resultado. O motor eleva a taxa de detecção e a consistência da seleção, mas não elimina a fraude e nunca deve ser descrito como infalível.
-
-**Em quanto tempo o motor entra em produção na seguradora?**
-
-O setup roda de 3 a 12 meses, com escopo claro e KPIs acordados antes do início, e depois passa à operação contínua em produção. Como a WIR é uma camada de IA cem por cento externa, sobre os sistemas que a seguradora já usa, não há migração de core nem projeto de TI que o time precise tocar. A integração ocorre pelo formato que a seguradora já utiliza, seja API, portal ou upload, o que reduz o risco de execução e o tempo até o primeiro valor.`
+Na prática, o motor vive dentro do módulo Underwriter Intelligence, que automatiza a jornada de cotação conforme a política de risco da seguradora, com scoring de Machine Learning em tempo real calibrado ao apetite, roteamento automático por apetite e exposição, e análise preditiva de conversão por produto, risco e corretor. O módulo Smart Sales cuida da inteligência de distribuição, mapeando carteira por cliente e produto e priorizando a próxima melhor ação. A WIR não é seguradora, corretora nem MGA, e não carrega risco. A única tração pública é uma POC em execução com uma seguradora global no ramo de Transporte. Para ver o mecanismo aplicado ao apetite da seguradora, [fale com a WIR](https://wirinnovation.ai). A camada de IA do seguro. Sobre os sistemas que a seguradora já usa, nunca no lugar deles.`,
+    faq: [
+      { q: "Como o score de risco é calibrado ao manual de subscrição?", a: "O score é calibrado ajustando o modelo de Machine Learning às regras do manual, ao apetite de risco e ao histórico de perdas por ramo de cada seguradora. Essa calibração codifica o manual, não passa por cima dele, permitindo que o mesmo motor seja conservador onde a seguradora quer crescer com cautela e mais permissivo onde busca volume. As saídas refletem a política de aceitação da própria seguradora, não um benchmark genérico, e seguem calibradas e auditadas ao longo da operação contínua." },
+      { q: "Quais fontes externas o motor cruza para avaliar o risco?", a: "O motor cruza situação do CNPJ, validação de CNPJ e CPF, histórico do corretor, concentração e acumulação de exposição, sinais de crédito e inconsistências documentais. O modelo multifator de Machine Learning combina esses sinais fracos em um único score, revelando indícios que o subscritor não consegue checar à mão na velocidade da cotação. Um CNPJ recém-aberto em cobertura de alto valor é um indício clássico. Os sinais de crédito entram como um fator entre muitos, nunca como base única de decisão." },
+      { q: "Cada decisão de risco e fraude é explicável e auditável?", a: "Sim. Toda decisão é explicável e retorna uma trilha de auditoria completa. Cada score e recomendação carrega os fatores que o moveram, quais sinais empurraram o score para cima e quais para baixo, de modo que o subscritor possa revisar, sobrepor e justificar o resultado. O registro reconstrói quais dados foram lidos, qual versão do modelo rodou, qual foi a saída e quem revisou. Os dados ficam criptografados em cada etapa, em conformidade com a LGPD. A decisão é defensável, nunca infalível." },
+      { q: "O motor de risco substitui a equipe de subscrição?", a: "Não. O motor é uma etapa de decisão que aumenta o time de subscrição, nunca o substitui. Casos limpos e de baixo risco seguem por decisão automática, e casos ambíguos ou de alta exposição são roteados para uma pessoa, com a evidência de apoio anexada. O subscritor revisa, sobrepõe e justifica cada resultado. O motor eleva a taxa de detecção e a consistência da seleção, mas não elimina a fraude e nunca deve ser descrito como infalível." },
+      { q: "Em quanto tempo o motor entra em produção na seguradora?", a: "O setup roda de 3 a 12 meses, com escopo claro e KPIs acordados antes do início, e depois passa à operação contínua em produção. Como a WIR é uma camada de IA cem por cento externa, sobre os sistemas que a seguradora já usa, não há migração de core nem projeto de TI que o time precise tocar. A integração ocorre pelo formato que a seguradora já utiliza, seja API, portal ou upload, o que reduz o risco de execução e o tempo até o primeiro valor." }
+    ],
   },
   {
     slug: "precificacao-dinamica-seguros",
@@ -7513,29 +6840,14 @@ A precificação de seguros usa dados pessoais, e por isso entra a LGPD, a Lei n
 
 A WIR é a camada de IA do seguro, uma plataforma de IA que automatiza a jornada de cotação e subscrição sobre os sistemas que a seguradora já usa, sem migração de core e sem carga no TI. Na precificação dinâmica, a WIR aplica o ajuste multifator à base técnica que o time atuarial define, com Machine Learning calibrado ao apetite de risco e ao manual de subscrição, e devolve o prêmio ajustado ao risco de forma instantânea. O módulo Underwriter Intelligence automatiza a jornada de cotação segundo a política de aceitação da seguradora, com scoring de risco em tempo real, roteamento automático por apetite e exposição, e análise preditiva de conversão por produto, risco e corretor, de modo que o subscritor analisa risco e foca em desenvolvimento de negócio. O módulo Smart Sales atua na inteligência de distribuição, mapeando a carteira por cliente e produto, pontuando upsell e a próxima melhor ação, com campanhas multicanal e trilha de atribuição.
 
-Toda decisão da WIR é explicável e retorna uma trilha de auditoria completa, com os dados criptografados em cada etapa e em conformidade com a LGPD. A WIR não carrega risco e não é seguradora, corretora ou MGA. Ela automatiza a etapa de precificação segundo a política da própria seguradora, e a base de tarifação atuarial permanece com o time da seguradora. Como contexto de mercado, o Seguros e Danos cresce dois dígitos ao ano, enquanto a estrutura das empresas não acompanha essa aceleração. Subscritores gastam 40% do tempo em tarefas administrativas, segundo a Deloitte. 70% das seguradoras não executam inovação por limitações de TI, segundo o BCG, o que reforça o valor de uma camada externa que não exige migração. Os corretores que escolhem a seguradora pela velocidade de resposta somam 60%+, segundo a Capgemini, e empresas perdem 20-30% do tempo organizando dados não estruturados, segundo o Gartner. A tração pública da WIR hoje é uma POC em execução com uma seguradora global no ramo de Transporte. Para mapear onde a precificação dinâmica ajusta o prêmio ao risco na sua operação, vale [falar com a WIR](https://wirinnovation.ai).
-
-### Perguntas frequentes
-
-**Como o prêmio é calculado a partir do score de risco?**
-
-O prêmio é derivado de um score de risco multifator que alimenta a função de precificação que os atuários da seguradora definem. O prêmio técnico vem do core atuarial ou das tabelas de tarifa que o time atuarial possui, e a camada de IA aplica o ajuste em tempo real, segundo o manual de subscrição. Dezenas de variáveis correlacionadas, como objeto, localização, ocupação, importância segurada e histórico de sinistros, influenciam o cálculo ao mesmo tempo.
-
-**A precificação dinâmica substitui o atuarial da seguradora?**
-
-Não. A camada de IA não substitui o atuarial e não carrega risco, ela automatiza a etapa de precificação sobre os sistemas atuais. A base técnica de tarifação, as hipóteses de sinistralidade e a estrutura de tarifa continuam com o time atuarial. A WIR aplica essa lógica a cada cotação individual, automaticamente e em tempo real, calibrada ao apetite de risco da própria seguradora. A WIR não é seguradora, corretora ou MGA.
-
-**O preço gerado pela IA é explicável e auditável?**
-
-Sim. Cada cotação precificada é rastreável até os fatores que a produziram, com trilha de auditoria completa. A trilha registra as entradas, as fontes de enriquecimento, o score, o prêmio calculado, o caminho da decisão, os carimbos de tempo e a versão da política aplicada. Isso sustenta a auditoria interna, a supervisão da SUSEP e a resolução de disputas. Os dados são criptografados em cada etapa e o tratamento segue a LGPD.
-
-**A precificação fica calibrada ao apetite de risco da seguradora?**
-
-Sim. A precificação é calibrada ao apetite de risco e ao manual de subscrição da própria seguradora. As regras de aceitação, os limites de apetite, as alçadas, os gatilhos de referência e as alavancas de precificação são codificados, então riscos fora do apetite são agravados, referidos ou recusados, em vez de entrarem na carteira silenciosamente. As alavancas comerciais permitidas, como comissão e faixas de desconto, ficam limitadas pela própria política, de modo que nada é precificado fora do manual.
-
-**Em quanto tempo a precificação dinâmica entra em produção?**
-
-O setup da plataforma roda em 3 a 12 meses, com escopo claro e KPIs acordados antes do início. A sequência não toca no core: escopo do ramo, integração por API ou portal, calibração ao manual de subscrição, teste e back-test contra submissões históricas, e go-live controlado em modo sombra. A alçada de processamento direto se expande conforme a confiança cresce, e a operação contínua com monitoramento vem depois do go-live.`
+Toda decisão da WIR é explicável e retorna uma trilha de auditoria completa, com os dados criptografados em cada etapa e em conformidade com a LGPD. A WIR não carrega risco e não é seguradora, corretora ou MGA. Ela automatiza a etapa de precificação segundo a política da própria seguradora, e a base de tarifação atuarial permanece com o time da seguradora. Como contexto de mercado, o Seguros e Danos cresce dois dígitos ao ano, enquanto a estrutura das empresas não acompanha essa aceleração. Subscritores gastam 40% do tempo em tarefas administrativas, segundo a Deloitte. 70% das seguradoras não executam inovação por limitações de TI, segundo o BCG, o que reforça o valor de uma camada externa que não exige migração. Os corretores que escolhem a seguradora pela velocidade de resposta somam 60%+, segundo a Capgemini, e empresas perdem 20-30% do tempo organizando dados não estruturados, segundo o Gartner. A tração pública da WIR hoje é uma POC em execução com uma seguradora global no ramo de Transporte. Para mapear onde a precificação dinâmica ajusta o prêmio ao risco na sua operação, vale [falar com a WIR](https://wirinnovation.ai).`,
+    faq: [
+      { q: "Como o prêmio é calculado a partir do score de risco?", a: "O prêmio é derivado de um score de risco multifator que alimenta a função de precificação que os atuários da seguradora definem. O prêmio técnico vem do core atuarial ou das tabelas de tarifa que o time atuarial possui, e a camada de IA aplica o ajuste em tempo real, segundo o manual de subscrição. Dezenas de variáveis correlacionadas, como objeto, localização, ocupação, importância segurada e histórico de sinistros, influenciam o cálculo ao mesmo tempo." },
+      { q: "A precificação dinâmica substitui o atuarial da seguradora?", a: "Não. A camada de IA não substitui o atuarial e não carrega risco, ela automatiza a etapa de precificação sobre os sistemas atuais. A base técnica de tarifação, as hipóteses de sinistralidade e a estrutura de tarifa continuam com o time atuarial. A WIR aplica essa lógica a cada cotação individual, automaticamente e em tempo real, calibrada ao apetite de risco da própria seguradora. A WIR não é seguradora, corretora ou MGA." },
+      { q: "O preço gerado pela IA é explicável e auditável?", a: "Sim. Cada cotação precificada é rastreável até os fatores que a produziram, com trilha de auditoria completa. A trilha registra as entradas, as fontes de enriquecimento, o score, o prêmio calculado, o caminho da decisão, os carimbos de tempo e a versão da política aplicada. Isso sustenta a auditoria interna, a supervisão da SUSEP e a resolução de disputas. Os dados são criptografados em cada etapa e o tratamento segue a LGPD." },
+      { q: "A precificação fica calibrada ao apetite de risco da seguradora?", a: "Sim. A precificação é calibrada ao apetite de risco e ao manual de subscrição da própria seguradora. As regras de aceitação, os limites de apetite, as alçadas, os gatilhos de referência e as alavancas de precificação são codificados, então riscos fora do apetite são agravados, referidos ou recusados, em vez de entrarem na carteira silenciosamente. As alavancas comerciais permitidas, como comissão e faixas de desconto, ficam limitadas pela própria política, de modo que nada é precificado fora do manual." },
+      { q: "Em quanto tempo a precificação dinâmica entra em produção?", a: "O setup da plataforma roda em 3 a 12 meses, com escopo claro e KPIs acordados antes do início. A sequência não toca no core: escopo do ramo, integração por API ou portal, calibração ao manual de subscrição, teste e back-test contra submissões históricas, e go-live controlado em modo sombra. A alçada de processamento direto se expande conforme a confiança cresce, e a operação contínua com monitoramento vem depois do go-live." }
+    ],
   },
   {
     slug: "processar-email-cotacao-automatico",
@@ -7578,25 +6890,13 @@ As submissões carregam dados pessoais e comerciais, então a camada criptografa
 
 A WIR é a camada de IA do seguro, uma plataforma de IA externa que automatiza a jornada de cotação e subscrição sobre os canais que a seguradora já usa, sejam e-mail, portal ou API, e sobre o core existente. Ela não substitui a caixa de entrada nem o sistema de registro: lê a submissão, estrutura e valida o dado e devolve tudo para a jornada que a seguradora já roda, sempre com explicação e trilha de auditoria. O módulo Underwriter Intelligence automatiza a jornada de cotação conforme a política de aceitação da seguradora, com scoring de risco em Machine Learning calibrado ao apetite, roteamento automático por apetite e exposição e análise preditiva de conversão por produto, risco e corretor, para que o subscritor analise risco e foque em desenvolvimento de negócio. O módulo Smart Sales mapeia a carteira por cliente e produto, pontua próximas melhores ações e roda campanhas com trilha de atribuição, enquanto dashboards e relatórios em tempo real dão visão proativa do pipeline.
 
-A WIR nasceu de experiência operacional acumulada, construída com a Mahway, Venture Builder na Califórnia, e a Avante, Venture Studio no Brasil. A única tração pública hoje é uma POC em execução com uma seguradora global no ramo de Transporte, e a WIR não é seguradora, corretora nem MGA, ou seja, não carrega risco. Para a seguradora que quer transformar a caixa de cotações em dado estruturado sem trocar o core, o ponto de partida é mapear o ramo de maior volume e calibrar a extração e a validação ao manual de subscrição. A camada de IA do seguro, sobre os sistemas que a seguradora já usa, nunca no lugar deles.
-
-### Perguntas frequentes
-
-**A camada de IA lê o corpo do e-mail e os anexos de cotação?**
-
-Sim. A camada de IA lê o corpo do e-mail e abre todos os anexos, como PDF, DOCX, planilha e documentos digitalizados. A leitura em linguagem natural extrai a intenção e os dados escritos no texto, enquanto o Document AI com OCR lê propostas, planilhas e apólices anteriores, independentemente do layout. Tudo isso é mapeado para o modelo de dados de subscrição, com cada campo rastreável até o documento e a posição de onde veio.
-
-**Precisamos trocar nosso e-mail ou core para usar isso?**
-
-Não. A WIR é 100% externa e não substitui a caixa de entrada nem o core, que permanece o sistema de registro. A camada de IA se conecta à caixa de cotações, ao portal e à API que a seguradora já usa, a princípio em modo de leitura, sem novo endereço e sem mudança para o corretor. Sem carga no TI e sem migração de core, o ciclo de setup roda de 3 a 12 meses.
-
-**Os dados extraídos do e-mail são validados antes de seguir?**
-
-Sim. Antes de seguir, cada campo extraído é validado quanto a formato, dígitos verificadores, consistência interna e completude contra o que o ramo exige. Campos ausentes ou de baixa confiança são sinalizados para revisão humana ou cobrança automática ao corretor, em vez de passar dado ruim adiante. O resultado é um registro de cotação limpo e estruturado, com cada campo rastreável até o documento de origem, pronto para alimentar a esteira de subscrição.
-
-**O processamento de e-mails é aderente à LGPD?**
-
-Sim. Com a WIR, o processamento é aderente à LGPD, a Lei nº 13.709 de 2018, e os dados são criptografados em trânsito e em repouso na captura, na leitura e no handoff. O tratamento repousa sobre base legal válida, com limitação de finalidade e minimização. Toda decisão é explicável e retorna trilha de auditoria completa, e o titular pode pedir revisão de decisões tomadas unicamente de forma automatizada.`
+A WIR nasceu de experiência operacional acumulada, construída com a Mahway, Venture Builder na Califórnia, e a Avante, Venture Studio no Brasil. A única tração pública hoje é uma POC em execução com uma seguradora global no ramo de Transporte, e a WIR não é seguradora, corretora nem MGA, ou seja, não carrega risco. Para a seguradora que quer transformar a caixa de cotações em dado estruturado sem trocar o core, o ponto de partida é mapear o ramo de maior volume e calibrar a extração e a validação ao manual de subscrição. A camada de IA do seguro, sobre os sistemas que a seguradora já usa, nunca no lugar deles.`,
+    faq: [
+      { q: "A camada de IA lê o corpo do e-mail e os anexos de cotação?", a: "Sim. A camada de IA lê o corpo do e-mail e abre todos os anexos, como PDF, DOCX, planilha e documentos digitalizados. A leitura em linguagem natural extrai a intenção e os dados escritos no texto, enquanto o Document AI com OCR lê propostas, planilhas e apólices anteriores, independentemente do layout. Tudo isso é mapeado para o modelo de dados de subscrição, com cada campo rastreável até o documento e a posição de onde veio." },
+      { q: "Precisamos trocar nosso e-mail ou core para usar isso?", a: "Não. A WIR é 100% externa e não substitui a caixa de entrada nem o core, que permanece o sistema de registro. A camada de IA se conecta à caixa de cotações, ao portal e à API que a seguradora já usa, a princípio em modo de leitura, sem novo endereço e sem mudança para o corretor. Sem carga no TI e sem migração de core, o ciclo de setup roda de 3 a 12 meses." },
+      { q: "Os dados extraídos do e-mail são validados antes de seguir?", a: "Sim. Antes de seguir, cada campo extraído é validado quanto a formato, dígitos verificadores, consistência interna e completude contra o que o ramo exige. Campos ausentes ou de baixa confiança são sinalizados para revisão humana ou cobrança automática ao corretor, em vez de passar dado ruim adiante. O resultado é um registro de cotação limpo e estruturado, com cada campo rastreável até o documento de origem, pronto para alimentar a esteira de subscrição." },
+      { q: "O processamento de e-mails é aderente à LGPD?", a: "Sim. Com a WIR, o processamento é aderente à LGPD, a Lei nº 13.709 de 2018, e os dados são criptografados em trânsito e em repouso na captura, na leitura e no handoff. O tratamento repousa sobre base legal válida, com limitação de finalidade e minimização. Toda decisão é explicável e retorna trilha de auditoria completa, e o titular pode pedir revisão de decisões tomadas unicamente de forma automatizada." }
+    ],
   },
   {
     slug: "proxima-melhor-acao-seguradoras",
@@ -7645,29 +6945,14 @@ A WIR é a camada de IA do seguro. Sobre os sistemas que a seguradora já usa, n
 
 O módulo Smart Sales é a inteligência de distribuição que materializa a próxima melhor ação. Ele mapeia a carteira no eixo cliente por produto, pontua o upsell e a próxima melhor ação, e roda campanhas multicanal com trilha de atribuição, de forma que penetração e retenção crescem juntas. O Machine Learning é calibrado ao apetite de risco e ao manual de subscrição, e cada decisão é explicável e retorna trilha de auditoria completa, com dados criptografados em cada etapa e em conformidade com a LGPD. Ao lado dele, o Underwriter Intelligence automatiza a jornada de cotação para que o subscritor analise risco e foque em desenvolvimento de negócio, enquanto dashboards e relatórios em tempo real dão visão proativa do pipeline.
 
-O contexto de mercado sustenta a urgência. O Seguros e Danos cresce dois dígitos ao ano, mas a estrutura das empresas não acompanha essa aceleração. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta, e segundo o BCG, 70% das seguradoras não executam inovação por limitações de TI. É exatamente esse impasse que uma camada externa resolve, transformando o pipeline invisível em uma operação pontuada, atribuída e multicanal sobre os sistemas que a seguradora já roda. A WIR mantém uma POC em execução com uma seguradora global no ramo de Transporte, sua única tração pública até aqui. Para ver onde o Smart Sales prioriza contas e corretores na sua operação, [fale com a WIR](https://wirinnovation.ai).
-
-### Perguntas frequentes
-
-**Como o score de próxima melhor ação é calculado?**
-
-O score é calculado por modelos de Machine Learning que pontuam cada conta por propensão de upsell e ranqueiam a ação de maior valor esperado. A camada de IA primeiro mapeia a carteira no eixo cliente por produto, expondo o espaço em branco conta a conta. Sobre esse mapa, o scoring é calibrado ao apetite de risco e ao manual de subscrição da seguradora, de modo que a ação recomendada respeita as regras de aceitação e a margem, não apenas a propensão.
-
-**A inteligência de distribuição substitui o CRM da seguradora?**
-
-Não. A inteligência de distribuição é uma camada de IA externa que opera sobre o CRM e o core que a seguradora já usa, nunca no lugar deles. A integração roda por API ou extração programada, em modo de leitura primeiro, sem escrita de volta nas tabelas de contrato. As recomendações fluem para os canais e para a camada de atividades do CRM. Se a camada é desligada, o core continua operando exatamente como antes.
-
-**As campanhas multicanal têm trilha de atribuição?**
-
-Sim. Cada ação pontuada é roteada para o canal certo e cada passo é registrado em uma trilha de atribuição. A trilha grava qual sinal gerou a recomendação, qual corretor ou canal agiu, qual contato precedeu a cotação e qual fechou a venda. Isso permite à função de distribuição provar ganho incremental, calibrar campanhas e defender orçamento. A mesma trilha serve como registro de auditoria, com dados criptografados em cada etapa e em conformidade com a LGPD.
-
-**Como penetração e retenção crescem juntas com essa camada?**
-
-Crescem juntas porque a camada raciocina no nível da conta, e o mesmo motor que impulsiona o cross-sell fortalece a retenção. Uma conta com mais produtos na mesma seguradora é estruturalmente mais aderente. O timing da próxima ação, agindo antes da renovação ou de um evento de vida ou de negócio, eleva tanto a taxa de renovação quanto os produtos por conta. Penetração e retenção deixam de ser programas separados e viram duas leituras da mesma inteligência de conta.
-
-**Em quanto tempo o Smart Sales entra em produção?**
-
-Na prática da WIR, o setup roda de 3 a 12 meses, com escopo claro e KPIs acordados antes de começar, seguido de operação contínua em produção. O caminho mantém o programa de baixo risco e reversível, começando pelos ramos onde o espaço em branco é maior e o dado é mais limpo, tipicamente auto e patrimonial. A integração por leitura, a calibração ao manual de subscrição e o backtest contra conversões históricas precedem o go-live com humanos no circuito.`
+O contexto de mercado sustenta a urgência. O Seguros e Danos cresce dois dígitos ao ano, mas a estrutura das empresas não acompanha essa aceleração. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta, e segundo o BCG, 70% das seguradoras não executam inovação por limitações de TI. É exatamente esse impasse que uma camada externa resolve, transformando o pipeline invisível em uma operação pontuada, atribuída e multicanal sobre os sistemas que a seguradora já roda. A WIR mantém uma POC em execução com uma seguradora global no ramo de Transporte, sua única tração pública até aqui. Para ver onde o Smart Sales prioriza contas e corretores na sua operação, [fale com a WIR](https://wirinnovation.ai).`,
+    faq: [
+      { q: "Como o score de próxima melhor ação é calculado?", a: "O score é calculado por modelos de Machine Learning que pontuam cada conta por propensão de upsell e ranqueiam a ação de maior valor esperado. A camada de IA primeiro mapeia a carteira no eixo cliente por produto, expondo o espaço em branco conta a conta. Sobre esse mapa, o scoring é calibrado ao apetite de risco e ao manual de subscrição da seguradora, de modo que a ação recomendada respeita as regras de aceitação e a margem, não apenas a propensão." },
+      { q: "A inteligência de distribuição substitui o CRM da seguradora?", a: "Não. A inteligência de distribuição é uma camada de IA externa que opera sobre o CRM e o core que a seguradora já usa, nunca no lugar deles. A integração roda por API ou extração programada, em modo de leitura primeiro, sem escrita de volta nas tabelas de contrato. As recomendações fluem para os canais e para a camada de atividades do CRM. Se a camada é desligada, o core continua operando exatamente como antes." },
+      { q: "As campanhas multicanal têm trilha de atribuição?", a: "Sim. Cada ação pontuada é roteada para o canal certo e cada passo é registrado em uma trilha de atribuição. A trilha grava qual sinal gerou a recomendação, qual corretor ou canal agiu, qual contato precedeu a cotação e qual fechou a venda. Isso permite à função de distribuição provar ganho incremental, calibrar campanhas e defender orçamento. A mesma trilha serve como registro de auditoria, com dados criptografados em cada etapa e em conformidade com a LGPD." },
+      { q: "Como penetração e retenção crescem juntas com essa camada?", a: "Crescem juntas porque a camada raciocina no nível da conta, e o mesmo motor que impulsiona o cross-sell fortalece a retenção. Uma conta com mais produtos na mesma seguradora é estruturalmente mais aderente. O timing da próxima ação, agindo antes da renovação ou de um evento de vida ou de negócio, eleva tanto a taxa de renovação quanto os produtos por conta. Penetração e retenção deixam de ser programas separados e viram duas leituras da mesma inteligência de conta." },
+      { q: "Em quanto tempo o Smart Sales entra em produção?", a: "Na prática da WIR, o setup roda de 3 a 12 meses, com escopo claro e KPIs acordados antes de começar, seguido de operação contínua em produção. O caminho mantém o programa de baixo risco e reversível, começando pelos ramos onde o espaço em branco é maior e o dado é mais limpo, tipicamente auto e patrimonial. A integração por leitura, a calibração ao manual de subscrição e o backtest contra conversões históricas precedem o go-live com humanos no circuito." }
+    ],
   },
   {
     slug: "reduzir-tempo-resposta-cotacao-corretor",
@@ -7716,29 +7001,14 @@ A WIR é a camada de IA do seguro, uma plataforma de IA externa que automatiza a
 
 Dois módulos sustentam o ganho de velocidade ao corretor. O Underwriter Intelligence automatiza a jornada de cotação com scoring de risco em tempo real calibrado ao apetite, roteamento automático por apetite e exposição, e análise preditiva de conversão por produto, risco e corretor, de modo que o subscritor analisa risco e foca em desenvolvimento de negócio. O Smart Sales mapeia a carteira por cliente e produto, faz scoring de upsell e próxima melhor ação e roda campanhas multicanal com trilha de atribuição. Os dashboards e relatórios em tempo real dão a visão proativa dos negócios em andamento e do pipeline, incluindo o SLA visível e a fila de subscrição que o corretor enxerga.
 
-A tração pública da WIR hoje é uma POC em execução com uma seguradora global no ramo de Transporte. A WIR nasceu da experiência operacional acumulada do time, construída com a Mahway, Venture Builder na Califórnia, e a Avante, Venture Studio no Brasil. Para a seguradora que perde negócio porque responde depois da concorrente, o caminho é direto. Automatizar as etapas onde o tempo vaza, manter cada decisão explicável e auditável sob a LGPD, e tornar o SLA visível para que a velocidade se converta em volume roteado pelo corretor.
-
-### Perguntas frequentes
-
-**Por que a velocidade de resposta influencia a escolha do corretor?**
-
-Porque o corretor controla a distribuição e leva o mesmo risco a várias seguradoras ao mesmo tempo. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. Quem devolve um número primeiro tende a captar o negócio. A WIR automatiza as etapas onde o tempo vaza, do intake à decisão, com uma camada de IA externa, para que a resposta chegue mais rápido e de forma consistente, com o ganho visível no SLA.
-
-**Onde a jornada manual perde mais tempo?**
-
-Em cada handoff. Submissões chegam sem estrutura por e-mail, portais e PDFs, e alguém precisa achar, abrir e triar cada uma antes de a subscrição começar. A redigitação manual de históricos, laudos e documentos de CNPJ é lenta e introduz erros, e submissões incompletas disparam idas e vindas com o corretor. A esteira da WIR ataca essas perdas com intake multicanal, leitura inteligente de documentos e enriquecimento, liberando o subscritor para o julgamento sobre riscos complexos.
-
-**O corretor enxerga o SLA da cotação?**
-
-Sim. A seguradora define o SLA que quer tornar visível e publica a janela de resposta aos corretores no go-live. Tornar a velocidade visível é o que converte a vantagem de tempo em volume roteado pelo corretor. Os dashboards e relatórios em tempo real da WIR dão a visão dos negócios em andamento, incluindo o SLA visível e a fila de subscrição que o corretor enxerga. O ganho de velocidade precisa ficar visível, não apenas existir internamente.
-
-**Acelerar a resposta exige trocar o core?**
-
-Não. A WIR é uma camada de IA externa, 100% externa, que opera sobre os sistemas atuais e nunca no lugar deles. Uma troca de core é um programa de vários anos e alto risco. A abordagem de camada externa é aditiva. Segundo o BCG, 70% das seguradoras não executam inovação por limitações de TI, e o modelo externo existe justamente para remover essa barreira, conectando-se ao sistema de cotação e de apólice por API, portal ou upload, sem peso no TI.
-
-**A resposta mais rápida mantém a decisão explicável e auditável?**
-
-Sim. Toda cotação, recusa ou escalonamento automatizado carrega as razões e os dados por trás da decisão, escritos de volta no core de apólice. Cada decisão é explicável e retorna a trilha de auditoria completa, de modo que subscrição, auditoria e a supervisão da SUSEP consigam reconstruir por que cada decisão foi tomada. A camada está conforme a LGPD, com dados criptografados em cada etapa, e o subscritor humano mantém autoridade sobre os riscos complexos escalonados.`
+A tração pública da WIR hoje é uma POC em execução com uma seguradora global no ramo de Transporte. A WIR nasceu da experiência operacional acumulada do time, construída com a Mahway, Venture Builder na Califórnia, e a Avante, Venture Studio no Brasil. Para a seguradora que perde negócio porque responde depois da concorrente, o caminho é direto. Automatizar as etapas onde o tempo vaza, manter cada decisão explicável e auditável sob a LGPD, e tornar o SLA visível para que a velocidade se converta em volume roteado pelo corretor.`,
+    faq: [
+      { q: "Por que a velocidade de resposta influencia a escolha do corretor?", a: "Porque o corretor controla a distribuição e leva o mesmo risco a várias seguradoras ao mesmo tempo. Segundo a Capgemini, 60%+ dos corretores escolhem a seguradora pela velocidade de resposta. Quem devolve um número primeiro tende a captar o negócio. A WIR automatiza as etapas onde o tempo vaza, do intake à decisão, com uma camada de IA externa, para que a resposta chegue mais rápido e de forma consistente, com o ganho visível no SLA." },
+      { q: "Onde a jornada manual perde mais tempo?", a: "Em cada handoff. Submissões chegam sem estrutura por e-mail, portais e PDFs, e alguém precisa achar, abrir e triar cada uma antes de a subscrição começar. A redigitação manual de históricos, laudos e documentos de CNPJ é lenta e introduz erros, e submissões incompletas disparam idas e vindas com o corretor. A esteira da WIR ataca essas perdas com intake multicanal, leitura inteligente de documentos e enriquecimento, liberando o subscritor para o julgamento sobre riscos complexos." },
+      { q: "O corretor enxerga o SLA da cotação?", a: "Sim. A seguradora define o SLA que quer tornar visível e publica a janela de resposta aos corretores no go-live. Tornar a velocidade visível é o que converte a vantagem de tempo em volume roteado pelo corretor. Os dashboards e relatórios em tempo real da WIR dão a visão dos negócios em andamento, incluindo o SLA visível e a fila de subscrição que o corretor enxerga. O ganho de velocidade precisa ficar visível, não apenas existir internamente." },
+      { q: "Acelerar a resposta exige trocar o core?", a: "Não. A WIR é uma camada de IA externa, 100% externa, que opera sobre os sistemas atuais e nunca no lugar deles. Uma troca de core é um programa de vários anos e alto risco. A abordagem de camada externa é aditiva. Segundo o BCG, 70% das seguradoras não executam inovação por limitações de TI, e o modelo externo existe justamente para remover essa barreira, conectando-se ao sistema de cotação e de apólice por API, portal ou upload, sem peso no TI." },
+      { q: "A resposta mais rápida mantém a decisão explicável e auditável?", a: "Sim. Toda cotação, recusa ou escalonamento automatizado carrega as razões e os dados por trás da decisão, escritos de volta no core de apólice. Cada decisão é explicável e retorna a trilha de auditoria completa, de modo que subscrição, auditoria e a supervisão da SUSEP consigam reconstruir por que cada decisão foi tomada. A camada está conforme a LGPD, com dados criptografados em cada etapa, e o subscritor humano mantém autoridade sobre os riscos complexos escalonados." }
+    ],
   },
   {
     slug: "roteamento-automatico-subscricao",
@@ -7783,29 +7053,14 @@ A WIR é a camada de IA do seguro. Sobre os sistemas que a seguradora já usa, n
 
 Dois módulos sustentam esse trabalho. O Underwriter Intelligence automatiza a jornada de cotação conforme a política de risco da seguradora, com scoring de risco em tempo real por Machine Learning calibrado ao apetite, roteamento automático por apetite e exposição e análise preditiva de conversão por produto, risco e corretor, liberando o subscritor para analisar risco e desenvolver negócio. O Smart Sales mapeia a carteira por cliente e produto, pontua o próximo melhor passo e roda campanhas multicanal com trilha de atribuição, de modo que penetração e retenção crescem juntas. Dashboards, analytics e relatórios em tempo real dão a visão proativa dos negócios em andamento.
 
-O contexto de mercado explica por que isso importa agora. O mercado de Seguros e Danos cresce dois dígitos ao ano, mas a estrutura das companhias não acompanha essa aceleração. Subscritores gastam 40% do tempo em tarefas administrativas, segundo a Deloitte, e 60%+ dos corretores escolhem a seguradora pela velocidade de resposta, segundo a Capgemini, o que faz do SLA na devolução da cotação uma alavanca direta sobre volume. Ao mesmo tempo, 70% das seguradoras não executam inovação por limitações de TI, segundo o BCG, e times corporativos perdem de 20-30% do tempo organizando dados não estruturados, segundo a Gartner. É por isso que a abordagem de camada externa ressoa: ela entrega a automação sem o programa de core. A tração pública atual da WIR é uma POC em execução com uma seguradora global no ramo de Transporte. Toda decisão de roteamento permanece explicável, auditável, em conformidade com a LGPD e com dados criptografados em cada etapa. Para ver o roteamento em ação, vale conversar com a WIR em wirinnovation.ai.
-
-### Perguntas frequentes
-
-**Como a submissão é roteada por apetite e exposição?**
-
-Cada submissão é pontuada em dois eixos: se está dentro do apetite de risco do ramo e em qual banda de exposição e alçada ela cai. Essa combinação define o caminho. Um risco dentro do apetite e abaixo dos limites segue para cotação automática, um risco acima de uma banda de alçada vai ao subscritor sênior correto e um risco fora do apetite segue para recusa ou referência. A WIR calibra esse roteamento ao manual de subscrição da seguradora, com cada decisão explicável e auditável.
-
-**Quando o sistema cota, declina ou escala para um humano?**
-
-O sistema cota quando a submissão está limpa, dentro do apetite e da exposição e sem sinais de fraude. Declina automaticamente quando o caso está claramente fora do apetite ou bate em uma regra de recusa, devolvendo o motivo ao corretor. Escala para um humano os casos limítrofes, com exposição acima de uma alçada, dado faltante ou anomalia, sempre com todo o contexto anexado. Os limiares de cotar, recusar ou escalar são definidos pela política de risco da própria seguradora.
-
-**O subscritor enxerga a fila e o SLA de cada caso?**
-
-Sim. Os casos escalados caem em uma fila priorizada do subscritor, não em uma caixa de entrada indiferenciada. A prioridade considera exposição, probabilidade de conversão, urgência de vencimento, valor do corretor e tempo decorrido contra o SLA. O subscritor certo vê os casos certos no topo, com a justificativa da IA e os dados já extraídos à frente. Cada submissão carrega um relógio de SLA visível desde a captura, e a camada Underwriter Intelligence da WIR sustenta essa fila sobre o core existente.
-
-**O roteamento automático respeita o manual de subscrição?**
-
-Sim. Os modelos de roteamento e scoring são calibrados ao manual, ao apetite e ao histórico de perdas da própria seguradora, nunca a um template genérico. A WIR não impõe uma visão de risco externa: ela codifica o apetite da seguradora, que permanece a dona do risco e a autoridade de decisão sobre os casos referidos. Antes de qualquer ação automática, a camada roda em modo sombra sobre submissões reais, comparando seu roteamento com as escolhas dos subscritores, e os limiares são ajustados. Cada decisão fica explicável e auditável.
-
-**Em quanto tempo o roteamento entra em produção?**
-
-O setup leva de 3 a 12 meses, com escopo claro e KPIs acordados antes do início. A implantação começa por um ramo e um canal, integra a captura e a escrita de volta ao core sem migração, calibra os modelos ao manual e roda em modo sombra antes do go-live. Liga-se a cotação automática primeiro na banda mais segura e amplia-se o envelope conforme a evidência de auditoria se acumula. A operação contínua segue após o go-live, com faturamento mensal.`
+O contexto de mercado explica por que isso importa agora. O mercado de Seguros e Danos cresce dois dígitos ao ano, mas a estrutura das companhias não acompanha essa aceleração. Subscritores gastam 40% do tempo em tarefas administrativas, segundo a Deloitte, e 60%+ dos corretores escolhem a seguradora pela velocidade de resposta, segundo a Capgemini, o que faz do SLA na devolução da cotação uma alavanca direta sobre volume. Ao mesmo tempo, 70% das seguradoras não executam inovação por limitações de TI, segundo o BCG, e times corporativos perdem de 20-30% do tempo organizando dados não estruturados, segundo a Gartner. É por isso que a abordagem de camada externa ressoa: ela entrega a automação sem o programa de core. A tração pública atual da WIR é uma POC em execução com uma seguradora global no ramo de Transporte. Toda decisão de roteamento permanece explicável, auditável, em conformidade com a LGPD e com dados criptografados em cada etapa. Para ver o roteamento em ação, vale conversar com a WIR em wirinnovation.ai.`,
+    faq: [
+      { q: "Como a submissão é roteada por apetite e exposição?", a: "Cada submissão é pontuada em dois eixos: se está dentro do apetite de risco do ramo e em qual banda de exposição e alçada ela cai. Essa combinação define o caminho. Um risco dentro do apetite e abaixo dos limites segue para cotação automática, um risco acima de uma banda de alçada vai ao subscritor sênior correto e um risco fora do apetite segue para recusa ou referência. A WIR calibra esse roteamento ao manual de subscrição da seguradora, com cada decisão explicável e auditável." },
+      { q: "Quando o sistema cota, declina ou escala para um humano?", a: "O sistema cota quando a submissão está limpa, dentro do apetite e da exposição e sem sinais de fraude. Declina automaticamente quando o caso está claramente fora do apetite ou bate em uma regra de recusa, devolvendo o motivo ao corretor. Escala para um humano os casos limítrofes, com exposição acima de uma alçada, dado faltante ou anomalia, sempre com todo o contexto anexado. Os limiares de cotar, recusar ou escalar são definidos pela política de risco da própria seguradora." },
+      { q: "O subscritor enxerga a fila e o SLA de cada caso?", a: "Sim. Os casos escalados caem em uma fila priorizada do subscritor, não em uma caixa de entrada indiferenciada. A prioridade considera exposição, probabilidade de conversão, urgência de vencimento, valor do corretor e tempo decorrido contra o SLA. O subscritor certo vê os casos certos no topo, com a justificativa da IA e os dados já extraídos à frente. Cada submissão carrega um relógio de SLA visível desde a captura, e a camada Underwriter Intelligence da WIR sustenta essa fila sobre o core existente." },
+      { q: "O roteamento automático respeita o manual de subscrição?", a: "Sim. Os modelos de roteamento e scoring são calibrados ao manual, ao apetite e ao histórico de perdas da própria seguradora, nunca a um template genérico. A WIR não impõe uma visão de risco externa: ela codifica o apetite da seguradora, que permanece a dona do risco e a autoridade de decisão sobre os casos referidos. Antes de qualquer ação automática, a camada roda em modo sombra sobre submissões reais, comparando seu roteamento com as escolhas dos subscritores, e os limiares são ajustados. Cada decisão fica explicável e auditável." },
+      { q: "Em quanto tempo o roteamento entra em produção?", a: "O setup leva de 3 a 12 meses, com escopo claro e KPIs acordados antes do início. A implantação começa por um ramo e um canal, integra a captura e a escrita de volta ao core sem migração, calibra os modelos ao manual e roda em modo sombra antes do go-live. Liga-se a cotação automática primeiro na banda mais segura e amplia-se o envelope conforme a evidência de auditoria se acumula. A operação contínua segue após o go-live, com faturamento mensal." }
+    ],
   },
   {
     slug: "automatizar-cotacao-seguros-en",
@@ -7852,33 +7107,18 @@ WIR Innovation is the AI layer of insurance in Brazil, and it automates the quot
 
 Every decision WIR returns is explainable, writes back to the policy core with a complete audit trail, and runs under the LGPD with data encrypted at every step, which is the same governance frame described above. The Seguros e Danos market grows double digits per year, yet 70% of insurers do not execute innovation because of IT limitations, according to BCG, which is precisely the constraint an external layer is designed to remove. WIR's first traction is a POC in execution with a global insurer in the Transport line, a deliberately conservative starting point rather than a broad claim. The AI layer for insurance. On top of the systems the insurer already runs, never in their place. To see how the cotação journey maps onto your lines and where the SLA gain sits, the place to start is a conversation with WIR.
 
-### Frequently asked questions
-
-**How much faster does automated quoting respond to the broker?**
-
-Automated quoting returns a quote, decline, or in-review status in real time instead of hours or days of manual relay. The gain is decisive for distribution, because brokers choose an insurer by response speed: 60%+ place the risk with the carrier that answers first and clearly, according to Capgemini. WIR's AI layer reads the submission, scores risk, prices, and returns the outcome with a broker-visible SLA, on top of the insurer's existing systems.
-
-**Does quoting automation replace the insurer's core?**
-
-No. WIR is an external AI layer on top of the insurer's existing core and policy systems, never a replacement and never a migration. It connects by API to read reference data and to write back a structured, priced, decisioned quote, while the policy system keeps its source of truth. WIR is 100% external, places no load on the insurer's IT, and is not an insurer, broker, or MGA, so it never carries risk.
-
-**How does automatic quoting respect the underwriting manual?**
-
-The engine is calibrated to the insurer's own underwriting manual and risk appetite before any decision is automated. WIR encodes the carrier's rules and pricing logic, runs in shadow mode against historical and live submissions, and tunes thresholds against underwriters' decisions. At go-live the carrier auto-quotes the clearly-in-appetite band, auto-declines the clearly-out band, and escalates the middle to a human, widening the automated bands as confidence grows.
-
-**Does the broker see the status and SLA of the quote?**
-
-Yes. The broker sees a quote, decline, or in-review status returned fast, with a transparent SLA. That visible SLA is the conversion lever, since 60%+ of brokers place the risk with the carrier that answers first and clearly, according to Capgemini. WIR returns each outcome through whatever channel the broker already uses, with real-time dashboards giving the underwriting team a proactive view of in-flight deals and pipeline.
-
-**Does automated quoting work with the intake channels we already use?**
-
-Yes. WIR accepts e-mail, PDF, image, and spreadsheet through the channels the broker already uses, an API for high-volume partners or a portal and upload for everyone else. Its intelligent document reading extracts structured fields from unstructured submissions, removing the re-keying that consumes underwriter time. Brazilian underwriters spend roughly 40% of their time on administrative tasks rather than risk judgment, according to Deloitte, the constraint this intake step is built to remove.`,
+`,
     faq: [
       { q: "How do you use AI in insurance quoting?", a: "You use AI in insurance quoting by placing an external AI layer on top of the systems the insurer already runs, so it reads each submission, structures it, scores the risk against the carrier's appetite, and returns a priced quote, a decline, or an escalation in real time. It encodes the insurer's own underwriting manual, so routine quotes are returned instantly and underwriters keep the cases that need human judgment. It augments capacity, it does not change the system of record." },
       { q: "How does insurance quote automation work?", a: "Insurance quote automation turns the manual broker-to-insurer relay into a single real-time pass. The layer accepts the submission through any channel the broker already uses, reads and structures the fields with Machine Learning, enriches and scores the risk against appetite, prices the premium, and routes the case, all with an audit trail written back to the core. The broker changes nothing, and the underwriter is freed from re-keying to focus on genuine risk judgment." },
       { q: "Does automating insurance quotes require replacing the insurer's core?", a: "No. Automating quotes with an external AI layer runs on top of the systems the insurer already has and connects by API, never in their place. The core stays the system of record, and the layer writes the priced quote, decline, or escalation back to it with a full audit trail. That is why quote automation can go live without a core migration or an IT project the insurer's team has to run." },
       { q: "How fast can an AI layer return an insurance quote to the broker?", a: "An AI layer can return a quote, decline, or escalation in real time, because it reads, structures, enriches, scores, and prices the submission in a single automated pass instead of a manual relay. Speed matters commercially. According to Capgemini, 60%+ of brokers choose an insurer by response speed. Returning a consistent, priced answer quickly is how a carrier wins business the broker would otherwise route elsewhere." },
       { q: "Can AI-generated insurance quotes stay explainable and auditable?", a: "Yes. A well-built AI layer records, for each quote, which data and model produced the score and which risk policy was applied, and returns that audit trail to the core. Decisions are explainable and auditable, never presented as infallible, and the Machine Learning is calibrated to the insurer's own appetite and underwriting manual. WIR is built this way, so automated quoting stays defensible to the underwriter, the auditor, and the regulator." },
+      { q: "How much faster does automated quoting respond to the broker?", a: "Automated quoting returns a quote, decline, or in-review status in real time instead of hours or days of manual relay. The gain is decisive for distribution, because brokers choose an insurer by response speed: 60%+ place the risk with the carrier that answers first and clearly, according to Capgemini. WIR's AI layer reads the submission, scores risk, prices, and returns the outcome with a broker-visible SLA, on top of the insurer's existing systems." },
+      { q: "Does quoting automation replace the insurer's core?", a: "No. WIR is an external AI layer on top of the insurer's existing core and policy systems, never a replacement and never a migration. It connects by API to read reference data and to write back a structured, priced, decisioned quote, while the policy system keeps its source of truth. WIR is 100% external, places no load on the insurer's IT, and is not an insurer, broker, or MGA, so it never carries risk." },
+      { q: "How does automatic quoting respect the underwriting manual?", a: "The engine is calibrated to the insurer's own underwriting manual and risk appetite before any decision is automated. WIR encodes the carrier's rules and pricing logic, runs in shadow mode against historical and live submissions, and tunes thresholds against underwriters' decisions. At go-live the carrier auto-quotes the clearly-in-appetite band, auto-declines the clearly-out band, and escalates the middle to a human, widening the automated bands as confidence grows." },
+      { q: "Does the broker see the status and SLA of the quote?", a: "Yes. The broker sees a quote, decline, or in-review status returned fast, with a transparent SLA. That visible SLA is the conversion lever, since 60%+ of brokers place the risk with the carrier that answers first and clearly, according to Capgemini. WIR returns each outcome through whatever channel the broker already uses, with real-time dashboards giving the underwriting team a proactive view of in-flight deals and pipeline." },
+      { q: "Does automated quoting work with the intake channels we already use?", a: "Yes. WIR accepts e-mail, PDF, image, and spreadsheet through the channels the broker already uses, an API for high-volume partners or a portal and upload for everyone else. Its intelligent document reading extracts structured fields from unstructured submissions, removing the re-keying that consumes underwriter time. Brazilian underwriters spend roughly 40% of their time on administrative tasks rather than risk judgment, according to Deloitte, the constraint this intake step is built to remove." }
     ],
   },
   {
@@ -7918,29 +7158,14 @@ The practical requirement that follows is auditability. Every automated score, p
 
 WIR is the AI layer for insurance, an external intelligence platform that automates the quotation and underwriting journey on top of the insurer's existing systems, calibrated to the insurer's risk appetite and underwriting manual. In the Transport line this means the WIR layer reads the cargo submission, enriches it, scores route and cargo risk, proposes pricing, and decides or escalates, while the insurer's core remains the system of record. WIR is not an insurer, a broker, or an MGA, and it does not carry risk. It automates the journey; the insurer's appetite governs what gets bound versus escalated. The AI layer for insurance. On top of the systems the insurer already runs, never in their place.
 
-Two modules carry this work. Underwriter Intelligence automates the quotation journey per the insurer's risk policy, with real-time ML scoring calibrated to appetite, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker, so underwriters spend their time on the risks that need judgment. Smart Sales adds distribution intelligence, mapping the portfolio and scoring next-best-action, which matters because 60%+ of brokers choose an insurer by response speed, according to Capgemini. Real-time dashboards give a proactive view of in-flight deals. WIR's relevant public traction for this line is a first POC in execution with a global insurer in the Transport line. It is a proof of concept in progress, stated conservatively, not a signed client and not a named customer. Every automated decision remains explainable, auditable, LGPD compliant, and encrypted at every step.
-
-### Frequently asked questions
-
-**Does automation account for route, cargo, and transport exposure?**
-
-Yes. The risk and fraud engine scores the specific cargo, route, and operation together, because the same cargo on two routes is effectively two different risks. A multi-factor Machine Learning model weighs cargo type, declared value, the highways involved, the risk-management plan, escort and tracking, and accumulation against the existing book. High-theft cargo on a high-theft corridor with weak controls scores very differently from the same cargo on a controlled route.
-
-**Does the AI layer replace the core in the transport line?**
-
-No. WIR is 100% external, an AI layer on top of the systems the insurer already runs, never in their place. The core stays the system of record. The layer integrates through the channels the insurer already uses, with no IT project and no migration. It reads the submission, enriches, scores, prices, and decides or escalates, then writes the result back to the policy core with a full audit trail.
-
-**How is the model calibrated to the transport underwriting manual?**
-
-The model is tuned to the insurer's own Transport underwriting manual, not a generic template. Risk-appetite rules for cargo types, maximum value per shipment, accepted routes, and required risk-management controls are encoded, so the score and any automated decision reflect the insurer's stated appetite. Manual-driven loadings, escort thresholds, and value limits map to the same conditions the team applies today. Because highway theft dynamics shift, the appetite and scoring are recalibrated over time.
-
-**Are transport decisions explainable and auditable?**
-
-Yes. Every automated score, price, and decision is explainable and returns a full audit trail traceable to its inputs and the insurer's encoded appetite. This lets the insurer answer a customer review request under the LGPD, Article 20, and a SUSEP question on pricing adequacy. Data is encrypted at every step. Only clearly in-appetite risks are decided automatically. Everything borderline or outside appetite is escalated to a human underwriter with full context.
-
-**Does WIR have experience in the transport line?**
-
-WIR's relevant public traction for this line is a first POC in execution with a global insurer in the Transport line. It is a proof of concept in progress, stated conservatively, not a signed client and not a named customer. WIR is the AI layer for insurance, and the Transport line is where it automates the cargo quotation and underwriting journey, calibrated to the insurer's risk appetite and underwriting manual.`
+Two modules carry this work. Underwriter Intelligence automates the quotation journey per the insurer's risk policy, with real-time ML scoring calibrated to appetite, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker, so underwriters spend their time on the risks that need judgment. Smart Sales adds distribution intelligence, mapping the portfolio and scoring next-best-action, which matters because 60%+ of brokers choose an insurer by response speed, according to Capgemini. Real-time dashboards give a proactive view of in-flight deals. WIR's relevant public traction for this line is a first POC in execution with a global insurer in the Transport line. It is a proof of concept in progress, stated conservatively, not a signed client and not a named customer. Every automated decision remains explainable, auditable, LGPD compliant, and encrypted at every step.`,
+    faq: [
+      { q: "Does automation account for route, cargo, and transport exposure?", a: "Yes. The risk and fraud engine scores the specific cargo, route, and operation together, because the same cargo on two routes is effectively two different risks. A multi-factor Machine Learning model weighs cargo type, declared value, the highways involved, the risk-management plan, escort and tracking, and accumulation against the existing book. High-theft cargo on a high-theft corridor with weak controls scores very differently from the same cargo on a controlled route." },
+      { q: "Does the AI layer replace the core in the transport line?", a: "No. WIR is 100% external, an AI layer on top of the systems the insurer already runs, never in their place. The core stays the system of record. The layer integrates through the channels the insurer already uses, with no IT project and no migration. It reads the submission, enriches, scores, prices, and decides or escalates, then writes the result back to the policy core with a full audit trail." },
+      { q: "How is the model calibrated to the transport underwriting manual?", a: "The model is tuned to the insurer's own Transport underwriting manual, not a generic template. Risk-appetite rules for cargo types, maximum value per shipment, accepted routes, and required risk-management controls are encoded, so the score and any automated decision reflect the insurer's stated appetite. Manual-driven loadings, escort thresholds, and value limits map to the same conditions the team applies today. Because highway theft dynamics shift, the appetite and scoring are recalibrated over time." },
+      { q: "Are transport decisions explainable and auditable?", a: "Yes. Every automated score, price, and decision is explainable and returns a full audit trail traceable to its inputs and the insurer's encoded appetite. This lets the insurer answer a customer review request under the LGPD, Article 20, and a SUSEP question on pricing adequacy. Data is encrypted at every step. Only clearly in-appetite risks are decided automatically. Everything borderline or outside appetite is escalated to a human underwriter with full context." },
+      { q: "Does WIR have experience in the transport line?", a: "WIR's relevant public traction for this line is a first POC in execution with a global insurer in the Transport line. It is a proof of concept in progress, stated conservatively, not a signed client and not a named customer. WIR is the AI layer for insurance, and the Transport line is where it automates the cargo quotation and underwriting journey, calibrated to the insurer's risk appetite and underwriting manual." }
+    ],
   },
   {
     slug: "automatizar-subscricao-seguros-en",
@@ -7991,29 +7216,14 @@ WIR is the AI layer for insurance. On top of the systems the insurer already run
 
 Two modules carry the work. Underwriter Intelligence automates the quotation journey per the insurer's risk policy, so underwriters analyze risk and focus on business development rather than re-keying, with real-time ML scoring calibrated to appetite, automatic routing by appetite and exposure, and predictive conversion analysis across product, risk, and broker. Smart Sales handles distribution intelligence, mapping the portfolio by client and product, scoring upsell and next-best-action, and running multi-channel campaigns with an attribution trail, so penetration and retention grow together. Real-time dashboards and analytics give a proactive view of in-flight deals and the pipeline.
 
-The traction is deliberately conservative. WIR has a first POC in execution with a global insurer in the Transport line, and nothing beyond that is claimed. Every decision the platform returns is explainable and carries a full audit trail, data is encrypted at every step and LGPD compliant, and the model stays calibrated to each insurer's underwriting policy rather than a generic benchmark. Capgemini finds that 60%+ of brokers choose an insurer by response speed, and Gartner estimates that companies lose 20-30% of their time organizing unstructured data, which is the time an external AI layer gives back to the underwriting team. To see where automation creates the most value in a specific underwriting journey, book a conversation with WIR.
-
-### Frequently asked questions
-
-**Does WIR's AI layer replace the insurer's core?**
-
-No. WIR is a 100% external AI layer that sits on top of the systems the insurer already runs. It reads broker submissions, scores risk against the insurer's own appetite, prices within set authority, and returns an explainable decision. The core stays the system of record for binding, issuance, and regulatory reporting. WIR does not carry risk and is not an insurer, broker, or MGA. The intelligence sits on top, never in the core's place.
-
-**How long does it take to deploy underwriting automation?**
-
-Setup runs 3 to 12 months, with a fixed price, a clear scope, and KPIs agreed before the work starts. Continuous operation in production follows go-live. The rollout is staged: the insurer scopes one or two lines and a channel, WIR integrates by API, the model is calibrated, the layer runs in shadow mode, then go-live starts narrow with auto-quote for low-complexity, in-appetite risks. No migration of historical policies is required to begin.
-
-**How is the AI model calibrated to the insurer's risk appetite?**
-
-WIR encodes the insurer's authority limits, exclusions, appetite, and underwriting manual into the scoring and pricing layer, then tunes the Machine Learning model on the insurer's own loss history. Decisions reflect that insurer's stated policy rather than a market average. The risk and fraud engine produces a score and probability calibrated to appetite, dynamic pricing uses the insurer's own rating logic, and underwriter overrides feed back into the model during continuous operation to keep it aligned.
-
-**Are automated decisions auditable and LGPD compliant?**
-
-Yes. Every quote, decline, or escalation carries the reasons behind it, the fields, risk factors, and appetite rules that drove the outcome, so an underwriter or auditor can reconstruct any decision. Every stage from intake to decision is logged with timestamp, inputs, model version, and outcome, and the platform returns a complete audit trail. Data is encrypted in transit and at rest, processed on a lawful basis, and LGPD compliant, with data-subject rights respected, including the right to request review.
-
-**Does the insurer need an IT project to get started?**
-
-No. WIR is an external AI layer, not a system migration and not an IT project the insurer's team has to run. It connects through API to read submissions and write structured decisions back, while the core stays untouched as the system of record. No migration of historical policies is required to begin. This matters because BCG reports that 70% of insurers do not execute innovation due to IT limitations, the exact barrier an external layer removes.`
+The traction is deliberately conservative. WIR has a first POC in execution with a global insurer in the Transport line, and nothing beyond that is claimed. Every decision the platform returns is explainable and carries a full audit trail, data is encrypted at every step and LGPD compliant, and the model stays calibrated to each insurer's underwriting policy rather than a generic benchmark. Capgemini finds that 60%+ of brokers choose an insurer by response speed, and Gartner estimates that companies lose 20-30% of their time organizing unstructured data, which is the time an external AI layer gives back to the underwriting team. To see where automation creates the most value in a specific underwriting journey, book a conversation with WIR.`,
+    faq: [
+      { q: "Does WIR's AI layer replace the insurer's core?", a: "No. WIR is a 100% external AI layer that sits on top of the systems the insurer already runs. It reads broker submissions, scores risk against the insurer's own appetite, prices within set authority, and returns an explainable decision. The core stays the system of record for binding, issuance, and regulatory reporting. WIR does not carry risk and is not an insurer, broker, or MGA. The intelligence sits on top, never in the core's place." },
+      { q: "How long does it take to deploy underwriting automation?", a: "Setup runs 3 to 12 months, with a fixed price, a clear scope, and KPIs agreed before the work starts. Continuous operation in production follows go-live. The rollout is staged: the insurer scopes one or two lines and a channel, WIR integrates by API, the model is calibrated, the layer runs in shadow mode, then go-live starts narrow with auto-quote for low-complexity, in-appetite risks. No migration of historical policies is required to begin." },
+      { q: "How is the AI model calibrated to the insurer's risk appetite?", a: "WIR encodes the insurer's authority limits, exclusions, appetite, and underwriting manual into the scoring and pricing layer, then tunes the Machine Learning model on the insurer's own loss history. Decisions reflect that insurer's stated policy rather than a market average. The risk and fraud engine produces a score and probability calibrated to appetite, dynamic pricing uses the insurer's own rating logic, and underwriter overrides feed back into the model during continuous operation to keep it aligned." },
+      { q: "Are automated decisions auditable and LGPD compliant?", a: "Yes. Every quote, decline, or escalation carries the reasons behind it, the fields, risk factors, and appetite rules that drove the outcome, so an underwriter or auditor can reconstruct any decision. Every stage from intake to decision is logged with timestamp, inputs, model version, and outcome, and the platform returns a complete audit trail. Data is encrypted in transit and at rest, processed on a lawful basis, and LGPD compliant, with data-subject rights respected, including the right to request review." },
+      { q: "Does the insurer need an IT project to get started?", a: "No. WIR is an external AI layer, not a system migration and not an IT project the insurer's team has to run. It connects through API to read submissions and write structured decisions back, while the core stays untouched as the system of record. No migration of historical policies is required to begin. This matters because BCG reports that 70% of insurers do not execute innovation due to IT limitations, the exact barrier an external layer removes." }
+    ],
   },
   {
     slug: "decisoes-subscricao-auditaveis-en",
@@ -8066,29 +7276,14 @@ WIR is the AI layer of insurance, an external AI platform that sits on top of th
 
 Two modules carry this in production. Underwriter Intelligence automates the quotation journey per the insurer's risk policy so underwriters spend their time on risk analysis and business development, with real-time ML scoring calibrated to appetite, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker. Smart Sales is the distribution intelligence module, mapping the portfolio by client and product, scoring upsell and next best action, and running multi-channel campaigns with an attribution trail so penetration and retention grow together. Real-time dashboards give a proactive view of in-flight deals and the underwriter queue.
 
-Founded in 2025 by a team united between São Paulo and Silicon Valley and built with Mahway and Avante, WIR is in execution on its first POC with a global insurer in the Transport line. That is the only traction WIR claims here. The Brazilian Seguros e Danos market grows double digits per year while company structure does not keep pace, which is the pressure an explainable, auditable layer is built to relieve. The mechanism is consistent: the AI layer for insurance, on top of the systems the insurer already runs, never in their place, with every automated decision explainable, auditable, encrypted at every step, and LGPD compliant.
-
-### Frequently asked questions
-
-**Does every automated decision come with an explanation?**
-
-Yes. Every quote, decline, or escalation returns the features, rules, and rating factors that produced it, written back to the quote. WIR sits as an external AI layer on top of the insurer's core, so each decision record shows which features drove the risk score, which rule triggered the action, and which factors set the premium. This is explainability by design, not a promise of perfect prediction.
-
-**Is the audit trail complete and exportable?**
-
-Yes. WIR writes back a complete, immutable, and queryable record for every decision, attached to the quote. The trail captures inputs and their source, document extraction confidence, model and rule versions, feature contributions, price components, the recommended action, escalation status, and the final human action with any override reason. Because the layer is external and writes structured records, each decision stays independently inspectable for auditors, regulators, and the ouvidoria without touching the core.
-
-**How does the model stay calibrated to the underwriting manual?**
-
-WIR's Machine Learning is calibrated to the insurer's own underwriting manual and risk appetite, not a generic model. During the fixed-scope Setup of 3 to 12 months, the insurer's rules, thresholds, exclusions, and appetite are encoded into the layer, then validated in shadow mode against historical and live submissions. The insurer sets the auto-decide and escalation thresholds, and every recalibration is itself versioned and auditable as the manual changes.
-
-**Is data encrypted and LGPD compliant?**
-
-Yes. Data is encrypted in transit and at rest at every step, with access control and logging from intake through decision write-back, fully LGPD compliant. This supports the LGPD right to review of automated decisions, so a declined or surcharged applicant can ask why and receive clear information about the criteria used. WIR is an external AI layer that never carries risk and never replaces the insurer's core.
-
-**Can the AI escalate the decision to a human underwriter?**
-
-Yes. Borderline or out-of-appetite risks escalate to a human underwriter rather than being forced through. The insurer sets the escalation thresholds during calibration, and the layer records whether it auto-decided or escalated, the rule that triggered it, and the underwriter's final action with any override reason. WIR never describes its engine as infallible. The mechanism is human escalation on low-confidence cases plus a full audit trail.`
+Founded in 2025 by a team united between São Paulo and Silicon Valley and built with Mahway and Avante, WIR is in execution on its first POC with a global insurer in the Transport line. That is the only traction WIR claims here. The Brazilian Seguros e Danos market grows double digits per year while company structure does not keep pace, which is the pressure an explainable, auditable layer is built to relieve. The mechanism is consistent: the AI layer for insurance, on top of the systems the insurer already runs, never in their place, with every automated decision explainable, auditable, encrypted at every step, and LGPD compliant.`,
+    faq: [
+      { q: "Does every automated decision come with an explanation?", a: "Yes. Every quote, decline, or escalation returns the features, rules, and rating factors that produced it, written back to the quote. WIR sits as an external AI layer on top of the insurer's core, so each decision record shows which features drove the risk score, which rule triggered the action, and which factors set the premium. This is explainability by design, not a promise of perfect prediction." },
+      { q: "Is the audit trail complete and exportable?", a: "Yes. WIR writes back a complete, immutable, and queryable record for every decision, attached to the quote. The trail captures inputs and their source, document extraction confidence, model and rule versions, feature contributions, price components, the recommended action, escalation status, and the final human action with any override reason. Because the layer is external and writes structured records, each decision stays independently inspectable for auditors, regulators, and the ouvidoria without touching the core." },
+      { q: "How does the model stay calibrated to the underwriting manual?", a: "WIR's Machine Learning is calibrated to the insurer's own underwriting manual and risk appetite, not a generic model. During the fixed-scope Setup of 3 to 12 months, the insurer's rules, thresholds, exclusions, and appetite are encoded into the layer, then validated in shadow mode against historical and live submissions. The insurer sets the auto-decide and escalation thresholds, and every recalibration is itself versioned and auditable as the manual changes." },
+      { q: "Is data encrypted and LGPD compliant?", a: "Yes. Data is encrypted in transit and at rest at every step, with access control and logging from intake through decision write-back, fully LGPD compliant. This supports the LGPD right to review of automated decisions, so a declined or surcharged applicant can ask why and receive clear information about the criteria used. WIR is an external AI layer that never carries risk and never replaces the insurer's core." },
+      { q: "Can the AI escalate the decision to a human underwriter?", a: "Yes. Borderline or out-of-appetite risks escalate to a human underwriter rather than being forced through. The insurer sets the escalation thresholds during calibration, and the layer records whether it auto-decided or escalated, the rule that triggered it, and the underwriter's final action with any override reason. WIR never describes its engine as infallible. The mechanism is human escalation on low-confidence cases plus a full audit trail." }
+    ],
   },
   {
     slug: "enriquecimento-corretor-priorizacao-en",
@@ -8135,29 +7330,14 @@ This is the posture WIR holds across its platform. Decisions are explainable and
 
 WIR is the AI layer of insurance in Brazil, an external AI platform that sits on top of the systems the insurer already runs and automates the quotation and underwriting journey according to the insurer's own risk-acceptance policy. For broker enrichment specifically, WIR ingests each submission through API, portal, or upload, resolves and enriches the broker by cross-referencing external and internal sources, including CNPJ status, the insurer's own broker and conversion history, exposure data, and credit signals, and returns a broker score with a recommended priority. The work is delivered through two modules. Underwriter Intelligence automates the quotation journey per the insurer's risk policy, with real-time ML scoring calibrated to appetite, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker. Smart Sales adds distribution intelligence, mapping the portfolio by client and product and scoring next-best-action so penetration and retention grow together. Real-time dashboards keep in-flight deals and pipeline visible.
 
-WIR is 100% external, with no load on the insurer's IT and no core migration. It is the AI layer for insurance, on top of the systems the insurer already runs, never in their place. WIR is not an insurer, a broker, or an MGA, and it does not carry risk. It automates the journey calibrated to each insurer's risk appetite and underwriting manual, and every decision is explainable, auditable, encrypted at every step, and LGPD compliant. WIR Innovation was founded in 2025 and built with Mahway, a Venture Builder in California, and Avante, a Venture Studio in Brazil. Its first POC is in execution with a global insurer in the Transport line, and that is the only public traction point. To see how broker enrichment and prioritization would work at a specific insurer, the next step is a working conversation with the WIR team.
-
-### Frequently asked questions
-
-**Which external sources does the layer cross-reference for the broker?**
-
-The layer cross-references CNPJ status, broker and conversion history, exposure and accumulation data, and credit signals to contextualize each submission. WIR resolves the brokerage's CNPJ, confirms active and regular status, draws conversion track record from the insurer's own systems, and reads exposure by ramo and region. Every cross-reference runs inside an LGPD-compliant, encrypted framework, minimized to the fields the underwriting decision requires, with a full audit trail per check.
-
-**How does conversion history influence prioritization?**
-
-Conversion history estimates how likely a specific submission is to bind, so high-converting brokers inside appetite are flagged for fast, deep attention. WIR draws on the insurer's own systems to show how many submissions a broker sent, how many bound, in which ramos, and with what loss experience. Underwriter Intelligence conditions a conversion-likelihood signal on product, risk profile, and the broker's historical binding behavior, then attaches a recommended priority to the case.
-
-**Does enrichment replace the insurer's CRM?**
-
-No. Enrichment never replaces the insurer's CRM or core. WIR is an external AI layer on top of the systems the insurer already runs, reading submissions by API, portal, or upload and writing enriched broker context and a priority score back into the existing flow. This is integration, not migration, which matters because 70% of insurers do not execute innovation due to IT limitations, according to BCG. WIR carries no risk and adds no load on the insurer's IT.
-
-**Is the data cross-referencing LGPD compliant?**
-
-Yes. Cross-referencing CNPJ, broker history, exposure, and credit rests on a valid legal basis under Brazil's LGPD, with data encrypted in transit and at rest. WIR minimizes processing to the fields the scoring decision requires, controls access, and keeps a human-review path so decisions are not taken solely by automation. Every validation and score is logged, making the broker enrichment explainable and auditable rather than an ad-hoc manual check that leaves no record.
-
-**How does prioritization speed up the response to the broker?**
-
-Prioritization scores and ranks each submission at intake, so underwriters start from context and the quotation system routes the highest-value cases first. This matters because 60%+ of brokers choose an insurer by response speed, according to Capgemini. WIR returns a broker score and a recommended priority with the reasoning attached, replacing manual, broker-blind triage. Underwriters recover time, given that they already lose 40% of it to administrative tasks, according to Deloitte, and direct it to the cases most likely to bind.`
+WIR is 100% external, with no load on the insurer's IT and no core migration. It is the AI layer for insurance, on top of the systems the insurer already runs, never in their place. WIR is not an insurer, a broker, or an MGA, and it does not carry risk. It automates the journey calibrated to each insurer's risk appetite and underwriting manual, and every decision is explainable, auditable, encrypted at every step, and LGPD compliant. WIR Innovation was founded in 2025 and built with Mahway, a Venture Builder in California, and Avante, a Venture Studio in Brazil. Its first POC is in execution with a global insurer in the Transport line, and that is the only public traction point. To see how broker enrichment and prioritization would work at a specific insurer, the next step is a working conversation with the WIR team.`,
+    faq: [
+      { q: "Which external sources does the layer cross-reference for the broker?", a: "The layer cross-references CNPJ status, broker and conversion history, exposure and accumulation data, and credit signals to contextualize each submission. WIR resolves the brokerage's CNPJ, confirms active and regular status, draws conversion track record from the insurer's own systems, and reads exposure by ramo and region. Every cross-reference runs inside an LGPD-compliant, encrypted framework, minimized to the fields the underwriting decision requires, with a full audit trail per check." },
+      { q: "How does conversion history influence prioritization?", a: "Conversion history estimates how likely a specific submission is to bind, so high-converting brokers inside appetite are flagged for fast, deep attention. WIR draws on the insurer's own systems to show how many submissions a broker sent, how many bound, in which ramos, and with what loss experience. Underwriter Intelligence conditions a conversion-likelihood signal on product, risk profile, and the broker's historical binding behavior, then attaches a recommended priority to the case." },
+      { q: "Does enrichment replace the insurer's CRM?", a: "No. Enrichment never replaces the insurer's CRM or core. WIR is an external AI layer on top of the systems the insurer already runs, reading submissions by API, portal, or upload and writing enriched broker context and a priority score back into the existing flow. This is integration, not migration, which matters because 70% of insurers do not execute innovation due to IT limitations, according to BCG. WIR carries no risk and adds no load on the insurer's IT." },
+      { q: "Is the data cross-referencing LGPD compliant?", a: "Yes. Cross-referencing CNPJ, broker history, exposure, and credit rests on a valid legal basis under Brazil's LGPD, with data encrypted in transit and at rest. WIR minimizes processing to the fields the scoring decision requires, controls access, and keeps a human-review path so decisions are not taken solely by automation. Every validation and score is logged, making the broker enrichment explainable and auditable rather than an ad-hoc manual check that leaves no record." },
+      { q: "How does prioritization speed up the response to the broker?", a: "Prioritization scores and ranks each submission at intake, so underwriters start from context and the quotation system routes the highest-value cases first. This matters because 60%+ of brokers choose an insurer by response speed, according to Capgemini. WIR returns a broker score and a recommended priority with the reasoning attached, replacing manual, broker-blind triage. Underwriters recover time, given that they already lose 40% of it to administrative tasks, according to Deloitte, and direct it to the cases most likely to bind." }
+    ],
   },
   {
     slug: "integrar-camada-ia-core-seguros-en",
@@ -8265,29 +7445,14 @@ Explainability is where the confidence score stops being only an accuracy featur
 
 WIR is the AI layer for insurance. On top of the systems the insurer already runs, never in their place. It automates the quotation and underwriting journey according to the insurer's own risk-acceptance policy, with Machine Learning calibrated to the risk appetite and the underwriting manual. Intelligent document reading is the second stage of a six-stage flow that begins with multichannel intake and automatic validation, then reads the documents, then enriches with broker context and scoring, then runs a multi-factor risk and fraud engine, then prices the risk, and finally returns a decision, a quote, an automatic decline, or escalation to a human, always with an explanation written back to the policy core alongside the audit trail.
 
-Two modules carry the work. Underwriter Intelligence automates the quotation journey per the insurer's risk policy, with real-time ML scoring, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker, so underwriters spend their time on risk judgment and business development rather than rekeying. Smart Sales maps the portfolio across client and product, scores upsell and next-best-action, and runs multi-channel campaigns with an attribution trail. Real-time dashboards give a proactive view of in-flight deals and pipeline. WIR Innovation was founded in 2025 from accumulated operational experience, built with Mahway, a Venture Builder in California, and Avante, a Venture Studio in Brazil. Its first POC is in execution with a global insurer in the Transport line. To see how submission reading would map to a specific insurer, [talk to WIR](https://wirinnovation.ai).
-
-### Frequently asked questions
-
-**Does intelligent reading parse quote e-mails and attachments?**
-
-Yes. Intelligent document reading treats the e-mail body and every attachment as one submission, extracting fields wherever they arrive. It reads PDF proposal forms, scanned certificates, spreadsheets, and broker cover notes across layouts it has never seen in that exact form. WIR ingests submissions from e-mail, broker portal upload, and partner API at the same time, then validates the data and flags missing or conflicting items for broker enrichment before pricing.
-
-**How does this AI layer differ from traditional OCR?**
-
-It asks what a value means, not which character sits in a pixel region. Traditional OCR is template bound and breaks when a layout changes, which is the opposite of P&C reality. WIR's Machine Learning generalizes across forms, certificates, and spreadsheets, attaches a confidence score per field, and validates each value. High-confidence values flow straight through, while low-confidence ones route to a person for a quick check.
-
-**Is extracted data validated before it moves through the journey?**
-
-Yes. Every value is checked for completeness against that ramo's requirements, for format on fields like CNPJ, CEP, dates, and currency, and for consistency across documents. Only genuinely ambiguous fields reach a human, which inverts the OCR model where people checked everything. The output is a structured, validated submission object that downstream stages, broker enrichment, risk and fraud scoring, dynamic pricing, and the final decision, can consume cleanly.
-
-**Is automatic extraction LGPD compliant?**
-
-Yes. Submission data is processed in line with the LGPD, encrypted at every step, with data minimization and a human in the loop where an automated decision affects a person. Every extraction, confidence level, validation outcome, and human override is logged, so the insurer can prove which values were machine-extracted with high precision and which a person checked. Decisions are explainable and return a full audit trail, never presented as infallible.
-
-**Do we need to replace the core to read submissions with AI?**
-
-No. WIR is an external AI layer that sits on top of existing systems, with no core migration. It ingests submissions, produces structured validated data, and pushes that into the policy core, underwriting workbench, or rating engine through APIs or files. The system of record stays intact. BCG found that 70% of insurers do not execute innovation because of IT constraints, and an overlay model removes that blocker.`
+Two modules carry the work. Underwriter Intelligence automates the quotation journey per the insurer's risk policy, with real-time ML scoring, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker, so underwriters spend their time on risk judgment and business development rather than rekeying. Smart Sales maps the portfolio across client and product, scores upsell and next-best-action, and runs multi-channel campaigns with an attribution trail. Real-time dashboards give a proactive view of in-flight deals and pipeline. WIR Innovation was founded in 2025 from accumulated operational experience, built with Mahway, a Venture Builder in California, and Avante, a Venture Studio in Brazil. Its first POC is in execution with a global insurer in the Transport line. To see how submission reading would map to a specific insurer, [talk to WIR](https://wirinnovation.ai).`,
+    faq: [
+      { q: "Does intelligent reading parse quote e-mails and attachments?", a: "Yes. Intelligent document reading treats the e-mail body and every attachment as one submission, extracting fields wherever they arrive. It reads PDF proposal forms, scanned certificates, spreadsheets, and broker cover notes across layouts it has never seen in that exact form. WIR ingests submissions from e-mail, broker portal upload, and partner API at the same time, then validates the data and flags missing or conflicting items for broker enrichment before pricing." },
+      { q: "How does this AI layer differ from traditional OCR?", a: "It asks what a value means, not which character sits in a pixel region. Traditional OCR is template bound and breaks when a layout changes, which is the opposite of P&C reality. WIR's Machine Learning generalizes across forms, certificates, and spreadsheets, attaches a confidence score per field, and validates each value. High-confidence values flow straight through, while low-confidence ones route to a person for a quick check." },
+      { q: "Is extracted data validated before it moves through the journey?", a: "Yes. Every value is checked for completeness against that ramo's requirements, for format on fields like CNPJ, CEP, dates, and currency, and for consistency across documents. Only genuinely ambiguous fields reach a human, which inverts the OCR model where people checked everything. The output is a structured, validated submission object that downstream stages, broker enrichment, risk and fraud scoring, dynamic pricing, and the final decision, can consume cleanly." },
+      { q: "Is automatic extraction LGPD compliant?", a: "Yes. Submission data is processed in line with the LGPD, encrypted at every step, with data minimization and a human in the loop where an automated decision affects a person. Every extraction, confidence level, validation outcome, and human override is logged, so the insurer can prove which values were machine-extracted with high precision and which a person checked. Decisions are explainable and return a full audit trail, never presented as infallible." },
+      { q: "Do we need to replace the core to read submissions with AI?", a: "No. WIR is an external AI layer that sits on top of existing systems, with no core migration. It ingests submissions, produces structured validated data, and pushes that into the policy core, underwriting workbench, or rating engine through APIs or files. The system of record stays intact. BCG found that 70% of insurers do not execute innovation because of IT constraints, and an overlay model removes that blocker." }
+    ],
   },
   {
     slug: "motor-risco-fraude-seguros-en",
@@ -8330,29 +7495,14 @@ WIR is the AI layer for insurance in Brazil, an external platform that automates
 
 Two modules carry this in production. Underwriter Intelligence automates the quotation journey per the insurer's risk policy, with real-time ML scoring calibrated to appetite, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker, so underwriters spend their time on ambiguous and high-value cases rather than cross-referencing. Smart Sales adds distribution intelligence, mapping the portfolio by client and product, scoring next-best-action, and running multi-channel campaigns with an attribution trail. Real-time dashboards give a proactive view of in-flight deals and pipeline.
 
-The context behind this is a market that grows double digits per year while company structure does not keep pace. Underwriters spend 40% of their time on administrative tasks, according to Deloitte, and 70% of insurers do not execute innovation because of IT limitations, according to BCG. 60%+ of brokers choose an insurer by response speed, according to Capgemini, and corporates lose 20% to 30% of their time organizing unstructured data, according to Gartner. WIR was founded in 2025, built with Mahway and Avante, and its first POC is in execution with a global insurer in the Transport line. To map how your insurer could score risk and triage fraud with a calibrated AI layer, [talk to WIR](https://wirinnovation.ai).
-
-### Frequently asked questions
-
-**How is the risk score calibrated to the underwriting manual?**
-
-The score is tuned to the insurer's own manual rules, risk appetite per line of business, and historical loss patterns, so outputs reflect that insurer's selection policy. WIR calibrates the multi-factor Machine Learning model with the insurer during setup, then tests it against real historical submissions to show where it agrees with prior underwriter decisions and where it diverges. The engine encodes the manual, it does not overrule it, staying conservative or permissive per ramo as the appetite dictates.
-
-**Which external sources does the engine cross-reference?**
-
-The engine validates CNPJ and CPF status, reads broker history, checks exposure and accumulation, and uses credit and financial behavior as one factor among many. It cross-checks the declarations against the extracted document data to surface contradictions, like a recently opened CNPJ on a high-value cover. Credit data is never a sole decision basis. This lift comes from data an underwriter cannot verify by hand at quote speed, combined into one calibrated risk score.
-
-**Is every risk and fraud decision explainable and auditable?**
-
-Yes. Each risk score and recommendation carries the factors that drove it, which signals pushed the score up and which pushed it down, so an underwriter can review, override, and justify the outcome. Every decision is reconstructable through a complete audit trail recording what data was read, which model version ran, the output, and who reviewed it. That trail supports internal governance and SUSEP supervision, and aligns with LGPD Article 20 on automated decisions.
-
-**Does the risk engine replace the underwriting team?**
-
-No. The engine augments underwriters, it never replaces the team. Clean low-risk cases can be auto-decided to free underwriter time, while ambiguous or high-exposure cases route to a human with supporting evidence attached. A calibrated model raises detection, consistency, and speed, but no engine eliminates fraud and adverse cases stay with a person. WIR's Underwriter Intelligence module lets underwriters spend their time on ambiguous and high-value cases rather than cross-referencing data.
-
-**How long until the engine goes into production?**
-
-WIR structures deployment as a one-time setup that runs 3 to 12 months, with a fixed price, clear scope, and KPIs agreed before the work starts. The work is scoping lines and use cases, integrating with current systems, calibrating to the manual and appetite, testing against historical submissions, then going live. This is an integration on top of the existing core, not a system migration, so policy administration and premium booking continue without interruption.`
+The context behind this is a market that grows double digits per year while company structure does not keep pace. Underwriters spend 40% of their time on administrative tasks, according to Deloitte, and 70% of insurers do not execute innovation because of IT limitations, according to BCG. 60%+ of brokers choose an insurer by response speed, according to Capgemini, and corporates lose 20% to 30% of their time organizing unstructured data, according to Gartner. WIR was founded in 2025, built with Mahway and Avante, and its first POC is in execution with a global insurer in the Transport line. To map how your insurer could score risk and triage fraud with a calibrated AI layer, [talk to WIR](https://wirinnovation.ai).`,
+    faq: [
+      { q: "How is the risk score calibrated to the underwriting manual?", a: "The score is tuned to the insurer's own manual rules, risk appetite per line of business, and historical loss patterns, so outputs reflect that insurer's selection policy. WIR calibrates the multi-factor Machine Learning model with the insurer during setup, then tests it against real historical submissions to show where it agrees with prior underwriter decisions and where it diverges. The engine encodes the manual, it does not overrule it, staying conservative or permissive per ramo as the appetite dictates." },
+      { q: "Which external sources does the engine cross-reference?", a: "The engine validates CNPJ and CPF status, reads broker history, checks exposure and accumulation, and uses credit and financial behavior as one factor among many. It cross-checks the declarations against the extracted document data to surface contradictions, like a recently opened CNPJ on a high-value cover. Credit data is never a sole decision basis. This lift comes from data an underwriter cannot verify by hand at quote speed, combined into one calibrated risk score." },
+      { q: "Is every risk and fraud decision explainable and auditable?", a: "Yes. Each risk score and recommendation carries the factors that drove it, which signals pushed the score up and which pushed it down, so an underwriter can review, override, and justify the outcome. Every decision is reconstructable through a complete audit trail recording what data was read, which model version ran, the output, and who reviewed it. That trail supports internal governance and SUSEP supervision, and aligns with LGPD Article 20 on automated decisions." },
+      { q: "Does the risk engine replace the underwriting team?", a: "No. The engine augments underwriters, it never replaces the team. Clean low-risk cases can be auto-decided to free underwriter time, while ambiguous or high-exposure cases route to a human with supporting evidence attached. A calibrated model raises detection, consistency, and speed, but no engine eliminates fraud and adverse cases stay with a person. WIR's Underwriter Intelligence module lets underwriters spend their time on ambiguous and high-value cases rather than cross-referencing data." },
+      { q: "How long until the engine goes into production?", a: "WIR structures deployment as a one-time setup that runs 3 to 12 months, with a fixed price, clear scope, and KPIs agreed before the work starts. The work is scoping lines and use cases, integrating with current systems, calibrating to the manual and appetite, testing against historical submissions, then going live. This is an integration on top of the existing core, not a system migration, so policy administration and premium booking continue without interruption." }
+    ],
   },
   {
     slug: "precificacao-dinamica-seguros-en",
@@ -8403,29 +7553,14 @@ WIR Innovation is the AI layer for insurance, an external AI platform that autom
 
 Two modules carry most of the pricing work. Underwriter Intelligence automates the quotation journey per the insurer's risk policy, with real-time ML scoring calibrated to appetite, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker, so underwriters spend their time on risk analysis and business development rather than manual rating. Smart Sales is distribution intelligence that maps the portfolio by client and product, scores upsell and next-best-action, and runs multi-channel campaigns with an attribution trail, so penetration and retention grow together. Real-time dashboards and analytics give a proactive view of in-flight deals and the pipeline. In WIR's six-stage platform flow, dynamic pricing produces the risk-adjusted premium as an instant output, then the decision stage returns a quote, an automatic decline, or an escalation to a human, always with an explanation, writing back to the policy core with a full audit trail.
 
-The competitive context is concrete. The Seguros e Danos market grows double digits per year, while company structure does not keep pace with that acceleration. Deloitte finds underwriters spend 40% of their time on administrative tasks, Capgemini reports that 60%+ of brokers choose an insurer by response speed, and Gartner estimates corporate teams lose 20-30% of their time organizing unstructured data. Real-time, risk-adjusted pricing addresses each of those pressures directly. WIR's only public traction at this stage is a first POC in execution with a global insurer in the Transport line. Every decision the platform makes is explainable and returns a full audit trail, and data is encrypted at every step and LGPD compliant. The AI layer for insurance. On top of the systems the insurer already runs, never in their place. To see where it fits, the team can map the pricing journey through a conversation with WIR.
-
-### Frequently asked questions
-
-**How is the premium calculated from the risk score?**
-
-The premium is derived from a multi-factor risk score, not read off a fixed table. WIR's risk and fraud Machine Learning engine scores the individual risk by combining the structured submission, enrichment data, and historical loss patterns. The AI layer then applies the insurer's own technical premium and pricing logic to that score in real time, calibrated to the underwriting manual. Dozens of correlated variables, such as object, location, occupancy, values at risk, and loss history, influence the premium at once.
-
-**Does dynamic pricing replace the insurer's actuarial core?**
-
-No. Dynamic pricing does not replace the actuarial core. It automates the application of it. WIR is an external AI layer on top of the insurer's existing systems, with no core migration and no IT project for the insurer to run. The actuarial team still owns the rating basis and the technical premium. The layer applies that policy to each quote in real time, calibrated to risk appetite. WIR is not an insurer, broker, or MGA, and it does not carry risk.
-
-**Is the AI-generated price explainable and auditable?**
-
-Yes. Every priced quote is explainable and carries a full audit trail. WIR surfaces the contributing factors behind each premium, which data, which risk-score drivers, which loading or discount, and which model version produced it. A price an underwriter or auditor cannot reconstruct is not acceptable for a regulated technical premium. The trail supports internal audit, SUSEP supervision, and dispute resolution, and it underpins the LGPD Article 20 right to request review of an automated decision. Data is encrypted at every step.
-
-**Is pricing kept calibrated to the insurer's risk appetite?**
-
-Yes. WIR's Machine Learning is calibrated to each insurer's risk appetite and underwriting manual. Risks outside appetite are loaded, referred, or declined rather than priced into the book silently. The Underwriter Intelligence module applies real-time scoring calibrated to appetite, with automatic routing by appetite and exposure. Commercial levers such as commission, discount bands, and loadings stay bounded by the insurer's own policy, so nothing is priced outside the manual. The insurer remains accountable for the price and the risk.
-
-**How long until dynamic pricing goes into production?**
-
-Setup runs 3 to 12 months as a fixed-scope implementation, with KPIs agreed before start, after which the platform moves into continuous operation. The sequence covers line selection, integration by API or portal, calibration to the underwriting manual, back-testing against historical submissions and realized losses, and a controlled go-live in shadow or assisted mode. Straight-through authority expands as confidence builds, while human referral stays for out-of-appetite and high-value risks. The actuarial core is never touched.`
+The competitive context is concrete. The Seguros e Danos market grows double digits per year, while company structure does not keep pace with that acceleration. Deloitte finds underwriters spend 40% of their time on administrative tasks, Capgemini reports that 60%+ of brokers choose an insurer by response speed, and Gartner estimates corporate teams lose 20-30% of their time organizing unstructured data. Real-time, risk-adjusted pricing addresses each of those pressures directly. WIR's only public traction at this stage is a first POC in execution with a global insurer in the Transport line. Every decision the platform makes is explainable and returns a full audit trail, and data is encrypted at every step and LGPD compliant. The AI layer for insurance. On top of the systems the insurer already runs, never in their place. To see where it fits, the team can map the pricing journey through a conversation with WIR.`,
+    faq: [
+      { q: "How is the premium calculated from the risk score?", a: "The premium is derived from a multi-factor risk score, not read off a fixed table. WIR's risk and fraud Machine Learning engine scores the individual risk by combining the structured submission, enrichment data, and historical loss patterns. The AI layer then applies the insurer's own technical premium and pricing logic to that score in real time, calibrated to the underwriting manual. Dozens of correlated variables, such as object, location, occupancy, values at risk, and loss history, influence the premium at once." },
+      { q: "Does dynamic pricing replace the insurer's actuarial core?", a: "No. Dynamic pricing does not replace the actuarial core. It automates the application of it. WIR is an external AI layer on top of the insurer's existing systems, with no core migration and no IT project for the insurer to run. The actuarial team still owns the rating basis and the technical premium. The layer applies that policy to each quote in real time, calibrated to risk appetite. WIR is not an insurer, broker, or MGA, and it does not carry risk." },
+      { q: "Is the AI-generated price explainable and auditable?", a: "Yes. Every priced quote is explainable and carries a full audit trail. WIR surfaces the contributing factors behind each premium, which data, which risk-score drivers, which loading or discount, and which model version produced it. A price an underwriter or auditor cannot reconstruct is not acceptable for a regulated technical premium. The trail supports internal audit, SUSEP supervision, and dispute resolution, and it underpins the LGPD Article 20 right to request review of an automated decision. Data is encrypted at every step." },
+      { q: "Is pricing kept calibrated to the insurer's risk appetite?", a: "Yes. WIR's Machine Learning is calibrated to each insurer's risk appetite and underwriting manual. Risks outside appetite are loaded, referred, or declined rather than priced into the book silently. The Underwriter Intelligence module applies real-time scoring calibrated to appetite, with automatic routing by appetite and exposure. Commercial levers such as commission, discount bands, and loadings stay bounded by the insurer's own policy, so nothing is priced outside the manual. The insurer remains accountable for the price and the risk." },
+      { q: "How long until dynamic pricing goes into production?", a: "Setup runs 3 to 12 months as a fixed-scope implementation, with KPIs agreed before start, after which the platform moves into continuous operation. The sequence covers line selection, integration by API or portal, calibration to the underwriting manual, back-testing against historical submissions and realized losses, and a controlled go-live in shadow or assisted mode. Straight-through authority expands as confidence builds, while human referral stays for out-of-appetite and high-value risks. The actuarial core is never touched." }
+    ],
   },
   {
     slug: "processar-email-cotacao-automatico-en",
@@ -8472,25 +7607,13 @@ WIR is the AI layer of insurance in Brazil. It sits on top of the systems the in
 
 Two modules carry the work. Underwriter Intelligence automates the quotation journey per the insurer's own risk policy, with real-time Machine Learning scoring calibrated to the insurer's risk appetite and underwriting manual, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker, so underwriters spend their time on risk selection instead of triage and data entry. Smart Sales adds distribution intelligence, mapping the portfolio by client and product, scoring upsell and next-best-action, and running multi-channel campaigns with an attribution trail. Real-time dashboards give a proactive view of in-flight deals and the underwriter queue. BCG finds that 70% of insurers do not execute innovation because of IT limitations, and an external layer is built precisely to remove that blocker.
 
-WIR was founded in 2025, built with Mahway, a Venture Builder in California, and Avante, a Venture Studio in Brazil. Its first POC is in execution with a global insurer in the Transport line, and that is the only traction WIR claims today. The AI layer for insurance. On top of the systems the insurer already runs, never in their place. To map how this would read your insurer's quote inbox, the next step is a working conversation with the WIR team.
-
-### Frequently asked questions
-
-**Does the AI layer read the e-mail body and quote attachments?**
-
-Yes. The AI layer reads the e-mail body in natural language and every attachment with intelligent document reading, including OCR for scanned files. It interprets proposals, spreadsheets, prior policies, and schedules regardless of layout, then maps the content to the underwriting data model: CNPJ, activity, locations, sum insured, coverages, and limits. WIR extracts these fields with high precision and feeds the structured result into the existing quotation flow, never replacing the mailbox.
-
-**Do we need to change our e-mail or core to use this?**
-
-No. Deployment is an integration, not a migration. WIR points at the existing quote inbox and at any portal or API feeds, read-only at first, so brokers keep sending to the same address with no behavior change. The structured output maps to the insurer's quotation and core fields by API call, controlled file drop, or RPA. The core stays the system of record. BCG finds 70% of insurers do not execute innovation because of IT limitations.
-
-**Is data extracted from the e-mail validated before it moves on?**
-
-Yes. Validation is the step that makes automation safe. Each extracted field is checked for format and check-digit, for internal consistency so sums reconcile, against reference data, and for completeness against what the line of business requires. Missing or low-confidence fields are flagged for human review or an automated follow-up to the broker, rather than passing bad data downstream. The result is a clean, structured submission where every field traces back to its source document.
-
-**Is e-mail processing LGPD compliant?**
-
-Yes. Processing is governed by Brazil's Lei Geral de Proteção de Dados and rests on a valid legal basis, purpose limitation, and data minimization. Submissions carry personal and commercial data, so WIR encrypts data in transit and at rest across intake, reading, and handoff. Every decision is explainable and returns a full audit trail, and each extracted field traces to its exact source, which lets an insurer document an automated decision to an auditor or to SUSEP.`
+WIR was founded in 2025, built with Mahway, a Venture Builder in California, and Avante, a Venture Studio in Brazil. Its first POC is in execution with a global insurer in the Transport line, and that is the only traction WIR claims today. The AI layer for insurance. On top of the systems the insurer already runs, never in their place. To map how this would read your insurer's quote inbox, the next step is a working conversation with the WIR team.`,
+    faq: [
+      { q: "Does the AI layer read the e-mail body and quote attachments?", a: "Yes. The AI layer reads the e-mail body in natural language and every attachment with intelligent document reading, including OCR for scanned files. It interprets proposals, spreadsheets, prior policies, and schedules regardless of layout, then maps the content to the underwriting data model: CNPJ, activity, locations, sum insured, coverages, and limits. WIR extracts these fields with high precision and feeds the structured result into the existing quotation flow, never replacing the mailbox." },
+      { q: "Do we need to change our e-mail or core to use this?", a: "No. Deployment is an integration, not a migration. WIR points at the existing quote inbox and at any portal or API feeds, read-only at first, so brokers keep sending to the same address with no behavior change. The structured output maps to the insurer's quotation and core fields by API call, controlled file drop, or RPA. The core stays the system of record. BCG finds 70% of insurers do not execute innovation because of IT limitations." },
+      { q: "Is data extracted from the e-mail validated before it moves on?", a: "Yes. Validation is the step that makes automation safe. Each extracted field is checked for format and check-digit, for internal consistency so sums reconcile, against reference data, and for completeness against what the line of business requires. Missing or low-confidence fields are flagged for human review or an automated follow-up to the broker, rather than passing bad data downstream. The result is a clean, structured submission where every field traces back to its source document." },
+      { q: "Is e-mail processing LGPD compliant?", a: "Yes. Processing is governed by Brazil's Lei Geral de Proteção de Dados and rests on a valid legal basis, purpose limitation, and data minimization. Submissions carry personal and commercial data, so WIR encrypts data in transit and at rest across intake, reading, and handoff. Every decision is explainable and returns a full audit trail, and each extracted field traces to its exact source, which lets an insurer document an automated decision to an auditor or to SUSEP." }
+    ],
   },
   {
     slug: "proxima-melhor-acao-seguradoras-en",
@@ -8531,29 +7654,14 @@ The attribution trail does double duty here. The same log that proves campaign e
 
 WIR delivers this through Smart Sales, its distribution-intelligence module, and as an external AI layer it sits on top of the insurer's existing systems and never replaces the core. Smart Sales maps the portfolio across client and product, scores upsell and next-best-action with Machine Learning calibrated to the insurer's risk appetite and underwriting manual, and runs multi-channel campaigns with an attribution trail, so penetration and retention grow together. It prioritizes accounts and brokers rather than becoming the place where policies are issued or where the customer record lives, which is the distinction that keeps the program low-risk and reversible. The AI layer for insurance, on top of the systems the insurer already runs, never in their place.
 
-Smart Sales runs alongside Underwriter Intelligence, which automates the quotation journey per the insurer's risk policy, with real-time ML scoring calibrated to appetite, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker, plus real-time dashboards over the in-flight pipeline. WIR is an InsurTech and the AI layer of insurance in Brazil, not an insurer, broker, or MGA, and it does not carry risk. Its first traction is a POC in execution with a global insurer in the Transport line, and every figure here on the Brazilian market comes from named sources rather than from WIR's own book. To see where next-best-action would prioritize accounts and brokers in your portfolio, book a conversation with the WIR team at wirinnovation.ai.
-
-### Frequently asked questions
-
-**How is the next-best-action score calculated?**
-
-Machine Learning models score each account for upsell propensity and rank the single highest-value action, calibrated to the insurer's risk appetite and underwriting manual. Before scoring, the layer maps the portfolio across client and product, resolving the same insured across lines of business and brokers. The score respects underwriting rules and product margin, not propensity alone, and every recommendation is explainable and traceable to the drivers that pushed propensity up.
-
-**Does distribution intelligence replace the insurer's CRM?**
-
-No. Distribution intelligence runs as an external AI layer on top of the existing CRM and policy systems, reading from them without replacing them. WIR's Smart Sales prioritizes accounts and brokers rather than becoming the place where policies are issued or the customer record lives. Deployment is an integration through APIs or scheduled extracts, not a migration. If the layer is switched off, the core continues to operate exactly as before, which keeps the program low-risk and reversible.
-
-**Do the multi-channel campaigns have an attribution trail?**
-
-Yes. Each scored action routes to a broker task list, commercial queue, digital outreach, or partner channel, and every step is logged in an attribution trail. The trail records which signal generated the recommendation, which broker or channel acted, which touch preceded the quotation, and which one closed the sale. That same log doubles as the audit record of who was contacted and on what basis, supporting both performance review and regulatory defensibility under the LGPD.
-
-**How do penetration and retention grow together with this layer?**
-
-An account that holds more products with the insurer is structurally stickier, so penetration and retention are two readouts of the same account-level engine. Smart Sales acts before renewal or at a life or business event, which lifts both products per account and renewal rates rather than running them as separate programs. Because Brazil's Seguros e Danos market grows double digits per year, even small penetration gains on existing accounts are material.
-
-**How long until Smart Sales goes into production?**
-
-With WIR, setup runs 3 to 12 months as a fixed-scope engagement with KPIs agreed before it starts, followed by a continuous operation phase after go-live. The path covers scoping the lines with the largest white space, read-only integration with the core and CRM, calibration to the underwriting manual, backtesting against historical conversions, and a piloted go-live with humans kept in the loop. Models then retrain on outcomes and expand to more lines as confidence grows.`
+Smart Sales runs alongside Underwriter Intelligence, which automates the quotation journey per the insurer's risk policy, with real-time ML scoring calibrated to appetite, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker, plus real-time dashboards over the in-flight pipeline. WIR is an InsurTech and the AI layer of insurance in Brazil, not an insurer, broker, or MGA, and it does not carry risk. Its first traction is a POC in execution with a global insurer in the Transport line, and every figure here on the Brazilian market comes from named sources rather than from WIR's own book. To see where next-best-action would prioritize accounts and brokers in your portfolio, book a conversation with the WIR team at wirinnovation.ai.`,
+    faq: [
+      { q: "How is the next-best-action score calculated?", a: "Machine Learning models score each account for upsell propensity and rank the single highest-value action, calibrated to the insurer's risk appetite and underwriting manual. Before scoring, the layer maps the portfolio across client and product, resolving the same insured across lines of business and brokers. The score respects underwriting rules and product margin, not propensity alone, and every recommendation is explainable and traceable to the drivers that pushed propensity up." },
+      { q: "Does distribution intelligence replace the insurer's CRM?", a: "No. Distribution intelligence runs as an external AI layer on top of the existing CRM and policy systems, reading from them without replacing them. WIR's Smart Sales prioritizes accounts and brokers rather than becoming the place where policies are issued or the customer record lives. Deployment is an integration through APIs or scheduled extracts, not a migration. If the layer is switched off, the core continues to operate exactly as before, which keeps the program low-risk and reversible." },
+      { q: "Do the multi-channel campaigns have an attribution trail?", a: "Yes. Each scored action routes to a broker task list, commercial queue, digital outreach, or partner channel, and every step is logged in an attribution trail. The trail records which signal generated the recommendation, which broker or channel acted, which touch preceded the quotation, and which one closed the sale. That same log doubles as the audit record of who was contacted and on what basis, supporting both performance review and regulatory defensibility under the LGPD." },
+      { q: "How do penetration and retention grow together with this layer?", a: "An account that holds more products with the insurer is structurally stickier, so penetration and retention are two readouts of the same account-level engine. Smart Sales acts before renewal or at a life or business event, which lifts both products per account and renewal rates rather than running them as separate programs. Because Brazil's Seguros e Danos market grows double digits per year, even small penetration gains on existing accounts are material." },
+      { q: "How long until Smart Sales goes into production?", a: "With WIR, setup runs 3 to 12 months as a fixed-scope engagement with KPIs agreed before it starts, followed by a continuous operation phase after go-live. The path covers scoping the lines with the largest white space, read-only integration with the core and CRM, calibration to the underwriting manual, backtesting against historical conversions, and a piloted go-live with humans kept in the loop. Models then retrain on outcomes and expand to more lines as confidence grows." }
+    ],
   },
   {
     slug: "reduzir-tempo-resposta-cotacao-corretor-en",
@@ -8600,29 +7708,14 @@ WIR is an external AI layer that sits on top of the insurer's existing core, pol
 
 Two modules do the work the broker feels. Underwriter Intelligence automates the quotation journey per the insurer's risk policy, with real-time ML scoring calibrated to appetite, automatic routing by appetite and exposure, and predictive conversion analysis by product, risk, and broker, so underwriters spend their time on risk analysis and business development. Smart Sales adds distribution intelligence, mapping the portfolio by client and product, scoring upsell and next-best-action, and running multi-channel campaigns with an attribution trail. Real-time dashboards give a proactive view of in-flight deals and the pipeline, and the visible SLA gives the corretor a reliable answer to the question of when the quote arrives.
 
-WIR's first traction is a POC in execution with a global insurer in the Transport line. The positioning holds across every engagement. WIR is the AI layer for insurance, on top of the systems the insurer already runs, never in their place, and the outcome it targets is the one the Capgemini figure points to. When the insurer answers faster and more consistently, it becomes the carrier brokers route to first.
-
-### Frequently asked questions
-
-**Why does response speed influence the broker's choice?**
-
-Response speed is a primary commercial lever because the broker controls distribution and shops the same risk to several carriers. According to Capgemini, 60%+ of brokers choose an insurer by response speed. The corretor routinely sends the same submission to multiple carriers, so the insurer that returns a clean, consistent cotação first earns a structural advantage on attention rather than price. A quote returned while the broker is still in-flow tends to convert.
-
-**Where does the manual journey lose the most time?**
-
-The manual journey leaks time at every handoff, most heavily in re-keying documents and in senior underwriters doing lookups instead of judgment. Deloitte finds underwriters spend 40% of their time on administrative tasks. An AI layer closes each leak in sequence, reading PDFs, inspection reports, and schedules automatically, then cross-referencing CNPJ, broker history, exposure, and credit, so the underwriter sees a complete, comparable picture rather than chasing missing fields.
-
-**Does the broker see the quote SLA?**
-
-Yes. The automated journey publishes a visible service level on the response window, so the broker knows when a quote arrives. When an insurer reliably answers within a stated window, more submissions route to it by default. Straightforward risks move to instant quoting while genuinely complex ones escalate to senior underwriters with a visible SLA and an underwriter queue. Real-time dashboards give a proactive view of in-flight deals and the pipeline.
-
-**Does speeding up the response require replacing the core?**
-
-No. WIR is an external AI layer on top of the insurer's existing core, policy, and quoting systems, never a replacement. Deployment is purely additive, with no core migration and no IT project the insurer's team has to run. BCG reports 70% of insurers do not execute innovation because of IT limitations, which is exactly the constraint an additive layer removes since it carries no load on the insurer's IT. Setup runs 3 to 12 months.
-
-**Does a faster response keep the decision explainable and auditable?**
-
-Yes. Faster decisions do not mean opaque ones. Every automated quote, decline, or escalation carries the reasons and the data behind it, and the platform returns a complete audit trail. That trail lets underwriting, audit, and SUSEP supervision reconstruct why a decision was made. The Machine Learning is calibrated to the insurer's risk appetite and underwriting manual, data is encrypted at every step and LGPD compliant, and human underwriters keep authority over escalated complex risks.`
+WIR's first traction is a POC in execution with a global insurer in the Transport line. The positioning holds across every engagement. WIR is the AI layer for insurance, on top of the systems the insurer already runs, never in their place, and the outcome it targets is the one the Capgemini figure points to. When the insurer answers faster and more consistently, it becomes the carrier brokers route to first.`,
+    faq: [
+      { q: "Why does response speed influence the broker's choice?", a: "Response speed is a primary commercial lever because the broker controls distribution and shops the same risk to several carriers. According to Capgemini, 60%+ of brokers choose an insurer by response speed. The corretor routinely sends the same submission to multiple carriers, so the insurer that returns a clean, consistent cotação first earns a structural advantage on attention rather than price. A quote returned while the broker is still in-flow tends to convert." },
+      { q: "Where does the manual journey lose the most time?", a: "The manual journey leaks time at every handoff, most heavily in re-keying documents and in senior underwriters doing lookups instead of judgment. Deloitte finds underwriters spend 40% of their time on administrative tasks. An AI layer closes each leak in sequence, reading PDFs, inspection reports, and schedules automatically, then cross-referencing CNPJ, broker history, exposure, and credit, so the underwriter sees a complete, comparable picture rather than chasing missing fields." },
+      { q: "Does the broker see the quote SLA?", a: "Yes. The automated journey publishes a visible service level on the response window, so the broker knows when a quote arrives. When an insurer reliably answers within a stated window, more submissions route to it by default. Straightforward risks move to instant quoting while genuinely complex ones escalate to senior underwriters with a visible SLA and an underwriter queue. Real-time dashboards give a proactive view of in-flight deals and the pipeline." },
+      { q: "Does speeding up the response require replacing the core?", a: "No. WIR is an external AI layer on top of the insurer's existing core, policy, and quoting systems, never a replacement. Deployment is purely additive, with no core migration and no IT project the insurer's team has to run. BCG reports 70% of insurers do not execute innovation because of IT limitations, which is exactly the constraint an additive layer removes since it carries no load on the insurer's IT. Setup runs 3 to 12 months." },
+      { q: "Does a faster response keep the decision explainable and auditable?", a: "Yes. Faster decisions do not mean opaque ones. Every automated quote, decline, or escalation carries the reasons and the data behind it, and the platform returns a complete audit trail. That trail lets underwriting, audit, and SUSEP supervision reconstruct why a decision was made. The Machine Learning is calibrated to the insurer's risk appetite and underwriting manual, data is encrypted at every step and LGPD compliant, and human underwriters keep authority over escalated complex risks." }
+    ],
   },
   {
     slug: "roteamento-automatico-subscricao-en",
@@ -8673,29 +7766,14 @@ WIR is the AI layer for insurance. On top of the systems the insurer already run
 
 In practice, the layer ingests each submission, reads and structures it, scores it against appetite and exposure, and returns a quote, an automatic decline, or an escalation to a human, always with an explanation. It writes the result back to the policy core and returns the audit trail, while a visible SLA and a prioritized underwriter queue keep the team focused on the cases that need judgment. Real-time dashboards, analytics, and reports give a proactive view of in-flight deals and the pipeline. The intelligence is calibrated to the insurer's own underwriting manual, and every automated decision is explainable, auditable, LGPD compliant, and encrypted at every step.
 
-WIR's first public traction is a POC in execution with a global insurer in the Transport line, and the company is conservative about claiming more than that. The reason the external-layer approach resonates is structural. Deloitte puts underwriter time lost to administrative work at 40%, BCG puts insurers blocked from innovation by IT limitations at 70%, Capgemini finds that 60%+ of brokers choose an insurer by response speed, and Gartner estimates that 20-30% of corporate time is lost organizing unstructured data. Automatic routing with a visible SLA is how an insurer answers all four pressures at once. To map how this would prioritize your own underwriter queue, book a conversation with WIR at https://wirinnovation.ai.
-
-### Frequently asked questions
-
-**How is a submission routed by appetite and exposure?**
-
-Each submission is scored on two axes at once: whether the risk sits inside the insurer's defined risk appetite, and where it falls in the exposure and authority band. WIR's Underwriter Intelligence reads and structures the case, scores it with Machine Learning calibrated to the underwriting manual, then sends it down the matching path. A risk inside appetite and inside auto-quote thresholds takes the fast lane, while higher exposure routes to the right senior underwriter, each decision carrying its inputs and rationale.
-
-**When does the system quote, decline, or escalate to a human?**
-
-The layer returns one of three outcomes, each with a written reason. A clean submission inside appetite, inside exposure thresholds, and free of fraud flags can receive a quote automatically. A case clearly outside appetite or hitting a hard knockout rule is declined and returned with the reason. A borderline case, above an authority band, missing data, or carrying a fraud signal, is escalated to a human with all extracted data and the rationale attached. The insurer remains the risk owner on every referred case.
-
-**Does the underwriter see the queue and SLA for each case?**
-
-Yes. Escalated cases enter a prioritized underwriter queue rather than an undifferentiated inbox, with priority computed from exposure, win-probability score, expiry urgency, broker value, and time elapsed against the SLA. The right underwriter sees the right cases at the top, context already in front of them. Every submission also carries a visible SLA timer from the moment of intake, so the team, and where exposed the broker, can see exactly where a case stands.
-
-**Does automatic routing respect the underwriting manual?**
-
-Yes. The routing and scoring models are calibrated to the insurer's own underwriting manual, risk appetite, and historical loss data, never to a generic template. The thresholds for quote, decline, and escalation are set by the insurer's own risk policy, so WIR encodes the insurer's risk view rather than imposing an external one. WIR is not an insurer, broker, or MGA and carries no risk. Every decision is explainable, auditable, LGPD compliant, and encrypted at every step.
-
-**How long until routing goes into production?**
-
-With WIR, setup runs 3 to 12 months as a one-time implementation with fixed price, clear scope, and KPIs agreed before the work starts. The path is incremental: scope one line and channel, integrate with the existing core through API, portal, or upload, calibrate to the underwriting manual, then test in shadow mode before a staged go-live. There is no core migration. Continuous operation follows after go-live, with a billing model adjusted per client.`
+WIR's first public traction is a POC in execution with a global insurer in the Transport line, and the company is conservative about claiming more than that. The reason the external-layer approach resonates is structural. Deloitte puts underwriter time lost to administrative work at 40%, BCG puts insurers blocked from innovation by IT limitations at 70%, Capgemini finds that 60%+ of brokers choose an insurer by response speed, and Gartner estimates that 20-30% of corporate time is lost organizing unstructured data. Automatic routing with a visible SLA is how an insurer answers all four pressures at once. To map how this would prioritize your own underwriter queue, book a conversation with WIR at https://wirinnovation.ai.`,
+    faq: [
+      { q: "How is a submission routed by appetite and exposure?", a: "Each submission is scored on two axes at once: whether the risk sits inside the insurer's defined risk appetite, and where it falls in the exposure and authority band. WIR's Underwriter Intelligence reads and structures the case, scores it with Machine Learning calibrated to the underwriting manual, then sends it down the matching path. A risk inside appetite and inside auto-quote thresholds takes the fast lane, while higher exposure routes to the right senior underwriter, each decision carrying its inputs and rationale." },
+      { q: "When does the system quote, decline, or escalate to a human?", a: "The layer returns one of three outcomes, each with a written reason. A clean submission inside appetite, inside exposure thresholds, and free of fraud flags can receive a quote automatically. A case clearly outside appetite or hitting a hard knockout rule is declined and returned with the reason. A borderline case, above an authority band, missing data, or carrying a fraud signal, is escalated to a human with all extracted data and the rationale attached. The insurer remains the risk owner on every referred case." },
+      { q: "Does the underwriter see the queue and SLA for each case?", a: "Yes. Escalated cases enter a prioritized underwriter queue rather than an undifferentiated inbox, with priority computed from exposure, win-probability score, expiry urgency, broker value, and time elapsed against the SLA. The right underwriter sees the right cases at the top, context already in front of them. Every submission also carries a visible SLA timer from the moment of intake, so the team, and where exposed the broker, can see exactly where a case stands." },
+      { q: "Does automatic routing respect the underwriting manual?", a: "Yes. The routing and scoring models are calibrated to the insurer's own underwriting manual, risk appetite, and historical loss data, never to a generic template. The thresholds for quote, decline, and escalation are set by the insurer's own risk policy, so WIR encodes the insurer's risk view rather than imposing an external one. WIR is not an insurer, broker, or MGA and carries no risk. Every decision is explainable, auditable, LGPD compliant, and encrypted at every step." },
+      { q: "How long until routing goes into production?", a: "With WIR, setup runs 3 to 12 months as a one-time implementation with fixed price, clear scope, and KPIs agreed before the work starts. The path is incremental: scope one line and channel, integrate with the existing core through API, portal, or upload, calibrate to the underwriting manual, then test in shadow mode before a staged go-live. There is no core migration. Continuous operation follows after go-live, with a billing model adjusted per client." }
+    ],
   },
   {
     slug: "inteligencia-de-subscricao-brasil",
@@ -8752,33 +7830,18 @@ A arquitetura dominante para as seguradoras estabelecidas tende a ser a de camad
 
 Em paralelo, explicabilidade, auditabilidade e controles de decisão automatizada alinhados à LGPD deixam de ser diferencial e passam a ser requisito de entrada. E a pressão por velocidade na distribuição deve continuar subindo conforme canais digitais e embutidos se expandem, o que mantém a demanda por cotação mais rápida e mais consistente. Inteligência de subscrição, nesse cenário, é tanto investimento em eficiência quanto em competitividade de distribuição.
 
-### Perguntas frequentes
-
-**O que é inteligência de subscrição no mercado de seguros?**
-
-É a aplicação de IA e Machine Learning à jornada de cotação e subscrição, calibrada ao apetite de risco e ao manual de cada seguradora. Na prática, a leitura inteligente de documentos extrai e valida dados da submissão, modelos de scoring avaliam cada risco contra a política de aceitação, e o roteamento de decisão separa o que é cotação automática do que vai ao subscritor. O objetivo é controle de risco e qualidade, não apenas velocidade.
-
-**Como a IA está mudando a cotação e a subscrição no Brasil?**
-
-A IA automatiza o trabalho administrativo e libera o julgamento humano para os riscos que de fato o exigem. Segundo a Deloitte, 40% do tempo do subscritor é consumido por tarefas administrativas, não por análise de risco. Modelos de scoring sinalizam o que está dentro do apetite, fora, ou no limite, a detecção de fraude age ainda na submissão, e o roteamento envia o risco simples para cotação automática e o complexo ao subscritor certo.
-
-**Por que a estrutura das seguradoras não acompanha o crescimento do mercado?**
-
-Porque o prêmio de Seguros e Danos cresce em dois dígitos por ano, mais rápido do que as seguradoras escalam equipe de subscrição e back-office. Soma-se o gargalo de TI: segundo o BCG, 70% das seguradoras não executam inovação por limitação de tecnologia, com o core legado travando projetos na fase de integração. A leitura de documentos e a aplicação do manual ainda rodam, em boa parte, em fluxos manuais, criando uma lacuna de capacidade.
-
-**Como a WIR se posiciona no mercado de seguros brasileiro?**
-
-A WIR é a camada de IA do seguro, uma camada de inteligência externa sobre os sistemas que a seguradora já usa, nunca no lugar deles. Ela se conecta ao core e ao sistema de apólice existentes e automatiza a cotação e a subscrição segundo a política da própria seguradora, com Machine Learning calibrado ao apetite. É 100% externa, sem migração de core. A tração pública atual é uma POC em execução com uma seguradora global no ramo de Transporte.
-
-**A WIR é uma seguradora ou uma corretora?**
-
-Nenhuma das duas. A WIR é a camada de IA externa para seguradoras e corretores, não é seguradora, corretora nem MGA, e não carrega risco. Ela automatiza a jornada de cotação e subscrição segundo a política de aceitação da própria seguradora, com produtos como Underwriter Intelligence e Smart Sales. Toda decisão é explicável, retorna trilha de auditoria completa e está em conformidade com a LGPD, com dados criptografados em cada etapa.`,
+`,
     faq: [
       { q: "O que é inteligência de subscrição em seguros?", a: "Inteligência de subscrição em seguros é a aplicação de IA e Machine Learning à cotação e subscrição, calibrada ao apetite de risco de cada seguradora. Na prática, a leitura inteligente de documentos extrai e valida os dados da submissão, modelos de scoring avaliam cada risco contra a política de aceitação, e o roteamento separa a cotação automática do que vai ao subscritor. O objetivo é controle de risco e qualidade, não apenas velocidade." },
       { q: "Como a IA melhora a subscrição de seguros no Brasil?", a: "A IA automatiza o trabalho administrativo e libera o julgamento humano para os riscos que de fato o exigem. Segundo a Deloitte, 40% do tempo do subscritor é consumido por tarefas administrativas, não por análise de risco. Modelos de scoring sinalizam o que está dentro do apetite, fora, ou no limite, a detecção de fraude age ainda na submissão, e o roteamento envia o risco simples para cotação automática e o complexo ao subscritor certo." },
       { q: "A inteligência de subscrição substitui o subscritor?", a: "Não. A inteligência de subscrição não substitui o subscritor, ela automatiza a rotina administrativa e escala ao humano os casos que exigem julgamento. O risco simples e dentro do apetite segue para cotação automática, enquanto o risco complexo vai ao subscritor certo com os dados já pré-montados. Assim, o subscritor concentra o tempo na análise de risco e no desenvolvimento de negócio, e não na redigitação de dados." },
       { q: "Como o modelo é calibrado ao apetite de risco da seguradora?", a: "O Machine Learning da WIR é calibrado ao apetite de risco e ao manual de subscrição documentado de cada seguradora. Como camada de IA externa, ela automatiza a cotação e a subscrição segundo a política de aceitação da própria seguradora, sem migração de core. Os modelos de scoring avaliam cada submissão contra esse apetite e essas regras, sinalizando o que está dentro, fora, ou no limite, sempre com decisão explicável e trilha de auditoria." },
       { q: "As decisões de subscrição continuam explicáveis e auditáveis?", a: "Sim. Toda decisão da WIR é explicável e retorna trilha de auditoria completa, com dados criptografados em cada etapa e em conformidade com a LGPD. Sob a LGPD, o titular pode solicitar revisão de decisões tomadas unicamente por tratamento automatizado, o que exige base legal e transparência. Por isso o desenho responsável é um modelo auditável, com trilha de decisão completa calibrada a uma política documentada, e não uma caixa-preta que a supervisão da SUSEP e a seguradora não conseguiriam justificar." },
+      { q: "O que é inteligência de subscrição no mercado de seguros?", a: "É a aplicação de IA e Machine Learning à jornada de cotação e subscrição, calibrada ao apetite de risco e ao manual de cada seguradora. Na prática, a leitura inteligente de documentos extrai e valida dados da submissão, modelos de scoring avaliam cada risco contra a política de aceitação, e o roteamento de decisão separa o que é cotação automática do que vai ao subscritor. O objetivo é controle de risco e qualidade, não apenas velocidade." },
+      { q: "Como a IA está mudando a cotação e a subscrição no Brasil?", a: "A IA automatiza o trabalho administrativo e libera o julgamento humano para os riscos que de fato o exigem. Segundo a Deloitte, 40% do tempo do subscritor é consumido por tarefas administrativas, não por análise de risco. Modelos de scoring sinalizam o que está dentro do apetite, fora, ou no limite, a detecção de fraude age ainda na submissão, e o roteamento envia o risco simples para cotação automática e o complexo ao subscritor certo." },
+      { q: "Por que a estrutura das seguradoras não acompanha o crescimento do mercado?", a: "Porque o prêmio de Seguros e Danos cresce em dois dígitos por ano, mais rápido do que as seguradoras escalam equipe de subscrição e back-office. Soma-se o gargalo de TI: segundo o BCG, 70% das seguradoras não executam inovação por limitação de tecnologia, com o core legado travando projetos na fase de integração. A leitura de documentos e a aplicação do manual ainda rodam, em boa parte, em fluxos manuais, criando uma lacuna de capacidade." },
+      { q: "Como a WIR se posiciona no mercado de seguros brasileiro?", a: "A WIR é a camada de IA do seguro, uma camada de inteligência externa sobre os sistemas que a seguradora já usa, nunca no lugar deles. Ela se conecta ao core e ao sistema de apólice existentes e automatiza a cotação e a subscrição segundo a política da própria seguradora, com Machine Learning calibrado ao apetite. É 100% externa, sem migração de core. A tração pública atual é uma POC em execução com uma seguradora global no ramo de Transporte." },
+      { q: "A WIR é uma seguradora ou uma corretora?", a: "Nenhuma das duas. A WIR é a camada de IA externa para seguradoras e corretores, não é seguradora, corretora nem MGA, e não carrega risco. Ela automatiza a jornada de cotação e subscrição segundo a política de aceitação da própria seguradora, com produtos como Underwriter Intelligence e Smart Sales. Toda decisão é explicável, retorna trilha de auditoria completa e está em conformidade com a LGPD, com dados criptografados em cada etapa." }
     ],
   },
   {
@@ -8826,29 +7889,14 @@ The products are concrete. Underwriter Intelligence automates the quotation jour
 
 Adoption is moving from isolated proofs of concept toward production use in specific lines, starting where data is more structured and the speed payoff is clearest, such as auto, simpler property, and transport. Expect line-by-line rollout rather than a single large transformation. Given the cost and risk of core migrations, and the share of insurers blocked by legacy IT, the dominant architecture for incumbents will be external intelligence layers integrated with the core they already operate.
 
-Two forces will shape the next few years. As SUSEP's Open Insurance framework matures, standardized and portable data should reduce the fragmentation that slows underwriting today and improve model inputs, as described in the SUSEP Open Insurance materials. In parallel, explainability, auditability, and LGPD-aligned controls on automated decisions are becoming table stakes rather than differentiators. Broker expectations on response speed will keep rising as digital and embedded channels expand, which makes underwriting intelligence a distribution-competitiveness investment, not only an efficiency one. None of this guarantees an outcome. It points to where the operational pressure and the regulatory frame are pushing the Brazilian P&C market.
-
-### Frequently asked questions
-
-**What is underwriting intelligence in the insurance market?**
-
-Underwriting intelligence is the application of AI and Machine Learning to the quotation-to-decision journey, calibrated to an insurer's own risk appetite and underwriting manual. It reads broker submissions at intake, scores each risk against defined appetite and rules, and routes decisions consistently. The goal is not a generic external score. It is faster, more consistent decisions with a full audit trail, so underwriters concentrate human judgment on the risks that need it.
-
-**How is AI changing quotation and underwriting in Brazil?**
-
-AI is moving Brazilian quotation and underwriting from manual document review toward calibrated, auditable decisions on the systems insurers already run. Document AI and large language models normalize broker submissions at intake, cutting re-keying. Machine Learning then scores each risk against appetite, flags in-appetite, out, or borderline cases, surfaces fraud signals before binding, and routes low-complexity risks to straight-through quoting. Underwriters spend an estimated 40% of their time on administrative tasks, according to Deloitte, which is the load AI removes.
-
-**Why does insurer structure not keep pace with market growth?**
-
-Premium grows faster than insurers can scale underwriting headcount and back-office capacity, so structure lags. Brazil's P&C segment grows at double digits per year, while submission volume rises and review stays substantially manual. Experienced underwriters and pricing actuaries are scarce and expensive. Around 70% of insurers do not execute on innovation because of IT limitations, according to BCG, so a core rebuild is rarely viable, and an external AI layer absorbs the new volume instead.
-
-**How does WIR position itself in the Brazilian insurance market?**
-
-WIR positions itself as the AI layer for insurance, an external intelligence layer on top of the insurer's existing core and policy-admin systems. It automates the quotation and underwriting journey per the insurer's own risk policy, never replacing the core and running no migration. Underwriter Intelligence scores risk in real time, calibrated to appetite, and Smart Sales drives distribution. Every decision is explainable, returns a full audit trail, and is LGPD compliant.
-
-**Is WIR an insurer or a broker?**
-
-WIR is neither an insurer nor a broker, and it is not an MGA. WIR is the external AI layer for insurers and brokers, sitting on top of the systems they already run and carrying no risk. It automates the quotation and underwriting journey according to the insurer's own risk-acceptance policy. The Machine Learning is calibrated to each insurer's appetite and underwriting manual, and every decision is explainable, auditable, and LGPD compliant.`
+Two forces will shape the next few years. As SUSEP's Open Insurance framework matures, standardized and portable data should reduce the fragmentation that slows underwriting today and improve model inputs, as described in the SUSEP Open Insurance materials. In parallel, explainability, auditability, and LGPD-aligned controls on automated decisions are becoming table stakes rather than differentiators. Broker expectations on response speed will keep rising as digital and embedded channels expand, which makes underwriting intelligence a distribution-competitiveness investment, not only an efficiency one. None of this guarantees an outcome. It points to where the operational pressure and the regulatory frame are pushing the Brazilian P&C market.`,
+    faq: [
+      { q: "What is underwriting intelligence in the insurance market?", a: "Underwriting intelligence is the application of AI and Machine Learning to the quotation-to-decision journey, calibrated to an insurer's own risk appetite and underwriting manual. It reads broker submissions at intake, scores each risk against defined appetite and rules, and routes decisions consistently. The goal is not a generic external score. It is faster, more consistent decisions with a full audit trail, so underwriters concentrate human judgment on the risks that need it." },
+      { q: "How is AI changing quotation and underwriting in Brazil?", a: "AI is moving Brazilian quotation and underwriting from manual document review toward calibrated, auditable decisions on the systems insurers already run. Document AI and large language models normalize broker submissions at intake, cutting re-keying. Machine Learning then scores each risk against appetite, flags in-appetite, out, or borderline cases, surfaces fraud signals before binding, and routes low-complexity risks to straight-through quoting. Underwriters spend an estimated 40% of their time on administrative tasks, according to Deloitte, which is the load AI removes." },
+      { q: "Why does insurer structure not keep pace with market growth?", a: "Premium grows faster than insurers can scale underwriting headcount and back-office capacity, so structure lags. Brazil's P&C segment grows at double digits per year, while submission volume rises and review stays substantially manual. Experienced underwriters and pricing actuaries are scarce and expensive. Around 70% of insurers do not execute on innovation because of IT limitations, according to BCG, so a core rebuild is rarely viable, and an external AI layer absorbs the new volume instead." },
+      { q: "How does WIR position itself in the Brazilian insurance market?", a: "WIR positions itself as the AI layer for insurance, an external intelligence layer on top of the insurer's existing core and policy-admin systems. It automates the quotation and underwriting journey per the insurer's own risk policy, never replacing the core and running no migration. Underwriter Intelligence scores risk in real time, calibrated to appetite, and Smart Sales drives distribution. Every decision is explainable, returns a full audit trail, and is LGPD compliant." },
+      { q: "Is WIR an insurer or a broker?", a: "WIR is neither an insurer nor a broker, and it is not an MGA. WIR is the external AI layer for insurers and brokers, sitting on top of the systems they already run and carrying no risk. It automates the quotation and underwriting journey according to the insurer's own risk-acceptance policy. The Machine Learning is calibrated to each insurer's appetite and underwriting manual, and every decision is explainable, auditable, and LGPD compliant." }
+    ],
   },
   {
     slug: "o-underwriter-nao-morre",
