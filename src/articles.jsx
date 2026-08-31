@@ -4,6 +4,594 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "what-is-an-algorithmic-mga",
+    cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#0E7C86)",
+    image: "/assets/articles/what-is-an-algorithmic-mga.jpg",
+    title: "What Is an Algorithmic MGA? Model, Stack, Proof",
+    sub: "An algorithmic MGA is a managing general agent that underwrites through code instead of through a queue of human referrals. It holds delegated authority from a carrier, prices and binds risk automatically inside an agreed appetite, and reports back to its capacity provider as data rather than as a monthly spreadsheet.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "7 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "An algorithmic MGA underwrites through code under delegated authority, binding risk automatically inside an agreed appetite and reporting to capacity as data.",
+    body: `An algorithmic MGA is a managing general agent that underwrites through code instead of through a queue of human referrals. It holds delegated authority from a carrier, prices and binds risk automatically inside an agreed appetite, and reports back to its capacity provider as data rather than as a monthly spreadsheet. The model is spreading because capacity is easier to raise when performance can be measured continuously instead of quarterly.
+
+### What is an algorithmic MGA?
+
+**An algorithmic MGA is a managing general agent whose underwriting decisions are made by models and rules running in software, under delegated authority from a carrier, with humans supervising the portfolio rather than touching every risk.**
+
+A traditional MGA does the same job a carrier's underwriting department does, but on someone else's paper. It receives submissions, applies the appetite agreed with the capacity provider, quotes, binds, and reports the bound business back through bordereaux. An algorithmic MGA does not change that legal structure. Delegated authority, the binding agreement, and the carrier's ultimate exposure all stay exactly where they were. What changes is where the decision happens.
+
+In a traditional MGA the decision lives in an underwriter's head, informed by a manual, a rating sheet, and experience. In an algorithmic MGA the decision lives in a versioned artifact: an appetite ruleset, a rating model, a set of data enrichments, and a decision log. A human wrote that artifact and a human supervises it, but the artifact is what runs on every submission, at the same speed, in the same way, at three in the morning.
+
+### How an algorithmic MGA differs from a traditional MGA
+
+The difference shows up in five places, and none of them are about how smart the underwriters are.
+
+- **Unit of work.** Traditional: the account. Algorithmic: the cohort. The underwriter tunes a rule that moves a thousand accounts, instead of pricing one.
+- **Speed floor.** Traditional: a quote turnaround measured in days. Algorithmic: measured in seconds for the clean majority, with humans reserved for the exceptions.
+- **Consistency.** Two traditional underwriters can price the same risk differently on the same day. An algorithmic MGA produces the same answer twice, which is the precondition for measuring anything.
+- **Reporting.** Traditional: bordereaux compiled after the fact. Algorithmic: the bordereau is a byproduct of the decision record, so the capacity provider can see the book in near real time.
+- **Change management.** Traditional: retrain people. Algorithmic: ship a new version of the ruleset, with the old version still on record for anything written under it.
+
+That last point is the one most often missed. An algorithmic MGA is not just faster. It is auditable in a way a human book is not, because every bound risk can be replayed against the exact ruleset version that priced it.
+
+### Why capacity providers care about the model
+
+Capacity is the scarce resource in the MGA world, and it is allocated on trust. A carrier or reinsurer delegating pen to a third party is accepting adverse selection risk it cannot see directly until the losses arrive.
+
+An algorithmic MGA changes the shape of that problem. When appetite is encoded, the capacity provider can inspect the rules before the first risk is bound rather than reconstruct intent from a loss run two years later. When every decision carries a reason code, the carrier can distinguish a book that drifted from a book that was mispriced. When the data flows continuously, a breach of the binding authority shows up in days instead of at the annual audit.
+
+This is also why the technology question and the capital question are the same question. Delegated authority audits, bordereaux quality, and data lineage are not back-office chores for an algorithmic MGA. They are the product being sold to capacity. The operational side of that is covered in more depth in [delegated authority technology for MGAs](#blog/delegated-authority-technology-for-mgas-2026) and in [how to automate bordereaux processing with AI](#blog/how-to-automate-bordereaux-processing-with-ai).
+
+### The stack behind an algorithmic MGA
+
+Strip away the branding and the stack is consistent across the market. Six capabilities have to work, in order.
+
+1. **Ingestion.** Submissions arrive as email, attachments, portal forms, spreadsheets, and API calls. Whatever the source, they have to become structured records without a person retyping them.
+2. **Extraction.** ACORD forms, statements of values, loss runs, and broker PDFs get read and turned into fields with confidence scores. This is where most implementations stall.
+3. **Enrichment.** The submission is thin. External data on the entity, the location, the exposure, the broker history, and prior claims is what makes the risk assessable.
+4. **Appetite and rules.** The carrier's binding authority is encoded: classes in and out, limits, attachment points, territory, referral triggers. This is the legal boundary of the pen, expressed in software.
+5. **Rating and scoring.** Technical price plus a model score. The score orders risks by expected performance. The rating engine turns the accepted risk into a number the market will trade.
+6. **Decision, issue, and record.** Quote, decline, or refer. Bind and issue documents. Write the decision, its inputs, its ruleset version, and its reason codes to a record the carrier can audit.
+
+The distinction between step 5 and step 6 matters commercially and is explained in [pricing engine vs underwriting decision platform](#blog/pricing-engine-vs-underwriting-decision-platform). A rating engine that produces a premium is not the same thing as a platform that decides whether the risk should be written at all.
+
+Underwriter time is the constraint that makes all of this worth building. Underwriters spend around 40% of their time on administrative tasks rather than on risk selection, according to Deloitte. In an MGA, where headcount is thin and the economics run on commission, that 40% is the difference between a book that scales and a book that plateaus.
+
+### What algorithmic underwriting does not mean
+
+Three misreadings are common enough to be worth naming.
+
+It does not mean no underwriters. The most durable algorithmic MGAs employ senior underwriters whose job moved upstream, from pricing individual accounts to designing and supervising the rules that price them. Judgment did not leave. It was moved to where it compounds.
+
+It does not mean every risk is automated. In practice a book splits. A clean majority flows through untouched, a middle band gets a human check on one or two flagged items, and a tail is fully manual because the exposure or the ambiguity justifies it. Trying to push the tail through the machine is how algorithmic books get into trouble.
+
+It does not mean replacing the carrier's core system. The policy administration system, the general ledger, and the regulatory reporting stay where they are. The algorithmic layer sits in front of them, decides, and writes back. This is the same architecture described in [AI underwriting without replacing your core system](#blog/ai-underwriting-without-replacing-core-system).
+
+### How an algorithmic MGA proves itself
+
+Capacity providers, and increasingly regulators, ask for evidence rather than a demo. Four artifacts do most of the persuading.
+
+- **A replayable decision log.** For any bound risk, the inputs, the ruleset version, the score, and the reason codes.
+- **A shadow period.** The model ran alongside the incumbent process on live submissions and its answers were compared before it had authority over anything. The method is described in [shadow mode underwriting](#blog/what-is-shadow-mode-underwriting).
+- **A breach report.** Evidence that out-of-appetite risks were caught by the system, not by luck.
+- **Version discipline.** Every ruleset change dated, attributed, and mapped to the policies written under it.
+
+An MGA that cannot produce these is asking for capacity on narrative. An MGA that can is asking for it on data, and the terms are usually different.
+
+### Where the model works best
+
+Algorithmic underwriting rewards lines with high submission volume, standardized exposures, and data that exists outside the submission itself. Small commercial property, cargo and transport, cyber for SMEs, and specialty niches with a repeatable structure all qualify. Large complex accounts, bespoke wordings, and heavily negotiated programs do not, and the honest answer for those is that a human should keep the pen.
+
+Brazil is a useful case in point. The market has volume and a broker-intermediated distribution structure, but carrier IT capacity is the bottleneck rather than ambition. Around 70% of insurers do not execute innovation because of IT limitations, according to BCG. An external layer that automates the underwriting journey without a core migration is the only version of the algorithmic model that can ship inside that constraint.
+
+WIR Innovation is an external AI layer for insurers and MGAs that automates submission intake, quotation, underwriting, and decisioning without replacing the core system, with every decision explainable and returning a full audit trail. It has applied this pattern in a proof of concept with a global insurer in the Transport line. For the broader MGA context, see [what an MGA is and how MGAs use AI](#blog/what-is-an-mga-and-how-mgas-use-ai).`,
+    faq: [
+      { q: "What is an algorithmic MGA?", a: "An algorithmic MGA is a managing general agent whose underwriting decisions are made by models and rules running in software, under delegated authority from a carrier. It quotes, prices, and binds risk automatically inside an agreed appetite, while humans supervise the portfolio and design the rules rather than touching every individual risk. The legal structure of delegated authority does not change. Only the place where the decision is made changes." },
+      { q: "What is the difference between an algorithmic MGA and a traditional MGA?", a: "A traditional MGA makes underwriting decisions account by account, in an underwriter's head, informed by a manual and a rating sheet. An algorithmic MGA encodes appetite, rating, and referral triggers into versioned software that runs on every submission identically. The practical differences are speed for clean business, consistency across decisions, continuous reporting to capacity instead of after-the-fact bordereaux, and the ability to replay any bound risk against the exact ruleset that priced it." },
+      { q: "Does an algorithmic MGA still need underwriters?", a: "Yes. Algorithmic MGAs typically employ senior underwriters whose work moves upstream, from pricing individual accounts to designing, testing, and supervising the rules and models that price them. A book usually splits into a clean majority that flows through automatically, a middle band that gets a human check on flagged items, and a complex tail that stays fully manual. Judgment does not leave the business, it moves to where it affects many risks at once." },
+      { q: "Why do capacity providers prefer the algorithmic model?", a: "Because it converts trust into evidence. When appetite is encoded, a carrier can inspect the binding rules before the first risk is written instead of reconstructing intent from a loss run years later. Every decision carries reason codes, so a book that drifted can be distinguished from a book that was mispriced, and an out-of-appetite risk shows up in days rather than at the annual delegated authority audit." },
+      { q: "What technology does an algorithmic MGA need?", a: "Six capabilities in sequence: ingestion of submissions from email, portals, and APIs; extraction of fields from ACORD forms, statements of values, and loss runs; enrichment with external data on the entity, location, and exposure; an encoded appetite and rules layer that expresses the binding authority; rating and risk scoring; and a decision, issuance, and record layer that writes an auditable trail. Most implementations stall at extraction." },
+      { q: "Which lines of business suit algorithmic underwriting?", a: "Lines with high submission volume, standardized exposures, and data available outside the submission itself. Small commercial property, cargo and transport, SME cyber, and specialty niches with repeatable structures all fit. Large complex accounts, bespoke wordings, and heavily negotiated programs do not, and in those cases a human should keep the pen." }
+    ],
+  },
+  {
+    slug: "what-is-fnol-first-notice-of-loss-process",
+    cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
+    image: "/assets/articles/what-is-fnol-first-notice-of-loss-process.jpg",
+    title: "What Is FNOL? First Notice of Loss, Step by Step",
+    sub: "FNOL stands for First Notice of Loss, the first report an insurer receives that a loss has happened. It is the moment a claim file opens, and it sets the cost, the speed, and the customer experience of everything that follows.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "7 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "FNOL means First Notice of Loss, the report that opens a claim file. Here is the process flow step by step and what a complete notice must contain.",
+    body: `FNOL stands for First Notice of Loss, the first report an insurer receives that a loss has happened. It is the moment a claim file opens, and it sets the cost, the speed, and the customer experience of everything that follows. This is the process end to end: what FNOL means, who does what at each step, what a complete notice contains, and why one notice can produce more than one claim.
+
+### What is FNOL in insurance?
+
+**FNOL, or First Notice of Loss, is the initial report a policyholder or a third party makes to an insurer that a covered event has occurred, and it is the trigger that opens the claim file and starts the claims process.**
+
+The term is used interchangeably with First Notification of Loss and, in some markets, with the first advice of claim. All three mean the same thing: the insurer now knows something happened, and a clock has started. Before FNOL there is a policy. After FNOL there is a claim.
+
+FNOL is not the claim itself and it is not a coverage decision. It is a notification. A valid FNOL can be followed by a denial, by a payment, or by nothing at all if the insured decides not to pursue it. What FNOL does is establish the record: date and time of report, description of the event, parties involved, and the policy under which it is being reported.
+
+### What FNOL stands for and why the wording matters
+
+FNOL is an acronym for First Notice of Loss. In claims documentation you will also see:
+
+- **FNOL:** First Notice of Loss, the common North American usage.
+- **FNOI:** First Notice of Incident, used where the event may not yet be a loss, common in liability and cyber.
+- **First Notification of Loss:** the more common phrasing in the United Kingdom and European markets.
+- **Aviso de sinistro:** the Brazilian equivalent, regulated under SUSEP claims-handling rules.
+
+The distinction between notice of loss and notice of incident is not pedantic. A cyber incident or a potential liability event is often reported before anyone knows whether there is a loss at all, and reporting it protects the insured's position under the policy's notification conditions. Late notice is one of the most common grounds for a coverage dispute, which is why most policies define a notification window and most brokers push clients to report early.
+
+### The FNOL process flow, step by step
+
+The flow below is the common shape across personal and commercial lines. Individual carriers vary in naming, not in substance.
+
+1. **Event occurs.** A vehicle is damaged, a cargo shipment is lost, a building floods, a system is breached.
+2. **Notice is made.** The policyholder, broker, or a third party contacts the insurer by phone, portal, app, email, or broker submission. In commercial lines the broker usually files on the client's behalf.
+3. **Intake and identification.** The insurer captures the report and matches it to a policy in force at the date of loss. If the policy cannot be identified, everything downstream stalls.
+4. **Completeness check.** The intake team or system verifies that the mandatory fields are present: date and time of loss, cause, location, description, parties, estimated severity, and supporting documents.
+5. **Claim file creation.** A claim number is issued and the file is created in the claims system. This is the formal opening of the claim.
+6. **Coverage screening.** A first pass on whether the reported event plausibly falls within the policy terms, deductibles, limits, and exclusions. This is a screen, not a coverage determination.
+7. **Segmentation and triage.** The claim is classified by complexity, severity, and fraud indicators, and routed accordingly. A low-severity, clean claim may go to a fast-track path. A complex or suspicious one is escalated.
+8. **Adjuster assignment.** The file goes to a handler, an in-house adjuster, an independent adjuster, or a specialist unit, matched to the claim type and reserve size.
+9. **Reserve setting.** An initial reserve is posted so the insurer's financial position reflects the exposure.
+10. **Acknowledgement to the customer.** The insured is told the claim is open, given a reference, and told what happens next and what is needed from them.
+
+Steps 3 through 8 are where the money is won or lost. Everything after that is adjustment and settlement, which is a different discipline. This article covers the notice; the automation of the downstream work is covered in [how AI automates insurance claims processing](#blog/how-ai-automates-insurance-claims-processing).
+
+### What a complete FNOL contains
+
+An incomplete notice is the single most common cause of claims cycle-time inflation, because every missing field becomes a callback, and every callback adds days. A complete FNOL generally carries:
+
+- **Policy identification:** policy number, named insured, and confirmation the policy was in force at the date of loss.
+- **Loss facts:** date, time, location, and a plain description of what happened.
+- **Cause of loss:** the peril or event type, coded to the insurer's taxonomy.
+- **Parties:** claimant, injured parties, witnesses, third parties, and their contact details.
+- **Damage and severity:** what was damaged or lost, and an initial estimate of scale.
+- **Documents:** photographs, police or incident reports, invoices, bills of lading, medical reports as applicable.
+- **Reporter details:** who is reporting, in what capacity, and how to reach them.
+- **Authority and consent:** confirmation the reporter is entitled to report and any data-processing consents required, which under Brazil's LGPD must be handled deliberately rather than assumed.
+
+Note that severity, cause, and party data are the three fields that drive triage. If they are missing or wrong, the claim is routed wrong, and rerouting a claim after an adjuster has touched it is expensive.
+
+### Can one FNOL result in more than one claim?
+
+Yes, and this is one of the most misunderstood parts of the process. **A single first notice of loss can generate multiple claims when one event produces several distinct coverages, claimants, or policy periods.**
+
+The common patterns are:
+
+- **Multiple coverages, one event.** A commercial fire triggers property damage, business interruption, and possibly liability. Each is typically handled as a separate claim under a separate coverage section, from one notice.
+- **Multiple claimants.** A single auto accident with three injured parties produces one FNOL and several bodily injury claims.
+- **Multiple policies.** A loss that falls across primary and excess layers, or across a package policy and a standalone cyber policy, opens files with more than one carrier or more than one section.
+- **Occurrence versus claim.** In liability, one occurrence can generate claims that arrive over years. The original notice remains the anchor.
+
+The practical consequence is that FNOL intake systems must be able to open a one-to-many structure from a single notice. Systems that force one notice to equal one claim end up with duplicate notices, broken reserve reporting, and bordereaux that do not reconcile.
+
+### Why FNOL quality decides the cost of the claim
+
+Claims leakage, the difference between what a claim cost and what it should have cost, is largely set in the first hours. Three mechanisms drive it.
+
+Wrong severity at intake means wrong routing. A claim that should have gone to a specialist sits in a general queue for a week while the damage worsens and the customer loses patience. Missing documentation means the adjuster's first action is a request rather than an assessment. And unstructured intake means the data needed for fraud screening arrives too late to matter, because the fraud signals in an FNOL narrative are strongest before anyone has told a story twice.
+
+There is also a pure data cost. Corporate teams lose an estimated 20% to 30% of their time organizing unstructured data, according to Gartner. Claims intake is one of the densest concentrations of unstructured input in insurance: free-text narratives, photographs, PDFs, and phone transcripts, all arriving at once, all needing to become fields.
+
+### Where automation fits, and where it does not
+
+The automatable part of FNOL is the part that is mechanical: reading the notice, extracting fields, matching the policy, checking completeness, coding the cause of loss, scoring severity and fraud indicators, and routing. Those are pattern tasks with clear right answers, and they are exactly the tasks that make adjusters slow. The detail of how that works is in [how AI automates FNOL](#blog/how-ai-automates-fnol-first-notice-of-loss).
+
+The part that should not be automated is the part that requires judgment: coverage determination, reserve adequacy on complex files, and any communication with a customer who has just had a bad day. An automated intake layer that summarizes and routes well makes the human better. One that decides coverage creates a regulatory problem.
+
+The architectural point is the same one that applies across insurance operations. The claims core system holds the file, the reserve, and the financial record, and it should keep holding them. The intelligence sits in front of it, structures the notice, decides how to route, and writes back with an audit trail rather than replacing the system of record. The reasoning behind that pattern is set out in [what an underwriting intelligence layer is](#blog/what-is-an-underwriting-intelligence-layer) and applies equally to claims intake.
+
+WIR Innovation is an external AI layer for insurers and MGAs that structures unstructured intake, automates decisioning, and returns a full audit trail without replacing the core system, and it has applied this pattern in a proof of concept with a global insurer in the Transport line.`,
+    faq: [
+      { q: "What is FNOL in insurance?", a: "FNOL stands for First Notice of Loss. It is the initial report a policyholder, broker, or third party makes to an insurer that a covered event has occurred, and it is the trigger that opens the claim file and starts the claims process. FNOL is a notification, not a coverage decision. A valid FNOL can be followed by a payment, a denial, or no further action at all." },
+      { q: "What does the FNOL process flow look like?", a: "The common flow is: the event occurs, notice is made by phone, portal, app, email, or broker submission, the insurer captures the report and matches it to a policy in force at the date of loss, mandatory fields are checked for completeness, a claim number is issued and the file is created, coverage is screened, the claim is triaged by complexity, severity, and fraud indicators, an adjuster is assigned, an initial reserve is posted, and the customer is acknowledged with a reference and next steps." },
+      { q: "Can one FNOL result in more than one claim?", a: "Yes. A single first notice of loss can generate multiple claims when one event produces several distinct coverages, claimants, or policy sections. A commercial fire can trigger property damage, business interruption, and liability claims from one notice. One auto accident with three injured parties produces several bodily injury claims. Intake systems must therefore support a one-to-many structure, because forcing one notice to equal one claim creates duplicate notices and reserve reporting that does not reconcile." },
+      { q: "What is the difference between FNOL and FNOI?", a: "FNOL is First Notice of Loss, used when a loss has occurred. FNOI is First Notice of Incident, used when an event has happened but it is not yet clear whether it will become a loss, which is common in liability and cyber. Reporting an incident early protects the insured's position under the policy's notification conditions, since late notice is one of the most frequent grounds for a coverage dispute." },
+      { q: "What information does a complete FNOL need?", a: "Policy identification and confirmation the policy was in force at the date of loss, the date, time, location and description of the event, the cause of loss coded to the insurer's taxonomy, the parties involved and their contact details, the damage and an initial severity estimate, supporting documents such as photographs, incident reports, invoices, or bills of lading, and the reporter's details and authority. Severity, cause, and party data are the three fields that drive triage, so errors there route the claim wrongly." },
+      { q: "Which parts of FNOL can be automated?", a: "The mechanical parts: reading the notice, extracting fields from free text, PDFs, and photographs, matching the policy, checking completeness, coding the cause of loss, scoring severity and fraud indicators, and routing to the right handler. Coverage determination, reserve adequacy on complex files, and customer communication should stay with people. An automated intake layer that summarizes and routes well makes the adjuster faster. One that decides coverage creates a regulatory problem." }
+    ],
+  },
+  {
+    slug: "what-is-an-underwriting-intelligence-layer",
+    cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#7540AC)",
+    image: "/assets/articles/what-is-an-underwriting-intelligence-layer.jpg",
+    title: "What Is an Underwriting Intelligence Layer?",
+    sub: "An underwriting intelligence layer sits between the submission and the core policy system, turning unstructured inputs into decisions the insurer can defend. It does not hold the policy, the premium, or the ledger. It exists because core systems were built to record decisions, not to make them.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "8 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "An underwriting intelligence layer ingests submissions, scores them against the insurer's own appetite, and writes an explainable decision back to the core system.",
+    body: `An underwriting intelligence layer is software that sits between the submission and the core policy system, turning unstructured inputs into decisions the insurer can defend. It does not hold the policy, the premium, or the ledger. It reads what arrives, enriches it, scores it against the insurer's own appetite, decides or refers, and writes the result back with an audit trail. The layer exists because core systems were built to record decisions, not to make them.
+
+### What is an underwriting intelligence layer?
+
+**An underwriting intelligence layer is an external software layer that ingests submissions, structures them, applies the insurer's risk appetite and models to produce an explainable decision, and writes that decision back to the core system of record without replacing it.**
+
+The term describes an architectural position, not a product category. It is defined by where it sits: in front of the policy administration system, behind the channels through which business arrives, and above whatever data sources the insurer uses to assess risk. Everything upstream is intake. Everything downstream is record-keeping. The layer is the part in the middle where the thinking happens.
+
+That middle used to be a person with a manual, a rating sheet, and an inbox. In most insurers it still is. The layer is what happens when that middle becomes software while the person stays accountable for it.
+
+### Why the layer exists
+
+Core systems, whether Guidewire, Duck Creek, Sapiens, or a twenty-year-old in-house platform, are systems of record. They are extremely good at holding a policy, calculating a premium against a rating table, tracking endorsements, and producing the regulatory and accounting output that keeps the insurer licensed. They were designed for correctness and durability, and they deliver both.
+
+What they were never designed for is reading a broker's email, deciding whether the risk is in appetite this quarter, or changing a referral rule on a Tuesday because loss experience moved. Those are fast-changing, judgment-heavy, data-hungry tasks, and forcing them into a system of record produces the two failure modes every insurer recognises: change requests that take nine months, and a shadow economy of spreadsheets where the actual underwriting logic lives.
+
+The scale of that constraint is measurable. Around 70% of insurers do not execute innovation because of IT limitations, according to BCG. That figure is usually read as a technology-debt problem. It is more accurately an architecture problem. When the only place to put new logic is inside the system that also holds the ledger, every improvement inherits the risk profile of the ledger, so almost nothing ships.
+
+The layer resolves that by separating the two clocks. The core changes slowly because it should. The layer changes quickly because it must. The [architectural argument for keeping those separate](#blog/ai-underwriting-without-replacing-core-system) is the foundation of the model, and the comparison against core replacement and RPA is set out in [AI layer vs core replacement vs RPA](#blog/camada-ia-vs-core-rpa-seguros-en).
+
+### What sits inside the layer
+
+A working underwriting intelligence layer has six stages, and skipping any of them shows up later as a failed pilot.
+
+1. **Multichannel intake with automatic validation.** Business arrives as email with attachments, portal uploads, spreadsheets, and API calls. The layer accepts the format the broker already uses rather than asking the market to change.
+2. **Intelligent document reading.** ACORD forms, statements of values, loss runs, and broker PDFs are converted into fields with confidence scores. This is where most implementations stall, because extraction that works on clean documents fails on real ones.
+3. **Enrichment and context.** The submission alone is thin. Entity data, prior claims, exposure, credit signals, and broker conversion history are what make the risk assessable and the prioritisation meaningful.
+4. **Risk and appetite scoring.** A model calibrated to the insurer's own underwriting manual and risk appetite, not to a vendor's generic benchmark. This is the difference between a tool and a layer.
+5. **Pricing.** Risk-adjusted premium calculation, produced instantly rather than after a manual rating exercise.
+6. **Decision and prioritisation.** Quote, automatic decline, or escalation to a human, always with an explanation, always written back to the core with a full audit trail and a visible service level.
+
+Stage 6 is the one that separates an intelligence layer from a document-processing tool. Extraction without decisioning produces cleaner data and the same bottleneck. The decision is the product.
+
+### Layer, workbench, and copilot are not the same thing
+
+These three terms are used interchangeably in the market and they describe genuinely different things.
+
+| | What it is | Who acts | Where it sits |
+|---|---|---|---|
+| **Intelligence layer** | Decisioning infrastructure between intake and core | The system decides or refers, per encoded appetite | Between channels and the system of record |
+| **Underwriting workbench** | A consolidated screen that assembles the submission | The underwriter, with everything in one place | On top of the layer, facing the user |
+| **Copilot** | An assistive AI that summarises and drafts | The underwriter, assisted | Inside the underwriter's existing tools |
+| **Core system** | System of record for policy, premium, ledger | Records what was decided | Behind everything |
+
+A workbench without a layer beneath it is a nicer window onto the same manual work. A copilot without a layer is a faster typist. The layer is what makes throughput change, because it is the only one of the three that can act on the clean majority of business without a human touching it. The distinctions are drawn out further in [what an AI underwriting workbench is](#blog/what-is-ai-underwriting-workbench) and [what an underwriting copilot is](#blog/what-is-an-underwriting-copilot).
+
+### How the layer writes back
+
+The write-back path is the part that decides whether an implementation is a two-month project or a two-year one.
+
+The layer should treat the core as the authority on the record and itself as the authority on the decision. In practice that means it writes the outcome, the premium, the policy data, and the decision reference into the core through whatever integration the core supports, API where available and batch where not, and it keeps the reasoning in its own store. The core does not need to understand the model. It needs to receive a decision and a reference it can point back to.
+
+That separation is what makes the audit trail work. When a regulator, reinsurer, or internal auditor asks why a specific risk was priced the way it was, the answer is not buried in a core system that only knows the final number. It is in the layer, with the inputs, the ruleset version, the score, and the reason codes, replayable against the exact configuration that ran that day. The requirements are covered in [how to audit AI underwriting decisions for compliance](#blog/how-to-audit-ai-underwriting-decisions-for-compliance).
+
+### What it takes to run one in production
+
+Four things, in roughly this order of difficulty.
+
+**A defined appetite.** The layer encodes the appetite. If the appetite exists only as tribal knowledge among three senior underwriters, that has to be resolved first, and that work is underwriting work, not technology work.
+
+**Data access.** Not a core migration, but read access to policy history and claims, plus the external sources that enrich a submission. Insurers frequently discover this is the real integration project.
+
+**A validation period.** No model should get authority on day one. It runs alongside the humans first, as described in [shadow mode underwriting](#blog/what-is-shadow-mode-underwriting).
+
+**Governance that survives contact with a regulator.** Versioned rules, reason codes, human escalation paths, retention and consent handling that satisfies LGPD in Brazil and the equivalent regimes elsewhere. This is not a compliance afterthought. It is a design input, because a decision you cannot explain is a decision you cannot use.
+
+### How to evaluate a vendor claiming to be one
+
+Five questions separate an intelligence layer from a document-processing tool with better marketing.
+
+- Does it decide, or does it only extract? Ask to see a decline with its reason codes.
+- Is the model calibrated to our appetite and manual, or is it a generic model with our logo on it?
+- What does it write back to the core, and through what interface?
+- Can you replay a decision from four months ago against the ruleset that was live that day?
+- What happens when a document arrives in a format nobody anticipated? The honest answer is escalation to a human, and a vendor who claims otherwise has not run in production.
+
+Underwriters spend around 40% of their time on administrative tasks rather than risk selection, according to Deloitte, and around 60% of brokers choose an insurer based on response speed, according to Capgemini. Those two figures describe the same opportunity from opposite ends. The layer exists to convert the first into the second.
+
+WIR Innovation is an external AI layer for insurers and MGAs that automates the quotation and underwriting journey according to the insurer's own risk-acceptance policy, with machine learning calibrated to the insurer's risk appetite and underwriting manual, every decision explainable with a full audit trail, and data encrypted at every step under LGPD. It runs entirely outside the core, with no core migration and no load on the insurer's IT, and it has applied this pattern in a proof of concept with a global insurer in the Transport line.`,
+    faq: [
+      { q: "What is an underwriting intelligence layer?", a: "An underwriting intelligence layer is an external software layer that ingests submissions, structures them, applies the insurer's risk appetite and models to produce an explainable decision, and writes that decision back to the core system of record without replacing it. It is defined by architectural position rather than by product category: in front of the policy administration system, behind the channels through which business arrives." },
+      { q: "How is an intelligence layer different from an underwriting workbench or a copilot?", a: "An intelligence layer is decisioning infrastructure that can act on the clean majority of business without a human touching it. An underwriting workbench is a consolidated screen that assembles the submission for a person to work through. A copilot is an assistive AI that summarizes and drafts inside the underwriter's existing tools. A workbench without a layer beneath it is a better window onto the same manual work, and a copilot without a layer is a faster typist." },
+      { q: "Does an underwriting intelligence layer replace the core system?", a: "No. The core policy administration system remains the system of record for the policy, the premium, the endorsements, and the accounting and regulatory output. The layer holds the decision and its reasoning. It writes outcomes and references back to the core through whatever integration the core supports, by API where available and by batch where not. The core does not need to understand the model, only to receive a decision and a reference." },
+      { q: "What are the components of an underwriting intelligence layer?", a: "Six stages in sequence: multichannel intake with automatic validation, accepting email, portal uploads, spreadsheets, and API calls; intelligent document reading that converts ACORD forms, statements of values, loss runs, and broker PDFs into fields with confidence scores; enrichment with entity, exposure, claims, and broker context; risk and appetite scoring calibrated to the insurer's own underwriting manual; risk-adjusted pricing; and decision and prioritization producing a quote, an automatic decline, or an escalation, always with an explanation and an audit trail." },
+      { q: "Why do insurers need a layer instead of building it into the core?", a: "Because the core and the decision logic run on different clocks. Core systems are designed for correctness and durability, so they change slowly, which is correct for a ledger. Underwriting logic needs to change quickly as loss experience and appetite move. When the only place to put new logic is inside the system that also holds the ledger, every improvement inherits the ledger's risk profile, so almost nothing ships. Around 70% of insurers do not execute innovation because of IT limitations, according to BCG." },
+      { q: "How do you evaluate a vendor claiming to offer an intelligence layer?", a: "Ask five questions. Does it decide or only extract, and can you see a decline with its reason codes? Is the model calibrated to your appetite and underwriting manual, or is it a generic model? What does it write back to the core, and through what interface? Can you replay a decision from four months ago against the ruleset that was live that day? And what happens when a document arrives in an unanticipated format? The honest answer to the last one is escalation to a human." }
+    ],
+  },
+  {
+    slug: "parametric-vs-indemnity-insurance",
+    cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#0E7C86)",
+    image: "/assets/articles/parametric-vs-indemnity-insurance.jpg",
+    title: "Parametric vs Indemnity Insurance: The Real Difference",
+    sub: "Parametric insurance pays a fixed amount when a measurable trigger is breached. Indemnity insurance pays what the loss actually cost, after an adjuster verifies it. That difference changes the speed of the payout, the paperwork, the price, and the risk the buyer keeps.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "7 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "Indemnity pays your verified loss. Parametric pays a set amount when an agreed index is breached. How both work, the basis-risk trade-off, and when to use each.",
+    body: `Parametric insurance pays a fixed amount when a measurable trigger is breached. Indemnity insurance pays what the loss actually cost, after an adjuster verifies it. That single difference, paying on a measurement instead of paying on an assessment, changes the speed of the payout, the paperwork, the price, and the risk the buyer keeps. Here is how the two models compare and when each one is the right answer.
+
+### What is the difference between parametric and indemnity insurance?
+
+**Indemnity insurance reimburses the actual loss suffered, verified through claims adjustment. Parametric insurance pays a predefined amount when an agreed, independently measured parameter crosses a threshold, regardless of the loss actually incurred.**
+
+Indemnity is the model almost everyone means when they say insurance. You suffer a loss, you prove it, the insurer makes you whole up to the limit, less the deductible. The insurer's obligation is tied to your damage.
+
+Parametric decouples the payout from the damage and ties it to an index instead. Wind speed above 200 kilometres per hour at a named station. Rainfall below 30 millimetres over a defined growing window. An earthquake of magnitude 6.5 or greater within a defined radius. Flight delayed more than three hours. If the index is breached, the policy pays the agreed sum. If it is not, the policy pays nothing, even if you were hurt.
+
+### How indemnity insurance works
+
+The mechanics are familiar because they are the market default.
+
+1. The insured suffers damage and reports it. This is the [first notice of loss](#blog/what-is-fnol-first-notice-of-loss-process).
+2. An adjuster is assigned and investigates: site visits, documentation, invoices, expert reports.
+3. Coverage is confirmed against the policy wording, exclusions, sub-limits, and conditions.
+4. The loss is quantified and agreed, sometimes after negotiation.
+5. Payment is made, less deductible, up to the policy limit.
+
+The strength of this model is precision. You are compensated for what actually happened to you, and complicated losses can be understood in their full context. The weakness is the cost of that precision: adjustment takes time and money, disputes are common on large or ambiguous losses, and cash arrives long after the moment it was most useful.
+
+### How parametric insurance works
+
+The parametric mechanic replaces the adjuster with a data source agreed in advance.
+
+1. The parties agree a **trigger**: the physical or economic variable being measured.
+2. They agree a **threshold**: the value at which the policy responds.
+3. They agree an **index provider**: the independent third party whose measurement is binding, such as a national meteorological agency, a seismic network, a satellite dataset, or an exchange price.
+4. They agree a **payout structure**: a lump sum, or a tiered ladder where higher index values pay more.
+5. When the index is published and the threshold is met, the policy pays, often within days.
+
+There is no claim investigation, because there is nothing to investigate. The question is not how much you lost. The question is what the index says. That is why parametric covers settle in days rather than months and why they can be written on risks where loss verification would be impractical, remote, or too slow to matter.
+
+### Side by side
+
+| Dimension | Indemnity | Parametric |
+|---|---|---|
+| Payout basis | Actual loss suffered, verified | Predefined amount on index breach |
+| Claims process | Adjustment, documentation, negotiation | Automatic on published index data |
+| Time to pay | Weeks to months, sometimes longer | Days, sometimes hours |
+| Proof required | Full loss documentation | Confirmation the trigger was met |
+| Wording complexity | High, with exclusions and sub-limits | Low, defined by trigger and threshold |
+| Main buyer risk | Coverage dispute over what is included | Basis risk, when the loss occurs but the index does not fire |
+| Covers intangible loss | Rarely and with difficulty | Yes, if the index correlates with it |
+| Moral hazard | Managed by deductibles and adjustment | Structurally low, the insured cannot influence the index |
+| Best for | Complex, verifiable, site-specific damage | Fast liquidity, remote or hard-to-adjust exposure |
+
+### Basis risk, the trade-off nobody explains well
+
+Basis risk is the gap between what the index says and what actually happened to you. It cuts both ways.
+
+Negative basis risk is the painful one: your warehouse floods, but the rainfall station eleven kilometres away recorded less than the threshold, so the policy pays nothing. Positive basis risk is the pleasant one: the index fires, you receive the payout, and your actual damage was smaller.
+
+Every parametric structure is an exercise in shrinking negative basis risk. That is done by choosing the trigger closest to the real driver of loss, by using dense measurement networks or satellite data instead of a single distant station, and by building tiered payouts rather than a single cliff-edge threshold. It is never eliminated. A buyer who does not understand basis risk has not understood the product, and that is the single most common reason parametric programs disappoint after purchase.
+
+Indemnity has its own version of the same problem, but it appears as coverage dispute rather than as index mismatch. The loss happened, and the argument is whether the wording responds. The difference is that basis risk is measurable and agreed up front, while coverage dispute is discovered after the fact.
+
+### When parametric wins
+
+Parametric is the better structure when at least one of these is true:
+
+- **Speed matters more than precision.** A business that needs cash in a week to keep operating gains more from a fast approximate payment than from an exact one in six months.
+- **The loss is hard or expensive to adjust.** Remote infrastructure, agricultural yield across thousands of hectares, offshore assets, or events where physical access is impossible for weeks.
+- **The loss is real but not physical.** Lost footfall from a hurricane that never touched your building, extra costs from a heat wave, event cancellation, or non-damage business interruption.
+- **The exposure is uninsured today.** Much of the global protection gap sits in risks that traditional indemnity cover prices out or declines. Swiss Re Institute's work on the protection gap consistently shows emerging markets carrying a disproportionate share of uninsured economic loss, and index-based cover is one of the few structures that can reach it.
+- **The buyer wants budget certainty.** A known payout on a known trigger is easier to model in a treasury plan than a claims outcome.
+
+### When indemnity wins
+
+Indemnity remains the right answer, and it is still the overwhelming majority of the market, when:
+
+- The damage is specific, verifiable, and site-based, and the buyer wants to be made whole rather than approximately compensated.
+- The exposure has no reliable independent index, which is true of most liability, most professional lines, and most bespoke property programs.
+- The potential loss is large enough that a mismatch between index and reality would be unacceptable.
+- Regulatory or contractual requirements demand demonstrated indemnity, for example in some financing and lease structures.
+
+The two are not competitors so much as different instruments. Mature programs increasingly combine them: an indemnity tower for the balance-sheet loss and a parametric layer sitting underneath it for immediate liquidity and for the deductible band the indemnity policy will never pay.
+
+### What makes a parametric program work operationally
+
+Three things, and none of them are the trigger itself.
+
+The **data source** has to be independent, published on a predictable schedule, and durable enough that both parties will still trust it in five years. A trigger tied to a dataset that gets discontinued is a legal problem waiting to happen.
+
+The **structure** has to be tiered rather than binary wherever possible, because a single threshold concentrates all the basis risk at one point on the curve.
+
+And the **verification and payment path** has to be automated end to end. The commercial promise of parametric is speed. If the index fires and then a human has to notice, check a spreadsheet, and route an approval, the product has quietly become slow indemnity with less coverage. That automation is a decisioning problem, not a claims problem, and it is covered in [what insurance decisioning is](#blog/what-is-insurance-decisioning). Around 70% of insurers do not execute innovation because of IT limitations, according to BCG, which is exactly why parametric programs so often stall between a good structure and a working payment pipeline.
+
+For a deeper treatment of the AI and data side of parametric triggers, see [what parametric insurance is and how AI enables faster payouts](#blog/what-is-parametric-insurance-and-how-ai-enables-faster-payouts). For the Brazilian market view, see [parametric insurance in Brazil](#blog/seguro-parametrico-brasil-en).
+
+WIR Innovation is an external AI layer for insurers and MGAs that automates intake, underwriting, and decisioning without replacing the core system, with every decision explainable and returning a full audit trail.`,
+    faq: [
+      { q: "What is the difference between parametric and indemnity insurance?", a: "Indemnity insurance reimburses the actual loss suffered, verified through claims adjustment, and pays up to the policy limit less the deductible. Parametric insurance pays a predefined amount when an agreed, independently measured parameter crosses a threshold, regardless of the loss actually incurred. Indemnity ties the payout to your damage. Parametric ties it to an index." },
+      { q: "How does parametric insurance work?", a: "The parties agree a trigger such as wind speed, rainfall, or earthquake magnitude, a threshold at which the policy responds, an independent index provider whose measurement is binding, and a payout structure that is either a lump sum or a tiered ladder. When the index is published and the threshold is met, the policy pays, often within days, with no claims investigation because there is nothing to adjust." },
+      { q: "What is basis risk in parametric insurance?", a: "Basis risk is the gap between what the index says and what actually happened to the insured. Negative basis risk means you suffer a loss but the index does not fire, so nothing is paid. Positive basis risk means the index fires and the payout exceeds your actual damage. Basis risk is reduced by choosing triggers close to the real driver of loss, by using dense measurement networks or satellite data, and by using tiered payouts instead of a single threshold. It is never eliminated." },
+      { q: "When should a buyer choose parametric over indemnity?", a: "When speed matters more than precision, when the loss is expensive or impossible to adjust such as remote infrastructure or agricultural yield, when the loss is real but not physical such as non-damage business interruption or event cancellation, when the exposure is effectively uninsurable on an indemnity basis, or when the buyer needs budget certainty. Indemnity remains better for specific verifiable site-based damage, for liability and professional lines with no reliable index, and where contracts require demonstrated indemnity." },
+      { q: "Can parametric and indemnity insurance be combined?", a: "Yes, and mature programs increasingly do. A common structure places an indemnity tower over the balance-sheet loss and a parametric layer underneath it, providing immediate liquidity in the first days after an event and covering the deductible band that the indemnity policy will never pay. The two are complementary instruments rather than direct competitors." },
+      { q: "Why do parametric programs pay so much faster?", a: "Because there is no loss adjustment step. An indemnity claim requires an adjuster to investigate, confirm coverage, quantify the loss, and agree it, which takes weeks or months. A parametric payout only requires confirmation that the agreed index reached the agreed threshold, which is a data check. The speed advantage only survives if verification and payment are automated end to end, otherwise the product becomes slow indemnity with less coverage." }
+    ],
+  },
+  {
+    slug: "what-is-shadow-mode-underwriting",
+    cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
+    image: "/assets/articles/what-is-shadow-mode-underwriting.jpg",
+    title: "Shadow Mode Underwriting: Test AI Without Risking a Book",
+    sub: "Shadow mode underwriting is running an AI model on live submissions without letting it decide anything. The model sees the same risks the underwriters see, its answer is logged and compared rather than acted on, and the record becomes the evidence a regulator or a reinsurer will actually accept.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "7 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "Shadow mode underwriting runs an AI model on live submissions with no authority to decide. How to design the run, what to measure, and how to graduate out of it.",
+    body: `Shadow mode underwriting is running an AI model on live submissions without letting it decide anything. The model sees the same risks the underwriters see, produces its own answer, and that answer is logged and compared rather than acted on. It is the cheapest way to find out whether a model works on your book, and it is the evidence a regulator, a reinsurer, or a nervous chief underwriting officer will actually accept.
+
+### What is shadow mode underwriting?
+
+**Shadow mode underwriting is a controlled evaluation period in which an AI or rules-based underwriting system scores real, live submissions in parallel with the existing human process, while having no authority to quote, decline, price, or bind anything.**
+
+The name comes from software engineering, where a new service runs alongside the old one on production traffic, its outputs discarded, purely to see whether it would have behaved correctly. In underwriting the mechanic is identical. Every submission that reaches the team also reaches the model. The underwriter works normally and never sees the model output while deciding. Afterwards, the two answers are stored side by side.
+
+The critical constraint is the one people get wrong: the model must not be visible to the decision-maker during the decision. The moment an underwriter can see the score before committing, the comparison is contaminated, because you are no longer measuring the model, you are measuring a human being anchored to it.
+
+### Why shadow mode exists
+
+Three problems make a straight go-live irresponsible on an underwriting book.
+
+The first is that model performance on a vendor's benchmark says nothing about performance on your portfolio. Appetite, broker mix, data quality, and the local market all shift the answer. A model that scores well on a North American commercial property book can be useless on Brazilian cargo.
+
+The second is regulatory. Supervisors increasingly expect insurers to demonstrate that an automated decision was validated before it affected a customer, and to be able to explain any individual outcome. A shadow period generates exactly that evidence: a dated, versioned record of the model's behaviour on real risks before it had any authority. The global picture is covered in [AI underwriting regulation in 2026](#blog/ai-underwriting-regulation-global-2026), and the Brazilian view in [SUSEP and AI regulation](#blog/regulacao-ia-seguros-susep-en).
+
+The third is organisational. Underwriters are asked to hand judgment to a system. The fastest way to lose that room is to launch a model and let it be wrong in public. The fastest way to win it is to let the underwriters see, for three months, where the model agreed with them and where it did not, before anything is at stake.
+
+### How a shadow run works in practice
+
+1. **Freeze the scope.** One line of business, one segment, one geography. A shadow run across a whole book measures nothing because the failure modes cancel each other out.
+2. **Define the decision being shadowed.** Appetite in or out, refer or auto-quote, technical price, risk score band. A model shadowing four different decisions at once produces four weak signals instead of one strong one.
+3. **Wire the model to live traffic.** Real submissions, real data quality, real gaps. Never a clean historical extract. The mess is the point.
+4. **Blind the humans.** Model output is written to a store the underwriting team cannot see during the working day.
+5. **Log the full record.** For every submission: inputs, ruleset and model version, model output, reason codes, human decision, timestamp, and eventual outcome where it becomes known.
+6. **Review on a cadence.** Weekly for the first month, then fortnightly. Every review looks at disagreements, not at the headline agreement rate.
+7. **Track the ones that bound.** Agreement is a proxy. Loss experience and conversion on the risks that were actually written are the real signal, and they arrive later.
+
+### What to measure
+
+Agreement rate is the number everyone asks for and the least informative one on its own. Four measurements matter more.
+
+- **Disagreement analysis by direction.** The model wanted to decline and the human wrote it, or the model wanted to quote and the human declined. These are two completely different business problems and must never be pooled into one percentage.
+- **Disagreement analysis by cause.** Missing data, a rule the model does not have, a broker relationship the model cannot see, or a genuine model error. Only the last one is a modelling problem. The others are process problems wearing a model costume.
+- **Coverage.** How often the model returned a usable answer at all. A model that agrees 95% of the time but abstains on a third of submissions has a data pipeline problem, not a good result.
+- **Stability.** The same risk, resubmitted with trivial differences, should score the same. Instability in shadow is the clearest predictor of trouble in production.
+
+There is a hard rule underneath all of this: **a high agreement rate is not proof the model is good, it is only proof the model is not obviously bad.** A model that agrees with your underwriters 92% of the time has replicated your existing book, including its existing mistakes. The value is concentrated in the 8%, and the whole point of the review cadence is to understand it.
+
+### How long a shadow period should last
+
+Long enough to see enough risks, and long enough for at least some of them to season. In practice:
+
+- **Volume first, not calendar time.** A book doing 200 submissions a week reaches statistical usefulness far sooner than one doing 20. Fix a target submission count, not a number of weeks.
+- **Cover the seasonality that matters.** Renewal peaks, monsoon or hurricane windows, and fiscal year-end all change submission mix. A shadow run that misses the peak has not tested the peak.
+- **Six to twelve weeks is the common band** for a defined segment with reasonable volume. Under four weeks is a demo. Over six months usually means nobody wants to decide.
+
+### Graduating out of shadow
+
+Shadow mode is a phase, not a permanent state, and the exit should be defined before it starts. The usual path has three steps and it is deliberately gradual.
+
+First, **advisory mode**: the model output becomes visible to the underwriter as a recommendation, with the human still deciding everything. Agreement typically jumps here, which is anchoring, not improvement, so this phase measures adoption rather than accuracy.
+
+Second, **limited authority**: the model gets to auto-decide a narrow, well-understood band. Usually the cleanest risks that would have been auto-quoted anyway, or clear out-of-appetite declines. Everything else still refers to a human.
+
+Third, **expanded authority**, band by band, each expansion justified by the data from the previous one.
+
+The exit criteria should be written down at the start and should include a floor on coverage, a ceiling on unexplained disagreement, evidence of stability, and a documented rollback procedure. The wider pilot design around this is set out in [how to run an AI underwriting pilot](#blog/how-to-run-ai-underwriting-pilot).
+
+### What shadow mode does not fix
+
+It does not fix bad data. If submissions arrive as unstructured PDFs and email threads, the model will underperform in shadow for reasons that have nothing to do with the model. Underwriters already lose around 40% of their time to administrative work rather than risk selection, according to Deloitte, and a shadow run on top of that mess will mostly measure the mess. Fix ingestion and extraction first.
+
+It does not fix an undefined appetite. If two senior underwriters disagree about whether a class is in appetite, the model cannot be right, because there is no right answer to compare against.
+
+And it does not, by itself, satisfy an auditor. What satisfies an auditor is the record: versioned rulesets, reason codes on every output, and the ability to replay a decision months later. That requirement is the same one that governs live underwriting and is covered in [how to audit AI underwriting decisions for compliance](#blog/how-to-audit-ai-underwriting-decisions-for-compliance) and [making underwriting decisions auditable](#blog/decisoes-subscricao-auditaveis-en).
+
+The architectural implication is that shadow mode is only cheap if the model can be attached to live submission flow without touching the policy administration system. If evaluating a model requires a core integration project, nobody will evaluate more than one model, which is precisely how insurers end up committing to the first vendor they saw. An external layer that reads live traffic and writes to its own log, leaving the system of record untouched, is what makes shadow mode a routine exercise rather than a programme.
+
+WIR Innovation is an external AI layer for insurers and MGAs that automates submission intake, quotation, and underwriting decisioning without replacing the core system, with ML calibrated to the insurer's own risk appetite and underwriting manual, and every decision explainable with a full audit trail. It has applied this pattern in a proof of concept with a global insurer in the Transport line.`,
+    faq: [
+      { q: "What is shadow mode underwriting?", a: "Shadow mode underwriting is a controlled evaluation period in which an AI or rules-based underwriting system scores real, live submissions in parallel with the existing human process while having no authority to quote, decline, price, or bind anything. The model's output is logged and compared against the underwriter's decision afterwards. The underwriter must not see the model output while deciding, otherwise the comparison measures anchoring rather than model quality." },
+      { q: "How long should a shadow mode period last?", a: "Set a target submission volume rather than a number of weeks, because a book doing 200 submissions a week reaches statistical usefulness far sooner than one doing 20. The run should also cover the seasonality that matters, such as renewal peaks or catastrophe windows. For a defined segment with reasonable volume, six to twelve weeks is the common band. Under four weeks is a demonstration rather than a test." },
+      { q: "What should you measure during a shadow run?", a: "Disagreement analysed by direction, since the model wanting to decline a risk the human wrote is a different problem from the model wanting to quote a risk the human declined. Disagreement analysed by cause, separating missing data, missing rules, and genuine model error. Coverage, meaning how often the model returned a usable answer at all. And stability, meaning the same risk scores the same way on resubmission. Headline agreement rate on its own is the least informative number." },
+      { q: "Is a high agreement rate proof the model is good?", a: "No. A high agreement rate only proves the model is not obviously bad. A model that agrees with your underwriters 92% of the time has largely replicated your existing book, including its existing mistakes. The value sits in the disagreements, which is why the review cadence should focus on understanding the minority of cases where the two answers differ rather than on celebrating the majority where they match." },
+      { q: "How do you move from shadow mode to live underwriting?", a: "In three graduated steps with exit criteria defined before the run starts. First advisory mode, where the model output becomes visible as a recommendation while the human still decides. Then limited authority, where the model auto-decides a narrow well-understood band such as the cleanest risks or clear out-of-appetite declines. Then expanded authority band by band, each expansion justified by data from the previous one, with a documented rollback procedure throughout." },
+      { q: "What problems does shadow mode not solve?", a: "It does not fix bad data. If submissions arrive as unstructured PDFs and email threads, the shadow run mostly measures the quality of your ingestion, so extraction should be fixed first. It does not fix an undefined appetite, because if senior underwriters disagree on whether a class is in appetite there is no correct answer to compare the model against. And it does not by itself satisfy an auditor, who needs versioned rulesets, reason codes, and replayable decisions." }
+    ],
+  },
+  {
+    slug: "pricing-engine-vs-underwriting-decision-platform",
+    cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#3222E9)",
+    image: "/assets/articles/pricing-engine-vs-underwriting-decision-platform.jpg",
+    title: "Pricing Engine vs Underwriting Decision Platform",
+    sub: "A pricing engine answers what this risk should cost. An underwriting decision platform answers whether to write it at all, and on what terms. The two get sold as if they were the same product, and buying one when you needed the other is an expensive mistake.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "7 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "A pricing engine turns an accepted risk into a premium. A decision platform decides whether to write it at all. How they differ and why you need both.",
+    body: `A pricing engine answers what this risk should cost. An underwriting decision platform answers whether to write it at all, and on what terms. The two get sold as if they were the same product, they sit next to each other in the same workflow, and buying one when you needed the other is one of the more expensive mistakes in insurance technology procurement.
+
+### What is the difference between a pricing engine and an underwriting decision platform?
+
+**A pricing engine converts an accepted risk into a premium using rating tables, factors, and actuarial models. An underwriting decision platform decides whether the risk is acceptable, what evidence is missing, whether it fits appetite, and whether a human needs to see it, and then calls the pricing engine if the answer is yes.**
+
+The order matters. Pricing is a calculation that assumes the risk is going to be written. Decisioning is a judgment about whether it should be. A pricing engine given an out-of-appetite risk will happily return a number, because returning numbers is its job. Nothing in it knows the risk should never have reached that point.
+
+### What a pricing engine does
+
+A pricing engine is a calculation service. Feed it a structured, complete risk record and it returns a technical price, a commercial price, or both.
+
+- **Rating tables and factors.** Base rates by class, territory, limit, deductible, and exposure measure, with the multiplicative and additive factors that adjust them.
+- **Actuarial models.** Frequency and severity models, catastrophe load, expense and profit loading, reinsurance cost allocation.
+- **Rules on price.** Minimum premiums, capping and collaring on renewal movement, scheme and broker commission structures.
+- **Versioning and filing.** In regulated personal lines especially, the rating algorithm is a filed artifact and every version must be reproducible.
+- **Output.** A number, with a breakdown of how it was reached.
+
+What a pricing engine assumes is that someone else already solved the hard part. It expects a clean record: named insured, class code, location, limits, values, prior losses. It does not read a broker's email, it does not know that the loss run is missing two years, and it does not have an opinion about whether this account belongs in the book.
+
+### What an underwriting decision platform does
+
+A decision platform sits upstream and answers a different set of questions.
+
+1. **Is this even processable?** Are the mandatory fields present, and if not, what is missing and who has to be asked?
+2. **Is it in appetite?** Class, territory, limit, hazard grade, exposure concentration, sanctions and regulatory checks, and the binding authority boundary if it is delegated business.
+3. **What is the risk actually like?** A score built from the submission plus enrichment: prior claims, entity data, exposure characteristics, broker conversion history.
+4. **What is the right path?** Auto-quote, auto-decline, refer to a specific underwriter, or request more information.
+5. **What is the evidence?** Reason codes, ruleset version, inputs, and an audit trail attached to whatever gets decided.
+6. **What gets written back?** The decision and its reference, into the system of record.
+
+Step 3 is where it calls the pricing engine, and only if steps 1 and 2 passed. The full anatomy of that flow is set out in [what an underwriting intelligence layer is](#blog/what-is-an-underwriting-intelligence-layer).
+
+### Side by side
+
+| | Pricing engine | Underwriting decision platform |
+|---|---|---|
+| Core question | What should this cost? | Should we write this, and how? |
+| Input required | Clean structured risk record | Whatever the broker actually sent |
+| Primary logic | Rating tables, actuarial models | Appetite rules, risk scoring, routing |
+| Typical owner | Actuarial and pricing | Underwriting operations |
+| Output | A premium with a breakdown | A decision with reason codes, then a premium |
+| Handles unstructured input | No | Yes, this is the point |
+| Handles decline and referral | No | Yes |
+| Regulatory artifact | The filed rating algorithm | The decision record and audit trail |
+| Change cadence | Slow, deliberate, actuarially governed | Fast, as appetite and loss experience move |
+
+The change-cadence row explains most of the confusion in the market. Pricing changes are governed, filed, and slow by design, because getting them wrong is an actuarial and regulatory problem. Appetite and routing change constantly, because they are commercial decisions. Putting both in the same system means either the pricing moves too fast or the appetite moves too slowly, and in practice it is always the second.
+
+### Where a rules engine fits
+
+A generic business rules engine is a third thing, and it is often proposed as a cheaper substitute for either.
+
+A rules engine executes deterministic logic well: if class is X and limit is above Y, refer. It is excellent at encoding an appetite boundary and terrible at everything that requires reading a document, scoring a probability, or handling a case that nobody wrote a rule for. It has no memory of why a decision was made beyond which rule fired, and it degrades badly as the ruleset grows, because rule interaction becomes unmanageable somewhere past a few hundred rules.
+
+Most working decision platforms contain a rules engine and are not one. Rules handle the hard boundaries, which are legal and non-negotiable. Models handle the graded questions, which are probabilistic. A platform that is only rules cannot prioritise, and a platform that is only models cannot enforce a binding authority. How that split is drawn in practice is covered in [what insurance decisioning is](#blog/what-is-insurance-decisioning).
+
+### Do you need both?
+
+Almost always yes, but not necessarily as two purchases.
+
+Most insurers already own a pricing engine, usually inside the core policy administration system or as a filed rating module beside it. It works, it is governed, and replacing it is rarely justified. What is usually missing is everything upstream of it: the intake, the extraction, the appetite check, the scoring, and the routing. That gap is why submissions sit in inboxes for three days before anyone prices anything.
+
+The productive move is therefore not to replace the rating engine. It is to put a decision layer in front of it that decides what deserves to be rated, and to have that layer call the existing engine when the answer is yes. This keeps the actuarial governance intact, keeps the filed algorithm untouched, and moves the bottleneck. The general argument for that shape is in [AI underwriting without replacing the core system](#blog/ai-underwriting-without-replacing-core-system), and the dynamic pricing side is covered in [dynamic pricing in insurance](#blog/precificacao-dinamica-seguros-en).
+
+### How to tell which one a vendor is selling you
+
+Vendor positioning in this category is unusually loose, so test it with four questions.
+
+- **Ask to see a decline.** A pricing engine cannot produce one. If the demo has no decline path with reason codes, it is a rating tool.
+- **Ask what it does with a broker email and three attachments.** A decision platform ingests it. A pricing engine needs it converted to fields first, by someone else.
+- **Ask who owns it internally.** If the answer is actuarial, it is pricing. If it is underwriting operations, it is decisioning. If nobody can say, that is the real finding.
+- **Ask what it writes back.** A premium is a pricing output. A decision with a reference, reason codes, and a replayable ruleset version is a decisioning output.
+
+### Why the distinction has commercial consequences
+
+The bottleneck in most underwriting operations is not the price calculation. It is everything that happens before a price can be calculated. Underwriters spend around 40% of their time on administrative tasks rather than risk selection, according to Deloitte, and around 60% of brokers pick an insurer on response speed, according to Capgemini. Neither of those numbers moves because the rating table got better.
+
+An insurer that responds to slow quoting by buying a faster pricing engine has optimised the fastest step in the chain. The time is being lost in intake, in chasing missing data, in deciding whether the risk is wanted, and in queueing for an underwriter's attention. Those are decisioning problems, and they are covered in [how to reduce quote turnaround time with AI](#blog/reduce-quote-turnaround-time-with-ai).
+
+WIR Innovation is an external AI layer for insurers and MGAs that automates the quotation and underwriting journey according to the insurer's own risk-acceptance policy, covering intake, document reading, enrichment, risk and fraud scoring, risk-adjusted pricing, and the final decision, with every decision explainable and returning a full audit trail, and without replacing the core system.`,
+    faq: [
+      { q: "What is the difference between a pricing engine and an underwriting decision platform?", a: "A pricing engine converts an accepted risk into a premium using rating tables, factors, and actuarial models. An underwriting decision platform decides whether the risk is acceptable, what evidence is missing, whether it fits appetite, and whether a human needs to see it, and only then calls the pricing engine. Pricing is a calculation that assumes the risk will be written. Decisioning is the judgment about whether it should be." },
+      { q: "Does an insurer need both a pricing engine and a decision platform?", a: "Almost always yes, but usually not as two purchases. Most insurers already own a pricing engine inside the core policy administration system or as a filed rating module beside it, and replacing it is rarely justified. What is typically missing is everything upstream: intake, document extraction, the appetite check, risk scoring, and routing. The productive move is to put a decision layer in front of the existing engine and have it call that engine when the answer is yes." },
+      { q: "Is a rules engine the same as an underwriting decision platform?", a: "No. A rules engine executes deterministic logic well and is excellent at encoding hard appetite boundaries, but it cannot read a document, score a probability, or handle a case nobody wrote a rule for, and it degrades as rule interaction becomes unmanageable. Most working decision platforms contain a rules engine rather than being one. Rules handle the non-negotiable boundaries and models handle the graded questions." },
+      { q: "How can you tell which one a vendor is actually selling?", a: "Ask to see a decline, because a pricing engine cannot produce one and a demo with no decline path and no reason codes is a rating tool. Ask what happens to a broker email with three attachments, since a decision platform ingests it while a pricing engine needs it converted to fields first. Ask who would own it internally, actuarial for pricing or underwriting operations for decisioning. And ask what it writes back: a premium is a pricing output, a decision with reason codes and a replayable ruleset version is a decisioning output." },
+      { q: "Why does a faster pricing engine not speed up quoting?", a: "Because the price calculation is usually the fastest step in the chain. The time is lost before it, in intake, in chasing missing data, in deciding whether the risk is wanted, and in queueing for an underwriter's attention. Underwriters spend around 40% of their time on administrative tasks rather than risk selection, according to Deloitte, and around 60% of brokers choose an insurer on response speed, according to Capgemini. Neither figure moves because the rating table improved." },
+      { q: "Why should pricing and appetite logic live in different systems?", a: "Because they change at different speeds. Pricing changes are actuarially governed, filed in many regulated lines, and slow by design, since getting them wrong is a regulatory problem. Appetite and routing change constantly because they are commercial decisions responding to loss experience and capacity. Putting both in one system means either pricing moves too fast or appetite moves too slowly, and in practice it is always appetite that gets stuck." }
+    ],
+  },
+  {
     slug: "arquitetura-camada-vs-core-decisor-tecnico-seguros",
     cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
     image: "/assets/articles/arquitetura-camada-vs-core-decisor-tecnico-seguros.svg",

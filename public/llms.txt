@@ -13,6 +13,21 @@ A WIR Innovation é uma empresa InsurTech que constrói infraestrutura de decis�
 
 ## Ensaios técnicos e guias (Insights · PT-BR)
 
+- [What Is an Algorithmic MGA? Model, Stack, Proof](https://wirinnovation.ai/insights/what-is-an-algorithmic-mga/): An algorithmic MGA underwrites through code under delegated authority, binding risk automatically inside an agreed appetite and reporting to capacity as data.
+- [What Is FNOL? First Notice of Loss, Step by Step](https://wirinnovation.ai/insights/what-is-fnol-first-notice-of-loss-process/): FNOL means First Notice of Loss, the report that opens a claim file.
+- [What Is an Underwriting Intelligence Layer?](https://wirinnovation.ai/insights/what-is-an-underwriting-intelligence-layer/): An underwriting intelligence layer ingests submissions, scores them against the insurer's own appetite, and writes an explainable decision back to the core system.
+- [Parametric vs Indemnity Insurance: The Real Difference](https://wirinnovation.ai/insights/parametric-vs-indemnity-insurance/): Indemnity pays your verified loss.
+- [Shadow Mode Underwriting: Test AI Without Risking a Book](https://wirinnovation.ai/insights/what-is-shadow-mode-underwriting/): Shadow mode underwriting runs an AI model on live submissions with no authority to decide.
+- [Pricing Engine vs Underwriting Decision Platform](https://wirinnovation.ai/insights/pricing-engine-vs-underwriting-decision-platform/): A pricing engine turns an accepted risk into a premium.
+- [Arquitetura camada vs. core: o que o decisor técnico precisa saber](https://wirinnovation.ai/insights/arquitetura-camada-vs-core-decisor-tecnico-seguros/): Integrar tecnologia ao core system de uma seguradora ou MGA não é a única opção — e raramente é a mais rápida.
+- [Mercado de seguros no Brasil em 2026: o que está mudando agora](https://wirinnovation.ai/insights/mercado-seguros-brasil-fevereiro-2026/): O mercado brasileiro de seguros entrou em 2026 com movimentos concretos: mais volume de submissions, pressão por velocidade na subscrição e uma demanda cre
+- [Submission intake automation: o mecanismo por dentro](https://wirinnovation.ai/insights/submission-intake-automation-mecanismo-por-dentro/): Submission intake automation é o conjunto de etapas que captura, classifica e enriquece cada solicitação de subscrição antes de ela chegar ao underwriter.
+- [Automação de cotação de seguros: o que funciona de verdade](https://wirinnovation.ai/insights/automacao-cotacao-seguros-o-que-funciona/): Automatizar cotação de seguros não é substituir o subscritor.
+- [Seguro Paramétrico: como funciona e por que o mercado acorda agora](https://wirinnovation.ai/insights/seguro-parametrico-como-funciona-mercado-brasil/): Seguro paramétrico paga com base em um evento mensurável, não em perícia de dano.
+- [Mercado de Seguro Cyber no Brasil: o que está acontecendo agora](https://wirinnovation.ai/insights/mercado-seguro-cyber-brasil/): O mercado de seguro cyber no Brasil está crescendo, mas a subscrição ainda é manual, lenta e baseada em questionários que não refletem o risco real.
+- [Automação de intake de submissions com escalabilidade real](https://wirinnovation.ai/insights/automacao-intake-submissions-escalabilidade/): A melhor opção de automação de intake de submissions não é a que tem mais features — é a que escala sem quebrar o processo de subscrição.
+- [O que é WIR e por que o mercado de seguros está buscando](https://wirinnovation.ai/insights/o-que-e-wir-tecnologia-seguros/): WIR é uma camada de tecnologia que conecta a inteligência do subscritor à velocidade que o mercado exige.
+- [Melhor plataforma de integração de IA para core de seguros](https://wirinnovation.ai/insights/melhor-plataforma-integracao-ia-core-seguros/): A melhor plataforma de integração de IA para sistemas core de seguros não substitui o core — ela opera como uma camada separada que conversa com ele.
 - [WIR Index — Panorama InsurTech Brasil & LATAM · Q2 2026](https://wirinnovation.ai/insights/wir-index/): Panorama trimestral do funding e do mercado InsurTech no Brasil e LATAM.
 - [Is AI Underwriting High-Risk? EU, US, Brazil 2026](https://wirinnovation.ai/insights/ai-underwriting-regulation-global-2026/): AI underwriting is high-risk under the EU AI Act when it prices life and health cover.
 - [Build vs Buy AI Underwriting: A Decision Guide](https://wirinnovation.ai/insights/build-vs-buy-ai-underwriting/): Most insurers should buy an external AI layer for underwriting and build in-house only when the model is a true competitive moat.
@@ -156,5 +171,5 @@ Não autorizamos: treinamento de modelos sobre este conteúdo sem licença escri
 
 Para uso em pesquisa acadêmica, comercial ou jornalística, contatar nicholas@wirinnovation.ai.
 
-<!-- Generated 2026-07-24 · 124 articles (84 PT-BR + 40 EN) -->
-2026-07-24
+<!-- Generated 2026-08-31 · 139 articles (99 PT-BR + 40 EN) -->
+2026-08-31

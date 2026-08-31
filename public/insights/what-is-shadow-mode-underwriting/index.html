@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#7540AC" />
+<title>Shadow Mode Underwriting: Test AI Without Risking a Book · WIR Innovation</title>
+<meta name="description" content="Shadow mode underwriting runs an AI model on live submissions with no authority to decide. How to design the run, what to measure, and how to graduate out of it." />
+<link rel="canonical" href="https://wirinnovation.ai/insights/what-is-shadow-mode-underwriting/" />
+<link rel="alternate" hreflang="pt-BR" href="https://wirinnovation.ai/insights/what-is-shadow-mode-underwriting/" />
+<link rel="alternate" hreflang="x-default" href="https://wirinnovation.ai/insights/what-is-shadow-mode-underwriting/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Shadow Mode Underwriting: Test AI Without Risking a Book" />
+<meta property="og:description" content="Shadow mode underwriting runs an AI model on live submissions with no authority to decide. How to design the run, what to measure, and how to graduate out of it." />
+<meta property="og:url" content="https://wirinnovation.ai/insights/what-is-shadow-mode-underwriting/" />
+<meta property="og:image" content="https://wirinnovation.ai/assets/articles/what-is-shadow-mode-underwriting.jpg" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="WIR Innovation" />
+<meta property="article:author" content="WIR Innovation" />
+<meta property="article:section" content="Artigo" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Shadow Mode Underwriting: Test AI Without Risking a Book" />
+<meta name="twitter:description" content="Shadow mode underwriting runs an AI model on live submissions with no authority to decide. How to design the run, what to measure, and how to graduate out of it." />
+<meta name="twitter:image" content="https://wirinnovation.ai/assets/articles/what-is-shadow-mode-underwriting.jpg" />
+
+<link rel="icon" type="image/svg+xml" href="/assets/wir-logo-azul.svg" />
+<link rel="apple-touch-icon" href="/assets/wir-logo-azul.svg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" /></noscript>
+<script>(function(){if(typeof navigator!=='undefined'&&navigator.webdriver)return;var href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap";var inject=function(){var l=document.createElement('link');l.rel='stylesheet';l.href=href;document.head.appendChild(l);};if('requestIdleCallback' in window){requestIdleCallback(inject,{timeout:2000});}else{setTimeout(inject,0);}})();</script>
+
+<link rel="stylesheet" href="/style.css?v=2026072301" />
+<link rel="stylesheet" href="/home.css?v=2026072301" />
+<link rel="stylesheet" href="/blog.css?v=2026072301" />
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Shadow Mode Underwriting: Test AI Without Risking a Book","description":"Shadow mode underwriting runs an AI model on live submissions with no authority to decide. How to design the run, what to measure, and how to graduate out of it.","image":"/assets/articles/what-is-shadow-mode-underwriting.jpg","datePublished":"2026-08-31","author":{"@type":"Person","name":"WIR Innovation","jobTitle":"Equipe"},"publisher":{"@type":"Organization","name":"WIR Innovation","logo":{"@type":"ImageObject","url":"https://wirinnovation.ai/assets/wir-logo-azul.svg"}},"mainEntityOfPage":"https://wirinnovation.ai/insights/what-is-shadow-mode-underwriting/","articleSection":"Artigo"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://wirinnovation.ai/"},{"@type":"ListItem","position":2,"name":"Insights & News","item":"https://wirinnovation.ai/insights/"},{"@type":"ListItem","position":3,"name":"Shadow Mode Underwriting: Test AI Without Risking a Book","item":"https://wirinnovation.ai/insights/what-is-shadow-mode-underwriting/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://wirinnovation.ai/insights/what-is-shadow-mode-underwriting/#faq","inLanguage":"pt-BR","mainEntity":[{"@type":"Question","name":"What is shadow mode underwriting?","acceptedAnswer":{"@type":"Answer","text":"Shadow mode underwriting is a controlled evaluation period in which an AI or rules-based underwriting system scores real, live submissions in parallel with the existing human process while having no authority to quote, decline, price, or bind anything. The model's output is logged and compared against the underwriter's decision afterwards. The underwriter must not see the model output while deciding, otherwise the comparison measures anchoring rather than model quality."}},{"@type":"Question","name":"How long should a shadow mode period last?","acceptedAnswer":{"@type":"Answer","text":"Set a target submission volume rather than a number of weeks, because a book doing 200 submissions a week reaches statistical usefulness far sooner than one doing 20. The run should also cover the seasonality that matters, such as renewal peaks or catastrophe windows. For a defined segment with reasonable volume, six to twelve weeks is the common band. Under four weeks is a demonstration rather than a test."}},{"@type":"Question","name":"What should you measure during a shadow run?","acceptedAnswer":{"@type":"Answer","text":"Disagreement analysed by direction, since the model wanting to decline a risk the human wrote is a different problem from the model wanting to quote a risk the human declined. Disagreement analysed by cause, separating missing data, missing rules, and genuine model error. Coverage, meaning how often the model returned a usable answer at all. And stability, meaning the same risk scores the same way on resubmission. Headline agreement rate on its own is the least informative number."}},{"@type":"Question","name":"Is a high agreement rate proof the model is good?","acceptedAnswer":{"@type":"Answer","text":"No. A high agreement rate only proves the model is not obviously bad. A model that agrees with your underwriters 92% of the time has largely replicated your existing book, including its existing mistakes. The value sits in the disagreements, which is why the review cadence should focus on understanding the minority of cases where the two answers differ rather than on celebrating the majority where they match."}},{"@type":"Question","name":"How do you move from shadow mode to live underwriting?","acceptedAnswer":{"@type":"Answer","text":"In three graduated steps with exit criteria defined before the run starts. First advisory mode, where the model output becomes visible as a recommendation while the human still decides. Then limited authority, where the model auto-decides a narrow well-understood band such as the cleanest risks or clear out-of-appetite declines. Then expanded authority band by band, each expansion justified by data from the previous one, with a documented rollback procedure throughout."}},{"@type":"Question","name":"What problems does shadow mode not solve?","acceptedAnswer":{"@type":"Answer","text":"It does not fix bad data. If submissions arrive as unstructured PDFs and email threads, the shadow run mostly measures the quality of your ingestion, so extraction should be fixed first. It does not fix an undefined appetite, because if senior underwriters disagree on whether a class is in appetite there is no correct answer to compare the model against. And it does not by itself satisfy an auditor, who needs versioned rulesets, reason codes, and replayable decisions."}}]}</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1SW9TDZ9H2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1SW9TDZ9H2', { anonymize_ip: true });
+</script>
+
+<script>document.documentElement.classList.add('js-ready');</script>
+</head>
+<body>
+<div class="ticker">
+  <div class="ticker__track">
+    <span class="ticker__item"><span class="ticker__dot"></span>Decisão em minutos · auditável · explicável</span>
+    <span class="ticker__item"><span class="ticker__dot ticker__dot--p"></span>Straight-through processing como padrão</span>
+    <span class="ticker__item"><span class="ticker__dot ticker__dot--b"></span>Plataforma de IA para seguros</span>
+    <span class="ticker__item"><span class="ticker__dot ticker__dot--o"></span>Em conformidade com LGPD</span>
+    <span class="ticker__item"><span class="ticker__dot"></span>Decisão em minutos · auditável · explicável</span>
+    <span class="ticker__item"><span class="ticker__dot ticker__dot--p"></span>Straight-through processing como padrão</span>
+  </div>
+</div>
+<nav class="nav">
+  <div class="wrap nav__inner">
+    <a href="/" class="nav__brand">
+      <img src="/assets/wir-logo-azul.svg" alt="WIR Innovation" style="height:60px;width:auto;display:block" />
+      <span class="nav__brand-sub">Innovation · AI Stack</span>
+    </a>
+    <div class="nav__links">
+      <a href="/" class="nav__link">Início</a>
+      <a href="/#about" class="nav__link">Sobre</a>
+      <a href="/insights/manifesto/" class="nav__link">Manifesto</a>
+      <a href="/#solutions" class="nav__link">Produtos &amp; IA</a>
+      <a href="/#protection" class="nav__link">Proteção de Dados</a>
+      <a href="/insights/" class="nav__link nav__link--active">Insights &amp; News</a>
+    </div>
+    <a href="/#contact" class="nav__cta">
+      <span class="dot"></span>
+      Contato
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</nav>
+
+<main>
+<article class="blarticle">
+  <div class="wrap blarticle__wrap">
+    <a class="blarticle__back" href="/insights/">
+      <span aria-hidden="true">←</span> Voltar para Insights &amp; News
+    </a>
+
+    <header class="blarticle__head">
+      <div class="eyebrow">· Artigo</div>
+      <h1 class="display blarticle__title">Shadow Mode Underwriting: Test AI Without Risking a Book</h1>
+      <p class="blarticle__sub">Shadow mode underwriting is running an AI model on live submissions without letting it decide anything. The model sees the same risks the underwriters see, its answer is logged and compared rather than acted on, and the record becomes the evidence a regulator or a reinsurer will actually accept.</p>
+      <div class="blarticle__byline">
+        <div class="blarticle__author-initials">WI</div>
+        <div class="blarticle__byline-meta">
+          <div class="blarticle__byline-author"><b>WIR Innovation</b> · Equipe</div>
+          <div class="blarticle__byline-time">31 · Ago · 2026 · 7 min de leitura</div>
+        </div>
+      </div>
+    </header>
+
+    <figure class="blarticle__hero-img" style="background: linear-gradient(135deg,#3222E9,#7540AC); aspect-ratio: 16 / 9;">
+      <img src="/assets/articles/what-is-shadow-mode-underwriting.jpg" alt="Shadow Mode Underwriting: Test AI Without Risking a Book" width="1600" height="900" loading="eager" fetchpriority="high" />
+    </figure>
+
+    <div class="blarticle__body">
+<p>Shadow mode underwriting is running an AI model on live submissions without letting it decide anything. The model sees the same risks the underwriters see, produces its own answer, and that answer is logged and compared rather than acted on. It is the cheapest way to find out whether a model works on your book, and it is the evidence a regulator, a reinsurer, or a nervous chief underwriting officer will actually accept.</p>
+<h3>What is shadow mode underwriting?</h3>
+<p><strong>Shadow mode underwriting is a controlled evaluation period in which an AI or rules-based underwriting system scores real, live submissions in parallel with the existing human process, while having no authority to quote, decline, price, or bind anything.</strong></p>
+<p>The name comes from software engineering, where a new service runs alongside the old one on production traffic, its outputs discarded, purely to see whether it would have behaved correctly. In underwriting the mechanic is identical. Every submission that reaches the team also reaches the model. The underwriter works normally and never sees the model output while deciding. Afterwards, the two answers are stored side by side.</p>
+<p>The critical constraint is the one people get wrong: the model must not be visible to the decision-maker during the decision. The moment an underwriter can see the score before committing, the comparison is contaminated, because you are no longer measuring the model, you are measuring a human being anchored to it.</p>
+<h3>Why shadow mode exists</h3>
+<p>Three problems make a straight go-live irresponsible on an underwriting book.</p>
+<p>The first is that model performance on a vendor&#39;s benchmark says nothing about performance on your portfolio. Appetite, broker mix, data quality, and the local market all shift the answer. A model that scores well on a North American commercial property book can be useless on Brazilian cargo.</p>
+<p>The second is regulatory. Supervisors increasingly expect insurers to demonstrate that an automated decision was validated before it affected a customer, and to be able to explain any individual outcome. A shadow period generates exactly that evidence: a dated, versioned record of the model&#39;s behaviour on real risks before it had any authority. The global picture is covered in <a href="/insights/ai-underwriting-regulation-global-2026/" class="blarticle__link-int">AI underwriting regulation in 2026</a>, and the Brazilian view in <a href="/insights/regulacao-ia-seguros-susep-en/" class="blarticle__link-int">SUSEP and AI regulation</a>.</p>
+<p>The third is organisational. Underwriters are asked to hand judgment to a system. The fastest way to lose that room is to launch a model and let it be wrong in public. The fastest way to win it is to let the underwriters see, for three months, where the model agreed with them and where it did not, before anything is at stake.</p>
+<h3>How a shadow run works in practice</h3>
+<ol>
+  <li><strong>Freeze the scope.</strong> One line of business, one segment, one geography. A shadow run across a whole book measures nothing because the failure modes cancel each other out.</li>
+  <li><strong>Define the decision being shadowed.</strong> Appetite in or out, refer or auto-quote, technical price, risk score band. A model shadowing four different decisions at once produces four weak signals instead of one strong one.</li>
+  <li><strong>Wire the model to live traffic.</strong> Real submissions, real data quality, real gaps. Never a clean historical extract. The mess is the point.</li>
+  <li><strong>Blind the humans.</strong> Model output is written to a store the underwriting team cannot see during the working day.</li>
+  <li><strong>Log the full record.</strong> For every submission: inputs, ruleset and model version, model output, reason codes, human decision, timestamp, and eventual outcome where it becomes known.</li>
+  <li><strong>Review on a cadence.</strong> Weekly for the first month, then fortnightly. Every review looks at disagreements, not at the headline agreement rate.</li>
+  <li><strong>Track the ones that bound.</strong> Agreement is a proxy. Loss experience and conversion on the risks that were actually written are the real signal, and they arrive later.</li>
+</ol>
+<h3>What to measure</h3>
+<p>Agreement rate is the number everyone asks for and the least informative one on its own. Four measurements matter more.</p>
+<ul>
+  <li><strong>Disagreement analysis by direction.</strong> The model wanted to decline and the human wrote it, or the model wanted to quote and the human declined. These are two completely different business problems and must never be pooled into one percentage.</li>
+  <li><strong>Disagreement analysis by cause.</strong> Missing data, a rule the model does not have, a broker relationship the model cannot see, or a genuine model error. Only the last one is a modelling problem. The others are process problems wearing a model costume.</li>
+  <li><strong>Coverage.</strong> How often the model returned a usable answer at all. A model that agrees 95% of the time but abstains on a third of submissions has a data pipeline problem, not a good result.</li>
+  <li><strong>Stability.</strong> The same risk, resubmitted with trivial differences, should score the same. Instability in shadow is the clearest predictor of trouble in production.</li>
+</ul>
+<p>There is a hard rule underneath all of this: <strong>a high agreement rate is not proof the model is good, it is only proof the model is not obviously bad.</strong> A model that agrees with your underwriters 92% of the time has replicated your existing book, including its existing mistakes. The value is concentrated in the 8%, and the whole point of the review cadence is to understand it.</p>
+<h3>How long a shadow period should last</h3>
+<p>Long enough to see enough risks, and long enough for at least some of them to season. In practice:</p>
+<ul>
+  <li><strong>Volume first, not calendar time.</strong> A book doing 200 submissions a week reaches statistical usefulness far sooner than one doing 20. Fix a target submission count, not a number of weeks.</li>
+  <li><strong>Cover the seasonality that matters.</strong> Renewal peaks, monsoon or hurricane windows, and fiscal year-end all change submission mix. A shadow run that misses the peak has not tested the peak.</li>
+  <li><strong>Six to twelve weeks is the common band</strong> for a defined segment with reasonable volume. Under four weeks is a demo. Over six months usually means nobody wants to decide.</li>
+</ul>
+<h3>Graduating out of shadow</h3>
+<p>Shadow mode is a phase, not a permanent state, and the exit should be defined before it starts. The usual path has three steps and it is deliberately gradual.</p>
+<p>First, <strong>advisory mode</strong>: the model output becomes visible to the underwriter as a recommendation, with the human still deciding everything. Agreement typically jumps here, which is anchoring, not improvement, so this phase measures adoption rather than accuracy.</p>
+<p>Second, <strong>limited authority</strong>: the model gets to auto-decide a narrow, well-understood band. Usually the cleanest risks that would have been auto-quoted anyway, or clear out-of-appetite declines. Everything else still refers to a human.</p>
+<p>Third, <strong>expanded authority</strong>, band by band, each expansion justified by the data from the previous one.</p>
+<p>The exit criteria should be written down at the start and should include a floor on coverage, a ceiling on unexplained disagreement, evidence of stability, and a documented rollback procedure. The wider pilot design around this is set out in <a href="/insights/how-to-run-ai-underwriting-pilot/" class="blarticle__link-int">how to run an AI underwriting pilot</a>.</p>
+<h3>What shadow mode does not fix</h3>
+<p>It does not fix bad data. If submissions arrive as unstructured PDFs and email threads, the model will underperform in shadow for reasons that have nothing to do with the model. Underwriters already lose around 40% of their time to administrative work rather than risk selection, according to Deloitte, and a shadow run on top of that mess will mostly measure the mess. Fix ingestion and extraction first.</p>
+<p>It does not fix an undefined appetite. If two senior underwriters disagree about whether a class is in appetite, the model cannot be right, because there is no right answer to compare against.</p>
+<p>And it does not, by itself, satisfy an auditor. What satisfies an auditor is the record: versioned rulesets, reason codes on every output, and the ability to replay a decision months later. That requirement is the same one that governs live underwriting and is covered in <a href="/insights/how-to-audit-ai-underwriting-decisions-for-compliance/" class="blarticle__link-int">how to audit AI underwriting decisions for compliance</a> and <a href="/insights/decisoes-subscricao-auditaveis-en/" class="blarticle__link-int">making underwriting decisions auditable</a>.</p>
+<p>The architectural implication is that shadow mode is only cheap if the model can be attached to live submission flow without touching the policy administration system. If evaluating a model requires a core integration project, nobody will evaluate more than one model, which is precisely how insurers end up committing to the first vendor they saw. An external layer that reads live traffic and writes to its own log, leaving the system of record untouched, is what makes shadow mode a routine exercise rather than a programme.</p>
+<p>WIR Innovation is an external AI layer for insurers and MGAs that automates submission intake, quotation, and underwriting decisioning without replacing the core system, with ML calibrated to the insurer&#39;s own risk appetite and underwriting manual, and every decision explainable with a full audit trail. It has applied this pattern in a proof of concept with a global insurer in the Transport line.</p>
+<section class="blarticle__faq" aria-label="Perguntas frequentes">
+<h3>Perguntas frequentes</h3>
+<details class="blarticle__faq-item">
+  <summary>What is shadow mode underwriting?</summary>
+  <p>Shadow mode underwriting is a controlled evaluation period in which an AI or rules-based underwriting system scores real, live submissions in parallel with the existing human process while having no authority to quote, decline, price, or bind anything. The model&#39;s output is logged and compared against the underwriter&#39;s decision afterwards. The underwriter must not see the model output while deciding, otherwise the comparison measures anchoring rather than model quality.</p>
+</details>
+<details class="blarticle__faq-item">
+  <summary>How long should a shadow mode period last?</summary>
+  <p>Set a target submission volume rather than a number of weeks, because a book doing 200 submissions a week reaches statistical usefulness far sooner than one doing 20. The run should also cover the seasonality that matters, such as renewal peaks or catastrophe windows. For a defined segment with reasonable volume, six to twelve weeks is the common band. Under four weeks is a demonstration rather than a test.</p>
+</details>
+<details class="blarticle__faq-item">
+  <summary>What should you measure during a shadow run?</summary>
+  <p>Disagreement analysed by direction, since the model wanting to decline a risk the human wrote is a different problem from the model wanting to quote a risk the human declined. Disagreement analysed by cause, separating missing data, missing rules, and genuine model error. Coverage, meaning how often the model returned a usable answer at all. And stability, meaning the same risk scores the same way on resubmission. Headline agreement rate on its own is the least informative number.</p>
+</details>
+<details class="blarticle__faq-item">
+  <summary>Is a high agreement rate proof the model is good?</summary>
+  <p>No. A high agreement rate only proves the model is not obviously bad. A model that agrees with your underwriters 92% of the time has largely replicated your existing book, including its existing mistakes. The value sits in the disagreements, which is why the review cadence should focus on understanding the minority of cases where the two answers differ rather than on celebrating the majority where they match.</p>
+</details>
+<details class="blarticle__faq-item">
+  <summary>How do you move from shadow mode to live underwriting?</summary>
+  <p>In three graduated steps with exit criteria defined before the run starts. First advisory mode, where the model output becomes visible as a recommendation while the human still decides. Then limited authority, where the model auto-decides a narrow well-understood band such as the cleanest risks or clear out-of-appetite declines. Then expanded authority band by band, each expansion justified by data from the previous one, with a documented rollback procedure throughout.</p>
+</details>
+<details class="blarticle__faq-item">
+  <summary>What problems does shadow mode not solve?</summary>
+  <p>It does not fix bad data. If submissions arrive as unstructured PDFs and email threads, the shadow run mostly measures the quality of your ingestion, so extraction should be fixed first. It does not fix an undefined appetite, because if senior underwriters disagree on whether a class is in appetite there is no correct answer to compare the model against. And it does not by itself satisfy an auditor, who needs versioned rulesets, reason codes, and replayable decisions.</p>
+</details>
+</section>
+    </div>
+
+    <nav class="blarticle__related" aria-label="Leituras relacionadas">
+      <h3 class="blarticle__related-title">Leituras relacionadas</h3>
+      <ul class="blarticle__related-list">
+      <li class="blarticle__related-item"><a href="/insights/pricing-engine-vs-underwriting-decision-platform/"><span class="blarticle__related-cat">Artigo</span> Pricing Engine vs Underwriting Decision Platform</a></li>
+      <li class="blarticle__related-item"><a href="/insights/arquitetura-camada-vs-core-decisor-tecnico-seguros/"><span class="blarticle__related-cat">Artigo</span> Arquitetura camada vs. core: o que o decisor técnico precisa saber</a></li>
+      <li class="blarticle__related-item"><a href="/insights/mercado-seguros-brasil-fevereiro-2026/"><span class="blarticle__related-cat">Artigo</span> Mercado de seguros no Brasil em 2026: o que está mudando agora</a></li>
+      <li class="blarticle__related-item"><a href="/insights/submission-intake-automation-mecanismo-por-dentro/"><span class="blarticle__related-cat">Artigo</span> Submission intake automation: o mecanismo por dentro</a></li>
+      </ul>
+    </nav>
+
+    <footer class="blarticle__foot">
+      <a class="btn btn--ghost" href="/insights/">
+        <span aria-hidden="true">←</span> Outros Insights
+      </a>
+      <a class="btn btn--solid" href="/#contact">
+        Falar com a equipe <span class="btn__arrow">→</span>
+      </a>
+    </footer>
+  </div>
+</article>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <img src="/assets/wir-logo-branco.svg" alt="WIR Innovation" style="height:64px;width:auto;display:block" />
+        <p class="footer__brand-desc">A nova era do seguro é inteligência de dados, velocidade e escala. A WIR Innovation é a plataforma de IA que entrega essa estrutura dentro dos sistemas que você já opera.</p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/company/wir-innovation/" target="_blank" rel="noopener noreferrer" class="footer__social-link">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://www.instagram.com/wirinnovation" target="_blank" rel="noopener noreferrer" class="footer__social-link">Instagram <span aria-hidden="true">↗</span></a>
+          <a href="https://x.com/wirinnovationai" target="_blank" rel="noopener noreferrer" class="footer__social-link">X <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/#about">Sobre</a></li>
+          <li><a href="/#solutions">Produtos &amp; IA</a></li>
+          <li><a href="/#protection">Proteção de Dados</a></li>
+          <li><a href="/insights/">Insights &amp; News</a></li>
+          <li><a href="/#contact">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@wirinnovation.ai">contato@wirinnovation.ai</a></li>
+          <li><a href="/#contact">Falar com a equipe</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sócios &amp; Holding</h4>
+        <ul>
+          <li><a href="/#about">Mahway · California</a></li>
+          <li><a href="/#about">Avante · Brasil</a></li>
+          <li><a href="/#about">Conselheiros estratégicos</a></li>
+          <li><a href="/#about">Princípios</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 WIR Innovation</span>
+      <span>wirinnovation.ai · Feito entre São Paulo e Silicon Valley</span>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/5511981757505?text=Ol%C3%A1%20Nicholas%2C%20vim%20pelo%20site%20da%20WIR%20Innovation.%20Gostaria%20de%20conversar%20sobre%E2%80%A6" target="_blank" rel="noopener noreferrer" class="wa-fab" aria-label="Falar com Nicholas no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+</body>
+</html>
