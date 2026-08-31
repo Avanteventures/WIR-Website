@@ -4,7 +4,563 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "o-que-e-uma-mga-algoritmica",
+    cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#0E7C86)",
+    image: "/assets/articles/o-que-e-uma-mga-algoritmica.jpg",
+    alt: "what-is-an-algorithmic-mga",
+    title: "O que é uma MGA algorítmica",
+    sub: "Uma MGA algorítmica subscreve por código, não por fila de referral. Tem autoridade delegada de uma seguradora, precifica e emite dentro de um apetite acordado, e presta contas à capacidade em dados em vez de planilha mensal.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "7 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "Uma MGA algorítmica subscreve por código sob autoridade delegada, emitindo dentro do apetite acordado e reportando à capacidade em dados. Modelo, pilha e prova.",
+    body: `Uma MGA algorítmica subscreve por código, não por fila de referral. Ela tem autoridade delegada de uma seguradora, precifica e emite dentro de um apetite acordado sem que ninguém abra o e-mail, e presta contas à capacidade em dados, não em planilha mensal. O modelo cresce por um motivo bem pouco romântico: é mais fácil levantar capacidade quando a performance pode ser olhada todo dia em vez de a cada trimestre.
+
+### O que é uma MGA algorítmica
+
+**Uma MGA algorítmica é uma MGA cujas decisões de subscrição rodam em software, sob autoridade delegada de uma seguradora, com gente supervisionando a carteira em vez de tocar risco por risco.**
+
+A estrutura jurídica não muda nada. Autoridade delegada, contrato de binding, exposição final da seguradora: tudo continua exatamente onde estava. O que muda é o lugar onde a decisão acontece.
+
+Numa MGA tradicional a decisão mora na cabeça de um subscritor, apoiada por um manual, uma tabela e vinte anos de calo. Numa MGA algorítmica ela mora num artefato versionado: regras de apetite, modelo de rating, enriquecimentos, log de decisão. Alguém escreveu esse artefato e alguém o supervisiona. Mas é ele que roda em toda submissão, do mesmo jeito, às três da manhã.
+
+### Onde ela difere de uma MGA tradicional
+
+Cinco diferenças, e nenhuma delas é sobre quem tem o subscritor mais experiente.
+
+A unidade de trabalho muda. A tradicional trabalha a conta. A algorítmica trabalha a coorte: o subscritor ajusta uma regra que move mil contas em vez de precificar uma.
+
+A velocidade tem piso. Cotação em dias versus cotação em segundos para a maioria limpa, com gente reservada para a exceção.
+
+A consistência aparece. Dois subscritores precificam o mesmo risco de formas diferentes no mesmo dia. Isso é normal e humano. Também é o motivo pelo qual nada consegue ser medido. Uma MGA algorítmica devolve a mesma resposta duas vezes, e essa é a precondição para medir qualquer coisa.
+
+O reporte deixa de ser arqueologia. Bordereaux compilado depois virou subproduto da própria decisão, então a capacidade enxerga a carteira quase em tempo real.
+
+E a gestão de mudança inverte. Em vez de retreinar pessoas, você publica uma versão nova do conjunto de regras, com a versão antiga preservada para tudo que foi emitido sob ela.
+
+Esse último ponto é o que quase todo mundo perde de vista. Uma MGA algorítmica não é só mais rápida. Ela é auditável de um jeito que uma carteira humana nunca vai ser, porque qualquer risco emitido pode ser reproduzido contra a versão exata das regras que o precificou.
+
+### Por que a capacidade gosta disso
+
+Capacidade é o recurso escasso desse mercado, e ela é alocada na base da confiança. Uma seguradora ou ressegurador que delega caneta a um terceiro está aceitando um risco de seleção adversa que só vai enxergar quando o sinistro chegar.
+
+A MGA algorítmica muda o formato do problema. Com o apetite codificado, a capacidade inspeciona as regras antes do primeiro risco emitido em vez de reconstruir a intenção a partir de um loss run dois anos depois. Com reason code em cada decisão, dá para separar uma carteira que derivou de uma carteira que foi mal precificada. E com dado fluindo, um furo de binding authority aparece em dias, não na auditoria anual.
+
+É por isso que a pergunta técnica e a pergunta de capital são a mesma pergunta. Auditoria de autoridade delegada, qualidade de bordereaux e linhagem de dado não são tarefa de retaguarda para uma MGA algorítmica. São o produto que está sendo vendido para a capacidade. A parte operacional disso está em [por que MGAs são a ponta da lança da IA em seguro](#blog/mgas-ponta-da-lanca) e em como automatizar o processamento de bordereaux com IA.
+
+### A pilha por trás
+
+Tire o marketing e a arquitetura é sempre a mesma. Seis capacidades, nessa ordem.
+
+1. **Ingestão.** Submissões chegam como e-mail, anexo, formulário de portal, planilha e chamada de API. Venha de onde vier, precisa virar registro estruturado sem ninguém redigitando.
+2. **Extração.** Formulários, laudos, planilhas de valores em risco e loss runs viram campos com score de confiança. É aqui que a maioria dos projetos trava.
+3. **Enriquecimento.** A submissão sozinha é magra. Dado da entidade, da localização, da exposição, do histórico do corretor e de sinistros anteriores é o que torna o risco avaliável.
+4. **Apetite e regras.** A binding authority da seguradora codificada: ramos dentro e fora, limites, pontos de retenção, território, gatilhos de referral. Isso é a fronteira legal da caneta, escrita em software.
+5. **Rating e score.** Preço técnico mais score de modelo. O score ordena os riscos por performance esperada. O rating transforma o risco aceito num número que o mercado negocia.
+6. **Decisão, emissão e registro.** Cotar, recusar ou encaminhar. Emitir. E gravar a decisão, seus insumos, a versão das regras e os reason codes num registro que a seguradora consegue auditar.
+
+A diferença entre o passo 5 e o passo 6 tem consequência comercial, e está detalhada em [motor de precificação vs plataforma de decisão](#blog/motor-de-precificacao-vs-plataforma-de-decisao). Um motor que devolve prêmio não é a mesma coisa que uma plataforma que decide se o risco deveria ser escrito.
+
+O que justifica construir tudo isso é o tempo do subscritor. Subscritores gastam cerca de 40% do tempo em tarefas administrativas em vez de seleção de risco, segundo a Deloitte. Numa MGA, onde o time é enxuto e a economia roda em comissão, esses 40% são a diferença entre uma carteira que escala e uma que empaca.
+
+### O que subscrição algorítmica não quer dizer
+
+Três leituras erradas aparecem com frequência suficiente para valer a pena nomear.
+
+Não quer dizer sem subscritores. As MGAs algorítmicas mais duráveis empregam subscritores sêniores cujo trabalho subiu de camada: em vez de precificar contas, desenham e supervisionam as regras que precificam. O julgamento não saiu. Foi movido para onde ele se multiplica.
+
+Não quer dizer todo risco automatizado. Na prática a carteira se divide. Uma maioria limpa passa direto, uma faixa do meio recebe uma conferência humana em um ou dois itens sinalizados, e uma cauda continua totalmente manual porque a exposição ou a ambiguidade justificam. Empurrar a cauda pela máquina é exatamente como carteiras algorítmicas se metem em encrenca.
+
+E não quer dizer trocar o core da seguradora. O sistema de administração de apólices, o razão contábil e o reporte regulatório ficam onde estão. A camada algorítmica senta na frente, decide, e devolve. É a mesma arquitetura descrita em [integrar uma camada de IA ao core sem migração](#blog/integrar-camada-ia-core-seguros).
+
+### Como uma MGA algorítmica se prova
+
+Capacidade pede evidência, não demo. Quatro artefatos fazem quase todo o convencimento: um log de decisão reproduzível, com insumos, versão das regras, score e reason codes para qualquer risco emitido; um período de shadow em que o modelo rodou ao lado do processo vigente sobre submissões reais antes de ter autoridade sobre qualquer coisa, método descrito em [subscrição em shadow mode](#blog/subscricao-em-shadow-mode); um relatório de exceções mostrando que risco fora de apetite foi barrado pelo sistema e não pela sorte; e disciplina de versão, com cada mudança datada, atribuída e mapeada para as apólices emitidas sob ela.
+
+Quem não consegue produzir isso está pedindo capacidade na base da narrativa. Quem consegue está pedindo na base do dado, e os termos costumam ser outros.
+
+### Onde o modelo funciona
+
+Subscrição algorítmica premia ramos com volume alto de submissão, exposição padronizada e dado disponível fora da própria submissão. Patrimonial de pequeno porte, transporte e cargas, cyber para PME e nichos de especialidade com estrutura repetível entram nessa conta. Contas grandes e complexas, clausulado sob medida e programas muito negociados não entram, e a resposta honesta nesses casos é que a caneta deve continuar humana.
+
+O Brasil ilustra bem a tensão. Tem volume e tem distribuição intermediada por corretor, mas o gargalo não é ambição e sim capacidade de TI da seguradora. Cerca de 70% das seguradoras não executam inovação por limitações de TI, segundo o BCG. Uma camada externa que automatiza a jornada de subscrição sem migração de core é a única versão do modelo algorítmico que consegue sair do papel dentro dessa restrição.
+
+A WIR Innovation é uma camada de IA externa para seguradoras e MGAs que automatiza intake de submissões, cotação, subscrição e decisão sem substituir o core, com toda decisão explicável e trilha de auditoria completa. Ela aplicou esse padrão numa prova de conceito com uma seguradora global no ramo de Transportes. Para o contexto mais amplo de MGA, veja [automação de submissões para MGAs](#blog/automacao-submissoes-mga-seguros).`,
+    faq: [
+      { q: "O que é uma MGA algorítmica?", a: "Uma MGA algorítmica é uma MGA cujas decisões de subscrição rodam em software, sob autoridade delegada de uma seguradora. Ela cota, precifica e emite dentro de um apetite acordado, enquanto as pessoas supervisionam a carteira e desenham as regras em vez de tocar risco por risco. A estrutura jurídica da autoridade delegada não muda. Muda apenas o lugar onde a decisão acontece." },
+      { q: "Qual a diferença entre uma MGA algorítmica e uma MGA tradicional?", a: "Uma MGA tradicional decide conta por conta, na cabeça de um subscritor apoiado por manual e tabela. Uma MGA algorítmica codifica apetite, rating e gatilhos de referral em software versionado que roda igual em toda submissão. Na prática isso significa velocidade para o negócio limpo, consistência entre decisões, reporte contínuo à capacidade em vez de bordereaux depois do fato, e a possibilidade de reproduzir qualquer risco emitido contra a versão exata das regras que o precificou." },
+      { q: "Uma MGA algorítmica ainda precisa de subscritores?", a: "Precisa. MGAs algorítmicas costumam empregar subscritores sêniores cujo trabalho sobe de camada: em vez de precificar contas, eles desenham, testam e supervisionam as regras e modelos que precificam. A carteira normalmente se divide entre uma maioria limpa que passa automaticamente, uma faixa do meio com conferência humana em itens sinalizados, e uma cauda complexa que segue totalmente manual. O julgamento não sai do negócio, ele se move para onde afeta muitos riscos de uma vez." },
+      { q: "Por que a capacidade prefere o modelo algorítmico?", a: "Porque ele converte confiança em evidência. Com o apetite codificado, a seguradora inspeciona as regras de binding antes do primeiro risco escrito, em vez de reconstruir a intenção a partir de um loss run anos depois. Cada decisão carrega reason codes, então dá para separar uma carteira que derivou de uma que foi mal precificada, e um risco fora de apetite aparece em dias e não na auditoria anual de autoridade delegada." },
+      { q: "Que tecnologia uma MGA algorítmica precisa?", a: "Seis capacidades em sequência: ingestão de submissões por e-mail, portal e API; extração de campos de formulários, planilhas de valores em risco e loss runs; enriquecimento com dado externo de entidade, localização e exposição; uma camada de apetite e regras que expressa a autoridade delegada; rating e score de risco; e uma camada de decisão, emissão e registro que grava uma trilha auditável. A maioria das implementações trava na extração." },
+      { q: "Em quais ramos a subscrição algorítmica funciona melhor?", a: "Ramos com volume alto de submissão, exposição padronizada e dado disponível fora da própria submissão. Patrimonial de pequeno porte, transporte e cargas, cyber para PME e nichos de especialidade com estrutura repetível se encaixam bem. Contas grandes e complexas, clausulado sob medida e programas muito negociados não se encaixam, e nesses casos a caneta deve continuar humana." }
+    ],
+  },
+  {
+    slug: "o-que-e-fnol-aviso-de-sinistro",
+    cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
+    image: "/assets/articles/o-que-e-fnol-aviso-de-sinistro.jpg",
+    alt: "what-is-fnol-first-notice-of-loss-process",
+    title: "O que é FNOL: o aviso de sinistro, passo a passo",
+    sub: "FNOL é a sigla de First Notice of Loss, o primeiro aviso que a seguradora recebe de que um sinistro aconteceu. É onde o processo abre, e é ali que se decide o custo, a velocidade e a experiência de tudo que vem depois.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "7 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "FNOL é o First Notice of Loss, o aviso que abre o processo de sinistro. O fluxo completo, o que um aviso precisa ter e por que um aviso pode gerar vários sinistros.",
+    body: `FNOL é a sigla de First Notice of Loss, o primeiro aviso que a seguradora recebe de que um sinistro aconteceu. É o momento em que o processo de sinistro abre, e é ali que se decide o custo, a velocidade e a experiência de tudo que vem depois. Este texto cobre o processo inteiro: o que a sigla significa, quem faz o quê em cada etapa, o que um aviso completo precisa ter, e por que um único aviso pode gerar mais de um sinistro.
+
+### O que é FNOL em seguros
+
+**FNOL, ou First Notice of Loss, é o aviso inicial que o segurado, o corretor ou um terceiro faz à seguradora comunicando que um evento coberto ocorreu, e é o gatilho que abre o processo de sinistro.**
+
+No Brasil o termo equivalente é aviso de sinistro, regulado pelas normas de regulação de sinistros da SUSEP. Em documentação internacional você vai encontrar FNOL, FNOI e First Notification of Loss, todos apontando para a mesma coisa. Antes do aviso existe uma apólice. Depois dele existe um sinistro, e um relógio começou a correr.
+
+O aviso não é o sinistro e não é uma decisão de cobertura. É uma notificação. Um aviso válido pode terminar em pagamento, em negativa, ou em nada, se o segurado desistir de levar adiante. O que ele faz é fixar o registro: data e hora do aviso, descrição do evento, partes envolvidas e a apólice sob a qual está sendo comunicado.
+
+### FNOL, FNOI e aviso de incidente
+
+A distinção entre aviso de perda e aviso de incidente não é preciosismo.
+
+- **FNOL**, First Notice of Loss, quando já houve perda.
+- **FNOI**, First Notice of Incident, quando houve um evento mas ainda não se sabe se vai virar perda. Comum em responsabilidade civil e cyber.
+- **First Notification of Loss**, a forma mais usada no Reino Unido e na Europa.
+- **Aviso de sinistro**, o termo brasileiro.
+
+Um incidente cyber ou um evento potencial de RC costuma ser comunicado antes de alguém saber se existe prejuízo, e comunicar cedo protege a posição do segurado nas condições de aviso da apólice. Aviso tardio é uma das causas mais frequentes de disputa de cobertura. É por isso que corretor bom empurra cliente para avisar antes de ter certeza.
+
+### O fluxo do processo, passo a passo
+
+O desenho abaixo é o formato comum entre ramos de pessoas e de danos. Seguradoras variam no nome das etapas, não na substância.
+
+1. **O evento acontece.** Um veículo é danificado, uma carga some, um prédio alaga, um sistema é invadido.
+2. **O aviso é feito.** Segurado, corretor ou terceiro aciona a seguradora por telefone, portal, app, e-mail ou submissão do corretor. Em ramos empresariais quem avisa quase sempre é o corretor.
+3. **Captura e identificação.** A seguradora recebe o aviso e o casa com uma apólice vigente na data do evento. Se a apólice não for identificada, tudo abaixo trava.
+4. **Checagem de completude.** Verificação dos campos obrigatórios: data e hora, causa, local, descrição, partes, estimativa de severidade e documentos.
+5. **Abertura do sinistro.** Um número é gerado e o processo é criado no sistema de sinistros.
+6. **Triagem de cobertura.** Primeira passada sobre se o evento comunicado plausivelmente cabe nos termos, franquias, limites e exclusões. É uma triagem, não uma decisão.
+7. **Segmentação.** O sinistro é classificado por complexidade, severidade e indicadores de fraude, e roteado. Caso limpo e de baixa severidade vai para a esteira rápida. Caso complexo ou suspeito sobe.
+8. **Designação do regulador.** O processo vai para quem vai tratá-lo, interno, independente ou unidade especializada, compatível com o tipo e o tamanho da reserva.
+9. **Constituição de reserva.** Uma reserva inicial é lançada para que a posição financeira reflita a exposição.
+10. **Confirmação ao cliente.** O segurado recebe o número, o que acontece agora e o que precisam dele.
+
+As etapas 3 a 8 são onde o dinheiro é ganho ou perdido. O que vem depois é regulação e liquidação, que é outra disciplina. A automação dessa parte de baixo está em [dados não estruturados em seguros](#blog/dados-nao-estruturados-seguros-ia).
+
+### O que um aviso completo tem
+
+Aviso incompleto é a causa número um de inflação do ciclo, porque cada campo faltando vira um retorno de contato, e cada retorno vira dias. Um aviso completo costuma trazer identificação da apólice e confirmação de vigência na data do evento, os fatos do sinistro com data, hora, local e uma descrição em português claro, a causa codificada na taxonomia da seguradora, as partes envolvidas com contato, o que foi danificado e uma primeira noção de escala, os documentos aplicáveis como fotos, boletim de ocorrência, notas fiscais ou conhecimento de transporte, e os dados de quem está avisando e em que qualidade.
+
+Some a isso o consentimento de tratamento de dados, que sob a LGPD precisa ser tratado de propósito e não presumido.
+
+Repare que severidade, causa e dados das partes são os três campos que comandam a triagem. Se vierem errados ou vazios, o sinistro é roteado errado, e rerrotear depois que um regulador já encostou custa caro.
+
+### Um aviso pode gerar mais de um sinistro?
+
+Pode, e essa é uma das partes menos compreendidas do processo. **Um único aviso de sinistro pode gerar vários sinistros quando um mesmo evento aciona coberturas, reclamantes ou seções de apólice distintas.**
+
+Um incêndio industrial dispara danos materiais, lucros cessantes e possivelmente responsabilidade civil, cada um tratado como sinistro separado sob sua seção, a partir de um único aviso. Um acidente de trânsito com três feridos gera um aviso e vários sinistros de danos corporais. Uma perda que atravessa camadas primária e excedente abre processos em mais de uma seguradora. E em responsabilidade civil, uma ocorrência pode gerar reclamações que chegam ao longo de anos, com o aviso original permanecendo como âncora.
+
+A consequência prática é que o sistema de intake precisa abrir uma estrutura um-para-muitos a partir de um aviso. Sistema que força um aviso a equivaler a um sinistro produz avisos duplicados, reserva reportada errada e bordereaux que não fecha.
+
+### Por que a qualidade do aviso define o custo
+
+Leakage, a diferença entre o que o sinistro custou e o que deveria ter custado, é decidida em grande parte nas primeiras horas.
+
+Severidade errada no intake significa roteamento errado, e o processo que deveria ter ido para um especialista fica uma semana numa fila geral enquanto o dano piora e o cliente perde a paciência. Documentação faltando significa que a primeira ação do regulador é um pedido, não uma avaliação. E intake não estruturado significa que o dado necessário para triagem de fraude chega tarde demais para servir, porque os sinais de fraude num relato são mais fortes antes de a pessoa contar a história duas vezes.
+
+Tem também um custo puro de dado. Times corporativos perdem de 20% a 30% do tempo organizando dado não estruturado, segundo o Gartner. Intake de sinistro é uma das maiores concentrações de entrada não estruturada do setor: texto livre, foto, PDF e transcrição de ligação chegando juntos, todos precisando virar campo.
+
+### O que automatizar e o que não
+
+A parte automatizável do aviso é a mecânica: ler, extrair campos, casar a apólice, checar completude, codificar a causa, pontuar severidade e indicadores de fraude, e rotear. São tarefas de padrão com resposta certa, e são exatamente as que deixam o regulador lento. O detalhe está em [leitura inteligente de submissões](#blog/leitura-inteligente-submissoes-seguro).
+
+A parte que não deve ser automatizada é a que exige julgamento: decisão de cobertura, adequação de reserva em processos complexos, e qualquer conversa com um cliente que acabou de ter um dia ruim. Uma camada de intake que resume e roteia bem deixa o regulador melhor. Uma que decide cobertura cria um problema regulatório.
+
+A lógica de arquitetura é a mesma que vale para o resto da operação. O core de sinistros guarda o processo, a reserva e o registro financeiro, e deve continuar guardando. A inteligência senta na frente, estrutura o aviso, decide o roteamento e devolve com trilha de auditoria em vez de substituir o sistema de registro. O raciocínio está em [o que é uma camada de inteligência de subscrição](#blog/camada-de-inteligencia-de-subscricao) e vale igual para intake de sinistro.
+
+A WIR Innovation é uma camada de IA externa para seguradoras e MGAs que estrutura intake não estruturado, automatiza decisão e devolve trilha de auditoria completa sem substituir o core, e aplicou esse padrão numa prova de conceito com uma seguradora global no ramo de Transportes.`,
+    faq: [
+      { q: "O que é FNOL em seguros?", a: "FNOL é a sigla de First Notice of Loss. É o aviso inicial que o segurado, o corretor ou um terceiro faz à seguradora comunicando que um evento coberto ocorreu, e é o gatilho que abre o processo de sinistro. No Brasil o termo equivalente é aviso de sinistro. O FNOL é uma notificação, não uma decisão de cobertura: um aviso válido pode terminar em pagamento, em negativa, ou em nada." },
+      { q: "Como é o fluxo do processo de FNOL?", a: "O evento acontece, o aviso é feito por telefone, portal, app, e-mail ou submissão do corretor, a seguradora captura o aviso e o casa com uma apólice vigente na data do evento, checa a completude dos campos obrigatórios, gera número e abre o processo, faz uma triagem inicial de cobertura, classifica por complexidade, severidade e indicadores de fraude, designa o regulador, lança a reserva inicial e confirma ao cliente com número e próximos passos." },
+      { q: "Um aviso de sinistro pode gerar mais de um sinistro?", a: "Pode. Um único aviso pode gerar vários sinistros quando um mesmo evento aciona coberturas, reclamantes ou seções de apólice distintas. Um incêndio industrial dispara danos materiais, lucros cessantes e possivelmente responsabilidade civil a partir de um aviso. Um acidente com três feridos gera vários sinistros de danos corporais. Por isso o sistema de intake precisa suportar uma estrutura um-para-muitos: forçar um aviso a equivaler a um sinistro produz avisos duplicados e bordereaux que não fecha." },
+      { q: "Qual a diferença entre FNOL e FNOI?", a: "FNOL é First Notice of Loss, usado quando já houve perda. FNOI é First Notice of Incident, usado quando houve um evento mas ainda não se sabe se ele vai virar perda, o que é comum em responsabilidade civil e cyber. Comunicar um incidente cedo protege a posição do segurado nas condições de aviso da apólice, já que aviso tardio é uma das causas mais frequentes de disputa de cobertura." },
+      { q: "Que informação um aviso de sinistro completo precisa ter?", a: "Identificação da apólice e confirmação de vigência na data do evento, data, hora, local e descrição do que aconteceu, a causa codificada na taxonomia da seguradora, as partes envolvidas com contato, o que foi danificado e uma estimativa inicial de severidade, os documentos aplicáveis como fotos, boletim de ocorrência, notas fiscais ou conhecimento de transporte, e os dados de quem avisa e em que qualidade. Severidade, causa e dados das partes são os três campos que comandam a triagem." },
+      { q: "Que partes do FNOL podem ser automatizadas?", a: "As mecânicas: ler o aviso, extrair campos de texto livre, PDF e foto, casar a apólice, checar completude, codificar a causa, pontuar severidade e indicadores de fraude, e rotear para o regulador certo. Decisão de cobertura, adequação de reserva em processos complexos e a conversa com o cliente devem seguir com pessoas. Uma camada de intake que resume e roteia bem deixa o regulador mais rápido. Uma que decide cobertura cria um problema regulatório." }
+    ],
+  },
+  {
+    slug: "camada-de-inteligencia-de-subscricao",
+    cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#7540AC)",
+    image: "/assets/articles/camada-de-inteligencia-de-subscricao.jpg",
+    alt: "what-is-an-underwriting-intelligence-layer",
+    title: "O que é uma camada de inteligência de subscrição",
+    sub: "Uma camada de inteligência de subscrição fica entre a submissão e o core de apólices, e transforma entrada bagunçada em decisão que a seguradora consegue defender. Ela não guarda a apólice, o prêmio nem o razão.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "8 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "Uma camada de inteligência de subscrição recebe submissões, pontua contra o apetite da seguradora e devolve uma decisão explicável ao core, sem substituí-lo.",
+    body: `Uma camada de inteligência de subscrição fica entre a submissão e o core de apólices, e transforma entrada bagunçada em decisão que a seguradora consegue defender. Ela não guarda a apólice, o prêmio nem o razão. Ela lê o que chega, enriquece, pontua contra o apetite da própria seguradora, decide ou encaminha, e devolve com trilha de auditoria. Ela existe porque sistemas de core foram construídos para registrar decisão, não para tomá-la.
+
+### O que é uma camada de inteligência de subscrição
+
+**Uma camada de inteligência de subscrição é uma camada externa de software que recebe submissões, estrutura, aplica o apetite e os modelos da seguradora para produzir uma decisão explicável, e devolve essa decisão ao core sem substituí-lo.**
+
+O termo descreve uma posição de arquitetura, não uma categoria de produto. Ela é definida por onde fica: na frente do sistema de administração de apólices, atrás dos canais por onde o negócio chega, e acima das fontes de dado usadas para avaliar risco. Tudo acima é intake. Tudo abaixo é registro. A camada é o meio, onde o pensamento acontece.
+
+Esse meio já foi uma pessoa com um manual, uma tabela de rating e uma caixa de entrada. Na maioria das seguradoras ainda é. A camada é o que acontece quando esse meio vira software e a pessoa continua respondendo por ele.
+
+### Por que a camada existe
+
+Sistemas de core, seja Guidewire, Duck Creek, Sapiens ou uma plataforma de casa com vinte anos, são sistemas de registro. Eles são muito bons em guardar apólice, calcular prêmio contra tabela, controlar endosso e produzir a saída contábil e regulatória que mantém a seguradora licenciada. Foram desenhados para correção e durabilidade, e entregam as duas.
+
+O que eles nunca foram desenhados para fazer é ler o e-mail de um corretor, decidir se o risco está no apetite deste trimestre, ou mudar uma regra de referral numa terça-feira porque a sinistralidade andou. São tarefas rápidas, cheias de julgamento e famintas por dado. Enfiar isso dentro de um sistema de registro produz os dois sintomas que toda seguradora reconhece: change request que leva nove meses, e uma economia paralela de planilhas onde a lógica real de subscrição de fato mora.
+
+O tamanho dessa restrição é mensurável. Cerca de 70% das seguradoras não executam inovação por limitações de TI, segundo o BCG. Esse número costuma ser lido como problema de dívida técnica. É mais preciso lê-lo como problema de arquitetura. Quando o único lugar para colocar lógica nova é o mesmo sistema que guarda o razão, toda melhoria herda o perfil de risco do razão, e aí quase nada sai.
+
+A camada resolve isso separando dois relógios. O core muda devagar porque deve mudar devagar. A camada muda rápido porque precisa. O argumento arquitetural está em [integrar uma camada de IA ao core sem migração](#blog/integrar-camada-ia-core-seguros), e a comparação contra substituição e RPA está em [camada de IA vs core vs RPA](#blog/camada-ia-vs-core-rpa-seguros).
+
+### O que existe dentro
+
+Uma camada que funciona tem seis estágios, e pular qualquer um aparece depois como piloto fracassado.
+
+1. **Intake multicanal com validação automática.** O negócio chega como e-mail com anexo, upload de portal, planilha e chamada de API. A camada aceita o formato que o corretor já usa em vez de pedir ao mercado que mude.
+2. **Leitura inteligente de documentos.** Formulários, planilhas de valores em risco, loss runs e PDFs de corretor viram campos com score de confiança. É aqui que a maioria das implementações trava, porque extração que funciona em documento limpo falha em documento real.
+3. **Enriquecimento e contexto.** A submissão sozinha é magra. Dado de entidade, sinistros anteriores, exposição, sinais de crédito e histórico de conversão do corretor é o que torna o risco avaliável e a priorização útil.
+4. **Score de risco e apetite.** Modelo calibrado ao manual de subscrição e ao apetite da própria seguradora, não a um benchmark genérico de fornecedor. Essa é a diferença entre uma ferramenta e uma camada.
+5. **Precificação.** Prêmio ajustado a risco, produzido na hora em vez de depois de um exercício manual de rating.
+6. **Decisão e priorização.** Cotar, recusar automaticamente ou encaminhar para humano, sempre com explicação, sempre devolvido ao core com trilha de auditoria e SLA visível.
+
+O estágio 6 é o que separa uma camada de inteligência de uma ferramenta de processamento documental. Extração sem decisão produz dado mais limpo e o mesmo gargalo. A decisão é o produto.
+
+### Camada, workbench e copiloto não são a mesma coisa
+
+Os três termos são usados como sinônimos no mercado e descrevem coisas genuinamente diferentes.
+
+| | O que é | Quem age | Onde fica |
+|---|---|---|---|
+| **Camada de inteligência** | Infraestrutura de decisão entre intake e core | O sistema decide ou encaminha, conforme apetite codificado | Entre os canais e o sistema de registro |
+| **Workbench de subscrição** | Uma tela consolidada que monta a submissão | O subscritor, com tudo num lugar só | Sobre a camada, virado para o usuário |
+| **Copiloto** | IA assistiva que resume e rascunha | O subscritor, assistido | Dentro das ferramentas que ele já usa |
+| **Core** | Sistema de registro de apólice, prêmio e razão | Registra o que foi decidido | Atrás de tudo |
+
+Um workbench sem camada embaixo é uma janela mais bonita para o mesmo trabalho manual. Um copiloto sem camada é um digitador mais rápido. A camada é a única das três que consegue agir sobre a maioria limpa do negócio sem ninguém encostar, e por isso é a única que muda vazão. As distinções estão detalhadas em o que é um workbench de subscrição com IA e o que é um copiloto de subscrição.
+
+### Como ela devolve ao core
+
+O caminho de volta é o que decide se a implementação é um projeto de dois meses ou de dois anos.
+
+A camada deve tratar o core como a autoridade sobre o registro e a si mesma como a autoridade sobre a decisão. Na prática ela grava o resultado, o prêmio, os dados da apólice e uma referência de decisão no core pela integração que o core suportar, API onde houver e batch onde não houver, e guarda o raciocínio no próprio armazenamento. O core não precisa entender o modelo. Precisa receber uma decisão e uma referência para onde apontar.
+
+Essa separação é o que faz a trilha de auditoria funcionar. Quando um regulador, um ressegurador ou a auditoria interna pergunta por que um risco específico foi precificado daquele jeito, a resposta não está enterrada num core que só conhece o número final. Está na camada, com os insumos, a versão das regras, o score e os reason codes, reproduzível contra a configuração exata que rodou naquele dia. Os requisitos estão em [decisões de subscrição auditáveis](#blog/decisoes-subscricao-auditaveis).
+
+### O que ela exige para rodar em produção
+
+Quatro coisas, mais ou menos nessa ordem de dificuldade.
+
+Um apetite definido. A camada codifica o apetite. Se o apetite existe só como conhecimento tribal na cabeça de três subscritores sêniores, isso precisa ser resolvido antes, e esse trabalho é de subscrição, não de tecnologia.
+
+Acesso a dado. Não migração de core, mas leitura de histórico de apólice e sinistro, mais as fontes externas que enriquecem uma submissão. Seguradoras costumam descobrir aqui qual era o projeto de integração de verdade.
+
+Um período de validação. Nenhum modelo deve ganhar autoridade no primeiro dia. Ele roda ao lado das pessoas antes, como descrito em [subscrição em shadow mode](#blog/subscricao-em-shadow-mode).
+
+E governança que sobreviva ao contato com um regulador. Regras versionadas, reason codes, caminhos de escalonamento humano, retenção e consentimento compatíveis com a LGPD. Isso não é apêndice de compliance. É insumo de projeto, porque decisão que você não consegue explicar é decisão que você não pode usar.
+
+### Como avaliar quem se diz uma
+
+Cinco perguntas separam uma camada de inteligência de uma ferramenta documental com marketing melhor. Ela decide ou só extrai, e dá para ver uma recusa com seus reason codes? O modelo é calibrado ao nosso apetite e manual, ou é um modelo genérico com a nossa logo? O que ela devolve ao core, e por qual interface? Dá para reproduzir uma decisão de quatro meses atrás contra as regras que estavam vivas naquele dia? E o que acontece quando chega um documento num formato que ninguém previu? A resposta honesta para a última é escalonamento humano, e fornecedor que diz outra coisa não rodou em produção.
+
+Subscritores gastam cerca de 40% do tempo em tarefas administrativas em vez de seleção de risco, segundo a Deloitte, e mais de 60% dos corretores escolhem seguradora por velocidade de resposta, segundo a Capgemini. Os dois números descrevem a mesma oportunidade por pontas opostas. A camada existe para converter o primeiro no segundo.
+
+A WIR Innovation é uma camada de IA externa para seguradoras e MGAs que automatiza a jornada de cotação e subscrição conforme a política de aceitação de risco da própria seguradora, com machine learning calibrado ao apetite e ao manual de subscrição, toda decisão explicável com trilha de auditoria completa, e dado criptografado em cada etapa sob a LGPD. Roda inteiramente fora do core, sem migração e sem carga para o time de TI, e aplicou esse padrão numa prova de conceito com uma seguradora global no ramo de Transportes.`,
+    faq: [
+      { q: "O que é uma camada de inteligência de subscrição?", a: "É uma camada externa de software que recebe submissões, estrutura o conteúdo, aplica o apetite e os modelos da seguradora para produzir uma decisão explicável, e devolve essa decisão ao sistema de registro sem substituí-lo. Ela é definida por posição de arquitetura e não por categoria de produto: fica na frente do core de apólices e atrás dos canais por onde o negócio chega." },
+      { q: "Qual a diferença entre camada de inteligência, workbench e copiloto?", a: "Uma camada de inteligência é infraestrutura de decisão, capaz de agir sobre a maioria limpa do negócio sem ninguém encostar. Um workbench de subscrição é uma tela consolidada que monta a submissão para uma pessoa trabalhar. Um copiloto é uma IA assistiva que resume e rascunha dentro das ferramentas que o subscritor já usa. Um workbench sem camada embaixo é uma janela mais bonita para o mesmo trabalho manual, e um copiloto sem camada é um digitador mais rápido." },
+      { q: "A camada de inteligência substitui o core da seguradora?", a: "Não. O core de administração de apólices segue como sistema de registro da apólice, do prêmio, dos endossos e da saída contábil e regulatória. A camada guarda a decisão e o raciocínio. Ela grava resultados e referências no core pela integração que o core suportar, API onde houver e batch onde não houver. O core não precisa entender o modelo, precisa receber uma decisão e uma referência para onde apontar." },
+      { q: "Quais são os componentes de uma camada de inteligência de subscrição?", a: "Seis estágios em sequência: intake multicanal com validação automática, aceitando e-mail, portal, planilha e API; leitura inteligente de documentos que converte formulários, planilhas de valores em risco e loss runs em campos com score de confiança; enriquecimento com dado de entidade, exposição, sinistros e contexto de corretor; score de risco e apetite calibrado ao manual da própria seguradora; precificação ajustada a risco; e decisão e priorização, produzindo cotação, recusa automática ou encaminhamento, sempre com explicação e trilha de auditoria." },
+      { q: "Por que não colocar essa lógica dentro do próprio core?", a: "Porque o core e a lógica de decisão rodam em relógios diferentes. Sistemas de core são desenhados para correção e durabilidade, então mudam devagar, o que é correto para um razão. A lógica de subscrição precisa mudar rápido conforme sinistralidade e apetite se movem. Quando o único lugar para colocar lógica nova é o mesmo sistema que guarda o razão, toda melhoria herda o perfil de risco do razão e quase nada sai. Cerca de 70% das seguradoras não executam inovação por limitações de TI, segundo o BCG." },
+      { q: "Como avaliar um fornecedor que se diz uma camada de inteligência?", a: "Cinco perguntas. Ele decide ou só extrai, e dá para ver uma recusa com seus reason codes? O modelo é calibrado ao seu apetite e manual, ou é genérico com a sua logo? O que ele devolve ao core, e por qual interface? Dá para reproduzir uma decisão de quatro meses atrás contra as regras vivas naquele dia? E o que acontece quando chega um documento num formato imprevisto? A resposta honesta para a última é escalonamento humano." }
+    ],
+  },
+  {
+    slug: "seguro-parametrico-vs-indenizatorio",
+    cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#0E7C86)",
+    image: "/assets/articles/seguro-parametrico-vs-indenizatorio.jpg",
+    alt: "parametric-vs-indemnity-insurance",
+    title: "Seguro paramétrico vs indenizatório: a diferença real",
+    sub: "Seguro paramétrico paga um valor fixo quando um índice acordado é rompido. Indenizatório paga o que a perda custou, depois que um regulador confere. Essa diferença muda a velocidade do pagamento, o papel, o preço e o risco que o comprador continua carregando.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "7 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "Indenizatório paga sua perda verificada. Paramétrico paga um valor fixo quando um índice é rompido. Como funcionam, o risco de base e quando usar cada um.",
+    body: `Seguro paramétrico paga um valor fixo quando um índice acordado é rompido. Seguro indenizatório paga o que a perda custou de fato, depois que um regulador confere. Essa diferença única, pagar sobre uma medição em vez de sobre uma avaliação, muda a velocidade do pagamento, o papel, o preço e o risco que o comprador continua carregando.
+
+### Qual a diferença entre seguro paramétrico e indenizatório
+
+**Seguro indenizatório reembolsa a perda efetivamente sofrida, verificada por regulação de sinistro. Seguro paramétrico paga um valor predefinido quando um parâmetro acordado e medido de forma independente cruza um limiar, independentemente da perda incorrida.**
+
+Indenizatório é o que praticamente todo mundo quer dizer quando diz seguro. Você sofre uma perda, prova, a seguradora te recompõe até o limite, menos a franquia. A obrigação dela está amarrada ao seu dano.
+
+Paramétrico solta o pagamento do dano e o amarra a um índice. Vento acima de 200 km/h numa estação nomeada. Chuva abaixo de 30 mm numa janela de safra definida. Terremoto de magnitude 6,5 ou mais dentro de um raio. Voo atrasado mais de três horas. Se o índice é rompido, a apólice paga o valor acordado. Se não é rompido, a apólice não paga nada, mesmo que você tenha se machucado.
+
+### Como funciona o indenizatório
+
+A mecânica é familiar porque é o padrão do mercado. O segurado sofre o dano e comunica, no [aviso de sinistro](#blog/o-que-e-fnol-aviso-de-sinistro). Um regulador é designado e investiga: vistoria, documentação, notas, laudos. A cobertura é confirmada contra o clausulado, as exclusões, os sublimites e as condições. A perda é quantificada e acordada, às vezes depois de negociação. E o pagamento sai, menos franquia, até o limite.
+
+A força desse modelo é a precisão. Você é compensado pelo que de fato aconteceu com você, e perdas complicadas conseguem ser entendidas no contexto. A fraqueza é o custo dessa precisão. Regulação leva tempo e dinheiro, disputa é comum em perda grande ou ambígua, e o dinheiro chega muito depois do momento em que ele era mais útil.
+
+### Como funciona o paramétrico
+
+A mecânica paramétrica troca o regulador por uma fonte de dado combinada de antemão. As partes acordam um gatilho, que é a variável física ou econômica medida. Acordam um limiar, o valor em que a apólice responde. Acordam um provedor de índice, o terceiro independente cuja medição é vinculante, como um órgão meteorológico, uma rede sismográfica, um conjunto de dados de satélite ou um preço de bolsa. E acordam uma estrutura de pagamento, valor único ou escada em que índice maior paga mais.
+
+Publicado o índice e atingido o limiar, a apólice paga, muitas vezes em dias.
+
+Não existe investigação de sinistro porque não existe nada a investigar. A pergunta não é quanto você perdeu. A pergunta é o que o índice diz. É por isso que cobertura paramétrica liquida em dias em vez de meses, e é por isso que ela consegue ser escrita sobre riscos em que verificar a perda seria impraticável, remoto ou lento demais para importar.
+
+### Lado a lado
+
+| Dimensão | Indenizatório | Paramétrico |
+|---|---|---|
+| Base do pagamento | Perda efetiva, verificada | Valor predefinido no rompimento do índice |
+| Processo de sinistro | Regulação, documentação, negociação | Automático sobre dado de índice publicado |
+| Tempo até pagar | Semanas a meses, às vezes mais | Dias, às vezes horas |
+| Prova exigida | Documentação completa da perda | Confirmação de que o gatilho ocorreu |
+| Complexidade do clausulado | Alta, com exclusões e sublimites | Baixa, definida por gatilho e limiar |
+| Risco principal do comprador | Disputa sobre o que está coberto | Risco de base, quando há perda e o índice não dispara |
+| Cobre perda intangível | Raramente e com dificuldade | Sim, se o índice se correlacionar |
+| Risco moral | Controlado por franquia e regulação | Estruturalmente baixo, o segurado não influencia o índice |
+| Melhor para | Dano complexo, verificável, específico do local | Liquidez rápida, exposição remota ou difícil de regular |
+
+### Risco de base, a troca que quase ninguém explica direito
+
+Risco de base é a distância entre o que o índice diz e o que aconteceu com você. Ele corta dos dois lados.
+
+O negativo é o doloroso: seu galpão alaga, mas a estação pluviométrica a onze quilômetros registrou menos que o limiar, e a apólice não paga nada. O positivo é o agradável: o índice dispara, você recebe, e o dano real era menor.
+
+Toda estrutura paramétrica é um exercício de encolher o risco de base negativo. Isso se faz escolhendo o gatilho mais próximo do que realmente causa a perda, usando redes densas de medição ou dado de satélite em vez de uma estação distante, e construindo pagamento em escada em vez de um limiar único. Nunca se elimina. Comprador que não entendeu risco de base não entendeu o produto, e essa é de longe a razão mais comum pela qual programa paramétrico decepciona depois da assinatura.
+
+O indenizatório tem sua própria versão do mesmo problema, só que ela aparece como disputa de cobertura. A perda aconteceu e a discussão é se o clausulado responde. A diferença é que risco de base é mensurável e acordado antes, enquanto disputa de cobertura é descoberta depois.
+
+### Quando o paramétrico ganha
+
+Quando velocidade importa mais que precisão, porque um negócio que precisa de caixa em uma semana para continuar operando ganha mais com pagamento rápido e aproximado do que com pagamento exato em seis meses.
+
+Quando a perda é cara ou impossível de regular: infraestrutura remota, produtividade agrícola em milhares de hectares, ativos offshore, ou eventos em que o acesso físico fica impossível por semanas.
+
+Quando a perda é real mas não é física: queda de movimento por um furacão que nunca tocou o prédio, custo extra por onda de calor, cancelamento de evento, lucros cessantes sem dano.
+
+Quando a exposição hoje simplesmente não é segurada. Boa parte da lacuna de proteção global está em riscos que o modelo indenizatório precifica fora do alcance ou recusa. O trabalho do Swiss Re Institute sobre lacuna de proteção mostra de forma consistente que mercados emergentes carregam parcela desproporcional da perda econômica não segurada, e cobertura indexada é uma das poucas estruturas capazes de alcançá-la.
+
+E quando o comprador quer previsibilidade orçamentária, porque pagamento conhecido sobre gatilho conhecido é mais fácil de modelar num plano de tesouraria do que um desfecho de sinistro.
+
+### Quando o indenizatório ganha
+
+Ele continua sendo a resposta certa, e ainda é a esmagadora maioria do mercado, quando o dano é específico, verificável e localizado, e o comprador quer ser recomposto e não aproximadamente compensado. Quando a exposição não tem índice independente confiável, o que vale para quase toda responsabilidade civil, quase todos os ramos profissionais e a maior parte dos programas patrimoniais sob medida. Quando a perda potencial é grande o bastante para que um descolamento entre índice e realidade seja inaceitável. E quando exigência contratual ou regulatória pede indenização demonstrada, como acontece em algumas estruturas de financiamento e locação.
+
+Os dois não são tanto concorrentes quanto instrumentos diferentes. Programas maduros cada vez mais combinam: uma torre indenizatória para a perda de balanço e uma camada paramétrica embaixo dela, para liquidez imediata e para a faixa de franquia que a apólice indenizatória nunca vai pagar.
+
+### O que faz um programa paramétrico funcionar na prática
+
+Três coisas, e nenhuma delas é o gatilho.
+
+A fonte de dado precisa ser independente, publicada em calendário previsível e durável o suficiente para que as duas partes ainda confiem nela daqui a cinco anos. Gatilho amarrado a um conjunto de dados que é descontinuado é um problema jurídico esperando para acontecer.
+
+A estrutura precisa ser em escada sempre que possível, porque limiar único concentra todo o risco de base num ponto da curva.
+
+E o caminho de verificação e pagamento precisa ser automático de ponta a ponta. A promessa comercial do paramétrico é velocidade. Se o índice dispara e depois alguém precisa perceber, conferir uma planilha e rotear uma aprovação, o produto virou em silêncio um indenizatório lento com menos cobertura. Essa automação é um problema de decisão, não de sinistro, e está em o que é decisão automatizada em seguros. Cerca de 70% das seguradoras não executam inovação por limitações de TI, segundo o BCG, que é exatamente por que tanto programa paramétrico empaca entre uma boa estrutura e um pipeline de pagamento que funcione.
+
+Para o lado de IA e dado nos gatilhos, veja [como funciona o seguro paramétrico no mercado brasileiro](#blog/seguro-parametrico-como-funciona-mercado-brasil). Para a visão do mercado brasileiro, veja [seguro paramétrico no Brasil](#blog/seguro-parametrico-brasil).
+
+A WIR Innovation é uma camada de IA externa para seguradoras e MGAs que automatiza intake, subscrição e decisão sem substituir o core, com toda decisão explicável e trilha de auditoria completa.`,
+    faq: [
+      { q: "Qual a diferença entre seguro paramétrico e indenizatório?", a: "Seguro indenizatório reembolsa a perda efetivamente sofrida, verificada por regulação de sinistro, até o limite e menos a franquia. Seguro paramétrico paga um valor predefinido quando um parâmetro acordado e medido de forma independente cruza um limiar, independentemente da perda incorrida. O indenizatório amarra o pagamento ao seu dano. O paramétrico amarra a um índice." },
+      { q: "Como funciona o seguro paramétrico?", a: "As partes acordam um gatilho, como velocidade de vento, volume de chuva ou magnitude de terremoto, um limiar em que a apólice responde, um provedor de índice independente cuja medição é vinculante, e uma estrutura de pagamento que pode ser valor único ou escada. Publicado o índice e atingido o limiar, a apólice paga, muitas vezes em dias, sem investigação de sinistro, porque não há nada a regular." },
+      { q: "O que é risco de base no seguro paramétrico?", a: "Risco de base é a distância entre o que o índice diz e o que aconteceu com o segurado. O risco de base negativo é quando há perda mas o índice não dispara, e nada é pago. O positivo é quando o índice dispara e o pagamento supera o dano real. Ele é reduzido escolhendo gatilhos próximos do que causa a perda, usando redes densas de medição ou dado de satélite, e usando pagamento em escada em vez de limiar único. Nunca é eliminado." },
+      { q: "Quando escolher paramétrico em vez de indenizatório?", a: "Quando velocidade importa mais que precisão, quando a perda é cara ou impossível de regular como infraestrutura remota ou produtividade agrícola, quando a perda é real mas não é física como lucros cessantes sem dano ou cancelamento de evento, quando a exposição é praticamente inassegurável na base indenizatória, ou quando o comprador precisa de previsibilidade orçamentária. O indenizatório segue melhor para dano específico e verificável, para responsabilidade civil e ramos profissionais sem índice confiável, e onde o contrato exige indenização demonstrada." },
+      { q: "Dá para combinar seguro paramétrico e indenizatório?", a: "Dá, e programas maduros cada vez mais fazem isso. Uma estrutura comum coloca uma torre indenizatória sobre a perda de balanço e uma camada paramétrica embaixo, fornecendo liquidez imediata nos primeiros dias após o evento e cobrindo a faixa de franquia que a apólice indenizatória nunca vai pagar. Os dois são instrumentos complementares mais do que concorrentes diretos." },
+      { q: "Por que o paramétrico paga tão mais rápido?", a: "Porque não existe etapa de regulação de sinistro. Um sinistro indenizatório exige que um regulador investigue, confirme cobertura, quantifique e acorde a perda, o que leva semanas ou meses. Um pagamento paramétrico exige apenas a confirmação de que o índice acordado atingiu o limiar acordado, que é uma checagem de dado. Essa vantagem só sobrevive se verificação e pagamento forem automáticos de ponta a ponta, caso contrário o produto vira um indenizatório lento com menos cobertura." }
+    ],
+  },
+  {
+    slug: "subscricao-em-shadow-mode",
+    cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
+    image: "/assets/articles/subscricao-em-shadow-mode.jpg",
+    alt: "what-is-shadow-mode-underwriting",
+    title: "Subscrição em shadow mode: testar IA sem arriscar a carteira",
+    sub: "Subscrição em shadow mode é rodar um modelo de IA sobre submissões reais sem deixar ele decidir nada. O modelo vê os mesmos riscos que os subscritores, a resposta dele é registrada e comparada, e esse registro vira a evidência que um regulador ou um ressegurador aceita.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "7 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "Shadow mode roda um modelo de subscrição sobre submissões reais sem autoridade para decidir. Como desenhar o teste, o que medir e como sair dele.",
+    body: `Subscrição em shadow mode é rodar um modelo de IA sobre submissões reais sem deixar ele decidir nada. O modelo vê os mesmos riscos que os subscritores veem, produz a própria resposta, e essa resposta é registrada e comparada em vez de executada. É o jeito mais barato de descobrir se um modelo funciona na sua carteira, e é a evidência que um regulador, um ressegurador ou um diretor técnico desconfiado realmente aceita.
+
+### O que é subscrição em shadow mode
+
+**Subscrição em shadow mode é um período controlado de avaliação em que um sistema de subscrição, de IA ou de regras, pontua submissões reais em paralelo ao processo humano vigente, sem nenhuma autoridade para cotar, recusar, precificar ou emitir.**
+
+O nome vem da engenharia de software, onde um serviço novo roda ao lado do antigo sobre tráfego de produção, com as saídas descartadas, só para ver se ele teria se comportado direito. Em subscrição a mecânica é idêntica. Toda submissão que chega ao time chega também ao modelo. O subscritor trabalha normalmente e não vê a saída do modelo enquanto decide. Depois, as duas respostas ficam guardadas lado a lado.
+
+A restrição crítica é justamente a que costuma ser ignorada: o modelo não pode estar visível para quem decide, no momento em que decide. Se o subscritor enxerga o score antes de bater o martelo, a comparação está contaminada, porque você deixou de medir o modelo e passou a medir uma pessoa ancorada nele.
+
+### Por que shadow mode existe
+
+Três problemas tornam um go-live direto irresponsável numa carteira.
+
+O primeiro é que performance de modelo no benchmark do fornecedor não diz nada sobre performance na sua carteira. Apetite, mix de corretor, qualidade de dado e mercado local mudam a resposta. Um modelo que vai bem numa carteira patrimonial norte-americana pode ser inútil em transporte brasileiro.
+
+O segundo é regulatório. Supervisores cada vez mais esperam que a seguradora demonstre que uma decisão automatizada foi validada antes de afetar um cliente, e que consiga explicar qualquer resultado individual. Um período de shadow gera exatamente essa evidência: um registro datado e versionado do comportamento do modelo sobre riscos reais antes de ele ter qualquer autoridade. O panorama global está em regulação de subscrição com IA em 2026 e a visão brasileira em [SUSEP e regulação de IA](#blog/regulacao-ia-seguros-susep).
+
+O terceiro é organizacional, e é o mais subestimado. Você está pedindo a subscritores que entreguem julgamento a um sistema. O jeito mais rápido de perder essa sala é lançar um modelo e deixá-lo errar em público. O jeito mais rápido de ganhá-la é deixar que, por três meses, os subscritores vejam onde o modelo concordou com eles e onde não concordou, sem nada em jogo.
+
+### Como um shadow run funciona na prática
+
+1. **Congele o escopo.** Um ramo, um segmento, uma geografia. Shadow sobre a carteira inteira não mede nada, porque os modos de falha se cancelam.
+2. **Defina qual decisão está sendo sombreada.** Dentro ou fora do apetite, encaminhar ou cotar automático, preço técnico, faixa de score. Um modelo sombreando quatro decisões ao mesmo tempo produz quatro sinais fracos em vez de um forte.
+3. **Ligue o modelo no tráfego vivo.** Submissões reais, qualidade de dado real, lacunas reais. Nunca um extrato histórico limpo. A bagunça é o ponto.
+4. **Cegue as pessoas.** A saída vai para um lugar que o time de subscrição não acessa durante o expediente.
+5. **Registre tudo.** Para cada submissão: insumos, versão do modelo e das regras, saída, reason codes, decisão humana, timestamp, e o desfecho quando ele aparecer.
+6. **Revise em cadência.** Semanal no primeiro mês, quinzenal depois. Toda revisão olha as discordâncias, não a taxa de concordância.
+7. **Acompanhe o que foi emitido.** Concordância é proxy. Sinistralidade e conversão nos riscos efetivamente escritos são o sinal de verdade, e chegam depois.
+
+### O que medir
+
+Taxa de concordância é o número que todo mundo pede e o menos informativo sozinho. Quatro medições importam mais.
+
+Discordância por direção. O modelo queria recusar e o humano escreveu, ou o modelo queria cotar e o humano recusou. São dois problemas de negócio completamente diferentes e não podem virar uma porcentagem só.
+
+Discordância por causa. Dado faltando, regra que o modelo não tem, relação com corretor que ele não enxerga, ou erro genuíno de modelo. Só o último é problema de modelagem. Os outros são problemas de processo fantasiados de modelo.
+
+Cobertura. Com que frequência o modelo devolveu resposta utilizável. Um modelo que concorda 95% das vezes mas se abstém em um terço das submissões tem problema de pipeline de dado, não um bom resultado.
+
+Estabilidade. O mesmo risco, reenviado com diferenças triviais, deve pontuar igual. Instabilidade no shadow é o melhor preditor de encrenca em produção.
+
+Debaixo de tudo isso tem uma regra dura: **taxa alta de concordância não prova que o modelo é bom, prova apenas que ele não é obviamente ruim.** Um modelo que concorda com seus subscritores 92% das vezes replicou sua carteira atual, inclusive os erros dela. O valor está concentrado nos 8%, e a cadência de revisão existe para entender esses 8%.
+
+### Quanto tempo deve durar
+
+Tempo suficiente para ver risco suficiente, e tempo suficiente para que parte dele amadureça.
+
+Fixe volume, não calendário. Uma carteira com 200 submissões por semana chega à utilidade estatística muito antes de uma com 20. Cubra a sazonalidade que importa: pico de renovação, janela de chuva ou de safra, fechamento fiscal. Shadow que perdeu o pico não testou o pico. Para um segmento definido com volume razoável, de seis a doze semanas é a faixa comum. Menos de quatro semanas é demonstração. Mais de seis meses normalmente quer dizer que ninguém quer decidir.
+
+### Saindo do shadow
+
+Shadow mode é uma fase, não um estado permanente, e a saída deve ser definida antes de começar. O caminho usual tem três degraus, e é deliberadamente gradual.
+
+Primeiro, modo consultivo: a saída do modelo fica visível ao subscritor como recomendação, com a pessoa ainda decidindo tudo. A concordância costuma saltar aqui, o que é ancoragem e não melhoria, então essa fase mede adoção, não acurácia.
+
+Segundo, autoridade limitada: o modelo passa a decidir sozinho uma faixa estreita e bem entendida. Normalmente os riscos mais limpos, que iriam para cotação automática de qualquer jeito, ou recusas claramente fora de apetite. Todo o resto continua indo para humano.
+
+Terceiro, expansão faixa a faixa, com cada ampliação justificada pelo dado da anterior.
+
+Os critérios de saída devem estar escritos desde o início e incluir um piso de cobertura, um teto de discordância inexplicada, evidência de estabilidade e um procedimento documentado de rollback. O desenho mais amplo do piloto está em [escalonamento humano na subscrição automatizada](#blog/escalonamento-humano-subscricao-seguros).
+
+### O que shadow mode não resolve
+
+Não resolve dado ruim. Se as submissões chegam como PDF não estruturado e fio de e-mail, o modelo vai desempenhar mal no shadow por razões que nada têm a ver com o modelo. Subscritores já perdem cerca de 40% do tempo em trabalho administrativo em vez de seleção de risco, segundo a Deloitte, e um shadow rodando em cima dessa bagunça mede principalmente a bagunça. Conserte ingestão e extração antes.
+
+Não resolve apetite indefinido. Se dois subscritores sêniores discordam sobre se um ramo está no apetite, o modelo não tem como estar certo, porque não existe resposta certa contra a qual comparar.
+
+E não satisfaz um auditor por si só. O que satisfaz um auditor é o registro: regras versionadas, reason codes em toda saída, e a capacidade de reproduzir uma decisão meses depois. Essa exigência é a mesma que vale para subscrição em produção e está em como auditar decisões de subscrição com IA e [decisões de subscrição auditáveis](#blog/decisoes-subscricao-auditaveis).
+
+A implicação arquitetural é que shadow mode só é barato se o modelo puder ser plugado no fluxo vivo de submissões sem tocar no sistema de administração de apólices. Se avaliar um modelo exige um projeto de integração com o core, ninguém vai avaliar mais de um modelo, e é exatamente assim que seguradoras acabam casadas com o primeiro fornecedor que viram. Uma camada externa que lê o tráfego vivo e escreve no próprio log, deixando o sistema de registro intacto, é o que transforma shadow mode em exercício de rotina em vez de programa.
+
+A WIR Innovation é uma camada de IA externa para seguradoras e MGAs que automatiza intake de submissões, cotação e decisão de subscrição sem substituir o core, com ML calibrado ao apetite e ao manual da própria seguradora, e toda decisão explicável com trilha de auditoria completa. Ela aplicou esse padrão numa prova de conceito com uma seguradora global no ramo de Transportes.`,
+    faq: [
+      { q: "O que é subscrição em shadow mode?", a: "É um período controlado de avaliação em que um sistema de subscrição, de IA ou de regras, pontua submissões reais em paralelo ao processo humano vigente, sem nenhuma autoridade para cotar, recusar, precificar ou emitir. A saída do modelo é registrada e comparada depois com a decisão do subscritor. A pessoa não pode ver a saída do modelo no momento em que decide, senão a comparação mede ancoragem e não qualidade de modelo." },
+      { q: "Quanto tempo deve durar um shadow mode?", a: "Fixe volume, não calendário, porque uma carteira com 200 submissões por semana chega à utilidade estatística muito antes de uma com 20. O período também precisa cobrir a sazonalidade que importa, como pico de renovação ou janela de safra. Para um segmento definido com volume razoável, de seis a doze semanas é a faixa comum. Menos de quatro semanas é demonstração, não teste." },
+      { q: "O que medir durante um shadow run?", a: "Discordância analisada por direção, já que o modelo querer recusar um risco que o humano escreveu é um problema diferente de querer cotar um que o humano recusou. Discordância por causa, separando dado faltando, regra ausente e erro genuíno de modelo. Cobertura, que é com que frequência o modelo devolveu resposta utilizável. E estabilidade, que é o mesmo risco pontuar igual ao ser reenviado. Taxa de concordância sozinha é o número menos informativo." },
+      { q: "Concordância alta prova que o modelo é bom?", a: "Não. Concordância alta prova apenas que o modelo não é obviamente ruim. Um modelo que concorda com seus subscritores 92% das vezes replicou a carteira atual, inclusive os erros dela. O valor está nas discordâncias, e é por isso que a cadência de revisão deve olhar a minoria de casos em que as duas respostas divergem em vez de comemorar a maioria em que coincidem." },
+      { q: "Como sair do shadow mode para produção?", a: "Em três degraus, com critérios definidos antes de começar. Primeiro modo consultivo, com a saída visível como recomendação e a pessoa ainda decidindo. Depois autoridade limitada, com o modelo decidindo sozinho uma faixa estreita e bem entendida, como os riscos mais limpos ou recusas claramente fora de apetite. Depois expansão faixa a faixa, cada ampliação justificada pelo dado da anterior, com procedimento de rollback documentado." },
+      { q: "Que problemas o shadow mode não resolve?", a: "Não resolve dado ruim: se as submissões chegam como PDF não estruturado e fio de e-mail, o shadow mede principalmente a qualidade da sua ingestão, então extração deve ser corrigida antes. Não resolve apetite indefinido, porque se subscritores sêniores discordam sobre se um ramo está no apetite não existe resposta certa para comparar. E não satisfaz um auditor sozinho, que precisa de regras versionadas, reason codes e decisões reproduzíveis." }
+    ],
+  },
+  {
+    slug: "motor-de-precificacao-vs-plataforma-de-decisao",
+    cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#3222E9)",
+    image: "/assets/articles/motor-de-precificacao-vs-plataforma-de-decisao.jpg",
+    alt: "pricing-engine-vs-underwriting-decision-platform",
+    title: "Motor de precificação vs plataforma de decisão",
+    sub: "Um motor de precificação responde quanto este risco deveria custar. Uma plataforma de decisão responde se ele deveria ser escrito, e em que termos. Os dois são vendidos como se fossem a mesma coisa, e comprar um quando você precisava do outro sai caro.",
+    author: "WIR Innovation", role: "Equipe",
+    time: "7 min", date: "31 · Ago · 2026", dateISO: "2026-08-31",
+    metaDesc: "Um motor de precificação transforma risco aceito em prêmio. Uma plataforma de decisão define se o risco deve ser escrito. Como diferenciar e por que precisa dos dois.",
+    body: `Um motor de precificação responde quanto este risco deveria custar. Uma plataforma de decisão de subscrição responde se ele deveria ser escrito, e em que termos. Os dois são vendidos como se fossem a mesma coisa, ficam lado a lado no mesmo fluxo, e comprar um quando você precisava do outro é um dos erros mais caros de compra de tecnologia em seguros.
+
+### Qual a diferença entre motor de precificação e plataforma de decisão de subscrição
+
+**Um motor de precificação converte um risco aceito em prêmio, usando tabelas, fatores e modelos atuariais. Uma plataforma de decisão de subscrição decide se o risco é aceitável, o que está faltando, se ele cabe no apetite e se um humano precisa ver, e só então chama o motor de precificação.**
+
+A ordem importa. Precificação é um cálculo que assume que o risco vai ser escrito. Decisão é o julgamento sobre se ele deveria ser. Um motor de precificação que recebe um risco fora de apetite devolve um número com toda a alegria, porque devolver número é o trabalho dele. Nada ali sabe que o risco nunca deveria ter chegado até aquele ponto.
+
+### O que um motor de precificação faz
+
+É um serviço de cálculo. Você alimenta com um registro de risco estruturado e completo, e ele devolve preço técnico, preço comercial, ou os dois.
+
+Ele carrega tabelas e fatores de rating por ramo, território, limite, franquia e medida de exposição, com os multiplicadores e adicionais que os ajustam. Carrega modelos atuariais de frequência e severidade, carregamento de catástrofe, despesa, lucro e alocação de custo de resseguro. Carrega regras sobre preço, como prêmio mínimo, teto de variação na renovação e estruturas de comissão. E carrega versionamento, porque em ramos regulados o algoritmo de rating é um artefato registrado e cada versão precisa ser reproduzível.
+
+O que ele assume é que alguém já resolveu a parte difícil. Ele espera um registro limpo: segurado, código de ramo, localização, limites, valores, sinistros anteriores. Ele não lê o e-mail do corretor, não sabe que o loss run está faltando dois anos, e não tem opinião sobre se essa conta pertence à carteira.
+
+### O que uma plataforma de decisão faz
+
+Ela senta antes e responde outro conjunto de perguntas. Isso é sequer processável, os campos obrigatórios estão lá, e se não estão, o que falta e a quem perguntar. Está no apetite, considerando ramo, território, limite, grau de risco, concentração de exposição, checagens de sanções e regulatórias, e a fronteira da autoridade delegada se for negócio delegado. Como é o risco de fato, num score construído da submissão mais enriquecimento: sinistros anteriores, dado da entidade, características da exposição, histórico de conversão do corretor. Qual o caminho certo, entre cotar automático, recusar automático, encaminhar a um subscritor específico ou pedir mais informação. Qual a evidência, em reason codes, versão de regras, insumos e trilha de auditoria presa ao que for decidido. E o que volta para o sistema de registro.
+
+É nesse ponto que ela chama o motor de precificação, e só se as etapas anteriores passaram. A anatomia completa está em [o que é uma camada de inteligência de subscrição](#blog/camada-de-inteligencia-de-subscricao).
+
+### Lado a lado
+
+| | Motor de precificação | Plataforma de decisão |
+|---|---|---|
+| Pergunta central | Quanto isso deveria custar? | Devemos escrever isso, e como? |
+| Entrada exigida | Registro de risco limpo e estruturado | O que o corretor de fato mandou |
+| Lógica principal | Tabelas de rating, modelos atuariais | Regras de apetite, score, roteamento |
+| Dono típico | Atuarial e pricing | Operações de subscrição |
+| Saída | Um prêmio com abertura | Uma decisão com reason codes, depois um prêmio |
+| Lida com entrada não estruturada | Não | Sim, esse é o ponto |
+| Lida com recusa e encaminhamento | Não | Sim |
+| Artefato regulatório | O algoritmo de rating registrado | O registro de decisão e a trilha de auditoria |
+| Cadência de mudança | Lenta, deliberada, governada por atuarial | Rápida, conforme apetite e sinistralidade se movem |
+
+A linha de cadência explica boa parte da confusão do mercado. Mudança de preço é governada, registrada e lenta por desenho, porque errar ali é problema atuarial e regulatório. Apetite e roteamento mudam o tempo todo, porque são decisões comerciais. Colocar os dois no mesmo sistema significa que ou o preço se move rápido demais ou o apetite se move devagar demais, e na prática é sempre o segundo.
+
+### Onde entra um motor de regras
+
+Um motor de regras genérico é uma terceira coisa, e costuma ser proposto como substituto barato de qualquer um dos dois.
+
+Ele executa lógica determinística muito bem: se ramo é X e limite acima de Y, encaminhe. É excelente para codificar uma fronteira de apetite e péssimo para tudo que exige ler um documento, pontuar uma probabilidade ou tratar um caso que ninguém previu. Ele não guarda memória de por que a decisão foi tomada além de qual regra disparou, e degrada mal conforme o conjunto cresce, porque interação entre regras vira ingovernável em algum ponto depois de algumas centenas.
+
+A maioria das plataformas de decisão que funcionam contém um motor de regras e não é um. Regras cuidam das fronteiras duras, que são legais e inegociáveis. Modelos cuidam das perguntas graduadas, que são probabilísticas. Uma plataforma só de regras não consegue priorizar, e uma plataforma só de modelos não consegue fazer cumprir uma autoridade delegada. Como esse corte é feito na prática está em [roteamento automático de subscrição](#blog/roteamento-automatico-subscricao).
+
+### Você precisa dos dois?
+
+Quase sempre sim, mas não necessariamente como duas compras.
+
+A maioria das seguradoras já tem um motor de precificação, dentro do core de apólices ou como módulo de rating registrado ao lado dele. Ele funciona, é governado, e trocá-lo raramente se justifica. O que costuma faltar é tudo que vem antes: intake, extração, checagem de apetite, score e roteamento. Essa lacuna é a razão pela qual submissões ficam três dias na caixa de entrada antes de alguém precificar qualquer coisa.
+
+O movimento produtivo, então, não é trocar o motor de rating. É colocar uma camada de decisão na frente dele que decida o que merece ser precificado, e fazer essa camada chamar o motor existente quando a resposta for sim. Isso mantém a governança atuarial intacta, mantém o algoritmo registrado sem toque, e move o gargalo. O formato geral disso está em [integrar uma camada de IA ao core sem migração](#blog/integrar-camada-ia-core-seguros), e o lado de precificação dinâmica em [precificação dinâmica de seguros](#blog/precificacao-dinamica-seguros).
+
+### Como saber o que estão te vendendo
+
+O posicionamento de fornecedor nessa categoria é especialmente frouxo, então teste com quatro perguntas.
+
+Peça para ver uma recusa. Um motor de precificação não produz uma. Se a demo não tem caminho de recusa com reason codes, é ferramenta de rating.
+
+Pergunte o que ele faz com um e-mail de corretor e três anexos. Uma plataforma de decisão ingere. Um motor de precificação precisa que alguém já tenha convertido aquilo em campos.
+
+Pergunte quem seria o dono internamente. Se a resposta é atuarial, é precificação. Se é operações de subscrição, é decisão. Se ninguém sabe dizer, esse é o achado de verdade.
+
+E pergunte o que ele devolve. Um prêmio é saída de precificação. Uma decisão com referência, reason codes e versão de regras reproduzível é saída de decisão.
+
+### Por que a distinção tem consequência comercial
+
+O gargalo na maioria das operações de subscrição não é o cálculo do preço. É tudo que acontece antes de um preço poder ser calculado. Subscritores gastam cerca de 40% do tempo em tarefas administrativas em vez de seleção de risco, segundo a Deloitte, e mais de 60% dos corretores escolhem seguradora por velocidade de resposta, segundo a Capgemini. Nenhum dos dois números se move porque a tabela de rating melhorou.
+
+Uma seguradora que responde à lentidão de cotação comprando um motor de precificação mais rápido otimizou a etapa mais rápida da cadeia. O tempo está sendo perdido no intake, na caça a dado faltando, na decisão sobre se o risco é desejado, e na fila pela atenção de um subscritor. Isso são problemas de decisão, e estão em [como reduzir o tempo de resposta de cotação para o corretor](#blog/reduzir-tempo-resposta-cotacao-corretor).
+
+A WIR Innovation é uma camada de IA externa para seguradoras e MGAs que automatiza a jornada de cotação e subscrição conforme a política de aceitação de risco da própria seguradora, cobrindo intake, leitura de documentos, enriquecimento, score de risco e fraude, precificação ajustada a risco e a decisão final, com toda decisão explicável e trilha de auditoria completa, sem substituir o core.`,
+    faq: [
+      { q: "Qual a diferença entre motor de precificação e plataforma de decisão de subscrição?", a: "Um motor de precificação converte um risco aceito em prêmio usando tabelas de rating, fatores e modelos atuariais. Uma plataforma de decisão de subscrição decide se o risco é aceitável, o que está faltando, se ele cabe no apetite e se um humano precisa ver, e só então chama o motor de precificação. Precificação é um cálculo que assume que o risco vai ser escrito. Decisão é o julgamento sobre se ele deveria ser." },
+      { q: "A seguradora precisa dos dois?", a: "Quase sempre sim, mas normalmente não como duas compras. A maioria das seguradoras já tem um motor de precificação dentro do core ou como módulo de rating registrado ao lado, e trocá-lo raramente se justifica. O que costuma faltar é tudo que vem antes: intake, extração de documentos, checagem de apetite, score de risco e roteamento. O movimento produtivo é colocar uma camada de decisão na frente do motor existente e fazê-la chamar esse motor quando a resposta for sim." },
+      { q: "Um motor de regras é a mesma coisa que uma plataforma de decisão?", a: "Não. Um motor de regras executa lógica determinística muito bem e é excelente para codificar fronteiras duras de apetite, mas não lê documento, não pontua probabilidade e não trata caso que ninguém previu, além de degradar conforme a interação entre regras fica ingovernável. A maioria das plataformas de decisão que funcionam contém um motor de regras e não é um. Regras cuidam das fronteiras inegociáveis e modelos cuidam das perguntas graduadas." },
+      { q: "Como saber o que um fornecedor está realmente vendendo?", a: "Peça para ver uma recusa, porque um motor de precificação não produz uma e uma demo sem caminho de recusa com reason codes é ferramenta de rating. Pergunte o que ele faz com um e-mail de corretor e três anexos, já que uma plataforma de decisão ingere e um motor precisa que alguém já tenha convertido aquilo em campos. Pergunte quem seria o dono internamente, atuarial para precificação ou operações de subscrição para decisão. E pergunte o que ele devolve: prêmio é saída de precificação, decisão com reason codes e versão reproduzível é saída de decisão." },
+      { q: "Por que um motor de precificação mais rápido não acelera a cotação?", a: "Porque o cálculo do preço costuma ser a etapa mais rápida da cadeia. O tempo se perde antes dele, no intake, na caça a dado faltando, na decisão sobre se o risco é desejado e na fila pela atenção de um subscritor. Subscritores gastam cerca de 40% do tempo em tarefas administrativas em vez de seleção de risco, segundo a Deloitte, e mais de 60% dos corretores escolhem seguradora por velocidade de resposta, segundo a Capgemini. Nenhum dos dois números se move porque a tabela de rating melhorou." },
+      { q: "Por que precificação e apetite devem viver em sistemas diferentes?", a: "Porque mudam em velocidades diferentes. Mudança de preço é governada por atuarial, registrada em vários ramos regulados e lenta por desenho, já que errar ali é problema regulatório. Apetite e roteamento mudam o tempo todo porque são decisões comerciais que respondem a sinistralidade e capacidade. Colocar os dois no mesmo sistema significa que ou o preço se move rápido demais ou o apetite se move devagar demais, e na prática é sempre o apetite que trava." }
+    ],
+  },
+  {
     slug: "what-is-an-algorithmic-mga",
+    alt: "o-que-e-uma-mga-algoritmica",
     lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#0E7C86)",
     image: "/assets/articles/what-is-an-algorithmic-mga.jpg",
@@ -97,6 +653,7 @@ WIR Innovation is an external AI layer for insurers and MGAs that automates subm
   },
   {
     slug: "what-is-fnol-first-notice-of-loss-process",
+    alt: "o-que-e-fnol-aviso-de-sinistro",
     lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
     image: "/assets/articles/what-is-fnol-first-notice-of-loss-process.jpg",
@@ -199,6 +756,7 @@ WIR Innovation is an external AI layer for insurers and MGAs that structures uns
   },
   {
     slug: "what-is-an-underwriting-intelligence-layer",
+    alt: "camada-de-inteligencia-de-subscricao",
     lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#0E7C86,#7540AC)",
     image: "/assets/articles/what-is-an-underwriting-intelligence-layer.jpg",
@@ -297,6 +855,7 @@ WIR Innovation is an external AI layer for insurers and MGAs that automates the 
   },
   {
     slug: "parametric-vs-indemnity-insurance",
+    alt: "seguro-parametrico-vs-indenizatorio",
     lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#0E7C86)",
     image: "/assets/articles/parametric-vs-indemnity-insurance.jpg",
@@ -408,6 +967,7 @@ WIR Innovation is an external AI layer for insurers and MGAs that automates inta
   },
   {
     slug: "what-is-shadow-mode-underwriting",
+    alt: "subscricao-em-shadow-mode",
     lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
     image: "/assets/articles/what-is-shadow-mode-underwriting.jpg",
@@ -499,6 +1059,7 @@ WIR Innovation is an external AI layer for insurers and MGAs that automates subm
   },
   {
     slug: "pricing-engine-vs-underwriting-decision-platform",
+    alt: "motor-de-precificacao-vs-plataforma-de-decisao",
     lang: "en",
     cat: "Artigo", grad: "linear-gradient(135deg,#7540AC,#3222E9)",
     image: "/assets/articles/pricing-engine-vs-underwriting-decision-platform.jpg",

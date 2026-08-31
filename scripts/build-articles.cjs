@@ -114,9 +114,12 @@ function renderHead(article) {
   // An English-native page (lang:"en", no `-en` suffix) has no translation pair. Without this
   // guard ptSlug() returns the page itself, so it would advertise itself as its own pt-BR
   // alternate and x-default, telling Google an English page is the Brazilian one.
-  const standaloneEn = isEn && !hasEnSuffix(article.slug);
-  const ptSibling = ptSlug(article.slug);
-  const enSibling = enSlug(article.slug);
+  // `alt: "<slug>"` declares the translation sibling explicitly. English-native pages carry no
+  // `-en` suffix, so their PT counterpart cannot be derived from the slug and has to be named.
+  const alt = article.alt && ALL_SLUGS.has(article.alt) ? article.alt : null;
+  const standaloneEn = isEn && !hasEnSuffix(article.slug) && !alt;
+  const ptSibling = alt ? (isEn ? alt : article.slug) : ptSlug(article.slug);
+  const enSibling = alt ? (isEn ? article.slug : alt) : enSlug(article.slug);
   const hasPT = !standaloneEn && ALL_SLUGS.has(ptSibling);
   const hasEN = !standaloneEn && ALL_SLUGS.has(enSibling);
   let hreflangTags = "";

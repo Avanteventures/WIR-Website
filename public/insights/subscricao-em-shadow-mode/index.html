@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#7540AC" />
+<title>Subscrição em shadow mode: testar IA sem arriscar a carteira · WIR Innovation</title>
+<meta name="description" content="Shadow mode roda um modelo de subscrição sobre submissões reais sem autoridade para decidir. Como desenhar o teste, o que medir e como sair dele." />
+<link rel="canonical" href="https://wirinnovation.ai/insights/subscricao-em-shadow-mode/" />
+<link rel="alternate" hreflang="pt-BR" href="https://wirinnovation.ai/insights/subscricao-em-shadow-mode/" />
+<link rel="alternate" hreflang="en" href="https://wirinnovation.ai/insights/what-is-shadow-mode-underwriting/" />
+<link rel="alternate" hreflang="x-default" href="https://wirinnovation.ai/insights/subscricao-em-shadow-mode/" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Subscrição em shadow mode: testar IA sem arriscar a carteira" />
+<meta property="og:description" content="Shadow mode roda um modelo de subscrição sobre submissões reais sem autoridade para decidir. Como desenhar o teste, o que medir e como sair dele." />
+<meta property="og:url" content="https://wirinnovation.ai/insights/subscricao-em-shadow-mode/" />
+<meta property="og:image" content="https://wirinnovation.ai/assets/articles/subscricao-em-shadow-mode.jpg" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="WIR Innovation" />
+<meta property="article:author" content="WIR Innovation" />
+<meta property="article:section" content="Artigo" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Subscrição em shadow mode: testar IA sem arriscar a carteira" />
+<meta name="twitter:description" content="Shadow mode roda um modelo de subscrição sobre submissões reais sem autoridade para decidir. Como desenhar o teste, o que medir e como sair dele." />
+<meta name="twitter:image" content="https://wirinnovation.ai/assets/articles/subscricao-em-shadow-mode.jpg" />
+
+<link rel="icon" type="image/svg+xml" href="/assets/wir-logo-azul.svg" />
+<link rel="apple-touch-icon" href="/assets/wir-logo-azul.svg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" /></noscript>
+<script>(function(){if(typeof navigator!=='undefined'&&navigator.webdriver)return;var href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap";var inject=function(){var l=document.createElement('link');l.rel='stylesheet';l.href=href;document.head.appendChild(l);};if('requestIdleCallback' in window){requestIdleCallback(inject,{timeout:2000});}else{setTimeout(inject,0);}})();</script>
+
+<link rel="stylesheet" href="/style.css?v=2026072301" />
+<link rel="stylesheet" href="/home.css?v=2026072301" />
+<link rel="stylesheet" href="/blog.css?v=2026072301" />
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Subscrição em shadow mode: testar IA sem arriscar a carteira","description":"Shadow mode roda um modelo de subscrição sobre submissões reais sem autoridade para decidir. Como desenhar o teste, o que medir e como sair dele.","image":"/assets/articles/subscricao-em-shadow-mode.jpg","datePublished":"2026-08-31","author":{"@type":"Person","name":"WIR Innovation","jobTitle":"Equipe"},"publisher":{"@type":"Organization","name":"WIR Innovation","logo":{"@type":"ImageObject","url":"https://wirinnovation.ai/assets/wir-logo-azul.svg"}},"mainEntityOfPage":"https://wirinnovation.ai/insights/subscricao-em-shadow-mode/","articleSection":"Artigo"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://wirinnovation.ai/"},{"@type":"ListItem","position":2,"name":"Insights & News","item":"https://wirinnovation.ai/insights/"},{"@type":"ListItem","position":3,"name":"Subscrição em shadow mode: testar IA sem arriscar a carteira","item":"https://wirinnovation.ai/insights/subscricao-em-shadow-mode/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://wirinnovation.ai/insights/subscricao-em-shadow-mode/#faq","inLanguage":"pt-BR","mainEntity":[{"@type":"Question","name":"O que é subscrição em shadow mode?","acceptedAnswer":{"@type":"Answer","text":"É um período controlado de avaliação em que um sistema de subscrição, de IA ou de regras, pontua submissões reais em paralelo ao processo humano vigente, sem nenhuma autoridade para cotar, recusar, precificar ou emitir. A saída do modelo é registrada e comparada depois com a decisão do subscritor. A pessoa não pode ver a saída do modelo no momento em que decide, senão a comparação mede ancoragem e não qualidade de modelo."}},{"@type":"Question","name":"Quanto tempo deve durar um shadow mode?","acceptedAnswer":{"@type":"Answer","text":"Fixe volume, não calendário, porque uma carteira com 200 submissões por semana chega à utilidade estatística muito antes de uma com 20. O período também precisa cobrir a sazonalidade que importa, como pico de renovação ou janela de safra. Para um segmento definido com volume razoável, de seis a doze semanas é a faixa comum. Menos de quatro semanas é demonstração, não teste."}},{"@type":"Question","name":"O que medir durante um shadow run?","acceptedAnswer":{"@type":"Answer","text":"Discordância analisada por direção, já que o modelo querer recusar um risco que o humano escreveu é um problema diferente de querer cotar um que o humano recusou. Discordância por causa, separando dado faltando, regra ausente e erro genuíno de modelo. Cobertura, que é com que frequência o modelo devolveu resposta utilizável. E estabilidade, que é o mesmo risco pontuar igual ao ser reenviado. Taxa de concordância sozinha é o número menos informativo."}},{"@type":"Question","name":"Concordância alta prova que o modelo é bom?","acceptedAnswer":{"@type":"Answer","text":"Não. Concordância alta prova apenas que o modelo não é obviamente ruim. Um modelo que concorda com seus subscritores 92% das vezes replicou a carteira atual, inclusive os erros dela. O valor está nas discordâncias, e é por isso que a cadência de revisão deve olhar a minoria de casos em que as duas respostas divergem em vez de comemorar a maioria em que coincidem."}},{"@type":"Question","name":"Como sair do shadow mode para produção?","acceptedAnswer":{"@type":"Answer","text":"Em três degraus, com critérios definidos antes de começar. Primeiro modo consultivo, com a saída visível como recomendação e a pessoa ainda decidindo. Depois autoridade limitada, com o modelo decidindo sozinho uma faixa estreita e bem entendida, como os riscos mais limpos ou recusas claramente fora de apetite. Depois expansão faixa a faixa, cada ampliação justificada pelo dado da anterior, com procedimento de rollback documentado."}},{"@type":"Question","name":"Que problemas o shadow mode não resolve?","acceptedAnswer":{"@type":"Answer","text":"Não resolve dado ruim: se as submissões chegam como PDF não estruturado e fio de e-mail, o shadow mede principalmente a qualidade da sua ingestão, então extração deve ser corrigida antes. Não resolve apetite indefinido, porque se subscritores sêniores discordam sobre se um ramo está no apetite não existe resposta certa para comparar. E não satisfaz um auditor sozinho, que precisa de regras versionadas, reason codes e decisões reproduzíveis."}}]}</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1SW9TDZ9H2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1SW9TDZ9H2', { anonymize_ip: true });
+</script>
+
+<script>document.documentElement.classList.add('js-ready');</script>
+</head>
+<body>
+<div class="ticker">
+  <div class="ticker__track">
+    <span class="ticker__item"><span class="ticker__dot"></span>Decisão em minutos · auditável · explicável</span>
+    <span class="ticker__item"><span class="ticker__dot ticker__dot--p"></span>Straight-through processing como padrão</span>
+    <span class="ticker__item"><span class="ticker__dot ticker__dot--b"></span>Plataforma de IA para seguros</span>
+    <span class="ticker__item"><span class="ticker__dot ticker__dot--o"></span>Em conformidade com LGPD</span>
+    <span class="ticker__item"><span class="ticker__dot"></span>Decisão em minutos · auditável · explicável</span>
+    <span class="ticker__item"><span class="ticker__dot ticker__dot--p"></span>Straight-through processing como padrão</span>
+  </div>
+</div>
+<nav class="nav">
+  <div class="wrap nav__inner">
+    <a href="/" class="nav__brand">
+      <img src="/assets/wir-logo-azul.svg" alt="WIR Innovation" style="height:60px;width:auto;display:block" />
+      <span class="nav__brand-sub">Innovation · AI Stack</span>
+    </a>
+    <div class="nav__links">
+      <a href="/" class="nav__link">Início</a>
+      <a href="/#about" class="nav__link">Sobre</a>
+      <a href="/insights/manifesto/" class="nav__link">Manifesto</a>
+      <a href="/#solutions" class="nav__link">Produtos &amp; IA</a>
+      <a href="/#protection" class="nav__link">Proteção de Dados</a>
+      <a href="/insights/" class="nav__link nav__link--active">Insights &amp; News</a>
+    </div>
+    <a href="/#contact" class="nav__cta">
+      <span class="dot"></span>
+      Contato
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</nav>
+
+<main>
+<article class="blarticle">
+  <div class="wrap blarticle__wrap">
+    <a class="blarticle__back" href="/insights/">
+      <span aria-hidden="true">←</span> Voltar para Insights &amp; News
+    </a>
+
+    <header class="blarticle__head">
+      <div class="eyebrow">· Artigo</div>
+      <h1 class="display blarticle__title">Subscrição em shadow mode: testar IA sem arriscar a carteira</h1>
+      <p class="blarticle__sub">Subscrição em shadow mode é rodar um modelo de IA sobre submissões reais sem deixar ele decidir nada. O modelo vê os mesmos riscos que os subscritores, a resposta dele é registrada e comparada, e esse registro vira a evidência que um regulador ou um ressegurador aceita.</p>
+      <div class="blarticle__byline">
+        <div class="blarticle__author-initials">WI</div>
+        <div class="blarticle__byline-meta">
+          <div class="blarticle__byline-author"><b>WIR Innovation</b> · Equipe</div>
+          <div class="blarticle__byline-time">31 · Ago · 2026 · 7 min de leitura</div>
+        </div>
+      </div>
+    </header>
+
+    <figure class="blarticle__hero-img" style="background: linear-gradient(135deg,#3222E9,#7540AC); aspect-ratio: 16 / 9;">
+      <img src="/assets/articles/subscricao-em-shadow-mode.jpg" alt="Subscrição em shadow mode: testar IA sem arriscar a carteira" width="1600" height="900" loading="eager" fetchpriority="high" />
+    </figure>
+
+    <div class="blarticle__body">
+<p>Subscrição em shadow mode é rodar um modelo de IA sobre submissões reais sem deixar ele decidir nada. O modelo vê os mesmos riscos que os subscritores veem, produz a própria resposta, e essa resposta é registrada e comparada em vez de executada. É o jeito mais barato de descobrir se um modelo funciona na sua carteira, e é a evidência que um regulador, um ressegurador ou um diretor técnico desconfiado realmente aceita.</p>
+<h3>O que é subscrição em shadow mode</h3>
+<p><strong>Subscrição em shadow mode é um período controlado de avaliação em que um sistema de subscrição, de IA ou de regras, pontua submissões reais em paralelo ao processo humano vigente, sem nenhuma autoridade para cotar, recusar, precificar ou emitir.</strong></p>
+<p>O nome vem da engenharia de software, onde um serviço novo roda ao lado do antigo sobre tráfego de produção, com as saídas descartadas, só para ver se ele teria se comportado direito. Em subscrição a mecânica é idêntica. Toda submissão que chega ao time chega também ao modelo. O subscritor trabalha normalmente e não vê a saída do modelo enquanto decide. Depois, as duas respostas ficam guardadas lado a lado.</p>
+<p>A restrição crítica é justamente a que costuma ser ignorada: o modelo não pode estar visível para quem decide, no momento em que decide. Se o subscritor enxerga o score antes de bater o martelo, a comparação está contaminada, porque você deixou de medir o modelo e passou a medir uma pessoa ancorada nele.</p>
+<h3>Por que shadow mode existe</h3>
+<p>Três problemas tornam um go-live direto irresponsável numa carteira.</p>
+<p>O primeiro é que performance de modelo no benchmark do fornecedor não diz nada sobre performance na sua carteira. Apetite, mix de corretor, qualidade de dado e mercado local mudam a resposta. Um modelo que vai bem numa carteira patrimonial norte-americana pode ser inútil em transporte brasileiro.</p>
+<p>O segundo é regulatório. Supervisores cada vez mais esperam que a seguradora demonstre que uma decisão automatizada foi validada antes de afetar um cliente, e que consiga explicar qualquer resultado individual. Um período de shadow gera exatamente essa evidência: um registro datado e versionado do comportamento do modelo sobre riscos reais antes de ele ter qualquer autoridade. O panorama global está em regulação de subscrição com IA em 2026 e a visão brasileira em <a href="/insights/regulacao-ia-seguros-susep/" class="blarticle__link-int">SUSEP e regulação de IA</a>.</p>
+<p>O terceiro é organizacional, e é o mais subestimado. Você está pedindo a subscritores que entreguem julgamento a um sistema. O jeito mais rápido de perder essa sala é lançar um modelo e deixá-lo errar em público. O jeito mais rápido de ganhá-la é deixar que, por três meses, os subscritores vejam onde o modelo concordou com eles e onde não concordou, sem nada em jogo.</p>
+<h3>Como um shadow run funciona na prática</h3>
+<ol>
+  <li><strong>Congele o escopo.</strong> Um ramo, um segmento, uma geografia. Shadow sobre a carteira inteira não mede nada, porque os modos de falha se cancelam.</li>
+  <li><strong>Defina qual decisão está sendo sombreada.</strong> Dentro ou fora do apetite, encaminhar ou cotar automático, preço técnico, faixa de score. Um modelo sombreando quatro decisões ao mesmo tempo produz quatro sinais fracos em vez de um forte.</li>
+  <li><strong>Ligue o modelo no tráfego vivo.</strong> Submissões reais, qualidade de dado real, lacunas reais. Nunca um extrato histórico limpo. A bagunça é o ponto.</li>
+  <li><strong>Cegue as pessoas.</strong> A saída vai para um lugar que o time de subscrição não acessa durante o expediente.</li>
+  <li><strong>Registre tudo.</strong> Para cada submissão: insumos, versão do modelo e das regras, saída, reason codes, decisão humana, timestamp, e o desfecho quando ele aparecer.</li>
+  <li><strong>Revise em cadência.</strong> Semanal no primeiro mês, quinzenal depois. Toda revisão olha as discordâncias, não a taxa de concordância.</li>
+  <li><strong>Acompanhe o que foi emitido.</strong> Concordância é proxy. Sinistralidade e conversão nos riscos efetivamente escritos são o sinal de verdade, e chegam depois.</li>
+</ol>
+<h3>O que medir</h3>
+<p>Taxa de concordância é o número que todo mundo pede e o menos informativo sozinho. Quatro medições importam mais.</p>
+<p>Discordância por direção. O modelo queria recusar e o humano escreveu, ou o modelo queria cotar e o humano recusou. São dois problemas de negócio completamente diferentes e não podem virar uma porcentagem só.</p>
+<p>Discordância por causa. Dado faltando, regra que o modelo não tem, relação com corretor que ele não enxerga, ou erro genuíno de modelo. Só o último é problema de modelagem. Os outros são problemas de processo fantasiados de modelo.</p>
+<p>Cobertura. Com que frequência o modelo devolveu resposta utilizável. Um modelo que concorda 95% das vezes mas se abstém em um terço das submissões tem problema de pipeline de dado, não um bom resultado.</p>
+<p>Estabilidade. O mesmo risco, reenviado com diferenças triviais, deve pontuar igual. Instabilidade no shadow é o melhor preditor de encrenca em produção.</p>
+<p>Debaixo de tudo isso tem uma regra dura: <strong>taxa alta de concordância não prova que o modelo é bom, prova apenas que ele não é obviamente ruim.</strong> Um modelo que concorda com seus subscritores 92% das vezes replicou sua carteira atual, inclusive os erros dela. O valor está concentrado nos 8%, e a cadência de revisão existe para entender esses 8%.</p>
+<h3>Quanto tempo deve durar</h3>
+<p>Tempo suficiente para ver risco suficiente, e tempo suficiente para que parte dele amadureça.</p>
+<p>Fixe volume, não calendário. Uma carteira com 200 submissões por semana chega à utilidade estatística muito antes de uma com 20. Cubra a sazonalidade que importa: pico de renovação, janela de chuva ou de safra, fechamento fiscal. Shadow que perdeu o pico não testou o pico. Para um segmento definido com volume razoável, de seis a doze semanas é a faixa comum. Menos de quatro semanas é demonstração. Mais de seis meses normalmente quer dizer que ninguém quer decidir.</p>
+<h3>Saindo do shadow</h3>
+<p>Shadow mode é uma fase, não um estado permanente, e a saída deve ser definida antes de começar. O caminho usual tem três degraus, e é deliberadamente gradual.</p>
+<p>Primeiro, modo consultivo: a saída do modelo fica visível ao subscritor como recomendação, com a pessoa ainda decidindo tudo. A concordância costuma saltar aqui, o que é ancoragem e não melhoria, então essa fase mede adoção, não acurácia.</p>
+<p>Segundo, autoridade limitada: o modelo passa a decidir sozinho uma faixa estreita e bem entendida. Normalmente os riscos mais limpos, que iriam para cotação automática de qualquer jeito, ou recusas claramente fora de apetite. Todo o resto continua indo para humano.</p>
+<p>Terceiro, expansão faixa a faixa, com cada ampliação justificada pelo dado da anterior.</p>
+<p>Os critérios de saída devem estar escritos desde o início e incluir um piso de cobertura, um teto de discordância inexplicada, evidência de estabilidade e um procedimento documentado de rollback. O desenho mais amplo do piloto está em <a href="/insights/escalonamento-humano-subscricao-seguros/" class="blarticle__link-int">escalonamento humano na subscrição automatizada</a>.</p>
+<h3>O que shadow mode não resolve</h3>
+<p>Não resolve dado ruim. Se as submissões chegam como PDF não estruturado e fio de e-mail, o modelo vai desempenhar mal no shadow por razões que nada têm a ver com o modelo. Subscritores já perdem cerca de 40% do tempo em trabalho administrativo em vez de seleção de risco, segundo a Deloitte, e um shadow rodando em cima dessa bagunça mede principalmente a bagunça. Conserte ingestão e extração antes.</p>
+<p>Não resolve apetite indefinido. Se dois subscritores sêniores discordam sobre se um ramo está no apetite, o modelo não tem como estar certo, porque não existe resposta certa contra a qual comparar.</p>
+<p>E não satisfaz um auditor por si só. O que satisfaz um auditor é o registro: regras versionadas, reason codes em toda saída, e a capacidade de reproduzir uma decisão meses depois. Essa exigência é a mesma que vale para subscrição em produção e está em como auditar decisões de subscrição com IA e <a href="/insights/decisoes-subscricao-auditaveis/" class="blarticle__link-int">decisões de subscrição auditáveis</a>.</p>
+<p>A implicação arquitetural é que shadow mode só é barato se o modelo puder ser plugado no fluxo vivo de submissões sem tocar no sistema de administração de apólices. Se avaliar um modelo exige um projeto de integração com o core, ninguém vai avaliar mais de um modelo, e é exatamente assim que seguradoras acabam casadas com o primeiro fornecedor que viram. Uma camada externa que lê o tráfego vivo e escreve no próprio log, deixando o sistema de registro intacto, é o que transforma shadow mode em exercício de rotina em vez de programa.</p>
+<p>A WIR Innovation é uma camada de IA externa para seguradoras e MGAs que automatiza intake de submissões, cotação e decisão de subscrição sem substituir o core, com ML calibrado ao apetite e ao manual da própria seguradora, e toda decisão explicável com trilha de auditoria completa. Ela aplicou esse padrão numa prova de conceito com uma seguradora global no ramo de Transportes.</p>
+<section class="blarticle__faq" aria-label="Perguntas frequentes">
+<h3>Perguntas frequentes</h3>
+<details class="blarticle__faq-item">
+  <summary>O que é subscrição em shadow mode?</summary>
+  <p>É um período controlado de avaliação em que um sistema de subscrição, de IA ou de regras, pontua submissões reais em paralelo ao processo humano vigente, sem nenhuma autoridade para cotar, recusar, precificar ou emitir. A saída do modelo é registrada e comparada depois com a decisão do subscritor. A pessoa não pode ver a saída do modelo no momento em que decide, senão a comparação mede ancoragem e não qualidade de modelo.</p>
+</details>
+<details class="blarticle__faq-item">
+  <summary>Quanto tempo deve durar um shadow mode?</summary>
+  <p>Fixe volume, não calendário, porque uma carteira com 200 submissões por semana chega à utilidade estatística muito antes de uma com 20. O período também precisa cobrir a sazonalidade que importa, como pico de renovação ou janela de safra. Para um segmento definido com volume razoável, de seis a doze semanas é a faixa comum. Menos de quatro semanas é demonstração, não teste.</p>
+</details>
+<details class="blarticle__faq-item">
+  <summary>O que medir durante um shadow run?</summary>
+  <p>Discordância analisada por direção, já que o modelo querer recusar um risco que o humano escreveu é um problema diferente de querer cotar um que o humano recusou. Discordância por causa, separando dado faltando, regra ausente e erro genuíno de modelo. Cobertura, que é com que frequência o modelo devolveu resposta utilizável. E estabilidade, que é o mesmo risco pontuar igual ao ser reenviado. Taxa de concordância sozinha é o número menos informativo.</p>
+</details>
+<details class="blarticle__faq-item">
+  <summary>Concordância alta prova que o modelo é bom?</summary>
+  <p>Não. Concordância alta prova apenas que o modelo não é obviamente ruim. Um modelo que concorda com seus subscritores 92% das vezes replicou a carteira atual, inclusive os erros dela. O valor está nas discordâncias, e é por isso que a cadência de revisão deve olhar a minoria de casos em que as duas respostas divergem em vez de comemorar a maioria em que coincidem.</p>
+</details>
+<details class="blarticle__faq-item">
+  <summary>Como sair do shadow mode para produção?</summary>
+  <p>Em três degraus, com critérios definidos antes de começar. Primeiro modo consultivo, com a saída visível como recomendação e a pessoa ainda decidindo. Depois autoridade limitada, com o modelo decidindo sozinho uma faixa estreita e bem entendida, como os riscos mais limpos ou recusas claramente fora de apetite. Depois expansão faixa a faixa, cada ampliação justificada pelo dado da anterior, com procedimento de rollback documentado.</p>
+</details>
+<details class="blarticle__faq-item">
+  <summary>Que problemas o shadow mode não resolve?</summary>
+  <p>Não resolve dado ruim: se as submissões chegam como PDF não estruturado e fio de e-mail, o shadow mede principalmente a qualidade da sua ingestão, então extração deve ser corrigida antes. Não resolve apetite indefinido, porque se subscritores sêniores discordam sobre se um ramo está no apetite não existe resposta certa para comparar. E não satisfaz um auditor sozinho, que precisa de regras versionadas, reason codes e decisões reproduzíveis.</p>
+</details>
+</section>
+    </div>
+
+    <nav class="blarticle__related" aria-label="Leituras relacionadas">
+      <h3 class="blarticle__related-title">Leituras relacionadas</h3>
+      <ul class="blarticle__related-list">
+      <li class="blarticle__related-item"><a href="/insights/motor-de-precificacao-vs-plataforma-de-decisao/"><span class="blarticle__related-cat">Artigo</span> Motor de precificação vs plataforma de decisão</a></li>
+      <li class="blarticle__related-item"><a href="/insights/arquitetura-camada-vs-core-decisor-tecnico-seguros/"><span class="blarticle__related-cat">Artigo</span> Arquitetura camada vs. core: o que o decisor técnico precisa saber</a></li>
+      <li class="blarticle__related-item"><a href="/insights/mercado-seguros-brasil-fevereiro-2026/"><span class="blarticle__related-cat">Artigo</span> Mercado de seguros no Brasil em 2026: o que está mudando agora</a></li>
+      <li class="blarticle__related-item"><a href="/insights/submission-intake-automation-mecanismo-por-dentro/"><span class="blarticle__related-cat">Artigo</span> Submission intake automation: o mecanismo por dentro</a></li>
+      </ul>
+    </nav>
+
+    <footer class="blarticle__foot">
+      <a class="btn btn--ghost" href="/insights/">
+        <span aria-hidden="true">←</span> Outros Insights
+      </a>
+      <a class="btn btn--solid" href="/#contact">
+        Falar com a equipe <span class="btn__arrow">→</span>
+      </a>
+    </footer>
+  </div>
+</article>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <img src="/assets/wir-logo-branco.svg" alt="WIR Innovation" style="height:64px;width:auto;display:block" />
+        <p class="footer__brand-desc">A nova era do seguro é inteligência de dados, velocidade e escala. A WIR Innovation é a plataforma de IA que entrega essa estrutura dentro dos sistemas que você já opera.</p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/company/wir-innovation/" target="_blank" rel="noopener noreferrer" class="footer__social-link">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://www.instagram.com/wirinnovation" target="_blank" rel="noopener noreferrer" class="footer__social-link">Instagram <span aria-hidden="true">↗</span></a>
+          <a href="https://x.com/wirinnovationai" target="_blank" rel="noopener noreferrer" class="footer__social-link">X <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/#about">Sobre</a></li>
+          <li><a href="/#solutions">Produtos &amp; IA</a></li>
+          <li><a href="/#protection">Proteção de Dados</a></li>
+          <li><a href="/insights/">Insights &amp; News</a></li>
+          <li><a href="/#contact">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@wirinnovation.ai">contato@wirinnovation.ai</a></li>
+          <li><a href="/#contact">Falar com a equipe</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sócios &amp; Holding</h4>
+        <ul>
+          <li><a href="/#about">Mahway · California</a></li>
+          <li><a href="/#about">Avante · Brasil</a></li>
+          <li><a href="/#about">Conselheiros estratégicos</a></li>
+          <li><a href="/#about">Princípios</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 WIR Innovation</span>
+      <span>wirinnovation.ai · Feito entre São Paulo e Silicon Valley</span>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/5511981757505?text=Ol%C3%A1%20Nicholas%2C%20vim%20pelo%20site%20da%20WIR%20Innovation.%20Gostaria%20de%20conversar%20sobre%E2%80%A6" target="_blank" rel="noopener noreferrer" class="wa-fab" aria-label="Falar com Nicholas no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+</body>
+</html>
