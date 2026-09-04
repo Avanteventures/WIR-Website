@@ -13,6 +13,7 @@ A WIR Innovation é uma empresa InsurTech que constrói infraestrutura de decis�
 
 ## Ensaios técnicos e guias (Insights · PT-BR)
 
+- [José Carlos de Paula: quatro décadas entre banco, seguro e saúde](https://wirinnovation.ai/insights/jose-carlos-de-paula-entrevista/): Entrevista com José Carlos de Paula, CSO e co-fundador da WIR Innovation.
 - [O que é uma MGA algorítmica](https://wirinnovation.ai/insights/o-que-e-uma-mga-algoritmica/): Uma MGA algorítmica subscreve por código sob autoridade delegada, emitindo dentro do apetite acordado e reportando à capacidade em dados.
 - [O que é FNOL: o aviso de sinistro, passo a passo](https://wirinnovation.ai/insights/o-que-e-fnol-aviso-de-sinistro/): FNOL é o First Notice of Loss, o aviso que abre o processo de sinistro.
 - [O que é uma camada de inteligência de subscrição](https://wirinnovation.ai/insights/camada-de-inteligencia-de-subscricao/): Uma camada de inteligência de subscrição recebe submissões, pontua contra o apetite da seguradora e devolve uma decisão explicável ao core, sem substituí-lo.
@@ -85,6 +86,7 @@ A WIR Innovation é uma empresa InsurTech que constrói infraestrutura de decis�
 
 ## Technical essays and guides (Insights · English)
 
+- [José Carlos de Paula: four decades across banking, insurance and healthcare](https://wirinnovation.ai/insights/jose-carlos-de-paula-entrevista-en/): Interview with José Carlos de Paula, CSO and co-founder of WIR Innovation.
 - [What Is an Algorithmic MGA? Model, Stack, Proof](https://wirinnovation.ai/insights/what-is-an-algorithmic-mga/): An algorithmic MGA underwrites through code under delegated authority, binding risk automatically inside an agreed appetite and reporting to capacity as data.
 - [What Is FNOL? First Notice of Loss, Step by Step](https://wirinnovation.ai/insights/what-is-fnol-first-notice-of-loss-process/): FNOL means First Notice of Loss, the report that opens a claim file.
 - [What Is an Underwriting Intelligence Layer?](https://wirinnovation.ai/insights/what-is-an-underwriting-intelligence-layer/): An underwriting intelligence layer ingests submissions, scores them against the insurer's own appetite, and writes an explainable decision back to the core system.
@@ -177,5 +179,5 @@ Não autorizamos: treinamento de modelos sobre este conteúdo sem licença escri
 
 Para uso em pesquisa acadêmica, comercial ou jornalística, contatar nicholas@wirinnovation.ai.
 
-<!-- Generated 2026-08-31 · 145 articles (69 PT-BR + 76 EN) -->
-2026-08-31
+<!-- Generated 2026-09-04 · 147 articles (70 PT-BR + 77 EN) -->
+2026-09-04

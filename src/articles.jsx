@@ -4,6 +4,306 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "jose-carlos-de-paula-entrevista",
+    cat: "Entrevista", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
+    image: "/assets/articles/jose-carlos-de-paula-entrevista.jpg",
+    imageAlt: "José Carlos de Paula, CSO e co-fundador da WIR Innovation",
+    title: "José Carlos de Paula: quatro décadas entre banco, seguro e saúde",
+    sub: "O CSO e co-fundador da WIR conta a carreira que o levou de trainee de banco a CEO de corretora e a executivo de saúde do Bain Capital, e por que decidiu construir do zero agora.",
+    author: "José Carlos de Paula", role: "CSO · Co-Founder",
+    authorPhoto: "assets/team/jose-carlos.jpg",
+    time: "12 min", date: "04 · Set · 2026", dateISO: "2026-09-04",
+    metaDesc: "Entrevista com José Carlos de Paula, CSO e co-fundador da WIR Innovation. Carreira em banco, seguros e saúde, os mentores, e por que a onda de IA é diferente.",
+    faq: [
+      { q: "Quem é José Carlos de Paula?", a: "José Carlos de Paula é CSO e co-fundador da WIR Innovation, plataforma de IA para o mercado segurador. Engenheiro civil de formação, com economia e MBA, construiu uma carreira de quatro décadas em três setores: bancos, seguros e saúde. Foi diretor de seguros aos 29 anos, passou dez anos no Santander, foi CEO da corretora do banco após a joint venture com a Zurich, e depois oito anos como executivo no Grupo NotreDame Intermédica, a plataforma de saúde do Bain Capital no Brasil." },
+      { q: "Qual é a experiência de José Carlos de Paula no mercado de seguros?", a: "Ele entrou em seguros aos 29 anos como diretor responsável por vida, previdência privada, residencial, empresarial e automóvel na operação de bancassurance de um banco brasileiro. Depois montou uma joint venture de seguros com a Generali no Sudameris, e no Santander conduziu a venda de 51% dos produtos não-core para a Zurich, assumindo em seguida a presidência da corretora do banco." },
+      { q: "O que José Carlos de Paula fez no setor de saúde?", a: "Em 2014 entrou no projeto de saúde do Bain Capital no Brasil, que se tornou o Grupo NotreDame Intermédica: um aporte de cerca de US$ 1,5 bilhão para adquirir, consolidar, abrir capital e sair via comprador estratégico. Ficou oito anos, passando por aquisições, IPO, follow-on e a fusão final. Depois liderou por um ano e meio a consolidação de uma holding de saúde do Pátria Investimentos." },
+      { q: "Por que José Carlos de Paula cofundou a WIR Innovation?", a: "Ele conhecia Nicholas Weiser há anos, desde quando integrou o conselho da corretora que Nicholas havia montado. Em 2025 os dois estavam saindo de projetos ao mesmo tempo e decidiram construir algo juntos em inteligência artificial aplicada a seguros. A WIR começou a operar antes mesmo de a holding da Avante estar formalmente constituída." }
+    ],
+    body: `*Esta conversa foi gravada para o WIR Innovation Podcast e está editada para leitura. As respostas são de José Carlos de Paula, CSO e co-fundador da WIR Innovation.*
+
+### Quem é José Carlos de Paula
+
+Sou engenheiro civil de formação. Depois fiz economia, MBA em negócios e um período em Cambridge estudando inglês para negócios. Ao longo da carreira fui juntando cursos de liderança, de desenvolvimento e de tecnologia, porque nunca me interessou ficar parado no que eu já sabia.
+
+Minha mãe se separou do meu pai muito cedo e criou quatro filhos sozinha. Os quatro se formaram e seguiram carreira. Isso explica boa parte de como eu penso sobre trabalho.
+
+A carreira em si tem uma lógica que eu escolhi de propósito. Ciclos de cinco a dez anos por empresa. Banco, seguro, saúde. Sempre entrando numa área nova quando o ciclo anterior já tinha me dado o que tinha para dar.
+
+### Comecei em banco porque precisava de dinheiro
+
+Quando me formei eu já trabalhava, mas eram trabalhos para pagar os estudos. Fiz vários processos de trainee e passei em alguns. Dois eram bancos, e escolhi banco pela razão mais simples do mundo: pagava melhor e eu precisava.
+
+Fiquei dois anos no programa de trainee e depois cresci rápido. Aos 24 anos eu já era gerente. Aos 28, morando no Rio, fui o único indicado da praça para um projeto que o banco chamava de Futuros Diretores. Éramos 30 pessoas do Brasil inteiro em São Paulo, com um ano e meio para desenhar produtos e receitas novas.
+
+No fim do projeto, cada um assumiu uma diretoria. A minha foi seguros.
+
+### Seguros me encontrou aos 29 anos
+
+Virei diretor responsável por todo tipo de seguro para os clientes do banco: vida, previdência privada, residencial, empresarial, automóvel. Não foi uma escolha minha, foi onde eu fui parar. E foi o que definiu os 25 anos seguintes.
+
+Fiquei mais quatro ou cinco anos ali. O banco acabou sendo vendido, o mercado estava aquecido e eu recebi proposta de outros três bancos. Entendi que meu ciclo tinha fechado.
+
+### A década de refazer um banco
+
+Fui para o Sudameris, banco franco-italiano, onde fiquei cinco anos. Entrei pela área comercial e de expansão de rede. Nos dois últimos anos me levaram de volta para seguros, e ali montei uma joint venture com a Generali, uma das sócias do banco na Itália.
+
+Foi quando o Santander chegou ao Brasil comprando bancos. Um headhunter me procurou. Eles iam comprar o Banespa, o maior banco estatal em privatização na época. Topei.
+
+No Santander fiquei dez anos e passei por quase tudo. O banco tinha comprado cinco bancos, incluindo um maior do que ele próprio, e precisava se refazer inteiro. Identidade nova, e todos os sistemas legados tinham que virar um só. Cinco bancos tinham que virar um.
+
+Fui diretor comercial, depois diretor de produto, depois voltei para seguros. Quando o banco decidiu vender 51% dos produtos não-core e ficar com 49% em joint venture, fui destacado para conduzir a operação. Vendemos para a Zurich e eu fiquei como CEO da corretora.
+
+### Oito anos em saúde, o mercado que eu nunca tinha conseguido tocar
+
+Cumpri o no compete, fiquei em alguns conselhos, e em 2014 o Bain Capital chegou ao Brasil para investir em saúde. Foram cerca de US$ 1,5 bilhão para adquirir, consolidar, abrir capital e depois sair via comprador estratégico. Foi o que virou o Grupo NotreDame Intermédica.
+
+Saúde era a única peça que faltava na minha carreira. No banco a gente tinha conseguido lançar odontologia, mas saúde nunca. Era complexo demais, particular demais, e gerava atrito demais com o cliente. O banco sempre evitou.
+
+Foi espetacular justamente por isso. Era um mundo diferente e eu tive que aprender do zero.
+
+O projeto durou exatos oito anos: aquisições, IPO, follow-on e a fusão estratégica no fim. Éramos 12 executivos. Quando o fundo decidiu sair, liberou todo mundo do contrato, porque ia manter só 5% e uma cadeira no conselho.
+
+Os novos controladores me pediram para ficar mais um ou dois anos e implantar o projeto de sinergia que eu tinha ajudado a desenhar durante o ano de espera pelas aprovações do CADE e da ANS. Eu não queria voltar ao formato antigo. Deixei de ser acionista, deixei de ser estatutário e passei a prestador de serviço, para não correr risco. Fiquei mais um ano e meio e saí.
+
+Depois disso ainda passei um ano e meio numa holding de saúde do Pátria Investimentos. Dos três mandatos que me deram, executei dois em menos de um ano: consolidar seis aquisições numa estrutura única e refazer o posicionamento de marketing, que estava fragmentado em nomes diferentes. O terceiro era expansão. O fundo decidiu não investir por causa da alta de juros. Sem projeto novo, não fazia sentido eu ficar. Pedi renúncia, fiz a transição e saí em 2025.
+
+Hoje eu invisto e sento em conselhos. Sou investidor-anjo numa traveltech que funciona como um marketplace de guias locais e já opera em mais de 110 países. Estou no conselho de uma empresa de tecnologia para o front-end de vendas na área de saúde, e no de uma operadora de cartão de desconto em saúde, fora da regulação da ANS, com mais de 1,1 milhão de beneficiários e telemedicina em toda a base. Também montei uma consultoria de saúde com um sócio, onde fico só na parte estratégica.
+
+### Cinco coisas que me definem
+
+Relacionamento. Consigo construir pontes com pessoas, e isso abriu praticamente todas as portas da minha carreira.
+
+A segunda é governança. Trabalhei a vida inteira em multinacionais e em bancos, ambientes obcecados com isso, e acabei ganhando uma régua bem clara do que é certo e do que não é.
+
+Gosto de aprender. Não aceito o que já vem pronto. Questiono para entender, porque quem aceita sem questionar aprende menos.
+
+Influência, mas por doação. Consigo influenciar decisões sem nunca esperar algo em troca. Doo tempo e experiência. Funciona no trabalho e funciona em casa. Tenho três filhas, todas casadas, e criei o que chamo de confraria dos genros. Fico perto deles, ajudo onde posso, e eles me devolvem o oxigênio que eu preciso para me renovar.
+
+E sou pragmático na execução. Se acredito, vou até o fim. Se descubro no meio do caminho que não era aquilo, sei virar a chave e parar.
+
+Se eu tivesse que escolher uma só, escolho relacionamento. É a que sustenta as outras quatro.
+
+### As pessoas que me formaram
+
+Minha mãe, em primeiro lugar. Ela tem bastante idade e continua me ensinando.
+
+Minha esposa, que eu conheci aos 13 anos. Ela foi o contrapeso da minha vida. Enquanto eu puxava demais para um lado, ela equilibrava o outro. Teve hora em que ela sumiu para me dar espaço e hora em que se posicionou para me segurar.
+
+Fora da família, tive dois mentores de verdade. O primeiro foi Odilon Paulo Martins, no início da carreira. Ele descobriu em mim habilidades que eu ainda não enxergava e me colocou no lugar certo. A gente às vezes insiste em fazer uma coisa para a qual não está preparado, por falta de perfil ou de competência, e não percebe. Ele percebia. Trabalhamos juntos alguns anos e ficamos amigos por muitos outros.
+
+O segundo foi Nilo Carvalho. Era meu par no banco, muito focado e muito pragmático. Anos depois, por coincidência, ele virou meu chefe no projeto do Bain Capital. Não foi ele quem me contratou, mas fiquei feliz de reencontrar. Continua meu amigo até hoje.
+
+Como referência distante, Steve Jobs. Não por concordar com tudo, porque ele fazia coisas que não eram boas. Mas era disruptivo de um jeito que mudava a régua. Sem ele, do jeito dele, a Apple não seria o que é.
+
+### Fora do trabalho
+
+Três coisas ocupam minha semana. Família, sempre. Trago para dentro de casa todo mundo que eu puder, porque quem está bem em casa tem chance de estar bem no resto.
+
+Cuidar do corpo é a segunda. Já joguei tênis, futebol e basquete. Hoje jogo menos, por causa de um problema no ombro, mas caminhada e corrida entram na semana no mínimo três vezes. Teve época em que eu não consegui manter isso, porque o mundo corporativo é cruel com o seu tempo. Hoje eu mantenho.
+
+E a terceira é ter um projeto. Eu não consigo viver sem um. Quem não tem projeto fica com a vida vazia, pelo menos no meu caso. Tem gente que se satisfaz com um. Eu preciso de mais, e falo isso abertamente. Se eu não tiver, eu não fico bem.
+
+### Por que sair do mundo corporativo e construir do zero
+
+Fui 90% executivo de multinacional a vida inteira. E sempre quis montar alguma coisa do zero. Não do zero colocando dinheiro, isso eu já fazia como investidor. Do zero atuando.
+
+Conheço o Nicholas há bastante tempo. Quando saí do banco, entrei no conselho da corretora que ele tinha montado com outros três sócios. Ele precisava de mentoria e de estrutura. Ajudei a criar governança e limites claros de responsabilidade, e a gente saiu visitando praticamente todos os CEOs de seguradora da época para trazer credibilidade. Ficamos amigos e nunca nos perdemos de vista, mesmo seguindo caminhos diferentes. Viramos meio conselheiros um do outro.
+
+Ano passado os astros se juntaram. Ele estava saindo de um projeto, eu estava me desligando do meu, e a gente sempre teve vontade de fazer alguma coisa junto sem nunca ter tido a janela. Ele apareceu com a ideia de trabalhar com inteligência artificial.
+
+Isso me pegou em cheio. Sempre gostei de tecnologia e estava querendo me aprofundar em IA, mas no mundo corporativo o tempo não é seu. É da empresa. Você doa 24 horas do seu dia. Eu conseguia achar brechas, nunca profundidade.
+
+Conversei com o Felipe, que eu já conhecia, e com a Amanda, que eu sabia quem era mas não conhecia pessoalmente. Ele tinha acabado de voltar de uma viagem para conhecer o projeto da Mahway. Topei.
+
+A gente começou a WIR em outubro ou novembro do ano passado, antes mesmo de a holding da Avante estar constituída. E antes de tudo o que está acontecendo hoje estar acontecendo.
+
+### O que essa onda de IA tem de diferente
+
+Em todos os projetos de que participei eu levei a tecnologia disponível na época. No Santander havia muito investimento em tecnologia e eu conseguia simplificar processo de venda com o que existia. Mas ali era entregar uma ferramenta para alguém usar.
+
+Em saúde foi diferente. O mercado de saúde é manual do começo ao fim, gente escrevendo à mão, e eu me permiti fazer uma revolução: zerar tudo e digitalizar. Não tinha IA como tem hoje.
+
+A diferença da IA é que ela não vem para fazer mais do mesmo. Ela vem para tirar de você tudo o que é replicável e devolver o que só o ser humano faz, que é decidir. O subscritor que precifica e aceita risco vai fazer o trabalho dele de verdade, em vez do trabalho manual que faz hoje. E dá para chegar lá por camadas, via API, sem mexer no core.
+
+Eu vi passar tudo. Trabalhei sem internet, usei fax e máquina de escrever. Depois veio a internet, a rede social, o 5G, a nuvem. Cada uma dessas mudou alguma coisa. A IA chega somando tudo isso numa velocidade e num escopo que não têm limite claro.
+
+Por isso eu acho que a minha geração, se souber aproveitar, sai na frente de quem não viu as ondas anteriores.
+
+> A IA não é uma onda que você fica olhando da areia para ver quando entra. Ou você surfa ela inteira, ou você não surfa.
+
+Tem muita gente entrando na onda só porque todo mundo está entrando. Isso não funciona. Se o líder não entender que a IA tem que estar na decisão dele, nos liderados dele e na cultura da empresa, ele vai ficar empurrando projeto, gastando dinheiro e não vendo retorno. IA tem que nascer na cultura da pessoa antes de virar sistema.
+
+Na WIR isso ficou claro quando fomos validar os produtos. Fizemos mais de 20 visitas para testar o que estávamos construindo. Uma coisa é o que a gente acha. Outra é o que o cliente sente do outro lado. Eu já senti aquela dor, então eu sabia. Mas eu precisava que ele validasse.
+
+### O legado que eu quero deixar
+
+Seguros está uma onda à frente de saúde no Brasil, e banco está uma onda à frente dos dois. Eu peguei a digitalização dos bancos em cheio, e isso foi sorte de timing tanto quanto qualquer outra coisa. Hoje os bancos brasileiros são referência mundial. Seguros veio depois. Saúde ainda tem muito o que acontecer.
+
+O que eu quero deixar é conhecimento. Em toda visita, toda reunião com gente do mercado, eu faço uma doação espontânea. Não tem uma conversa em que eu não devolva alguma coisa do que aprendi.
+
+Muita gente construiu carreira e se formou em coisas que talvez não existam mais daqui a pouco, e ainda não parou para pensar nisso. Ajudar essas pessoas a mudar o mindset é o trabalho. Isso cria credibilidade e reputação, e as pessoas passam a procurar você sozinhas.
+
+Contratei muita gente ao longo da carreira e fui mentor de turmas de trainee no banco e no projeto do Bain. Vários deles hoje estão em posições de liderança. Toda vez que publico algo sobre IA no LinkedIn aparece alguém desses querendo conversar. Isso já está acontecendo, e é a parte de que eu mais gosto.
+
+Eu mudei de cabeça. Podia estar aqui pensando igual ao passado, e não ia dar certo. Se eu consegui mudar, com a bagagem que tenho, quase todo mundo consegue.
+
+### Leia também
+
+- [Por que MGAs são a ponta da lança da IA em seguro](#blog/mgas-ponta-da-lanca)
+- [O custo invisível do straight-through processing mal feito](#blog/custo-invisivel-stp-mal-feito)
+- [Manifesto WIR Innovation](#blog/manifesto)`,
+  },
+  {
+    slug: "jose-carlos-de-paula-entrevista-en",
+    cat: "Entrevista", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
+    image: "/assets/articles/jose-carlos-de-paula-entrevista-en.jpg",
+    imageAlt: "José Carlos de Paula, CSO and co-founder of WIR Innovation",
+    title: "José Carlos de Paula: four decades across banking, insurance and healthcare",
+    sub: "WIR's CSO and co-founder on the career that took him from bank trainee to brokerage CEO to Bain Capital healthcare executive, and why he decided to build from zero now.",
+    author: "José Carlos de Paula", role: "CSO · Co-Founder",
+    authorPhoto: "assets/team/jose-carlos.jpg",
+    time: "12 min", date: "04 · Sep · 2026", dateISO: "2026-09-04",
+    metaDesc: "Interview with José Carlos de Paula, CSO and co-founder of WIR Innovation. His career in banking, insurance and healthcare, his mentors, and why the AI wave is different.",
+    faq: [
+      { q: "Who is José Carlos de Paula?", a: "José Carlos de Paula is CSO and co-founder of WIR Innovation, an AI platform for the insurance market. A civil engineer by training, with degrees in economics and an MBA, he built a four-decade career across three sectors: banking, insurance and healthcare. He became an insurance director at 29, spent ten years at Santander, served as CEO of the bank's brokerage after its joint venture with Zurich, and then spent eight years as an executive at Grupo NotreDame Intermédica, Bain Capital's Brazilian healthcare platform." },
+      { q: "What is José Carlos de Paula's experience in insurance?", a: "He entered insurance at 29 as the director responsible for life, private pension, home, commercial and auto cover in a Brazilian bank's bancassurance operation. He later built an insurance joint venture with Generali at Sudameris, and at Santander he led the sale of 51% of the bank's non-core products to Zurich, then took over as CEO of the bank's brokerage." },
+      { q: "What did José Carlos de Paula do in healthcare?", a: "In 2014 he joined Bain Capital's healthcare project in Brazil, which became Grupo NotreDame Intermédica: an investment of roughly US$ 1.5 billion to acquire, consolidate, go public and exit to a strategic buyer. He stayed eight years, through acquisitions, IPO, follow-on and the final merger. He then spent a year and a half leading the consolidation of a Pátria Investimentos healthcare holding." },
+      { q: "Why did José Carlos de Paula co-found WIR Innovation?", a: "He had known Nicholas Weiser for years, since sitting on the board of the brokerage Nicholas had built. In 2025 both were exiting projects at the same time and decided to build something together in artificial intelligence applied to insurance. WIR started operating before Avante's holding company was even formally incorporated." }
+    ],
+    body: `*This conversation was recorded for the WIR Innovation Podcast and has been edited for reading. The answers are from José Carlos de Paula, CSO and co-founder of WIR Innovation.*
+
+### Who is José Carlos de Paula
+
+I am a civil engineer by training. Then came economics, an MBA in business, and a stretch at Cambridge studying business English. Along the way I kept adding courses in leadership, development and technology, because standing still on what I already knew never interested me.
+
+My mother separated from my father very early and raised four children on her own. All four graduated and built careers. That explains a good part of how I think about work.
+
+The career itself follows a logic I chose deliberately. Cycles of five to ten years per company. Banking, insurance, healthcare. Always moving into a new area once the previous cycle had given me what it had to give.
+
+### I started in banking because I needed the money
+
+I was already working when I graduated, but those were jobs to pay for my studies. I went through several trainee processes and passed a few. Two were banks, and I picked banking for the simplest reason in the world: it paid better and I needed it.
+
+I spent two years in the trainee program and then moved fast. At 24 I was already a branch manager. At 28, living in Rio, I was the only person from that market nominated for a program the bank called Future Directors. Thirty of us from all over Brazil, in São Paulo, with eighteen months to design new products and new revenue lines.
+
+At the end of the program each of us took over a directorship. Mine was insurance.
+
+### Insurance found me at 29
+
+I became the director responsible for every kind of cover sold to the bank's customers: life, private pension, home, commercial, auto. It was not my choice, it was where I landed. And it defined the next 25 years.
+
+I stayed another four or five years. The bank ended up being sold, the market was hot, and I had offers from three other banks. I understood my cycle had closed.
+
+### The decade spent rebuilding a bank
+
+I moved to Sudameris, a French-Italian bank, where I spent five years. I came in through the commercial and branch expansion side. In the last two years they moved me back to insurance, and there I built a joint venture with Generali, one of the bank's Italian shareholders.
+
+That was when Santander arrived in Brazil buying banks. A headhunter called. They were going to acquire Banespa, the largest state-owned bank being privatised at the time. I took it.
+
+I spent ten years at Santander and went through almost everything. The bank had bought five banks, including one larger than itself, and had to rebuild from the ground up. A new identity, and every legacy system had to collapse into one. Five banks had to become one.
+
+I was commercial director, then product director, then back to insurance. When the bank decided to sell 51% of its non-core products and keep 49% in a joint venture, I was assigned to run the deal. We sold to Zurich and I stayed on as CEO of the brokerage.
+
+### Eight years in healthcare, the market I had never managed to touch
+
+I served out the non-compete, sat on a few boards, and in 2014 Bain Capital came to Brazil to invest in healthcare. Roughly US$ 1.5 billion to acquire, consolidate, go public and then exit to a strategic buyer. That became Grupo NotreDame Intermédica.
+
+Healthcare was the one piece missing from my career. At the bank we had managed to launch dental, but never health. Too complex, too particular, too much friction with the customer. The bank always avoided it.
+
+It was extraordinary for exactly that reason. It was a different world and I had to learn it from scratch.
+
+The project lasted exactly eight years: acquisitions, IPO, follow-on and the strategic merger at the end. There were twelve of us in the executive team. When the fund decided to exit, it released everyone from their contracts, because it was keeping only 5% and a board seat.
+
+The new controlling shareholders asked me to stay another year or two to implement the synergy plan I had helped design during the year we spent waiting on CADE and ANS approvals. I did not want to go back to the old arrangement. I stopped being a shareholder, stopped being a statutory officer, and moved to a service provider contract so I would not carry the risk. I stayed another eighteen months and left.
+
+After that I spent a year and a half at a healthcare holding backed by Pátria Investimentos. Of the three mandates they gave me, I executed two in under a year: consolidating six acquisitions into a single structure and rebuilding the marketing positioning, which was fragmented across different brand names. The third was expansion. The fund decided not to invest because interest rates had climbed. With no new project, there was no reason for me to stay. I resigned, ran the transition and left in 2025.
+
+Today I invest and I sit on boards. I am an angel investor in a traveltech company that works as a marketplace of local guides and already operates in more than 110 countries. I sit on the board of a technology company serving the sales front end in healthcare, and on the board of a health discount-card operator, outside ANS regulation, with more than 1.1 million members and telemedicine across the base. I also set up a healthcare consultancy with a partner, where I stay purely on the strategy side.
+
+### Five things that define me
+
+Relationships. I can build bridges with people, and that opened practically every door in my career.
+
+The second is governance. I spent my whole life in multinationals and banks, environments obsessed with it, and I came out with a clear ruler for what is right and what is not.
+
+I like learning. I do not accept things as delivered. I question in order to understand, because whoever accepts without questioning learns less.
+
+Influence, but through giving. I can influence decisions without ever expecting something back. I give time and experience. It works at work and it works at home. I have three daughters, all married, and I created what I call the brotherhood of sons-in-law. I stay close to them, help where I can, and they give me back the oxygen I need to stay current.
+
+And I am pragmatic about execution. If I believe in it, I go all the way. If I find out halfway that it was not what I thought, I know how to flip the switch and stop.
+
+If I had to pick only one, I pick relationships. It is the one holding up the other four.
+
+### The people who shaped me
+
+My mother, first. She is well into her years and still teaching me.
+
+My wife, whom I met when I was 13. She was the counterweight in my life. When I pulled too hard in one direction, she balanced the other. There were times she stepped back to give me room and times she stepped in to hold me steady.
+
+Outside the family, I had two real mentors. The first was Odilon Paulo Martins, early in my career. He found abilities in me that I could not yet see and put me in the right place. Sometimes we insist on doing something we are not prepared for, for lack of fit or of skill, and we do not notice. He noticed. We worked together for a few years and stayed friends for many more.
+
+The second was Nilo Carvalho. He was my peer at the bank, very focused and very pragmatic. Years later, by coincidence, he ended up being my boss on the Bain Capital project. He was not the one who hired me, but I was glad to find him there. He is still a friend.
+
+As a distant reference, Steve Jobs. Not because I agree with everything, because he did things that were not good. But he was disruptive in a way that moved the ruler. Without him, done his way, Apple would not be what it is.
+
+### Outside work
+
+Three things fill my week. Family, always. I bring everyone I can into the house, because whoever is well at home has a shot at being well everywhere else.
+
+Looking after my body is the second. I played tennis, football and basketball. I play less now because of a shoulder problem, but walking and running go into the week at least three times. There were stretches when I could not keep that up, because the corporate world is brutal with your time. Now I keep it.
+
+And the third is having a project. I cannot live without one. Whoever has no project ends up with an empty life, at least in my case. Some people are satisfied with one. I need more, and I say it openly. Without it, I am not well.
+
+### Why leave the corporate world and build from zero
+
+I was a multinational executive 90% of my life. And I always wanted to build something from zero. Not from zero by putting money in, I already did that as an investor. From zero by running it.
+
+I have known Nicholas for a long time. When I left the bank I joined the board of the brokerage he had built with three other partners. He needed mentoring and structure. I helped create governance and clear lines of responsibility, and we went out to meet practically every insurance CEO in the market at the time to build credibility. We became friends and never lost touch, even as our paths diverged. We ended up acting as each other's advisors.
+
+Last year the stars lined up. He was leaving a project, I was winding down mine, and we had always wanted to do something together without ever having the window. He showed up with the idea of working on artificial intelligence.
+
+That landed. I have always liked technology and I wanted to go deep on AI, but in the corporate world your time is not yours. It belongs to the company. You give it 24 hours a day. I could find gaps, never depth.
+
+I talked to Felipe, whom I already knew, and to Amanda, whom I knew of but had not met. He had just come back from a trip to see the Mahway project. I said yes.
+
+We started WIR in October or November of last year, before Avante's holding company was even incorporated. And before everything that is happening today was happening.
+
+### What is different about this AI wave
+
+In every project I was part of, I brought in whatever technology was available at the time. At Santander there was heavy investment in technology and I could simplify the sales process with what existed. But that was handing someone a tool to use.
+
+Healthcare was different. The healthcare market is manual end to end, people writing by hand, and I gave myself permission to run a revolution: wipe it clean and digitise everything. There was no AI the way there is today.
+
+The difference with AI is that it does not come to do more of the same. It comes to take away everything replicable and give back what only a human does, which is decide. The underwriter who prices and accepts risk gets to do the actual job instead of the manual work he does today. And you can get there in layers, through APIs, without touching the core.
+
+I watched all of it happen. I worked without internet, used a fax and a typewriter. Then came the internet, social networks, 5G, the cloud. Each of those changed something. AI arrives adding all of it together, at a speed and a scope with no clear ceiling.
+
+That is why I think my generation, if it knows how to use this, comes out ahead of whoever did not live through the earlier waves.
+
+> AI is not a wave you watch from the sand, waiting to see when to paddle out. Either you ride the whole thing or you do not ride it.
+
+A lot of people are getting in only because everyone else is getting in. That does not work. If the leader does not understand that AI has to sit inside his own decisions, inside his team and inside the company culture, he will keep pushing projects, spending money and seeing no return. AI has to take root in the person before it becomes a system.
+
+At WIR that became obvious when we went out to validate the products. We ran more than 20 meetings to test what we were building. What we think is one thing. What the customer feels on the other side is another. I had felt that pain, so I knew. But I needed him to confirm it.
+
+### The legacy I want to leave
+
+Insurance is one wave ahead of healthcare in Brazil, and banking is one wave ahead of both. I caught the digitisation of the banks head on, and that was timing luck as much as anything else. Brazilian banks are a global reference today. Insurance came later. Healthcare still has a lot to come.
+
+What I want to leave behind is knowledge. In every visit, every meeting with someone from the market, I give something away unprompted. There is not one conversation where I do not hand back part of what I learned.
+
+Plenty of people built careers and trained for things that may not exist much longer, and have not stopped to think about it. Helping those people shift their mindset is the work. It builds credibility and reputation, and then people come looking for you on their own.
+
+I hired a lot of people over my career and mentored trainee cohorts at the bank and on the Bain project. Several of them hold leadership positions today. Every time I publish something about AI on LinkedIn, one of them shows up wanting to talk. That is already happening, and it is the part I enjoy most.
+
+I changed my thinking. I could be sitting here reasoning the way I did in the past, and it would not work. If I could change, with the mileage I carry, almost anyone can.
+
+### Read next
+
+- [WIR Innovation Manifesto](#blog/manifesto-en)`,
+  },
+  {
     slug: "o-que-e-uma-mga-algoritmica",
     cat: "Artigo", grad: "linear-gradient(135deg,#3222E9,#0E7C86)",
     image: "/assets/articles/o-que-e-uma-mga-algoritmica.jpg",
