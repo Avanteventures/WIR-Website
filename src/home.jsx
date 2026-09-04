@@ -211,6 +211,86 @@ export function Press() {
   );
 }
 
+// Vozes dos fundadores — the two podcast interviews, in their own words.
+// Sits after the Manifesto so the last thing before the closing CTA is a human face.
+// ES has no translated articles yet, so it points at the PT pair (same rule as INSIGHTS_HREF).
+const VOICES = {
+  pt: {
+    eyebrow: "· Os fundadores, em primeira pessoa",
+    title: <>Quem está construindo isso <em>já viveu o problema</em>.</>,
+    read: "Ler a entrevista",
+  },
+  en: {
+    eyebrow: "· The founders, in their own words",
+    title: <>The people building this <em>lived the problem first</em>.</>,
+    read: "Read the interview",
+  },
+  es: {
+    eyebrow: "· Los fundadores, en primera persona",
+    title: <>Quienes construyen esto <em>ya vivieron el problema</em>.</>,
+    read: "Leer la entrevista",
+  },
+}[LANG];
+
+const VOICES_ITEMS = [
+  {
+    name: "Nicholas Weiser",
+    role: "CEO · Co-Founder",
+    photo: "/assets/team/nicholas.jpg",
+    line: { pt: "27 anos em corretoras e seguradoras", en: "27 years across brokers and insurers", es: "27 años en corredoras y aseguradoras" },
+    quote: {
+      pt: "Eu enxerguei um oceano azul dentro de um oceano vermelho.",
+      en: "I saw a blue ocean inside a red one.",
+      es: "Vi un océano azul dentro de un océano rojo.",
+    },
+    href: { pt: "/insights/nicholas-weiser-entrevista/", en: "/insights/nicholas-weiser-entrevista-en/", es: "/insights/nicholas-weiser-entrevista/" },
+  },
+  {
+    name: "José Carlos de Paula",
+    role: "CSO · Co-Founder",
+    photo: "/assets/team/jose-carlos.jpg",
+    line: { pt: "Quatro décadas entre banco, seguro e saúde", en: "Four decades across banking, insurance and healthcare", es: "Cuatro décadas entre banca, seguros y salud" },
+    quote: {
+      pt: "Ou você surfa a onda inteira, ou você não surfa.",
+      en: "Either you ride the whole wave, or you do not ride it.",
+      es: "O surfeas la ola entera, o no la surfeas.",
+    },
+    href: { pt: "/insights/jose-carlos-de-paula-entrevista/", en: "/insights/jose-carlos-de-paula-entrevista-en/", es: "/insights/jose-carlos-de-paula-entrevista/" },
+  },
+];
+
+export function Voices() {
+  return (
+    <section className="voices bg-editorial bg-editorial--bl" data-reveal>
+      <div className="wrap">
+        <div className="voices__head">
+          <div className="eyebrow">{VOICES.eyebrow}</div>
+          <h2 className="voices__title display">{VOICES.title}</h2>
+        </div>
+        <ul className="voices__list">
+          {VOICES_ITEMS.map((it) => (
+            <li key={it.name} className="voices__item">
+              <a className="voices__link-wrap" href={it.href[LANG]}>
+                <div className="voices__person">
+                  <img className="voices__photo" src={it.photo} alt={it.name}
+                    width="64" height="64" loading="lazy" decoding="async"/>
+                  <div>
+                    <div className="voices__name">{it.name}</div>
+                    <div className="voices__role">{it.role}</div>
+                  </div>
+                </div>
+                <p className="voices__quote">“{it.quote[LANG]}”</p>
+                <div className="voices__line">{it.line[LANG]}</div>
+                <span className="voices__cta">{VOICES.read} <span aria-hidden="true">→</span></span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
 export function HomePage({ go }) {
   useReveal();
   return (
@@ -224,6 +304,7 @@ export function HomePage({ go }) {
       <Press/>
       <MidCta go={go}/>
       <Manifesto go={go}/>
+      <Voices/>
       <Closing go={go}/>
     </>
   );
