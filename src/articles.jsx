@@ -4,6 +4,335 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 
 export const ARTICLES = [
   {
+    slug: "nicholas-weiser-entrevista",
+    cat: "Entrevista", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
+    image: "/assets/articles/nicholas-weiser-entrevista.jpg",
+    imageAlt: "Nicholas Weiser, CEO e co-fundador da WIR Innovation",
+    title: "Nicholas Weiser: 27 anos de mercado até fundar a WIR",
+    sub: "O CEO e co-fundador da WIR conta a carreira que começou numa agência dos Correios aos 15 anos, passou por Aon, Gallagher, JLT e Lockton, fundou e vendeu a própria corretora, cofundou a EZZE Seguros, e por que decidiu virar empresa de tecnologia.",
+    author: "Nicholas Weiser", role: "CEO · Co-Founder",
+    authorPhoto: "assets/team/nicholas.jpg",
+    time: "12 min", date: "04 · Set · 2026", dateISO: "2026-09-04",
+    metaDesc: "Entrevista com Nicholas Weiser, CEO e co-fundador da WIR Innovation. Da agência dos Correios aos 15 anos a Aon, JLT e Lockton, a VIS, a EZZE Seguros, e por que virou tecnologia.",
+    faq: [
+      { q: "Quem é Nicholas Weiser?", a: "Nicholas Weiser é CEO e co-fundador da WIR Innovation, plataforma de IA para o mercado segurador. Começou a trabalhar aos 15 anos numa agência dos Correios e entrou no mercado de seguros em 1999, na Aon. Passou por Gallagher, foi sócio da JLT no Brasil, fundou a corretora VIS e a vendeu para a Lockton, cofundou a EZZE Seguros e fundou a consultoria WGA. São 27 anos de mercado." },
+      { q: "Que empresas Nicholas Weiser fundou?", a: "Fundou a VIS, corretora criada do zero em janeiro de 2012 com mais três sócios e vendida à Lockton em dezembro de 2015, junto com a corretora digital Otimize. Foi sócio cofundador da seguradora EZZE a partir de agosto de 2019. Fundou a WGA em janeiro de 2022, consultoria de aceleração de corretoras e seguradoras. E é co-fundador e CEO da WIR Innovation." },
+      { q: "O que é a WIR Innovation, segundo seu CEO?", a: "Segundo Nicholas Weiser, a WIR não vende tecnologia, vende informação e uma plataforma. Atende seguradoras, corretoras, MGAs e resseguradoras que ainda operam subscrição, atendimento e gestão em processos manuais, e transforma essa operação com inovação, velocidade e escala." },
+      { q: "Por que Nicholas Weiser saiu do mercado de corretagem para fundar uma empresa de tecnologia?", a: "Depois de quase 30 anos no setor, ele identificou que os problemas do mercado eram os mesmos de 15 ou 20 anos antes: seguradoras e corretoras operando de forma manual. Tentou iniciativas de IA que não funcionaram por falta de fornecedores que entendessem seguro. Concluiu que quem conhecesse o mercado por dentro teria que construir a tecnologia, e fundou a WIR com a Avante e a Mahway." }
+    ],
+    body: `*Esta conversa foi gravada para o WIR Innovation Podcast e está editada para leitura. As respostas são de Nicholas Weiser, CEO e co-fundador da WIR Innovation.*
+
+### Quem é Nicholas Weiser
+
+Comecei a trabalhar aos 15 anos, numa agência dos Correios. Fui subindo dentro da própria agência e passei um bom tempo ali, inclusive no call center.
+
+Em 1999 entrei no mercado de seguros, a convite de um amigo, na Aon. Entrei como estagiário.
+
+De lá para cá são 27 anos no mesmo mercado, mudando de lado o tempo todo. Corretora, seguradora, consultoria e agora tecnologia.
+
+### Aon, resseguro e aviação
+
+Na Aon passei por várias áreas corporativas e trabalhei muito com resseguro. Fiquei cinco anos. Cheguei a gerente de Aviation no Brasil e depois a account executive de contas grandes e globais.
+
+### Gallagher, a TRR Securitas e a filial de São Paulo
+
+Em 2004 fui para a TRR Securitas, corretora de seguros e benefícios ligada ao grupo Gallagher, que atendia a Braskem. Assumi o escritório de São Paulo, à frente de relacionamento com cliente e novos negócios, e a gente cresceu mais de 300% de faturamento em quase três anos.
+
+No começo de 2006 passei alguns meses em Londres, num treinamento internacional de resseguro.
+
+### Düsseldorf, Chicago e o roadshow
+
+Em 2007 voltei para a Aon, agora na diretoria comercial internacional. Primeiro como gerente do German Desk, morando em Düsseldorf. Depois como head do European & American Desk, em Chicago.
+
+O trabalho ali era roadshow. Ficávamos uma ou duas semanas fora visitando os risk managers globais para convencê-los de que dava para fazer um trabalho melhor no Brasil do que as corretoras que já os atendiam. Depois sentávamos com os CEOs, CFOs e as áreas de benefícios aqui. Essa área deu certo.
+
+### JLT e a primeira vez como sócio
+
+No fim de 2009 entrei na JLT como sócio e diretor comercial Brasil. Em 2010 virei sócio da JLT UK Holdings e vice-presidente executivo e CCO de Non-Life e Benefícios da corretora.
+
+Transformei toda a área comercial e triplicamos o faturamento. Criei specialties alinhadas com Londres, então eu ia para lá a cada dois ou três meses e tinha contato direto com o CEO da América Latina e com o CEO global.
+
+Foi a primeira vez que eu saí do cargo executivo e virei executivo sócio. Me trouxe muito conhecimento sobre como empreender.
+
+### VIS: fundar do zero e vender em quatro anos
+
+Saí da JLT no fim de 2011 e fiquei alguns meses parado, de propósito, para repensar o que eu queria fazer. Eu queria inovar mais. Foi aí que veio a ideia de empreender pela primeira vez.
+
+Em janeiro de 2012 abri a VIS, de Vision Insuring Success, com mais três sócios. Criamos um modelo de partnership e convidamos mais seis sócios para serem diretores, o que atraiu talento de verdade. Terminamos com nove sócios e 30 funcionários.
+
+Dentro da VIS a gente conheceu o José Carlos, que entrou como conselheiro. Ele estava saindo da Santander Seguros, onde tinha sido CEO da corretora, e nos ajudou muito na parte estratégica e em como crescer a companhia. Foi isso que nos impulsionou. Saímos do zero para quase R$ 70 milhões de prêmios.
+
+A partir de 2013 eu era CEO da VIS e da Otimize, a corretora digital do grupo, que já vendia automóvel, small business e produtos para shopping malls por canais próprios. Foram quase R$ 1,5 milhão de investimento.
+
+Montamos uma boutique de seguros corporativos, e na época foi uma das primeiras do mercado, se não a primeira. Em dezembro de 2015, quatro anos depois de abrir, vendemos para a Lockton, uma das dez maiores do mundo.
+
+Eu já tinha comprado corretora antes, mas nunca tinha vendido. Fazer o sell side de um M&A foi um aprendizado enorme de negociação.
+
+### Lockton e o canal do Santander Corporate
+
+Entrei na Lockton em 2016 como diretor executivo de Digital e Varejo e membro do comitê executivo Brasil. Depois assumi a diretoria comercial de Commercial Lines, varejo, digital e affinity, e em seguida virei vice-presidente e producer.
+
+Assumimos toda a área de Risk Services e fizemos uma reestruturação grande. A área cresceu muito.
+
+No fim de 2018 passei a liderar o canal entre a Lockton e o Banco Santander Corporate. Plugamos o canal corporate do banco, mais de 4 mil clientes, na nossa estrutura de venda de seguro corporativo. Deu certo, e de novo eu saí do papel de executivo puro e virei sócio da operação.
+
+### Cofundar a EZZE Seguros
+
+Em agosto de 2019 me chamaram para ser sócio cofundador de uma seguradora nova, a EZZE. Projeto ambicioso: a companhia fez R$ 1 bilhão de venda em quatro anos.
+
+Eu liderei toda a área comercial do Brasil, do zero, e depois assumi também digital, assessorias, licitações e marketing.
+
+Foi ali que eu comecei a enxergar duas coisas ao mesmo tempo. A dificuldade de crescer sem tecnologia, que a gente sentia na pele. E um espaço grande do lado das corretoras.
+
+Como segurador eu sentava com presidentes de corretoras pequenas, médias e grandes. Principalmente com as pequenas. E eu sabia que tinha muita coisa para fazer com elas. O lado empreendedor mexeu comigo de novo.
+
+### WGA e a cadeira de CEO na Umma
+
+Em janeiro de 2022 fundei a WGA, também do zero. Aceleramos várias corretoras que hoje estão crescendo forte e apoiamos algumas seguradoras na parte estratégica: proposta de valor, reposicionamento, marketing. Fiquei como CEO até meados de 2024 e depois continuei no conselho.
+
+Um dos nossos clientes me convidou para assumir como CEO da corretora dele, a Umma Seguros, uma boutique de seguros, riscos e benefícios. Entrei como CEO e sócio da operação, passei a WGA para os meus sócios, que tocam a empresa até hoje, e reestruturei a corretora inteira. Saí de lá com quase 40% de crescimento.
+
+### O que me define
+
+Conexão. Converso com muita gente, ajudo muita gente e sou ajudado por muita gente. Tenho muitos amigos dentro do mercado de seguros, e também clientes e fornecedores. Fazer conexão é o que eu faço melhor.
+
+Sou especialista de seguros, riscos e benefícios em nível alto. Consigo falar 360 graus de qualquer produto e de qualquer tipo de empresa dentro do mercado.
+
+A terceira é estratégia de negócio. Aprendi a pensar empresa, pensar solução, e também a parte de venda estratégica, que é entender o cliente do lado psicológico.
+
+E eu sou um family guy. Gosto de estar com os meus filhos, com a minha esposa, com a minha família. Passar o fim de semana com eles e, apesar do trabalho pesado, manter alguma rotina durante a semana para estar perto deles.
+
+### Mentores
+
+Três. O José Carlos, que foi meu conselheiro por vários anos e hoje virou meu sócio. O Henrique Camilo, que hoje é co-CEO de uma seguradora importante do mercado nacional. E o Guilherme Peronde, hoje CEO de uma grande seguradora global.
+
+### Fora do trabalho
+
+Jogo tênis. Acho que o tênis me ensina a me adaptar a situação difícil, e isso eu levo para o trabalho. Fora que junta os amigos e faz bem para a saúde.
+
+A segunda é assistir filme e série. Me traz tranquilidade mental.
+
+E a terceira, que hoje ocupa boa parte do meu tempo, é trabalhar com IA. Não conversar, trabalhar. Full time, com Claude e com ChatGPT. Todo mundo digita no chat e recebe uma resposta média. A partir do momento em que você estrutura o contexto e o histórico, o resultado é outro. Estou gostando muito disso.
+
+### Por que virar tecnologia
+
+Eu estava confortável. Ganhando bem, sócio da operação, fazendo o que eu já sabia fazer. Era só escalar.
+
+Mas comecei a sentir que os problemas do mercado eram os mesmos de 15, 20 anos atrás. Seguradora operando de forma manual, corretora também. Não existia fornecedor que conhecesse seguro de verdade, do lado estratégico. Tentei várias iniciativas de IA que não deram certo exatamente por isso.
+
+Daí veio a ideia de montar uma empresa de tecnologia e IA para seguros. Eu enxerguei um oceano azul dentro de um oceano vermelho.
+
+E enxerguei uma coisa a mais. Estou há quase 30 anos no mercado. Conheço seguradora por dentro porque cofundei uma. Conheço corretora porque fundei e também trabalhei em pequena, média e grande. Eu conheço o mercado 360 graus. Entendi que eu precisava ajudar o mercado.
+
+Fiz uma transição de seis meses dentro da corretora e saí no fim de 2025. Em dezembro negociamos para fazer parte de uma holding, a Avante, e conhecemos a Mahway. Ali eu vi o potencial de tecnologia e de IA bem feita, e que dava para implantar isso dentro do mercado de verdade.
+
+Lançamos a WIR junto com a Avante e a Mahway. Eles são nossos investidores. A Mahway aporta capital intelectual global e a Avante aporta suporte estratégico e financeiro.
+
+### O que é a WIR, em uma frase
+
+A WIR não vende tecnologia. Vende informação e uma plataforma.
+
+Nossos clientes são seguradoras, corretoras, MGAs e resseguradoras que ainda fazem subscrição, atendimento e gestão em processo manual e não conseguem escalar. A gente transforma o business deles com inovação, velocidade e escala.
+
+Existe uma dificuldade real de transformar processo digitalizado com custo-benefício que feche. E existe um receio grande das corretoras de automatizar atendimento de cliente. Com quase 30 anos de mercado, dá para identificar a dor e construir a solução que digitaliza o processo e escala o cliente, seja ele corretor, segurador, MGA, assessoria ou plataforma de distribuição.
+
+> Seguro é quase uma proteção para a economia do país. Quando vem uma catástrofe natural, o seguro cobre boa parte. No Brasil a penetração é baixa demais, e boa parte do prejuízo não está segurada.
+
+Isso é um problema e é uma oportunidade do mesmo tamanho. Só que ela não se resolve com processo manual de 1990 rodando em 2026.
+
+### O que muda em cinco anos
+
+Eu acredito que dá para dobrar o mercado. Potencializar a venda na distribuição, ajudar seguradora e resseguradora a criar produto novo e transformar o negócio. O mercado fica mais ágil.
+
+O que eu enxergo daqui a cinco ou dez anos já é tecnicamente possível hoje, só não está implantado. Imagina que você viaja e o voo atrasa. Você tem seguro pelo cartão de crédito ou comprou seguro viagem. A informação do atraso é pública. A seguradora cruza o dado, vê que você é segurado e deposita na sua conta quando você desce do avião. Você não abre sinistro. Não passa por burocracia. Recebe a indenização para fazer uma refeição enquanto espera.
+
+Tem gente tentando fazer isso. O ganho não está só no sinistro, está em conseguir acessar a pessoa ou a empresa de forma assertiva, na hora exata em que ela precisa, e oferecer o seguro dentro da jornada dela.
+
+Com data analytics e com o que a IA está trazendo, e com seguradoras e corretores se preparando, vai ter uma disrupção grande.
+
+### O que eu quero deixar
+
+Um sonho meu, e nosso, é fazer a transformação digital nas áreas de negócio das seguradoras. Não só na operação.
+
+Hoje já existe transformação digital na parte operacional, em sinistro, nesse tipo de coisa. Na área de negócio, quase não. É ali que a seguradora melhora resultado financeiro, escala a operação, atende melhor o corretor, e o corretor atende melhor o cliente dele.
+
+Isso é disruptivo porque possibilita a criação de seguradoras novas. Gera emprego, gera cargo novo para fazer a transformação, gera negócio para o mercado inteiro.
+
+Do lado da distribuição eu vejo projeto especial de MGA, geração e digestão de lead, automação de negócio. Dá para transformar corretor, criar corretor e distribuidor novo, e trazer produto que hoje, sem tecnologia, não existe. Tudo isso tira do executivo o trabalho burocrático e devolve o tempo dele para tarefa que gera resultado.
+
+A WIR pode liderar essa transformação. Ou vamos ser líderes, ou vamos ser um dos líderes que puxa isso no mercado.
+
+### Leia também
+
+- [José Carlos de Paula: quatro décadas entre banco, seguro e saúde](#blog/jose-carlos-de-paula-entrevista)
+- [O underwriter não morre. O modelo operacional dele, sim.](#blog/o-underwriter-nao-morre)
+- [Manifesto WIR Innovation](#blog/manifesto)`,
+  },
+  {
+    slug: "nicholas-weiser-entrevista-en",
+    cat: "Entrevista", grad: "linear-gradient(135deg,#3222E9,#7540AC)",
+    image: "/assets/articles/nicholas-weiser-entrevista-en.jpg",
+    imageAlt: "Nicholas Weiser, CEO and co-founder of WIR Innovation",
+    title: "Nicholas Weiser: 27 years in the market before founding WIR",
+    sub: "WIR's CEO and co-founder on the career that started at a post office branch at 15, ran through Aon, Gallagher, JLT and Lockton, built and sold his own broker, co-founded EZZE Seguros, and why he turned into a technology company.",
+    author: "Nicholas Weiser", role: "CEO · Co-Founder",
+    authorPhoto: "assets/team/nicholas.jpg",
+    time: "12 min", date: "04 · Sep · 2026", dateISO: "2026-09-04",
+    metaDesc: "Interview with Nicholas Weiser, CEO and co-founder of WIR Innovation. From a post office branch at 15 to Aon, JLT and Lockton, the VIS broker, EZZE Seguros, and why he moved into technology.",
+    faq: [
+      { q: "Who is Nicholas Weiser?", a: "Nicholas Weiser is CEO and co-founder of WIR Innovation, an AI platform for the insurance market. He started working at 15 at a post office branch and entered insurance in 1999 at Aon. He worked at Gallagher, became a partner at JLT in Brazil, founded the broker VIS and sold it to Lockton, co-founded the insurer EZZE and founded the consultancy WGA. That is 27 years in the market." },
+      { q: "What companies has Nicholas Weiser founded?", a: "He founded VIS, a broker built from scratch in January 2012 with three other partners and sold to Lockton in December 2015 alongside the digital broker Otimize. He was a co-founding partner of the insurer EZZE from August 2019. He founded WGA in January 2022, a consultancy accelerating brokers and insurers. And he is co-founder and CEO of WIR Innovation." },
+      { q: "What is WIR Innovation, according to its CEO?", a: "According to Nicholas Weiser, WIR does not sell technology, it sells information and a platform. It serves insurers, brokers, MGAs and reinsurers still running underwriting, servicing and management as manual processes, and transforms that operation with innovation, speed and scale." },
+      { q: "Why did Nicholas Weiser leave broking to found a technology company?", a: "After almost 30 years in the sector he saw that the market's problems were the same as 15 or 20 years earlier: insurers and brokers operating manually. He tried AI initiatives that failed for lack of vendors who understood insurance. He concluded that whoever knew the market from the inside would have to build the technology, and founded WIR with Avante and Mahway." }
+    ],
+    body: `*This conversation was recorded for the WIR Innovation Podcast and has been edited for reading. The answers are from Nicholas Weiser, CEO and co-founder of WIR Innovation.*
+
+### Who is Nicholas Weiser
+
+I started working at 15, at a post office branch. I moved up inside that same branch and spent a good while there, including in the call centre.
+
+In 1999 I entered the insurance market, invited by a friend, at Aon. I came in as an intern.
+
+From there to here it is 27 years in the same market, switching sides the whole time. Broker, insurer, consultancy, and now technology.
+
+### Aon, reinsurance and aviation
+
+At Aon I passed through several corporate areas and worked a lot with reinsurance. I stayed five years. I made it to Aviation manager for Brazil and then account executive for large and global clients.
+
+### Gallagher, TRR Securitas and the São Paulo office
+
+In 2004 I moved to TRR Securitas, an insurance and benefits broker tied to the Gallagher group, which served Braskem. I took over the São Paulo office, running client relationships and new business, and we grew revenue more than 300% in almost three years.
+
+At the start of 2006 I spent a few months in London on an international reinsurance training programme.
+
+### Düsseldorf, Chicago and the roadshow
+
+In 2007 I went back to Aon, this time in the international commercial division. First as manager of the German Desk, living in Düsseldorf. Then as head of the European & American Desk, in Chicago.
+
+The work there was roadshows. We would spend a week or two abroad visiting global risk managers to convince them that the work could be done better in Brazil than by the brokers already serving them. Then we would sit with the CEOs, CFOs and benefits teams back home. That area worked.
+
+### JLT and the first time as a partner
+
+At the end of 2009 I joined JLT as a partner and commercial director for Brazil. In 2010 I became a partner in JLT UK Holdings and executive vice president and CCO for Non-Life and Benefits at the broker.
+
+I rebuilt the entire commercial area and we tripled revenue. I created specialties aligned with London, so I was flying there every two or three months and had direct contact with the Latin America CEO and the global CEO.
+
+It was the first time I stepped out of an executive role and became an executive partner. It taught me a great deal about building a business.
+
+### VIS: building from zero and selling in four years
+
+I left JLT at the end of 2011 and stayed out for a few months, on purpose, to rethink what I wanted to do. I wanted to innovate more. That is where the idea of building something of my own came from.
+
+In January 2012 I opened VIS, short for Vision Insuring Success, with three other partners. We created a partnership model and invited six more partners in as directors, which pulled in real talent. We ended up with nine partners and 30 employees.
+
+Inside VIS we met José Carlos, who joined as an advisor. He was leaving Santander Seguros, where he had been CEO of the brokerage, and he helped us enormously on strategy and on how to grow the company. That is what pushed us. We went from zero to almost R$ 70 million in premiums.
+
+From 2013 I was CEO of VIS and of Otimize, the group's digital broker, already selling motor, small business and shopping mall products through channels of its own. That was close to R$ 1.5 million of investment.
+
+We built a corporate insurance boutique, and at the time it was one of the first in the market, if not the first. In December 2015, four years after opening, we sold to Lockton, one of the ten largest in the world.
+
+I had bought a broker before, but never sold one. Running the sell side of an M&A was an enormous lesson in negotiation.
+
+### Lockton and the Santander Corporate channel
+
+I joined Lockton in 2016 as executive director for Digital and Retail and a member of the Brazil executive committee. Then I took the commercial directorship for Commercial Lines, retail, digital and affinity, and after that became vice president and producer.
+
+We took over the whole Risk Services area and ran a major restructuring. The area grew a lot.
+
+At the end of 2018 I began leading the channel between Lockton and Banco Santander Corporate. We plugged the bank's corporate channel, more than 4,000 clients, into our structure for selling corporate insurance. It worked, and once again I moved out of the pure executive role and became a partner in the operation.
+
+### Co-founding EZZE Seguros
+
+In August 2019 they called me to be a co-founding partner of a new insurer, EZZE. Ambitious project: the company did R$ 1 billion in sales in four years.
+
+I led the entire commercial area for Brazil, from zero, and later also took on digital, wholesale, public tenders and marketing.
+
+That is where I started seeing two things at once. The difficulty of growing without technology, which we felt directly. And a large opening on the broker side.
+
+As an insurer I sat with the presidents of small, mid-sized and large brokers. Mostly the small ones. And I knew there was a lot to be done with them. The builder in me moved again.
+
+### WGA and the CEO seat at Umma
+
+In January 2022 I founded WGA, also from zero. We accelerated several brokers that are growing strongly today, and supported some insurers on strategy: value proposition, repositioning, marketing. I stayed on as CEO until mid-2024 and then continued on the board.
+
+One of our clients invited me to take over as CEO of his brokerage, Umma Seguros, a boutique in insurance, risk and benefits. I came in as CEO and partner in the operation, handed WGA to my partners, who run it to this day, and restructured the whole broker. I left with almost 40% growth.
+
+### What defines me
+
+Connection. I talk to a lot of people, I help a lot of people and a lot of people help me. I have many friends inside the insurance market, and clients and suppliers too. Making connections is what I do best.
+
+I am a high-level specialist in insurance, risk and benefits. I can talk 360 degrees about any product and any kind of company in this market.
+
+The third is business strategy. I learned to think in companies and in solutions, and also the strategic sales side, which is understanding the client psychologically.
+
+And I am a family guy. I like being with my kids, my wife, my family. Spending the weekend with them and, despite the heavy work, keeping some routine during the week to be near them.
+
+### Mentors
+
+Three. José Carlos, who was my advisor for years and is now my partner. Henrique Camilo, today co-CEO of an important insurer in the Brazilian market. And Guilherme Peronde, today CEO of a large global insurer.
+
+### Outside work
+
+I play tennis. I think tennis teaches you to adapt to a hard situation, and I carry that into work. It also brings friends together and it is good for your health.
+
+The second is watching films and series. It gives me mental calm.
+
+And the third, which takes up a good part of my time now, is working with AI. Not chatting with it. Working. Full time, with Claude and with ChatGPT. Everyone types into the chat and gets an average answer back. The moment you structure the context and the history, the output is different. I am enjoying it a lot.
+
+### Why move into technology
+
+I was comfortable. Paid well, partner in the operation, doing what I already knew how to do. It was just a matter of scaling.
+
+But I started to feel that the market's problems were the same as 15 or 20 years earlier. Insurers operating manually, brokers too. There was no vendor that genuinely understood insurance from the strategic side. I tried several AI initiatives that failed for exactly that reason.
+
+That is where the idea of building a technology and AI company for insurance came from. I saw a blue ocean inside a red one.
+
+And I saw one more thing. I have been in this market almost 30 years. I know insurers from the inside because I co-founded one. I know brokers because I founded one and also worked at small, mid-sized and large ones. I know this market 360 degrees. I understood that I needed to help it.
+
+I ran a six-month transition out of the brokerage and left at the end of 2025. In December we negotiated joining a holding company, Avante, and met Mahway. That is where I saw the potential of technology and of AI done properly, and that it could genuinely be deployed inside this market.
+
+We launched WIR together with Avante and Mahway. They are our investors. Mahway brings global intellectual capital and Avante brings strategic and financial support.
+
+### What WIR is, in one sentence
+
+WIR does not sell technology. It sells information and a platform.
+
+Our clients are insurers, brokers, MGAs and reinsurers still running underwriting, servicing and management as manual processes, unable to scale. We transform their business with innovation, speed and scale.
+
+There is a real difficulty in transforming a digitised process at a cost-benefit that adds up. And brokers carry a real fear of automating client servicing. With almost 30 years in the market, you can identify the pain and build the solution that digitises the process and scales the client, whether that client is a broker, an insurer, an MGA, a wholesaler or a distribution platform.
+
+> Insurance is close to a protection for a country's economy. When a natural catastrophe hits, insurance covers a good part of it. In Brazil, penetration is far too low, and much of the loss is simply not insured.
+
+That is a problem and an opportunity of the same size. It just does not get solved with a 1990 manual process running in 2026.
+
+### What changes in five years
+
+I believe the market can double. Amplify sales in distribution, help insurers and reinsurers create new products and transform their businesses. The market becomes more agile.
+
+What I see five or ten years out is already technically possible today, it just is not deployed. Picture yourself travelling and the flight is delayed. You have cover through your credit card or you bought travel insurance. The delay is public information. The insurer cross-references the data, sees you are covered, and deposits the money in your account as you walk off the plane. You file no claim. You go through no bureaucracy. You get the payout in time to buy a meal while you wait.
+
+People are trying to build this. The gain is not only in the claim, it is in reaching the person or the company accurately, at the exact moment they need it, and offering the cover inside their journey.
+
+With data analytics, with what AI is bringing, and with insurers and brokers preparing for it, there is going to be serious disruption.
+
+### What I want to leave behind
+
+A dream of mine, and ours, is to run the digital transformation inside insurers' business areas. Not only in operations.
+
+Digital transformation already exists on the operational side, in claims, in that kind of process. In the business area, almost none. That is where an insurer improves its financial result, scales the operation, serves brokers better, and where brokers in turn serve their own clients better.
+
+That is disruptive because it makes new insurers possible. It creates jobs, creates new roles to run the transformation, and creates business for the whole market.
+
+On the distribution side I see MGA projects, lead generation and lead handling, business automation. You can transform brokers, create new brokers and distributors, and bring in products that today, without technology, do not exist. All of it takes bureaucratic work off the executive and gives the time back to work that produces a result.
+
+WIR can lead that transformation. Either we will be the leaders, or we will be one of the leaders pulling it through this market.
+
+### Read next
+
+- [José Carlos de Paula: four decades across banking, insurance and healthcare](#blog/jose-carlos-de-paula-entrevista-en)
+- [WIR Innovation Manifesto](#blog/manifesto-en)`,
+  },
+  {
     slug: "jose-carlos-de-paula-entrevista",
     cat: "Entrevista", grad: "linear-gradient(135deg,#0E7C86,#3222E9)",
     image: "/assets/articles/jose-carlos-de-paula-entrevista.jpg",

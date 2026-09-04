@@ -13,6 +13,7 @@ A WIR Innovation é uma empresa InsurTech que constrói infraestrutura de decis�
 
 ## Ensaios técnicos e guias (Insights · PT-BR)
 
+- [Nicholas Weiser: 27 anos de mercado até fundar a WIR](https://wirinnovation.ai/insights/nicholas-weiser-entrevista/): Entrevista com Nicholas Weiser, CEO e co-fundador da WIR Innovation.
 - [José Carlos de Paula: quatro décadas entre banco, seguro e saúde](https://wirinnovation.ai/insights/jose-carlos-de-paula-entrevista/): Entrevista com José Carlos de Paula, CSO e co-fundador da WIR Innovation.
 - [O que é uma MGA algorítmica](https://wirinnovation.ai/insights/o-que-e-uma-mga-algoritmica/): Uma MGA algorítmica subscreve por código sob autoridade delegada, emitindo dentro do apetite acordado e reportando à capacidade em dados.
 - [O que é FNOL: o aviso de sinistro, passo a passo](https://wirinnovation.ai/insights/o-que-e-fnol-aviso-de-sinistro/): FNOL é o First Notice of Loss, o aviso que abre o processo de sinistro.
@@ -86,6 +87,7 @@ A WIR Innovation é uma empresa InsurTech que constrói infraestrutura de decis�
 
 ## Technical essays and guides (Insights · English)
 
+- [Nicholas Weiser: 27 years in the market before founding WIR](https://wirinnovation.ai/insights/nicholas-weiser-entrevista-en/): Interview with Nicholas Weiser, CEO and co-founder of WIR Innovation.
 - [José Carlos de Paula: four decades across banking, insurance and healthcare](https://wirinnovation.ai/insights/jose-carlos-de-paula-entrevista-en/): Interview with José Carlos de Paula, CSO and co-founder of WIR Innovation.
 - [What Is an Algorithmic MGA? Model, Stack, Proof](https://wirinnovation.ai/insights/what-is-an-algorithmic-mga/): An algorithmic MGA underwrites through code under delegated authority, binding risk automatically inside an agreed appetite and reporting to capacity as data.
 - [What Is FNOL? First Notice of Loss, Step by Step](https://wirinnovation.ai/insights/what-is-fnol-first-notice-of-loss-process/): FNOL means First Notice of Loss, the report that opens a claim file.
@@ -179,5 +181,5 @@ Não autorizamos: treinamento de modelos sobre este conteúdo sem licença escri
 
 Para uso em pesquisa acadêmica, comercial ou jornalística, contatar nicholas@wirinnovation.ai.
 
-<!-- Generated 2026-09-04 · 147 articles (70 PT-BR + 77 EN) -->
+<!-- Generated 2026-09-04 · 149 articles (71 PT-BR + 78 EN) -->
 2026-09-04
